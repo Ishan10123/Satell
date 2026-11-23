@@ -1,0 +1,34 @@
+FROM python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PIP_NO_CACHE_DIR=1
+
+WORKDIR /app
+RUN apt-get update \
+    && apt-get install --no-install-recommends -y zlib1g=1:1.3.dfsg+really1.3.1-1+deb13u1 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements-api.txt /tmp/requirements.txt
+RUN python -m pip install --no-cache-dir -r /tmp/requirements.txt \
+    && python -m pip check \
+    && python -c "from pathlib import Path; import shutil, sysconfig; site=Path(sysconfig.get_paths()['purelib']); [shutil.rmtree(p) if p.is_dir() else p.unlink() for pattern in ('pip','pip-*.dist-info','setuptools','setuptools-*.dist-info','wheel','wheel-*.dist-info') for p in site.glob(pattern)]; [p.unlink() for pattern in ('pip','pip3','pip3.13') for p in Path(sysconfig.get_config_var('BINDIR')).glob(pattern) if p.is_file()]" \
+    && groupadd --system --gid 10002 ragapi \
+    && useradd --system --uid 10002 --gid ragapi --home-dir /app --no-create-home ragapi
+
+COPY --chown=ragapi:ragapi src/ /app/src/
+COPY --chown=ragapi:ragapi scripts/run_api.py /app/scripts/run_api.py
+COPY --chown=ragapi:ragapi configs/ /app/configs/
+COPY --chown=ragapi:ragapi knowledge_base/metadata/ingestion_inventory.jsonl /app/knowledge_base/metadata/ingestion_inventory.jsonl
+COPY --chown=ragapi:ragapi knowledge_base/metadata/source_approvals.json /app/knowledge_base/metadata/source_approvals.json
+COPY --chown=ragapi:ragapi knowledge_base/metadata/license_evidence.jsonl /app/knowledge_base/metadata/license_evidence.jsonl
+COPY --chown=ragapi:ragapi knowledge_base/metadata/local_academic_demo_document_authorizations_phase1_v3.json /app/knowledge_base/metadata/local_academic_demo_document_authorizations_phase1_v3.json
+COPY --chown=ragapi:ragapi knowledge_base/metadata/local_academic_demo_source_authorizations_phase1_v3.json /app/knowledge_base/metadata/local_academic_demo_source_authorizations_phase1_v3.json
+COPY --chown=ragapi:ragapi knowledge_base/metadata/index_manifests/rag_docs_v2.json /app/knowledge_base/metadata/index_manifests/rag_docs_v2.json
+COPY --chown=ragapi:ragapi knowledge_base/metadata/qdrant_indexes/rag_docs_v2.json /app/knowledge_base/metadata/qdrant_indexes/rag_docs_v2.json
+COPY --chown=ragapi:ragapi assets/tokenizers/nomic-embed-text-v1.5/tokenizer.json /app/assets/tokenizers/nomic-embed-text-v1.5/tokenizer.json
+
+USER ragapi
+EXPOSE 8000
+CMD ["python", "scripts/run_api.py"]

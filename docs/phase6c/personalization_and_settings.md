@@ -1,0 +1,9 @@
+# Personalization and settings
+
+`UserPreferences` is a per-user row created with sensible defaults and cascades with the user. The choices are system/light/dark theme; comfortable/compact spacing; natural/concise/detailed response style; and code-block/source-card display preferences.
+
+The theme is server-rendered from the authenticated preference and system mode follows `prefers-color-scheme`. A new token stylesheet makes the light background slightly darker and the dark background slightly deeper while retaining the purple accent. Focus indicators are explicit. Compact spacing and code-block visibility are applied in CSS; source cards are conditional in the conversation template. Response style is included in the Django-to-FastAPI request only when non-default, validated as a three-value enum, and added as output-format guidance to generation. It does not change the query text or retrieval plan, and existing citation/verification instructions remain in the prompt.
+
+Settings only expose behaviors with implemented backing logic. Conversation share defaults remain off and links remain revocable/expiring through existing handlers. Notifications are not offered because there is no notification sender. Security/authorization preferences are not user-overridable.
+
+Color contrast was checked from the final CSS tokens after adjusting the light-theme muted text from `#6d7887` to `#5f6978`. Ratios are 5.00:1 on the light page background `#f1f3f6` and 5.56:1 on white cards. Dark primary text is 15.59:1 on `#0f1318`; dark muted text is 7.92:1 on that background; dark accent is 7.00:1 on `#171d25`. The purple primary action uses white text at 4.79:1. The ratios clear WCAG AA for normal text on those tested pairs. This is a token-level calculation, not a full rendered-page accessibility audit; browser zoom, all status colors, and every component state still need visual review.

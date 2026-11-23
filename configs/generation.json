@@ -1,0 +1,20 @@
+{
+  "config_version": "1.0",
+  "status": "local_synthetic_generation_verified",
+  "provider": "ollama",
+  "base_url": "http://127.0.0.1:11434",
+  "model_name": "qwen3.5:4b",
+  "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "artifact_size_bytes": 3324173934,
+  "quantization": "Q4_K_M",
+  "license": "Apache-2.0",
+  "runtime_version_observed": "0.40.16",
+  "context_window_configured": 8192,
+  "max_output_tokens": 1024,
+  "input_safety_margin_tokens": 512,
+  "temperature": 0,
+  "thinking": false,
+  "request_timeout_seconds": 120,
+  "max_retries": 1,
+  "notes": "Synthetic 5,000-character prompt smoke benchmark completed at 4K and 8K context on the local GPU. 8K is the configured initial target; full 1,024-token RAG generation and verifier latency remain unbenchmarked. Generation token budgeting uses a conservative UTF-8-byte estimator because the exact Qwen tokenizer is not locally available."
+}

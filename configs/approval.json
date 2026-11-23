@@ -1,0 +1,6 @@
+{
+  "config_version": "1.0",
+  "source_registry": "knowledge_base/metadata/source_approvals.json",
+  "document_registry": "knowledge_base/metadata/document_approvals.json",
+  "evidence_catalog": "knowledge_base/metadata/license_evidence.jsonl"
+}

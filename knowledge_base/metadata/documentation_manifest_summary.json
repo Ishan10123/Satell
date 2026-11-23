@@ -1,0 +1,245 @@
+{
+  "manifest_version": "1.0",
+  "generated_at": "2026-11-14T15:00:13.299362+00:00",
+  "manifest_path": "E:\\RAG_Project\\knowledge_base\\metadata\\documentation_manifest.jsonl",
+  "sources": [
+    {
+      "source_id": "python_3_13",
+      "name": "Python Documentation",
+      "root": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html",
+      "source_url": "https://docs.python.org/3.13/",
+      "version": "3.13",
+      "commit": null,
+      "repository": null,
+      "file_count": 602,
+      "total_bytes": 63130773,
+      "categories": {
+        "supporting_artifact": 10,
+        "documentation": 553,
+        "code": 15,
+        "image": 21,
+        "structured_data": 3
+      },
+      "extensions": {
+        "[no_extension]": 1,
+        ".html": 553,
+        ".py": 1,
+        ".png": 20,
+        ".json": 2,
+        ".css": 7,
+        ".js": 14,
+        ".woff2": 1,
+        ".xml": 1,
+        ".svg": 1,
+        ".inv": 1
+      }
+    },
+    {
+      "source_id": "postgresql_18",
+      "name": "PostgreSQL Documentation",
+      "root": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18",
+      "source_url": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+      "version": "18",
+      "commit": null,
+      "repository": null,
+      "file_count": 1,
+      "total_bytes": 15944094,
+      "categories": {
+        "documentation": 1
+      },
+      "extensions": {
+        ".pdf": 1
+      }
+    },
+    {
+      "source_id": "fastapi",
+      "name": "FastAPI Documentation",
+      "root": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs",
+      "source_url": "https://github.com/fastapi/fastapi",
+      "version": "0.162.7",
+      "commit": "5758a9c8347d911444dca97a55b708cc4a8de4f8",
+      "repository": "https://github.com/fastapi/fastapi.git",
+      "file_count": 410,
+      "total_bytes": 18659224,
+      "categories": {
+        "documentation": 158,
+        "supporting_artifact": 2,
+        "image": 247,
+        "code": 3
+      },
+      "extensions": {
+        ".md": 158,
+        ".css": 2,
+        ".png": 187,
+        ".svg": 56,
+        ".jpg": 4,
+        ".js": 3
+      }
+    },
+    {
+      "source_id": "qdrant",
+      "name": "Qdrant Documentation",
+      "root": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation",
+      "source_url": "https://qdrant.tech/documentation/",
+      "version": null,
+      "commit": "799edaa9d0ef562790402d6d4ddf370db92162e5",
+      "repository": "https://github.com/qdrant/landing_page.git",
+      "file_count": 5735,
+      "total_bytes": 7981922,
+      "categories": {
+        "documentation": 3613,
+        "supporting_artifact": 98,
+        "code": 2024
+      },
+      "extensions": {
+        ".md": 3613,
+        ".css": 96,
+        ".js": 97,
+        ".py": 355,
+        ".mjs": 5,
+        ".csv": 1,
+        ".sh": 59,
+        ".cs": 300,
+        ".go": 299,
+        ".java": 301,
+        ".rs": 306,
+        ".ts": 302,
+        ".gotmpl": 1
+      }
+    },
+    {
+      "source_id": "huggingface_transformers",
+      "name": "Hugging Face Transformers Documentation",
+      "root": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs",
+      "source_url": "https://huggingface.co/docs/transformers/",
+      "version": null,
+      "commit": "3a134bc37f7c22c801b618e289b0255425f22647",
+      "repository": "https://github.com/huggingface/transformers.git",
+      "file_count": 790,
+      "total_bytes": 5544022,
+      "categories": {
+        "code": 1,
+        "structured_data": 2,
+        "documentation": 787
+      },
+      "extensions": {
+        ".py": 1,
+        ".yml": 2,
+        ".md": 787
+      }
+    },
+    {
+      "source_id": "pytorch",
+      "name": "PyTorch Documentation",
+      "root": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs",
+      "source_url": "https://pytorch.org/docs/stable/",
+      "version": null,
+      "commit": "242a9cf0e013551eaada7827cfff1aa8d293dfb1",
+      "repository": "https://github.com/pytorch/pytorch.git",
+      "file_count": 352,
+      "total_bytes": 21779263,
+      "categories": {
+        "supporting_artifact": 3,
+        "image": 78,
+        "documentation": 263,
+        "code": 7,
+        "structured_data": 1
+      },
+      "extensions": {
+        ".css": 3,
+        ".png": 71,
+        ".gif": 1,
+        ".jpg": 4,
+        ".svg": 2,
+        ".rst": 7,
+        ".md": 255,
+        ".py": 7,
+        ".conf": 1,
+        ".txt": 1
+      }
+    },
+    {
+      "source_id": "docker",
+      "name": "Docker Documentation",
+      "root": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs",
+      "source_url": "https://docs.docker.com/",
+      "version": null,
+      "commit": "553482ce632f00c6e7faabab863422b4916e7c18",
+      "repository": "https://github.com/docker/docs.git",
+      "file_count": 1935,
+      "total_bytes": 30106037,
+      "categories": {
+        "supporting_artifact": 29,
+        "code": 17,
+        "image": 237,
+        "documentation": 1114,
+        "structured_data": 538
+      },
+      "extensions": {
+        ".css": 11,
+        ".js": 11,
+        ".svg": 43,
+        ".webp": 110,
+        ".jpg": 4,
+        ".mjs": 4,
+        ".md": 1114,
+        ".png": 59,
+        ".avif": 21,
+        ".yaml": 535,
+        ".dot": 3,
+        ".excalidraw": 1,
+        ".gliffy": 8,
+        "[no_extension]": 3,
+        ".sh": 2,
+        ".gotmpl": 3,
+        ".json": 2,
+        ".yml": 1
+      }
+    }
+  ],
+  "total_files": 9825,
+  "total_bytes": 163145335,
+  "categories": {
+    "supporting_artifact": 142,
+    "documentation": 6489,
+    "code": 2067,
+    "image": 583,
+    "structured_data": 544
+  },
+  "extensions": {
+    "[no_extension]": 4,
+    ".html": 553,
+    ".py": 364,
+    ".png": 337,
+    ".json": 4,
+    ".css": 119,
+    ".js": 125,
+    ".woff2": 1,
+    ".xml": 1,
+    ".svg": 102,
+    ".inv": 1,
+    ".pdf": 1,
+    ".md": 5927,
+    ".jpg": 12,
+    ".mjs": 9,
+    ".csv": 1,
+    ".sh": 61,
+    ".cs": 300,
+    ".go": 299,
+    ".java": 301,
+    ".rs": 306,
+    ".ts": 302,
+    ".gotmpl": 4,
+    ".yml": 3,
+    ".gif": 1,
+    ".rst": 7,
+    ".conf": 1,
+    ".txt": 1,
+    ".webp": 110,
+    ".avif": 21,
+    ".yaml": 535,
+    ".dot": 3,
+    ".excalidraw": 1,
+    ".gliffy": 8
+  }
+}

@@ -1,0 +1,15 @@
+<div class="conversation-menu">
+  <button class="conversation-menu-trigger" type="button" aria-label="Actions for {{ item.title }}" title="Conversation actions" aria-haspopup="menu" aria-expanded="false" aria-controls="{{ menu_context }}-menu-{{ item.id }}" data-dropdown-trigger>
+    <span aria-hidden="true">⋯</span>
+  </button>
+  <div class="menu-panel" id="{{ menu_context }}-menu-{{ item.id }}" role="menu" aria-label="Actions for {{ item.title }}" data-dropdown-panel hidden>
+    <button type="button" role="menuitem" data-rename-conversation data-title="{{ item.title }}" data-url="{% url 'conversations:rename' item.id %}">Rename</button>
+    <a role="menuitem" href="{% url 'conversations:export' item.id 'md' %}">Download Markdown</a>
+    <a role="menuitem" href="{% url 'conversations:export' item.id 'txt' %}">Download text</a>
+    <a role="menuitem" href="{% url 'conversations:export' item.id 'json' %}">Download JSON</a>
+    <a role="menuitem" href="{% url 'conversations:detail' item.id %}#sharing">Share settings</a>
+    {% if item.locked_at %}<form method="post" action="{% url 'conversations:unlock' item.id %}">{% csrf_token %}<button role="menuitem" type="submit">Unlock</button></form>
+    {% else %}<form method="post" action="{% url 'conversations:lock' item.id %}">{% csrf_token %}<button role="menuitem" type="submit">Lock</button></form>{% endif %}
+    <form method="post" action="{% url 'conversations:delete' item.id %}" data-confirm="Delete ‘{{ item.title }}’? This permanently removes its messages and saved citation details.">{% csrf_token %}<button role="menuitem" class="menu-danger" type="submit"{% if item.locked_at %} disabled title="Unlock before deleting"{% endif %}>Delete</button></form>
+  </div>
+</div>

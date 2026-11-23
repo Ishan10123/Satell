@@ -1,0 +1,76 @@
+{
+  "collection": "rag_docs_v2",
+  "index_id": "index-20261116T044640Z-b53eb021",
+  "manifest_authorization_mode": "operator_authorized_unreviewed",
+  "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+  "read_only": true,
+  "query_count": 1,
+  "results": [
+    {
+      "question": "How does FastAPI dependency injection work?",
+      "domain": null,
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 182.735,
+      "retrieval_ms": 40.739,
+      "total_ms": 223.477,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.8298372,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "7f683fe74b352e6c4710f1254daa1130062f5e8e3cc9d77bac6768474645d273",
+          "title": "Dependencies { #dependencies }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\tutorial\\dependencies\\index.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "**FastAPI** has a very powerful but intuitive **<dfn title=\"also known as components, resources, providers, services, injectables\">Dependency Injection</dfn>** system.\nIt is designed to be very simple to use, and to make it very easy for any developer to integrate other components with **FastAPI**."
+        },
+        {
+          "rank": 2,
+          "score": 0.81984997,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "a0e1934f6cd4816f3ac6757857b6a90b4e42a67a48de4d3fad56ce4d0f4adee5",
+          "title": "Dependencies { #dependencies }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\tutorial\\dependencies\\index.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "The simplicity of the dependency injection system makes **FastAPI** compatible with:\n* all the relational databases * NoSQL databases * external packages * external APIs * authentication and authorization systems * API usage monitoring systems * response data injection systems * etc."
+        },
+        {
+          "rank": 3,
+          "score": 0.7852316,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "515553cf4cfb74de7ff607590b4596662da67f849be258a34ececae7198f7282",
+          "title": "Dependencies { #dependencies }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\tutorial\\dependencies\\index.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "If you look at it, *path operation functions* are declared to be used whenever a *path* and *operation* matches, and then **FastAPI** takes care of calling the function with the correct parameters, extracting the data from the request.\nActually, all (or most) of the web frameworks work in this same way.\nYou never call those functions directly. They are called by your framework (in this case, **FastAPI**).\nWith the Dependency Injection system, you can also tell **FastAPI** that your *path operation function* also \"depends\" on something else that should be executed before your *path operation function*, and **FastAPI** will take care of executing it and \"injecting\" the results.\nOther common te"
+        },
+        {
+          "rank": 4,
+          "score": 0.78372693,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "6082e1141b744ebda55a6b8ef6eb5758e1333bd72118450314b9e92653608f3f",
+          "title": "Dependencies { #dependencies }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\tutorial\\dependencies\\index.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "**\"Dependency Injection\"** means, in programming, that there is a way for your code (in this case, your *path operation functions*) to declare things that it requires to work and use: \"dependencies\".\nAnd then, that system (in this case **FastAPI**) will take care of doing whatever is needed to provide your code with those needed dependencies (\"inject\" the dependencies).\nThis is very useful when you need to:\n* Have shared logic (the same code logic again and again). * Share database connections. * Enforce security, authentication, role requirements, etc. * And many other things...\nAll these, while minimizing code repetition."
+        },
+        {
+          "rank": 5,
+          "score": 0.783517,
+          "source_id": "fastapi",
+          "document_id": "2abc20f5dfb4f9ab490d27d25699d2c1dfc1eccb59ea6a37534dcf98e8059203",
+          "chunk_id": "a930a6d13c5dccc4cc8870a7779f014fa1fd5910f1299ac0f4caa6c841588687",
+          "title": "Features { #features }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\features.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "FastAPI includes an extremely easy to use, but extremely powerful <dfn title='also known as \"components\", \"resources\", \"services\", \"providers\"'><strong>Dependency Injection</strong></dfn> system.\n* Even dependencies can have dependencies, creating a hierarchy or **\"graph\" of dependencies**. * All **automatically handled** by the framework. * All the dependencies can require data from requests and **augment the path operation** constraints and automatic documentation. * **Automatic validation** even for *path operation* parameters defined in dependencies. * Support for complex user authentication systems, **database connections**, etc. * **No compromise** with databases, frontends, etc. But e"
+        }
+      ]
+    }
+  ]
+}

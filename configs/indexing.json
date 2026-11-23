@@ -1,0 +1,8 @@
+{
+  "config_version": "1.0",
+  "collection_name": "rag_docs_v2",
+  "qdrant_url": "http://127.0.0.1:6333",
+  "chunking_version": "1.2",
+  "tenant_id": "local",
+  "principal_id": "local-admin"
+}

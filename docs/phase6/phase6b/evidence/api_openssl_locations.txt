@@ -1,0 +1,95 @@
+
+
+## Overview
+
+                   │              Analyzed Image               
+───────────────────┼───────────────────────────────────────────
+ Target            │  local://satell-rag-api:phase6-candidate  
+   digest          │  0ab84e45ec8f                             
+   platform        │ linux/amd64                               
+   vulnerabilities │    0C     3H     1M     7L                
+   size            │ 152 MB                                    
+   packages        │ 3                                         
+
+
+## Packages and Vulnerabilities
+
+   0C     3H     1M     7L  openssl 3.5.7-1~deb13u3
+pkg:deb/debian/openssl@3.5.7-1~deb13u3?os_distro=trixie&os_name=debian&os_version=13
+
+0: sha256:dd57f90311a2567b55ff22eeacff1602fd04ad7566e315957731359eab173b90
+/usr/share/doc/libssl3t64/copyright (evident by)
+/usr/share/doc/openssl-provider-legacy/copyright (evident by)
+/var/lib/dpkg/info/openssl-provider-legacy.list (evident by)
+/var/lib/dpkg/info/openssl-provider-legacy.md5sums (evident by)
+/var/lib/dpkg/status (evident by)
+3: sha256:ba2541ec790ab743d0e3ee06e9eb5b3e8343b1fdc09cb65853c7c90803bbff00
+/etc/ssl/openssl.cnf
+/usr/share/doc/openssl/copyright (evident by)
+/var/lib/dpkg/info/openssl.conffiles (evident by)
+/var/lib/dpkg/info/openssl.list (evident by)
+/var/lib/dpkg/info/openssl.md5sums (evident by)
+
+    x HIGH CVE-2026-107493
+      https://scout.docker.com/v/CVE-2026-107493?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E0
+      Affected range : >0        
+      Fixed version  : not fixed 
+    
+    x HIGH CVE-2026-84786
+      https://scout.docker.com/v/CVE-2026-84786?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E0
+      Affected range : >0        
+      Fixed version  : not fixed 
+    
+    x HIGH CVE-2026-107496
+      https://scout.docker.com/v/CVE-2026-107496?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E0
+      Affected range : >0        
+      Fixed version  : not fixed 
+    
+    x MEDIUM CVE-2026-95690
+      https://scout.docker.com/v/CVE-2026-95690?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E0
+      Affected range : >0        
+      Fixed version  : not fixed 
+    
+    x LOW CVE-2026-95692
+      https://scout.docker.com/v/CVE-2026-95692?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E0
+      Affected range : >0        
+      Fixed version  : not fixed 
+    
+    x LOW CVE-2026-95691
+      https://scout.docker.com/v/CVE-2026-95691?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E0
+      Affected range : >0        
+      Fixed version  : not fixed 
+    
+    x LOW CVE-2026-88823
+      https://scout.docker.com/v/CVE-2026-88823?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E0
+      Affected range : >0        
+      Fixed version  : not fixed 
+    
+    x LOW CVE-2026-88822
+      https://scout.docker.com/v/CVE-2026-88822?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E0
+      Affected range : >0        
+      Fixed version  : not fixed 
+    
+    x LOW CVE-2026-35190
+      https://scout.docker.com/v/CVE-2026-35190?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E0
+      Affected range : >0        
+      Fixed version  : not fixed 
+    
+    x LOW CVE-2026-124709
+      https://scout.docker.com/v/CVE-2026-124709?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E0
+      Affected range : >0        
+      Fixed version  : not fixed 
+    
+    x LOW CVE-2010-0928
+      https://scout.docker.com/v/CVE-2010-0928?s=debian&n=openssl&ns=debian&t=deb&osn=debian&osv=13&vr=%3E%3D3.2.1-3
+      Affected range : >=3.2.1-3 
+      Fixed version  : not fixed 
+    
+
+
+11 vulnerabilities found in 1 package
+  CRITICAL  0 
+  HIGH      3 
+  MEDIUM    1 
+  LOW       7 
+

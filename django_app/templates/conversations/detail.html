@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load citation_display %}
+{% block title %}{{ conversation.title }} · satell{% endblock %}
+{% block content %}
+<div class="chat-page">
+  <header class="chat-heading"><div><p class="eyebrow">CONVERSATION</p><h1>{{ conversation.title }}</h1></div>
+    {% include "conversations/_actions_menu.html" with item=conversation menu_context="detail" %}
+  </header>
+  {% if conversation.locked_at %}<div class="locked-notice" role="status">This conversation is locked and read-only. <form method="post" action="{% url 'conversations:unlock' conversation.id %}">{% csrf_token %}<button type="submit">Unlock conversation</button></form></div>{% endif %}
+  <section class="share-settings" id="sharing" aria-labelledby="sharing-heading">
+    <h2 id="sharing-heading">Share this conversation</h2>
+    <p>Sharing is off unless you create a link. Anyone with an active link can read this conversation until it expires or you revoke it.</p>
+    {% if share_link_once %}<div class="share-created" role="status"><label for="share-link-value">Copy this link now. It will not be shown again.</label><div><input id="share-link-value" readonly value="{{ share_link_once }}" data-share-link><button type="button" class="outline-button" data-copy-share>Copy link</button></div></div>{% endif %}
+    {% if share_active %}<p class="share-expiry">A link is active until {{ conversation.share_expires_at|date:"M j, Y · P" }}. Its secret is not recoverable; create a replacement to rotate it.</p>{% endif %}
+    <div class="share-actions"><form method="post" action="{% url 'conversations:share_create' conversation.id %}">{% csrf_token %}<label for="share-expiration">Link expires in</label><select id="share-expiration" name="expiration_days"><option value="1">1 day</option><option value="7" selected>7 days</option><option value="30">30 days</option></select><button class="outline-button" type="submit">{% if share_active %}Replace share link{% else %}Create share link{% endif %}</button></form>
+    {% if share_active %}<form method="post" action="{% url 'conversations:share_revoke' conversation.id %}" data-confirm="Revoke the current share link? Anyone using it will lose access.">{% csrf_token %}<button class="outline-button" type="submit">Revoke link</button></form>{% endif %}</div>
+  </section>
+  {% if adapter_mode == "mock" %}<div class="mock-banner" role="status"><span class="mock-dot" aria-hidden="true"></span><span><strong>Development mode</strong> Replies are synthetic examples, not real RAG results.</span></div>{% endif %}
+
+  <section class="message-thread" aria-label="Conversation messages" aria-live="polite">
+    {% if messages_page.has_previous %}<div class="older-messages"><a class="text-link" href="?page={{ messages_page.previous_page_number }}">← Load newer messages</a></div>{% endif %}
+    {% for item in messages_list %}
+      <article class="message-card message-{{ item.role }}" data-message-status="{{ item.status }}"{% if item.status == "pending" %} aria-busy="true"{% endif %}>
+        <div class="message-avatar {% if item.role == 'assistant' %}assistant-avatar{% endif %}" aria-hidden="true">{% if item.role == "user" %}{{ user.get_username|first|upper }}{% else %}✳{% endif %}</div>
+        <div class="message-body"><div class="message-meta"><strong>{% if item.role == "user" %}You{% else %}Satell{% endif %}</strong><time datetime="{{ item.created_at|date:'c' }}">{{ item.created_at|date:"M j · P" }}</time>{% if item.status != "complete" %}<span class="status-pill status-{{ item.status }}">{{ item.get_status_display }}</span>{% endif %}{% for metadata in item.generation_metadata.all %}{% if metadata.verification_status == "partially_verified" %}<span class="status-pill verification-partial" role="status">Partially verified</span>{% endif %}{% endfor %}</div>
+          {% if item.status == "pending" %}<div class="pending-indicator" role="status" aria-label="Generating response"><span></span><span></span><span></span><span class="sr-only">Generating reply</span></div>{% else %}<div class="message-content{% if item.role == 'assistant' %} markdown-content{% endif %}"{% if item.role == "assistant" %} data-markdown-content{% endif %}>{{ item.content }}</div>{% endif %}
+          {% if item.role == "assistant" and item.status == "complete" %}<button class="copy-response" type="button" data-copy-response aria-label="Copy Satell response">Copy response</button>{% endif %}
+          {% if item.citations.all and user_preferences.show_source_cards %}<section class="citations" aria-label="Sources for this response"><h2><span aria-hidden="true">▤</span> Sources</h2><ol>
+            {% for citation in item.citations.all %}<li class="citation-card"><span class="citation-number">{{ citation.citation_id }}</span><div><strong>{{ citation.title|citation_display_title:citation.section }}</strong><div class="citation-detail">{% if citation.page_references %}pages {{ citation.page_references|join:", " }}{% endif %}{% with clean_section=citation.section|citation_display_section:citation.title %}{% if clean_section %}{% if citation.page_references %}<br>{% endif %}{{ clean_section }}{% endif %}{% endwith %}</div>{% with safe_ref=citation.source_reference|safe_source_reference %}{% if safe_ref %}<a class="citation-link" href="{{ safe_ref }}" rel="noopener noreferrer">Open source <span aria-hidden="true">↗</span></a>{% endif %}<button class="copy-citation" type="button" data-copy-citation="{{ citation.citation_id }} — {{ citation.title|citation_display_title:citation.section }}{% if safe_ref %} — {{ safe_ref }}{% endif %}">Copy citation</button>{% endwith %}</div></li>{% endfor %}
+          </ol></section>{% endif %}
+          {% for metadata in item.generation_metadata.all %}
+            {% if metadata.verification_status == "synthetic" %}<p class="synthetic-notice" role="status">Synthetic test response; not a real RAG result.</p>
+            {% elif metadata.verification_status == "trusted_metadata" %}<p class="verification-note trusted-metadata-note" role="status">Based on Satell's publicly enabled creator-profile information, not documentation retrieval.</p>
+            {% elif metadata.verification_status == "verified" %}<p class="verification-note verification-verified" role="status">Claims checked against the cited sources.</p>
+            {% elif metadata.verification_status == "partially_verified" %}
+            {% elif metadata.verification_status == "abstained" %}<p class="verification-note" role="status">Not enough authorized evidence; an answer was withheld.</p>
+            {% elif metadata.verification_status == "failed" %}<p class="verification-note verification-failed" role="status">The response could not be verified and was not delivered as a grounded answer.</p>{% endif %}
+          {% endfor %}
+        </div>
+      </article>
+    {% empty %}<div class="empty-card thread-empty"><span class="empty-icon" aria-hidden="true">✦</span><h2>Ask your first question</h2><p>Your messages and answers will appear here.</p></div>{% endfor %}
+    {% if messages_page.has_next %}<div class="older-messages"><a class="text-link" href="?page={{ messages_page.next_page_number }}">View older messages →</a></div>{% endif %}
+  </section>
+
+  {% if not conversation.locked_at %}<form class="composer" method="post" action="{% url 'conversations:message_create' conversation.id %}" data-message-form>
+    {% csrf_token %}<label class="sr-only" for="message-content">Your message</label>
+    <textarea id="message-content" name="content" rows="1" maxlength="5000" required placeholder="Ask a question…" data-message-input data-max-chars="{{ max_message_chars }}"></textarea>
+    <div class="composer-footer"><span class="composer-hint">Enter to send · Shift + Enter for a new line <span data-char-count data-max-chars="{{ max_message_chars }}">0 / 5,000</span></span><button class="send-button" type="submit" data-send-button><span data-send-label>Send</span><span aria-hidden="true">↑</span></button></div>
+  </form>{% endif %}
+  <p class="composer-disclaimer">Check important details against the cited source material.</p>
+</div>
+{% endblock %}

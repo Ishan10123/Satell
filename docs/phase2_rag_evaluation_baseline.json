@@ -1,0 +1,483 @@
+{
+  "conversation_id": "d61d95bd-3928-420d-b00c-a530469ec9ba",
+  "results": [
+    {
+      "question_number": 1,
+      "question": "In Python, what is the key behavioral difference between a list and a tuple, and how do you create a one-item tuple?",
+      "message_status": "complete",
+      "answer": "I cannot answer from the local academic demo sources available.",
+      "retrieval_mode": "dense",
+      "verification_status": "abstained",
+      "timings_ms": {
+        "context": 1.4841910001450742,
+        "embedding": 2320.588138000403,
+        "dense_search": 48.183719999997265
+      },
+      "diagnostics": {
+        "context_bytes": 772,
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.80914855,
+            "chunk_id": "59c2639ce084224b8abce4209e49e8bb47ef7a2e3d88824f5b083d593aab16b1",
+            "source_id": "python_3_13",
+            "document_id": "cec0a6b1d88b05c63de313b80351f0a0529c80f4dee5d350981a6cd76d9a6534"
+          },
+          {
+            "rank": 2,
+            "score": 0.7950488,
+            "chunk_id": "23d083958f6b30e6cb5acac00a2a90150f771d9168a84737e7a6582c4ebf7032",
+            "source_id": "python_3_13",
+            "document_id": "63cac76f6c377cf51f572d64c332b65143b70fef44a3c55b359537a7e177c07b"
+          },
+          {
+            "rank": 3,
+            "score": 0.76142293,
+            "chunk_id": "cf721e71116fb7f7e262e70f8a505b9e12654e26779503c2826df0ef21e9b0b4",
+            "source_id": "fastapi",
+            "document_id": "9d3e64b552f2156338b9c5e6c0e4de0fc415e3f0fdd8275feee129934c902757"
+          },
+          {
+            "rank": 4,
+            "score": 0.75099504,
+            "chunk_id": "eb34ee06a60b8576eacffab3e4b5ebbc5318069ef33d0146aad4421088517d29",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 5,
+            "score": 0.7420784,
+            "chunk_id": "4f05e211fdd966a393ac0d859ad942e1cb1bbd86bc0ceb8b68e85d86b9aa85bb",
+            "source_id": "python_3_13",
+            "document_id": "3e7ea952d150cf6502922a8cb898c8e769a2c75cd37564efbad359036b74b02a"
+          },
+          {
+            "rank": 6,
+            "score": 0.73703134,
+            "chunk_id": "271d818371410b3bb85e561e84af59f6bae977d1b29f7fc6769c8ee6e4adcffa",
+            "source_id": "python_3_13",
+            "document_id": "cec0a6b1d88b05c63de313b80351f0a0529c80f4dee5d350981a6cd76d9a6534"
+          },
+          {
+            "rank": 7,
+            "score": 0.73168063,
+            "chunk_id": "4de1af4cd273e75416b69eb36823d7908b9562e36ac4f1165c13d6aa8782160e",
+            "source_id": "python_3_13",
+            "document_id": "bb2796172cede3af9059973de5377799162c8bf1e9f8c50f56d566e31ff51412"
+          },
+          {
+            "rank": 8,
+            "score": 0.7242235,
+            "chunk_id": "a10af96d513c8ec48b66283bf4fbce949a7b569fe4a027e2776732dc7e77a833",
+            "source_id": "python_3_13",
+            "document_id": "749a16552514bb1e4144166bb5612998c988e8a0ed2dc414e4273b448a88fa2d"
+          }
+        ],
+        "reranker_active": false,
+        "retrieval_strategy": "dense",
+        "context_chunk_count": 1,
+        "retrieval_hit_count": 8,
+        "claim_verifier_status": "not_run",
+        "context_token_estimate": 772,
+        "context_exclusion_count": 7,
+        "context_exclusion_reasons": {
+          "context_budget": 7
+        },
+        "citation_validation_status": "not_applicable"
+      },
+      "citations": []
+    },
+    {
+      "question_number": 2,
+      "question": "In FastAPI, how do you declare a path parameter and a query parameter in an endpoint, and how does the framework distinguish them?",
+      "message_status": "failed",
+      "answer": "The RAG service is temporarily unavailable. Please try again.",
+      "retrieval_mode": "",
+      "verification_status": "failed",
+      "timings_ms": {},
+      "diagnostics": {},
+      "citations": []
+    },
+    {
+      "question_number": 3,
+      "question": "In Docker Compose, what does depends_on with condition service_healthy guarantee, and what healthcheck configuration does it rely on?",
+      "message_status": "complete",
+      "answer": "I cannot answer from the local academic demo sources available.",
+      "retrieval_mode": "dense",
+      "verification_status": "failed",
+      "timings_ms": {
+        "context": 0.9701080002741946,
+        "embedding": 36.64456500018787,
+        "dense_search": 34.46635899990724,
+        "answer_generation": 1326.3890359999095,
+        "generation_pipeline": 1326.5719859996352,
+        "answer_validation_rejected": 1.0
+      },
+      "diagnostics": {
+        "failure_code": "uncited_claim_rejected",
+        "context_bytes": 2275,
+        "failure_stage": "answer_validation",
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.8617585,
+            "chunk_id": "265211ac69bbeb2142f656b2bebd028a1a35384441dfd504612e10a47cbf082f",
+            "source_id": "docker",
+            "document_id": "632e66c39301cf96414b69d5cf5a6c90ed71c56fcc4b7659ad46a117f1c0fca2"
+          },
+          {
+            "rank": 2,
+            "score": 0.7938974,
+            "chunk_id": "70087c168c7b0a53a94fc77a5e46ccdda4e4484c668a463ab57ce90a0e252e60",
+            "source_id": "docker",
+            "document_id": "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff"
+          },
+          {
+            "rank": 3,
+            "score": 0.79063547,
+            "chunk_id": "aad6babb439778983c88ab18b52f667af9300fd9b72dd5176eeefa79cecac42d",
+            "source_id": "docker",
+            "document_id": "79acb2ef13051dfa81ae68f2b03629d8fddcee1b8fc3741638998391a7330dce"
+          },
+          {
+            "rank": 4,
+            "score": 0.78412247,
+            "chunk_id": "ff3e72da3ab5853bb8ff1dc46339d5eaef4bd99d2dd28394883bff095de396c5",
+            "source_id": "docker",
+            "document_id": "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff"
+          },
+          {
+            "rank": 5,
+            "score": 0.77650195,
+            "chunk_id": "e032d689a1fbd64e59f33ad582c0609ddc53f8ffc0df00e68bf3053169feff9f",
+            "source_id": "docker",
+            "document_id": "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff"
+          },
+          {
+            "rank": 6,
+            "score": 0.7747668,
+            "chunk_id": "096e8ae9129e2b472b2822fadaec7155d7b67fb107dcb1d10f053492fac37da1",
+            "source_id": "docker",
+            "document_id": "438d05d74665a887ce25f6b48dd4537697ae3641d79c0dd65f7b4c6cf55a462a"
+          },
+          {
+            "rank": 7,
+            "score": 0.7730111,
+            "chunk_id": "71771867a456d9420faf8d5e4b82a311fe2dd569d0d7f7a564ccd68b36413659",
+            "source_id": "docker",
+            "document_id": "79acb2ef13051dfa81ae68f2b03629d8fddcee1b8fc3741638998391a7330dce"
+          },
+          {
+            "rank": 8,
+            "score": 0.76719785,
+            "chunk_id": "674982c6aad7ef0da9d91b1aaf12d2abffcc5a1a397e4a3d2aabc3aee30f2cde",
+            "source_id": "docker",
+            "document_id": "f90b8afb0a53ba1bf7a7980450112981f504e8e68d668dec80e0a5e4b1f711ea"
+          }
+        ],
+        "reranker_active": false,
+        "retrieval_strategy": "dense",
+        "context_chunk_count": 3,
+        "retrieval_hit_count": 8,
+        "claim_verifier_status": "not_run",
+        "context_token_estimate": 2271,
+        "context_exclusion_count": 5,
+        "context_exclusion_reasons": {
+          "context_budget": 5
+        },
+        "citation_validation_status": "rejected"
+      },
+      "citations": []
+    },
+    {
+      "question_number": 4,
+      "question": "In Qdrant, what is a collection and what is a point? How are vector size and distance metric chosen when creating a collection?",
+      "message_status": "failed",
+      "answer": "The RAG service is temporarily unavailable. Please try again.",
+      "retrieval_mode": "",
+      "verification_status": "failed",
+      "timings_ms": {},
+      "diagnostics": {},
+      "citations": []
+    },
+    {
+      "question_number": 5,
+      "question": "In Hugging Face Transformers, what does the pipeline API provide, and how do task and model arguments affect its use?",
+      "message_status": "failed",
+      "answer": "The RAG service is temporarily unavailable. Please try again.",
+      "retrieval_mode": "",
+      "verification_status": "failed",
+      "timings_ms": {},
+      "diagnostics": {},
+      "citations": []
+    },
+    {
+      "question_number": 6,
+      "question": "In PyTorch, what does torch.no_grad do, and why is it useful during model inference?",
+      "message_status": "complete",
+      "answer": "I cannot answer from the local academic demo sources available.",
+      "retrieval_mode": "dense",
+      "verification_status": "failed",
+      "timings_ms": {
+        "context": 0.7685680002396111,
+        "embedding": 31.871760000285576,
+        "dense_search": 42.54023499970572,
+        "answer_generation": 1993.5381309996956,
+        "generation_pipeline": 1993.7177789997804,
+        "answer_validation_rejected": 1.0
+      },
+      "diagnostics": {
+        "failure_code": "uncited_claim_rejected",
+        "context_bytes": 2373,
+        "failure_stage": "answer_validation",
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.7674631,
+            "chunk_id": "6f80447635d30f7831d8839b7fa033d59c037c0d422b48ac10f022e623b23c68",
+            "source_id": "pytorch",
+            "document_id": "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842"
+          },
+          {
+            "rank": 2,
+            "score": 0.7512752,
+            "chunk_id": "f9e038003ef5c117d4714162ee6cce2b219a27056853d0bf60761465f416bc56",
+            "source_id": "pytorch",
+            "document_id": "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842"
+          },
+          {
+            "rank": 3,
+            "score": 0.74873245,
+            "chunk_id": "a8a238d15fa3f2f3fc6ddaccab0143e45be875f106b7f2ee5eeb0137ea47f173",
+            "source_id": "huggingface_transformers",
+            "document_id": "a58dc68dd3dab7fc2c77452d6abccb9daece0872156bb506e969ce45329ac5ce"
+          },
+          {
+            "rank": 4,
+            "score": 0.7393843,
+            "chunk_id": "923a7b257613892c5303d974fccc31f749a0f5250da0cc531afb914e18ee74e0",
+            "source_id": "pytorch",
+            "document_id": "2b74e5c577375d02e9ccfdf4434e32e99ca89b6c50c53d0eac874fc201c050e9"
+          },
+          {
+            "rank": 5,
+            "score": 0.73849976,
+            "chunk_id": "e0a9cfb8362a3835ce545809f9e3dab490257a2b61256a084c217824273be97a",
+            "source_id": "pytorch",
+            "document_id": "b2abdb74fb68e873d879b27a8aa7a7ae69160bc8a99a9dcfc4500864bac5e55b"
+          },
+          {
+            "rank": 6,
+            "score": 0.73846334,
+            "chunk_id": "bcd3c036cc30e679ada03133a1e5a4bc708ec9f405b56084be18f8ffb04a3452",
+            "source_id": "pytorch",
+            "document_id": "03646923f0f991c39f710eeb5362df3b6c5280a6bd619bc2a92662fde627f48e"
+          },
+          {
+            "rank": 7,
+            "score": 0.7346284,
+            "chunk_id": "0e3d04fb24258f45638a5fe906c9570df259100fde710319f3d50ee34bf79beb",
+            "source_id": "pytorch",
+            "document_id": "1184e4e37020c6a70391ecc364880bf793d98eded440b397ccd3e9b4b68555c9"
+          },
+          {
+            "rank": 8,
+            "score": 0.73137784,
+            "chunk_id": "02570ec90f1a25ae509830f36310060523bd037853b3b2f6fa869eaaac1f6c94",
+            "source_id": "pytorch",
+            "document_id": "99ad3e7162f57fbbb5bca48cd129434080042dd84bd15c2142c2caa064c91759"
+          }
+        ],
+        "reranker_active": false,
+        "retrieval_strategy": "dense",
+        "context_chunk_count": 3,
+        "retrieval_hit_count": 8,
+        "claim_verifier_status": "not_run",
+        "context_token_estimate": 2369,
+        "context_exclusion_count": 5,
+        "context_exclusion_reasons": {
+          "context_budget": 5
+        },
+        "citation_validation_status": "rejected"
+      },
+      "citations": []
+    },
+    {
+      "question_number": 7,
+      "question": "In PostgreSQL, what is a transaction, and what do COMMIT and ROLLBACK do to the changes made within it?",
+      "message_status": "complete",
+      "answer": "I cannot answer from the local academic demo sources available.",
+      "retrieval_mode": "dense",
+      "verification_status": "failed",
+      "timings_ms": {
+        "context": 1.235503999851062,
+        "embedding": 78.82825700016838,
+        "dense_search": 34.74755600018398,
+        "answer_generation": 5452.291595999668,
+        "generation_pipeline": 5453.138499000033,
+        "answer_validation_rejected": 1.0
+      },
+      "diagnostics": {
+        "failure_code": "citation_validation_failed",
+        "context_bytes": 2436,
+        "failure_stage": "answer_validation",
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.8333727,
+            "chunk_id": "1dee411d24912e61ea5eaa4ae3f919cb7f6bb05a5eb0542d04250419c52b5ec5",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 2,
+            "score": 0.8246267,
+            "chunk_id": "ed65b46058711e26d0b09020912ed9b75adbaf35d0849cb7428f4728ad1582bb",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 3,
+            "score": 0.81665826,
+            "chunk_id": "c2682543aecb06e50218df18d76fc8fa1c5112cbd6dd60bfb31b31c63f2d4c11",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 4,
+            "score": 0.79330945,
+            "chunk_id": "840de5293437c4d8a9bbcc7162e7477fae526ef8ce361be1bf1976811c0807b5",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 5,
+            "score": 0.7890766,
+            "chunk_id": "241de53108cf3bbee0fae01ad31907797c0bec2a10b624d1be2378c04f99eb3d",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 6,
+            "score": 0.7675781,
+            "chunk_id": "4affbfc6caf9a74098f69c139c9e06198ebdcb804b624fdce4b5938368fc1d94",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 7,
+            "score": 0.7604007,
+            "chunk_id": "496150b28846414bcdeb00e85adebfb09c417462641b227f23dba4a00a1bd938",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 8,
+            "score": 0.7603729,
+            "chunk_id": "8cc9b87fe19f7087fc09af0b12a3e3635adf57768b7486ba55982ba421a589f8",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          }
+        ],
+        "reranker_active": false,
+        "retrieval_strategy": "dense",
+        "context_chunk_count": 2,
+        "retrieval_hit_count": 8,
+        "claim_verifier_status": "not_run",
+        "context_token_estimate": 2434,
+        "context_exclusion_count": 6,
+        "context_exclusion_reasons": {
+          "context_budget": 6
+        },
+        "citation_validation_status": "rejected"
+      },
+      "citations": []
+    },
+    {
+      "question_number": 8,
+      "question": "Compare how Docker Compose service_healthy startup dependencies and FastAPI request validation help a local application fail safely when a dependency or request is invalid.",
+      "message_status": "complete",
+      "answer": "I cannot answer from the local academic demo sources available.",
+      "retrieval_mode": "dense",
+      "verification_status": "abstained",
+      "timings_ms": {
+        "context": 0.9732910002639983,
+        "embedding": 61.98750499970629,
+        "dense_search": 33.630463000008604
+      },
+      "diagnostics": {
+        "context_bytes": 0,
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.75032556,
+            "chunk_id": "674982c6aad7ef0da9d91b1aaf12d2abffcc5a1a397e4a3d2aabc3aee30f2cde",
+            "source_id": "docker",
+            "document_id": "f90b8afb0a53ba1bf7a7980450112981f504e8e68d668dec80e0a5e4b1f711ea"
+          },
+          {
+            "rank": 2,
+            "score": 0.7464176,
+            "chunk_id": "70087c168c7b0a53a94fc77a5e46ccdda4e4484c668a463ab57ce90a0e252e60",
+            "source_id": "docker",
+            "document_id": "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff"
+          },
+          {
+            "rank": 3,
+            "score": 0.7343254,
+            "chunk_id": "194f1f7bc329bde8065d73043ad0c430df764a1a278fac209a8f82cb15067b31",
+            "source_id": "docker",
+            "document_id": "9de39dd08d0371b264914a2cbd963cbce2774ac2859ec8e5bf879c9ca4b9665a"
+          },
+          {
+            "rank": 4,
+            "score": 0.7322046,
+            "chunk_id": "cf4dd81a3b3f05046c301a57c718c89028f16351072ce89a9e469c667305cdd4",
+            "source_id": "docker",
+            "document_id": "3a3639d0534d7294181a54f5f93003e8ccbc1041d8a17229934c78a4ecdeec2a"
+          },
+          {
+            "rank": 5,
+            "score": 0.7290029,
+            "chunk_id": "7ddd58b7db338ed5b1b891d8a5ee393df60c2c782f52db9189eedf3e5e064328",
+            "source_id": "docker",
+            "document_id": "b7a28358b59833cee359a51df1d9c27edc6661a02288fb47848004afe033a5b5"
+          },
+          {
+            "rank": 6,
+            "score": 0.7225375,
+            "chunk_id": "4df8f92307941d6cd9a18a4acb8498c187f3640643c0bdbaa260296a7b12a57d",
+            "source_id": "docker",
+            "document_id": "a2ad8f2eed4e476f9826146f273dbe2bf53c4b9d89e48714013d7a4258423cbf"
+          },
+          {
+            "rank": 7,
+            "score": 0.72199774,
+            "chunk_id": "aad6babb439778983c88ab18b52f667af9300fd9b72dd5176eeefa79cecac42d",
+            "source_id": "docker",
+            "document_id": "79acb2ef13051dfa81ae68f2b03629d8fddcee1b8fc3741638998391a7330dce"
+          },
+          {
+            "rank": 8,
+            "score": 0.7176621,
+            "chunk_id": "dc592b57c26419ed8cbfe6703de4f9263adc991f3dd8a21adf3a6529b73c65a3",
+            "source_id": "docker",
+            "document_id": "f92f1a3909569c7033a9f19b3b0ceeefb899c42a38f2fe537ec7595e99e9045f"
+          }
+        ],
+        "reranker_active": false,
+        "retrieval_strategy": "dense",
+        "context_chunk_count": 0,
+        "retrieval_hit_count": 8,
+        "claim_verifier_status": "not_run",
+        "context_token_estimate": 304,
+        "context_exclusion_count": 8,
+        "context_exclusion_reasons": {
+          "context_budget": 8
+        },
+        "citation_validation_status": "not_applicable"
+      },
+      "citations": []
+    }
+  ]
+}

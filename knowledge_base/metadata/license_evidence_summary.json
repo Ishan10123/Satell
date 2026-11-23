@@ -1,0 +1,19 @@
+{
+  "report_version": "1.0",
+  "total_license_candidates": 6,
+  "existing_candidates": 6,
+  "missing_candidates": 0,
+  "sources_requiring_review": [
+    "python_3_13",
+    "postgresql_18",
+    "fastapi",
+    "qdrant",
+    "huggingface_transformers",
+    "pytorch",
+    "docker"
+  ],
+  "approval_status": "not_approved",
+  "evidence_status_counts": {
+    "text_extracted": 6
+  }
+}

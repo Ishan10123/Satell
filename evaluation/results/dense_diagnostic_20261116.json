@@ -1,0 +1,1594 @@
+{
+  "collection": "rag_docs_v2",
+  "index_id": "index-20261116T044640Z-b53eb021",
+  "manifest_authorization_mode": "operator_authorized_unreviewed",
+  "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+  "read_only": true,
+  "query_count": 24,
+  "results": [
+    {
+      "question": "How does FastAPI dependency injection work?",
+      "domain": "fastapi",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 107.506,
+      "retrieval_ms": 37.716,
+      "total_ms": 145.224,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.8298372,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "7f683fe74b352e6c4710f1254daa1130062f5e8e3cc9d77bac6768474645d273",
+          "title": "Dependencies { #dependencies }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\tutorial\\dependencies\\index.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "**FastAPI** has a very powerful but intuitive **<dfn title=\"also known as components, resources, providers, services, injectables\">Dependency Injection</dfn>** system.\nIt is designed to be very simple to use, and to make it very easy for any developer to integrate other components with **FastAPI**."
+        },
+        {
+          "rank": 2,
+          "score": 0.81984997,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "a0e1934f6cd4816f3ac6757857b6a90b4e42a67a48de4d3fad56ce4d0f4adee5",
+          "title": "Dependencies { #dependencies }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\tutorial\\dependencies\\index.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "The simplicity of the dependency injection system makes **FastAPI** compatible with:\n* all the relational databases * NoSQL databases * external packages * external APIs * authentication and authorization systems * API usage monitoring systems * response data injection systems * etc."
+        },
+        {
+          "rank": 3,
+          "score": 0.7852316,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "515553cf4cfb74de7ff607590b4596662da67f849be258a34ececae7198f7282",
+          "title": "Dependencies { #dependencies }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\tutorial\\dependencies\\index.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "If you look at it, *path operation functions* are declared to be used whenever a *path* and *operation* matches, and then **FastAPI** takes care of calling the function with the correct parameters, extracting the data from the request.\nActually, all (or most) of the web frameworks work in this same way.\nYou never call those functions directly. They are called by your framework (in this case, **FastAPI**).\nWith the Dependency Injection system, you can also tell **FastAPI** that your *path operation function* also \"depends\" on something else that should be executed before your *path operation function*, and **FastAPI** will take care of executing it and \"injecting\" the results.\nOther common te"
+        },
+        {
+          "rank": 4,
+          "score": 0.78372693,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "6082e1141b744ebda55a6b8ef6eb5758e1333bd72118450314b9e92653608f3f",
+          "title": "Dependencies { #dependencies }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\tutorial\\dependencies\\index.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "**\"Dependency Injection\"** means, in programming, that there is a way for your code (in this case, your *path operation functions*) to declare things that it requires to work and use: \"dependencies\".\nAnd then, that system (in this case **FastAPI**) will take care of doing whatever is needed to provide your code with those needed dependencies (\"inject\" the dependencies).\nThis is very useful when you need to:\n* Have shared logic (the same code logic again and again). * Share database connections. * Enforce security, authentication, role requirements, etc. * And many other things...\nAll these, while minimizing code repetition."
+        },
+        {
+          "rank": 5,
+          "score": 0.783517,
+          "source_id": "fastapi",
+          "document_id": "2abc20f5dfb4f9ab490d27d25699d2c1dfc1eccb59ea6a37534dcf98e8059203",
+          "chunk_id": "a930a6d13c5dccc4cc8870a7779f014fa1fd5910f1299ac0f4caa6c841588687",
+          "title": "Features { #features }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\features.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "FastAPI includes an extremely easy to use, but extremely powerful <dfn title='also known as \"components\", \"resources\", \"services\", \"providers\"'><strong>Dependency Injection</strong></dfn> system.\n* Even dependencies can have dependencies, creating a hierarchy or **\"graph\" of dependencies**. * All **automatically handled** by the framework. * All the dependencies can require data from requests and **augment the path operation** constraints and automatic documentation. * **Automatic validation** even for *path operation* parameters defined in dependencies. * Support for complex user authentication systems, **database connections**, etc. * **No compromise** with databases, frontends, etc. But e"
+        }
+      ]
+    },
+    {
+      "question": "How do I protect a FastAPI endpoint using OAuth2 scopes?",
+      "domain": "fastapi",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 62.235,
+      "retrieval_ms": 34.387,
+      "total_ms": 96.624,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.78337777,
+          "source_id": "fastapi",
+          "document_id": "d8aea3621898c42578c992672557763ef79eba753cb306dd1cf84fa62897467a",
+          "chunk_id": "3dab29a44403bdf88d170778104b4f4d645a532c24df27a538c292cacaacfb1e",
+          "title": "Security Tools",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\reference\\security\\index.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "::: fastapi.security.OAuth2\n::: fastapi.security.OAuth2AuthorizationCodeBearer\n::: fastapi.security.OAuth2PasswordBearer"
+        },
+        {
+          "rank": 2,
+          "score": 0.7815192,
+          "source_id": "fastapi",
+          "document_id": "e67df7cfd90a7354d0e84ca69fddefc26c3d4df4dce06af576f655d27a905a1c",
+          "chunk_id": "c311ba55c080a48d0bd82d9f7ab8e2336474e1bd1481361f961d1f2d51ff3bb8",
+          "title": "OAuth2 scopes { #oauth2-scopes }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\advanced\\security\\oauth2-scopes.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "You can use OAuth2 scopes directly with **FastAPI**, they are integrated to work seamlessly.\nThis would allow you to have a more fine-grained permission system, following the OAuth2 standard, integrated into your OpenAPI application (and the API docs).\nOAuth2 with scopes is the mechanism used by many big authentication providers, like Facebook, Google, GitHub, Microsoft, X (Twitter), etc. They use it to provide specific permissions to users and applications.\nEvery time you \"log in with\" Facebook, Google, GitHub, Microsoft, X (Twitter), that application is using OAuth2 with scopes.\nIn this section you will see how to manage authentication and authorization with the same OAuth2 with scopes in "
+        },
+        {
+          "rank": 3,
+          "score": 0.766243,
+          "source_id": "fastapi",
+          "document_id": "e361a358a9db7c5bcac3b166a2b87e608c2ea5f99031b3075d9ad3fbeb9cadd5",
+          "chunk_id": "2209e113bf3b29f4bc7a73891be171ac7b0c968aa816f78fdc77f46907f5ebd0",
+          "title": "Release Notes",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\release-notes.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "* 🐛 Fix OpenAPI security scheme OAuth2 scopes declaration, deduplicate security schemes with different scopes. PR [#14455](https://github.com/fastapi/fastapi/pull/14455) by [@tiangolo](https://github.com/tiangolo)."
+        },
+        {
+          "rank": 4,
+          "score": 0.75617623,
+          "source_id": "fastapi",
+          "document_id": "e361a358a9db7c5bcac3b166a2b87e608c2ea5f99031b3075d9ad3fbeb9cadd5",
+          "chunk_id": "6abc960dc241ec29bdd6291d2b9df8db33e5637532e8928a1022f3a7e2873973",
+          "title": "Release Notes",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\release-notes.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "* 🐛 Fix OAuth2 scopes in OpenAPI in extra corner cases, parent dependency with scopes, sub-dependency security scheme without scopes. PR [#14459](https://github.com/fastapi/fastapi/pull/14459) by [@tiangolo](https://github.com/tiangolo)."
+        },
+        {
+          "rank": 5,
+          "score": 0.74101824,
+          "source_id": "fastapi",
+          "document_id": "132258acfd60385b80171b8f164739bfd48bbd26ecedadaf60bdc935e0c26e69",
+          "chunk_id": "c32e0c6b62d6ef1c179409f9b800c55208f3202885dff4d3f1c34ad63163eb2f",
+          "title": "OAuth2 with Password (and hashing), Bearer with JWT tokens { #oauth2-with-password-and-hashing-bearer-with-jwt-tokens }",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\fastapi\\docs\\tutorial\\security\\oauth2-jwt.md",
+          "source_reference": "https://github.com/fastapi/fastapi",
+          "text_preview": "With what you have seen up to now, you can set up a secure **FastAPI** application using standards like OAuth2 and JWT.\nIn almost any framework handling the security becomes a rather complex subject quite quickly.\nMany packages that simplify it a lot have to make many compromises with the data model, database, and available features. And some of these packages that simplify things too much actually have security flaws underneath.\n---\n**FastAPI** doesn't make any compromise with any database, data model or tool.\nIt gives you all the flexibility to choose the ones that fit your project the best.\nAnd you can use directly many well maintained and widely used packages like `pwdlib` and `PyJWT`, b"
+        }
+      ]
+    },
+    {
+      "question": "How does asyncio TaskGroup handle failures among concurrent tasks?",
+      "domain": "python",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 43.597,
+      "retrieval_ms": 34.183,
+      "total_ms": 77.782,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7523625,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "ee1af389f59a6d8535b97742a136ad2431eb9b615e1ead9bdcbf9f83f4215afb",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html\\library\\asyncio-task.html",
+          "source_reference": "https://docs.python.org/3.13/",
+          "text_preview": "Task groups combine a task creation API with a convenient\nand reliable way to wait for all tasks in the group to finish.\nclass asyncio. TaskGroup ¶\nAn asynchronous context manager\nholding a group of tasks.\nTasks can be added to the group using\ncreate_task()\n.\nAll tasks are awaited when the context manager exits.\nAdded in version 3.11.\ncreate_task ( coro , * , name = None , context = None ) ¶\nCreate a task in this task group.\nThe signature matches that of\nasyncio.create_task()\n.\nIf the task group is inactive (e.g. not yet entered,\nalready finished, or in the process of shutting down),\nwe will close the given\ncoro\nand raise\nRuntimeError\n.\nChanged in version 3.13: Close the given coroutine if t"
+        },
+        {
+          "rank": 2,
+          "score": 0.7451837,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "2dd1dd6d9cda710d4b0171b3687eb068445f7c8e49d4d155699e3aeecfd6e990",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html\\library\\asyncio-task.html",
+          "source_reference": "https://docs.python.org/3.13/",
+          "text_preview": "While terminating a task group is not natively supported by the standard\nlibrary, termination can be achieved by adding an exception-raising task\nto the task group and ignoring the raised exception:\nimport asyncio\nfrom asyncio import TaskGroup\n\nclass TerminateTaskGroup(Exception):\n    \"\"\"Exception raised to terminate a task group.\"\"\"\n\nasync def force_terminate_task_group():\n    \"\"\"Used to force termination of a task group.\"\"\"\n    raise TerminateTaskGroup()\n\nasync def job(task_id, sleep_time):\n    print(f'Task {task_id}: start')\n    await asyncio.sleep(sleep_time)\n    print(f'Task {task_id}: done')\n\nasync def main():\n    try:\n        async with TaskGroup() as group:\n            # spawn some t"
+        },
+        {
+          "rank": 3,
+          "score": 0.72798586,
+          "source_id": "python_3_13",
+          "document_id": "75095fb232ef8d385af04a3512737528dcf8e7243a02a32f4bd570b6640b1fd6",
+          "chunk_id": "4b9709470d9fee7a4ae578d1ee31cbe4c3863910b98cd97bf3684a52b0a4a923",
+          "title": "High-level API Index — Python 3.13.18 documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html\\library\\asyncio-api-index.html",
+          "source_reference": "https://docs.python.org/3.13/",
+          "text_preview": "Utilities to run asyncio programs, create Tasks, and\nawait on multiple things with timeouts.\nrun()\nCreate event loop, run a coroutine, close the loop.\nRunner\nA context manager that simplifies multiple async function calls.\nTask\nTask object.\nTaskGroup\nA context manager that holds a group of tasks. Provides\na convenient and reliable way to wait for all tasks in the group to\nfinish.\ncreate_task()\nStart an asyncio Task, then returns it.\ncurrent_task()\nReturn the current Task.\nall_tasks()\nReturn all tasks that are not yet finished for an event loop.\nawait\nsleep()\nSleep for a number of seconds.\nawait\ngather()\nSchedule and wait for things concurrently.\nawait\nwait_for()\nRun with a timeout.\nawait\nshi"
+        },
+        {
+          "rank": 4,
+          "score": 0.7250663,
+          "source_id": "python_3_13",
+          "document_id": "a846cdb813b10b8b6669dd433dee81b8b2f5a9e7ca25456627076828cdad6c54",
+          "chunk_id": "4a3756bd08bae595ea00a9aecae61fc9b122c21fa659a1ab4fb978532f7500c6",
+          "title": "What’s New In Python 3.11 — Python 3.13.18 documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html\\whatsnew\\3.11.html",
+          "source_reference": "https://docs.python.org/3.13/",
+          "text_preview": "Added the\nTaskGroup\nclass,\nan asynchronous context manager\nholding a group of tasks that will wait for all of them upon exit.\nFor new code this is recommended over using\ncreate_task()\nand\ngather()\ndirectly.\n(Contributed by Yury Selivanov and others in gh-90908 .)\nAdded\ntimeout()\n, an asynchronous context manager for\nsetting a timeout on asynchronous operations. For new code this is\nrecommended over using\nwait_for()\ndirectly.\n(Contributed by Andrew Svetlov in gh-90927 .)\nAdded the\nRunner\nclass, which exposes the machinery\nused by\nrun()\n.\n(Contributed by Andrew Svetlov in gh-91218 .)\nAdded the\nBarrier\nclass to the synchronization\nprimitives in the asyncio library, and the related\nBrokenBarrier"
+        },
+        {
+          "rank": 5,
+          "score": 0.71987134,
+          "source_id": "python_3_13",
+          "document_id": "ac40ccd6493d827f3cb22430f22679280a1d0fd05811608268c393b8fce109e0",
+          "chunk_id": "e0e8e8e954d98b4749bcee3518909a7e8436cd033f0ee0be6704a633cd4f6620",
+          "title": "Developing with asyncio — Python 3.13.18 documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html\\library\\asyncio-dev.html",
+          "source_reference": "https://docs.python.org/3.13/",
+          "text_preview": "Developing with asyncio\nDebug Mode\nConcurrency and Multithreading\nRunning Blocking Code\nLogging\nDetect never-awaited coroutines\nDetect never-retrieved exceptions\nAsynchronous generators best practices\nClose asynchronous generators explicitly\nCreate asynchronous generators only when the event loop is running\nAvoid concurrent iteration and closure of the same generator"
+        }
+      ]
+    },
+    {
+      "question": "What happens when an asyncio task is cancelled?",
+      "domain": "python",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 27.335,
+      "retrieval_ms": 11.698,
+      "total_ms": 39.035,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.84312683,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "9a9da1395625b17c1c03d1fb4474fd44e1eb598db7f7e47261acf6a0e48d7c6a",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html\\library\\asyncio-task.html",
+          "source_reference": "https://docs.python.org/3.13/",
+          "text_preview": "Tasks can easily and safely be cancelled.\nWhen a task is cancelled,\nasyncio.CancelledError\nwill be raised\nin the task at the next opportunity.\nIt is recommended that coroutines use\ntry/finally\nblocks to robustly\nperform clean-up logic. In case\nasyncio.CancelledError\nis explicitly caught, it should generally be propagated when\nclean-up is complete.\nasyncio.CancelledError\ndirectly subclasses\nBaseException\nso most code will not need to be aware of it.\nThe asyncio components that enable structured concurrency, like\nasyncio.TaskGroup\nand\nasyncio.timeout()\n,\nare implemented using cancellation internally and might misbehave if\na coroutine swallows\nasyncio.CancelledError\n. Similarly, user code\nshoul"
+        },
+        {
+          "rank": 2,
+          "score": 0.83935404,
+          "source_id": "python_3_13",
+          "document_id": "75095fb232ef8d385af04a3512737528dcf8e7243a02a32f4bd570b6640b1fd6",
+          "chunk_id": "34c73cf4f96726eafed9d592664307dbe09300e9e8c076f68efe7bb6ee677a03",
+          "title": "High-level API Index — Python 3.13.18 documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html\\library\\asyncio-api-index.html",
+          "source_reference": "https://docs.python.org/3.13/",
+          "text_preview": "asyncio.CancelledError\nRaised when a Task is cancelled. See also\nTask.cancel()\n.\nasyncio.BrokenBarrierError\nRaised when a Barrier is broken. See also\nBarrier.wait()\n.\nExamples\nHandling CancelledError to run code on cancellation request .\nSee also the full list of\nasyncio-specific exceptions ."
+        },
+        {
+          "rank": 3,
+          "score": 0.78543687,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "773c8d11c2f8cd4ab31322ea9e104d3c394a35fec03aae545f2b9a9a18620b1a",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html\\library\\asyncio-task.html",
+          "source_reference": "https://docs.python.org/3.13/",
+          "text_preview": "asyncio.CancelledError\n,\nthose exceptions are combined in an\nExceptionGroup\nor\nBaseExceptionGroup\n(as appropriate; see their documentation)\nwhich is then raised.\nTwo base exceptions are treated specially:\nIf any task fails with\nKeyboardInterrupt\nor\nSystemExit\n,\nthe task group still cancels the remaining tasks and waits for them,\nbut then the initial\nKeyboardInterrupt\nor\nSystemExit\nis re-raised instead of\nExceptionGroup\nor\nBaseExceptionGroup\n.\nIf the body of the\nasync with\nstatement exits with an exception\n(so\n__aexit__()\nis called with an exception set),\nthis is treated the same as if one of the tasks failed:\nthe remaining tasks are cancelled and then waited for,\nand non-cancellation excepti"
+        },
+        {
+          "rank": 4,
+          "score": 0.7620832,
+          "source_id": "python_3_13",
+          "document_id": "44696051442abd1c888ba89f4a67573b6b9ecd467ae33d50eaec6c339d3d004e",
+          "chunk_id": "4fa5e5b35d4477fea4ac1300c9c1961879851b6be70e0942f6ab8befcbb6072d",
+          "title": "What’s New In Python 3.13 — Python 3.13.18 documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html\\whatsnew\\3.13.html",
+          "source_reference": "https://docs.python.org/3.13/",
+          "text_preview": "asyncio.as_completed()\nnow returns an object that is both an\nasynchronous iterator and a plain iterator\nof awaitables .\nThe awaitables yielded by asynchronous iteration include original task\nor future objects that were passed in,\nmaking it easier to associate results with the tasks being completed.\n(Contributed by Justin Arthur in gh-77714 .)\nasyncio.loop.create_unix_server()\nwill now automatically remove\nthe Unix socket when the server is closed.\n(Contributed by Pierre Ossman in gh-111246 .)\nDatagramTransport.sendto()\nwill now send zero-length\ndatagrams if called with an empty bytes object.\nThe transport flow control also now accounts for the datagram header\nwhen calculating the buffer size"
+        },
+        {
+          "rank": 5,
+          "score": 0.7515857,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "07b63036e0730e9ab43560de3a550547d2bae048b845e02150e06f7f341c6305",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\python\\3.13\\python-3.13-docs-html\\library\\asyncio-task.html",
+          "source_reference": "https://docs.python.org/3.13/",
+          "text_preview": "awaitable asyncio. shield ( aw ) ¶\nProtect an awaitable object\nfrom being\ncancelled\n.\nIf aw is a coroutine it is automatically scheduled as a Task.\nThe statement:\ntask = asyncio.create_task(something())\nres = await shield(task)\nis equivalent to:\nres = await something()\nexcept that if the coroutine containing it is cancelled, the\nTask running in\nsomething()\nis not cancelled. From the point\nof view of\nsomething()\n, the cancellation did not happen.\nAlthough its caller is still cancelled, so the “await” expression\nstill raises a\nCancelledError\n.\nIf\nsomething()\nis cancelled by other means (i.e. from within\nitself) that would also cancel\nshield()\n.\nIf it is desired to completely ignore cancellatio"
+        }
+      ]
+    },
+    {
+      "question": "How does PostgreSQL multiversion concurrency control provide transaction isolation?",
+      "domain": "postgresql",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 30.744,
+      "retrieval_ms": 35.187,
+      "total_ms": 65.932,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.8315509,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "7be3473e645366d60ae1020a19db105e5d254f74dd17dce546aa6755c7c3d2a3",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+          "text_preview": "Chapter 13. Concurrency Control\nThis chapter describes the behavior of the PostgreSQL database system when two or more sessions\ntry to access the same data at the same time. The goals in that situation are to allow efficient access for\nall sessions while maintaining strict data integrity. Every developer of database applications should\nbe familiar with the topics covered in this chapter.\n13.1. Introduction\nPostgreSQL provides a rich set of tools for developers to manage concurrent access to data. Internally,\ndata consistency is maintained by using a multiversion model (Multiversion Concurrency Control,\nMVCC). This means that each SQL statement sees a snapshot of data (a database version) as "
+        },
+        {
+          "rank": 2,
+          "score": 0.82120323,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "25b4fe868d856c92996c75da92a50b3fb4ee7294431c073324037f2a8106f53e",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+          "text_preview": "Concurrency Control\nserialization anomaly\nThe result of successfully committing a group of transactions is inconsistent with all possible\norderings of running those transactions one at a time.\nThe SQL standard and PostgreSQL-implemented transaction isolation levels are described in\nTable 13.1.\nTable 13.1. Transaction Isolation Levels\nIsolation Level Dirty Read Nonrepeatable\nRead\nPhantom Read Serialization\nAnomaly\nRead uncommitted Allowed, but not\nin PG\nPossible Possible Possible\nRead committed Not possible Possible Possible Possible\nRepeatable read Not possible Not possible Allowed, but not\nin PG\nPossible\nSerializable Not possible Not possible Not possible Not possible\nIn PostgreSQL, you can"
+        },
+        {
+          "rank": 3,
+          "score": 0.7991007,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "211cb76433459c58e2f4f3de363efa50bf4f8ad41adc42ffd99527e43fc6ac0d",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+          "text_preview": "Concurrency Control\nThe Repeatable Read mode provides a rigorous guarantee that each transaction sees a completely stable\nview of the database. However, this view will not necessarily always be consistent with some serial\n(one at a time) execution of concurrent transactions of the same level. For example, even a read-only\ntransaction at this level may see a control record updated to show that a batch has been completed but\nnot see one of the detail records which is logically part of the batch because it read an earlier revision\nof the control record. Attempts to enforce business rules by transactions running at this isolation level\nare not likely to work correctly without careful use of expl"
+        },
+        {
+          "rank": 4,
+          "score": 0.7853873,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "479ef948d59a0ccef337133e9e385fdfbc4dc055b85a593a98b04cc3ccfff7ed",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+          "text_preview": "izable transaction isolation level is used for all writes and for all reads which need a\nconsistent view of the data, no other effort is required to ensure consistency. Software from other\nenvironments which is written to use serializable transactions to ensure consistency should “just work”\nin this regard in PostgreSQL.\nWhen using this technique, it will avoid creating an unnecessary burden for application\nprogrammers if the application software goes through a framework which automatically retries\ntransactions which are rolled back with a serialization failure. It may be a good idea to set\ndefault_transaction_isolation to serializable. It would also be wise to take some\naction to ensure tha"
+        },
+        {
+          "rank": 5,
+          "score": 0.7782014,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "7d3d37b21973ccafcc97ebbfecbc5a20d04d3d63f5c0024de1e97d308c73ce83",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+          "text_preview": "sure to weigh any decrease in\ntransaction rollbacks and restarts against any overall change in query execution time.\nThe Serializable isolation level is implemented using a technique known in academic database\nliterature as Serializable Snapshot Isolation, which builds on Snapshot Isolation by adding checks\nfor serialization anomalies. Some differences in behavior and performance may be observed when\ncompared with other systems that use a traditional locking technique. Please see [ports12] for detailed\ninformation.\n13.3. Explicit Locking\nPostgreSQL provides various lock modes to control concurrent access to data in tables. These modes\ncan be used for application-controlled locking in situati"
+        }
+      ]
+    },
+    {
+      "question": "How do PostgreSQL indexes affect query performance and writes?",
+      "domain": "postgresql",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 31.299,
+      "retrieval_ms": 32.091,
+      "total_ms": 63.391,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7601947,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "f40e3c8d78c331bfa9483fd6149d971d1997061fecf8e95adcd937f4295530fb",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+          "text_preview": "Chapter 14. Performance Tips\nQuery performance can be affected by many things. Some of these can be controlled by the user, while\nothers are fundamental to the underlying design of the system. This chapter provides some hints about\nunderstanding and tuning PostgreSQL performance.\n14.1. Using EXPLAIN\nPostgreSQL devises a query plan for each query it receives. Choosing the right plan to match the\nquery structure and the properties of the data is absolutely critical for good performance, so the system\nincludes a complex planner that tries to choose good plans. You can use the EXPLAIN command\nto see what query plan the planner creates for any query. Plan-reading is an art that requires some\nexpe"
+        },
+        {
+          "rank": 2,
+          "score": 0.7451023,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "1c486c1a8b8a4149a499e75604bc27da529cc8f97000b4a7ed72c254d9ca1261",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+          "text_preview": "use the index in queries when it thinks doing so would be more efficient\nthan a sequential table scan. But you might have to run the ANALYZE command regularly to update\nstatistics to allow the query planner to make educated decisions. See Chapter 14 for information about\nhow to find out whether an index is used and when and why the planner might choose not to use an\nindex.\nIndexes can also benefit UPDATE and DELETE commands with search conditions. Indexes can\nmoreover be used in join searches. Thus, an index defined on a column that is part of a join condition\ncan also significantly speed up queries with joins.\nIn general, PostgreSQL indexes can be used to optimize queries that contain one o"
+        },
+        {
+          "rank": 3,
+          "score": 0.7428328,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "07b58d7cb5296a1388ce8aa0458e9706d00eacace6d8d82ca40f108d14dbdc37",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+          "text_preview": "the system is a live\nproduction database. Very large tables can take many hours to be indexed, and even for smaller tables,\nan index build can lock out writers for periods that are unacceptably long for a production system.\nPostgreSQL supports building indexes without locking out writes. This method is invoked by\nspecifying the CONCURRENTLY option of CREATE INDEX. When this option is used, PostgreSQL\nmust perform two scans of the table, and in addition it must wait for all existing transactions that\ncould potentially modify or use the index to terminate. Thus this method requires more total work than\na standard index build and takes significantly longer to complete. However, since it allows "
+        },
+        {
+          "rank": 4,
+          "score": 0.71221817,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "b85ddbb63a8e8973b68cdf933600ce822f63d2e61c8702d416d46bbd085369e9",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+          "text_preview": ":\nCREATE TABLE tests (\nsubject text,\ntarget text,\nsuccess boolean,\n...\n);\nCREATE UNIQUE INDEX tests_success_constraint ON tests (subject,\ntarget)\nWHERE success;\nThis is a particularly efficient approach when there are few successful tests and many unsuccessful\nones. It is also possible to allow only one null in a column by creating a unique partial index with\nan IS NULL restriction.\nFinally, a partial index can also be used to override the system's query plan choices. Also, data sets\nwith peculiar distributions might cause the system to use an index when it really should not. In that\ncase the index can be set up so that it is not available for the offending query. Normally, PostgreSQL\nmakes "
+        },
+        {
+          "rank": 5,
+          "score": 0.7069106,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "3bc0b8aa72b3ca1acae6f9360fd540bd651b20a5a8be9ec038314fb37a840c2b",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf",
+          "text_preview": "The value\nof these options is that multicolumn indexes can be created that match the sort ordering requested by a\nmixed-ordering query, such as SELECT ... ORDER BY x ASC, y DESC. The NULLS options\nare useful if you need to support “nulls sort low” behavior, rather than the default “nulls sort high”,\nin queries that depend on indexes to avoid sorting steps.\nThe system regularly collects statistics on all of a table's columns. Newly-created non-expression\nindexes can immediately use these statistics to determine an index's usefulness. For new expression\nindexes, it is necessary to run ANALYZE or wait for the autovacuum daemon to analyze the table to\ngenerate statistics for these indexes.\nWhile"
+        }
+      ]
+    },
+    {
+      "question": "How can Qdrant filter vector search results by payload fields?",
+      "domain": "qdrant",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 31.654,
+      "retrieval_ms": 49.283,
+      "total_ms": 80.939,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.8202985,
+          "source_id": "qdrant",
+          "document_id": "186a54ed68ec61d70bc9b09fb2a48b5c7c7223570a5385257f687f9a31a9f6b1",
+          "chunk_id": "7a3f29b732035bf0427f2f09365b7bf9e35fac6da6c1a04deb039e118f07f617",
+          "title": "_description",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\headless\\snippets\\create-payload-index\\simple-keyword\\_description.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Create a payload index by specifying the field name and setting its schema to 'keyword'. This allows for more efficient searching with filters in Qdrant. Indexing fields can impact the vector index as well. It is recommended to index fields that might heavily influence search results. For example, indexing the object ID, which is unique for each record, will be more efficient than indexing by color with only a few possible values. Qdrant will prioritize using the most restrictive index in compound queries involving multiple fields."
+        },
+        {
+          "rank": 2,
+          "score": 0.7981345,
+          "source_id": "qdrant",
+          "document_id": "79a7c67443b91b7bd49bc3ad0ee231f27c558d3fc46f5b0bb93e0b76058c4511",
+          "chunk_id": "2d0b3e0de1c6beb2665771e892cb4c4a0848fdb3af9514b1a13afd2bc149098a",
+          "title": "Filtering in Vector Search: When to Use What",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search-design\\vector-search-filtering.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Qdrant uses payload indexes in three ways: to find matching points without scanning every payload, to estimate how many points a filter matches so the [query planner](#let-the-query-planner-choose) can pick a strategy, and to build the extra filterable HNSW edges.\n- **Index every field you filter on in dense vector search.** Without an index, the planner cannot estimate how many points match, and Qdrant has to read payloads to evaluate the filter. You can make Qdrant [reject queries that filter on unindexed fields](/documentation/manage-data/indexing/#block-queries-that-filter-on-unindexed-fields), so a missing index surfaces as an error instead of a slow query. - **Match the index type to t"
+        },
+        {
+          "rank": 3,
+          "score": 0.7976124,
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "chunk_id": "7bfe7c745e70972e98b09e6b60f86fbdcd9f428bb499dd31508cbb08d57976b9",
+          "title": "Indexing",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\manage-data\\indexing.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Payload index in Qdrant is similar to the index in conventional document-oriented databases. This index is built for a specific field and type, and is used for quick point requests by the corresponding filtering condition. The index is also used to accurately estimate the filter cardinality, which helps the [query planning](/documentation/search/search/#query-planning) choose a search strategy.\nCreating an index requires additional computational resources and memory, so choosing fields to be indexed is essential. Qdrant does not make this choice but grants it to the user.\nThe following field types support payload indexing:"
+        },
+        {
+          "rank": 4,
+          "score": 0.7937701,
+          "source_id": "qdrant",
+          "document_id": "4e6bd789c0ff089587e2ff1b48736982f3f687b1d3a9d5b16e499b57945a5915",
+          "chunk_id": "b237c56426bd9fbde964dd83b912e9b6f8d4ec6e67a16fe0039e5aa3d7f1b23f",
+          "title": "Frequently Asked Questions: General Topics",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\faq\\qdrant-fundamentals.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "By default, Qdrant tries to minimize network traffic and doesn't return vectors in search results. But you can force Qdrant to do so by setting the `with_vector` parameter of the Search/Scroll to `true`.\nIf you're still seeing `\"vector\": null` in your results, it might be that the vector you're passing is not in the correct format, or there's an issue with how you're calling the upsert method."
+        },
+        {
+          "rank": 5,
+          "score": 0.7914456,
+          "source_id": "qdrant",
+          "document_id": "88281a1dbb79edc9ceea3181e54bed984272c3f243d169d1ea598d1c12c220dc",
+          "chunk_id": "6ca8c78d8bd627ff1bf29210b3bc2dd139293d4899c184a291e304d0afb34e2c",
+          "title": "Text Filtering",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search\\text-search\\text-filtering.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Qdrant supports [filtering](/documentation/search/filtering/) on a wide range of datatypes: numbers, dates, booleans, geolocations, and strings. In Qdrant, a filter is typically combined with a vector query. The vector query is used to score and rank the results, while the filter is used to narrow down the results based on specific criteria."
+        }
+      ]
+    },
+    {
+      "question": "How does Qdrant configure HNSW indexing for vector search?",
+      "domain": "qdrant",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 98.423,
+      "retrieval_ms": 26.039,
+      "total_ms": 124.463,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.8307344,
+          "source_id": "qdrant",
+          "document_id": "c213749550c3e269216e653f594d01d6fd500740e32318aad61532d9d0f8dd1b",
+          "chunk_id": "d66fb2bac643f2e160e240c7998b00f5f1322bb6975e8b5deb2c99f5906e745e",
+          "title": "_description",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\headless\\snippets\\create-collection\\with-disabled-global-hnsw\\_description.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Configure Qdrant to optimize performance by bypassing the creation of a global vector index for the entire collection. Instead, focus on indexing vectors for individual groups separately to enhance the speed of the process. Update the HNSW configuration by setting `payload_m` to a specific value, like 16, and ensuring `m` in the configuration is set to 0 to disable the global index construction."
+        },
+        {
+          "rank": 2,
+          "score": 0.8156766,
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "chunk_id": "ab48708f7004dfcf9a4d69032cd31307c72df7d56e7b86c64e59083c4e62b934",
+          "title": "Indexing",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\manage-data\\indexing.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "HNSW is chosen for several reasons. First, HNSW is well-compatible with the modification that allows Qdrant to use filters during a search. Second, it is one of the most accurate and fastest algorithms, according to [public benchmarks](https://github.com/erikbern/ann-benchmarks).\n*Available as of v1.1.1*\nThe HNSW parameters can also be configured on a collection and named vector level by setting [`hnsw_config`](/documentation/manage-data/indexing/#vector-index) to fine-tune search performance."
+        },
+        {
+          "rank": 3,
+          "score": 0.81156445,
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "chunk_id": "7d2b20e5f475381efdb7d7cc2b5afc698aa46d6cdbde4d2e0af017bd63b300e1",
+          "title": "Indexing",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\manage-data\\indexing.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "--- title: Indexing short_description: \"Combine HNSW vector indexes with payload indexes in Qdrant for fast filtered search across structured fields.\" description: \"Configure HNSW vector indexes and payload indexes in Qdrant to accelerate similarity search with filters on structured fields and high-cardinality metadata.\" weight: 30 cta: \"Run indexed search on your own vectors in the Cloud.\" aliases: - ../indexing ---"
+        },
+        {
+          "rank": 4,
+          "score": 0.79884124,
+          "source_id": "qdrant",
+          "document_id": "8bcbce8e79ed3205f58fbc8417e3ea581c7fff38ac59e350a5d56b18ae40c39f",
+          "chunk_id": "1eb243b85c1c441f6da90e895eaec8c63681b5565a56e20ff567529ed2ccdfa1",
+          "title": "Qdrant Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\_index.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Qdrant is an AI-native vector search engine for storing, indexing, and searching high-dimensional vectors — powering semantic search, RAG pipelines, recommendation systems, and AI-native applications."
+        },
+        {
+          "rank": 5,
+          "score": 0.79614156,
+          "source_id": "qdrant",
+          "document_id": "ec2032f965530e2c83e1dc79d64e8c1b8d29b4b4c08bd0f0748f5b54cbe849e2",
+          "chunk_id": "b1e44e75beccc8cd66b15c03826ec48a71c9a5a0de9cd8cb447df57002dde52b",
+          "title": "Multivector Representations for Reranking in Qdrant",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\tutorials-search-engineering\\using-multivector-representations.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "In multivector representations (such as those used by Late Interaction models like ColBERT), a single logical document results in hundreds of token-level vectors. Indexing each of these vectors individually with HNSW in Qdrant can lead to:\n- High RAM usage - Slow insert times due to the complexity of maintaining the HNSW graph\nHowever, because multivectors are typically used in the reranking stage (after a first-pass retrieval using dense vectors), there's often no need to index these token-level vectors with HNSW.\nInstead, they can be stored as multi-vector fields (without HNSW indexing) and used at query-time for reranking, which reduces resource overhead and improves performance.\nFor more"
+        }
+      ]
+    },
+    {
+      "question": "How do multi-stage Docker builds reduce the final image size?",
+      "domain": "docker",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 48.621,
+      "retrieval_ms": 34.177,
+      "total_ms": 82.8,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.8620153,
+          "source_id": "docker",
+          "document_id": "5db55f28f50c0cee32691b1eb9d74740531dee0dde8a60e3d0401e189f44f377",
+          "chunk_id": "2227b862846ba9e2d6bbbc105a594193651b46bbf3fd5325bf816aee94ed4f78",
+          "title": "best-practices",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\manuals\\build\\building\\best-practices.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "Multi-stage builds let you reduce the size of your final image, by creating a cleaner separation between the building of your image and the final output. Split your Dockerfile instructions into distinct stages to make sure that the resulting output only contains the files that are needed to run the application.\nUsing multiple stages can also let you build more efficiently by executing build steps in parallel.\nSee [Multi-stage builds](/manuals/build/building/multi-stage.md) for more information."
+        },
+        {
+          "rank": 2,
+          "score": 0.8248951,
+          "source_id": "docker",
+          "document_id": "f7bdb8cc3b5dfb86c752ce701118a7cdeb8b9684ce76e89d6c71bac6514dede0",
+          "chunk_id": "58b0825200aa43852537cfe18a094fa5c84fc212d3c6c0a1381d463222017fbe",
+          "title": "optimize",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\manuals\\offload\\optimize.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "[Multi-stage builds](/build/building/multi-stage/) let you separate build-time and runtime environments in your Dockerfile. This not only reduces the size of the final image but also allows for parallel stage execution during the build.\nUse `COPY --from` to copy files from earlier stages or external images. This approach helps minimize unnecessary layers and reduce final image size."
+        },
+        {
+          "rank": 3,
+          "score": 0.82071066,
+          "source_id": "docker",
+          "document_id": "25043062ccdeede16c079b2089e52630d5f630cac0ba9639720fba356a02106b",
+          "chunk_id": "31cdece3ef2bbc42c7c88187905c4d5b4f6005b46bbf7e772a7fbf4a1856c28e",
+          "title": "multi-stage-builds",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\get-started\\docker-concepts\\building-images\\multi-stage-builds.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "    $ docker build -t spring-helloworld-builder .\nThis command builds a Docker image named `spring-helloworld-builder` using the final stage from your `Dockerfile` file located in the current directory.\n> [!NOTE] > > In your multi-stage Dockerfile, the final stage (final) is the default target for building. This means that if you don't explicitly specify a target stage using the `--target` flag in the `docker build` command, Docker will automatically build the last stage by default. You could use `docker build -t spring-helloworld-builder --target builder .` to build only the builder stage with the JDK environment.\n3. Look at the image size difference by using the `docker images` command:\n  "
+        },
+        {
+          "rank": 4,
+          "score": 0.8120879,
+          "source_id": "docker",
+          "document_id": "50f23247b23b0e23e507d1d673c0f373b0e2cb0641f5bc95686689ee48f65854",
+          "chunk_id": "cffcfcb09758d6125f1524e6652ea988cb9d7163b639bf95b2cbc4fe484f1f60",
+          "title": "optimization",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\manuals\\build-cloud\\optimization.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "[Multi-stage builds](/build/building/multi-stage/) can make your build run faster, because stages can run in parallel. It can also make your end-result smaller. Write your Dockerfile in such a way that the final runtime stage uses the smallest possible base image, with only the resources that your program requires to run.\nIt’s also possible to [copy resources from other images or stages](/build/building/multi-stage/#name-your-build-stages), using the Dockerfile `COPY --from` instruction. This technique can reduce the number of layers, and the size of those layers, in the final stage."
+        },
+        {
+          "rank": 5,
+          "score": 0.7830663,
+          "source_id": "docker",
+          "document_id": "6646d47b74f695c6567c5cf39ca06558ce3edb49aee4f3a0626a94e92b8ff32d",
+          "chunk_id": "470c10a8e48983621544f6ac0a0bf1bd5c73149ec72b56c3e89f293a8a087518",
+          "title": "cpp",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\guides\\cpp.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "This section walks you through creating a multi-stage Docker build for a C++ application. A multi-stage build is a Docker feature that allows you to use different base images for different stages of the build process, so you can optimize the size of your final image and separate build dependencies from runtime dependencies.\nThe standard practice for compiled languages like C++ is to have a build stage that compiles the code and a runtime stage that runs the compiled binary, because the build dependencies are not needed at runtime."
+        }
+      ]
+    },
+    {
+      "question": "How do Docker health checks determine whether a container is healthy?",
+      "domain": "docker",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 38.772,
+      "retrieval_ms": 14.979,
+      "total_ms": 53.752,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.85500324,
+          "source_id": "docker",
+          "document_id": "632e66c39301cf96414b69d5cf5a6c90ed71c56fcc4b7659ad46a117f1c0fca2",
+          "chunk_id": "265211ac69bbeb2142f656b2bebd028a1a35384441dfd504612e10a47cbf082f",
+          "title": "services-healthcheck",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\includes\\compose\\services-healthcheck.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "The `healthcheck` attribute declares a check that's run to determine whether or not the service containers are \"healthy\". It works in the same way, and has the same default values, as the HEALTHCHECK Dockerfile instruction set by the service's Docker image. Your Compose file can override the values set in the Dockerfile."
+        },
+        {
+          "rank": 2,
+          "score": 0.7613059,
+          "source_id": "docker",
+          "document_id": "42a922697384fc2ff233fb51a2f868e82c432ab8fafa574011a467a1fce05839",
+          "chunk_id": "c67b27b42c9c3043a4c58881b8d1416a60e0ccf4c0974ef2808fb805bcb45c56",
+          "title": "17.05",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\manuals\\engine\\release-notes\\17.05.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "- Ensure health probe is stopped when a container exits [#32274](https://github.com/docker/docker/pull/32274)"
+        },
+        {
+          "rank": 3,
+          "score": 0.75466585,
+          "source_id": "docker",
+          "document_id": "62fe045bbbd588a0b0484c63af3ac65bd1a36f5f84c32d53cb5c975c94869066",
+          "chunk_id": "8b97606f9b5b85fc6db11b51f68414b1cb973a1451981477ee405b72d8be8920",
+          "title": "17.12",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\manuals\\engine\\release-notes\\17.12.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "* Health check no longer uses the container's working directory [moby/moby#35843](https://github.com/moby/moby/issues/35843) * Errors not returned from client in stack deploy configs [moby/moby#757](https://github.com/docker/cli/pull/757) * Docker cannot use memory limit when using systemd options [moby/moby#35123](https://github.com/moby/moby/issues/35123)"
+        },
+        {
+          "rank": 4,
+          "score": 0.7473736,
+          "source_id": "docker",
+          "document_id": "9389cd6f650e94597f1ab20fb2b659bb0de7d4be7d6d159b8ed6bb8b17c1a8ae",
+          "chunk_id": "9a1c911ae07b0b7ef78c799b18dbd0ab6559c4087d28b0dfffe7c6b78fb22a9c",
+          "title": "local-vs-cloud",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\manuals\\ai\\sandboxes\\cloud\\local-vs-cloud.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "If your workflow runs Docker inside the sandbox, review the [Docker exec and healthcheck limitation](usage.md#docker-exec-and-healthchecks). It can affect container setup, debugging, and Compose service readiness."
+        },
+        {
+          "rank": 5,
+          "score": 0.7462578,
+          "source_id": "docker",
+          "document_id": "9bedaf88b265094a9fe69e83e45d4f763818b1b5f3d82d85ca9d52f09f21cdb2",
+          "chunk_id": "4c412153e11f6ab82ed1e29607dbf2fa0e00a632ed8c174d46dc66b7dca7d55b",
+          "title": "test",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\manuals\\dhi\\explore\\test.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "Docker provides a test attestation that details the testing and validation processes each DHI has undergone."
+        }
+      ]
+    },
+    {
+      "question": "How do Transformers pipelines select a task and model?",
+      "domain": "huggingface_transformers",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 34.455,
+      "retrieval_ms": 32.367,
+      "total_ms": 66.823,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7616339,
+          "source_id": "huggingface_transformers",
+          "document_id": "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+          "chunk_id": "20662f86c3ccd3f68446e2b149fd6437cfe4377db092ee566e71146c2464be47",
+          "title": "Glossary",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\glossary.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "A pipeline in 🤗 Transformers is an abstraction referring to a series of steps that are executed in a specific order to preprocess and transform data and return a prediction from a model. Some example stages found in a pipeline might be data preprocessing, feature extraction, and normalization.\nFor more details, see [Pipelines for inference](./pipeline_tutorial)."
+        },
+        {
+          "rank": 2,
+          "score": 0.7447007,
+          "source_id": "huggingface_transformers",
+          "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+          "chunk_id": "d5d0da32e8f5c1bde4ae13d31bad9ce4ed37f08b27361a5418c18cdcf1269d72",
+          "title": "Pipeline",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\pipeline_tutorial.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "At a minimum, [`Pipeline`] only requires a task identifier, model, and the appropriate input. But there are many parameters available to configure the pipeline with, from task-specific parameters to optimizing performance.\nThis section introduces you to some of the more important parameters."
+        },
+        {
+          "rank": 3,
+          "score": 0.7422668,
+          "source_id": "huggingface_transformers",
+          "document_id": "891f7275aa7feb6efea822285f806ff3b5451d856e8b01c8d8e95746f1c63735",
+          "chunk_id": "07352048949fd68ffbbd1a08ccc75de96562650e38cece1d20de07605d417990",
+          "title": "Adding a new pipeline",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\add_new_pipeline.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "The [register_pipeline](https://github.com/huggingface/transformers/blob/9feae5fb0164e89d4998e5776897c16f7330d3df/src/transformers/pipelines/base.py#L1387) function registers the pipeline details (task type, pipeline class, supported backends) to a models `config.json` file.\n  \"custom_pipelines\": {\n    \"pair-classification\": {\n      \"impl\": \"pair_classification.PairClassificationPipeline\",\n      \"pt\": [\n        \"AutoModelForSequenceClassification\"\n      ],\n    }\n  },\nCall [`~Pipeline.push_to_hub`] to push the pipeline to the Hub. The Python file containing the code is copied to the Hub, and the pipelines model and tokenizer are also saved and pushed to the Hub. Your pipeline should now be av"
+        },
+        {
+          "rank": 4,
+          "score": 0.73816234,
+          "source_id": "huggingface_transformers",
+          "document_id": "d77091172cf783edbf8af02dd448877cf87f0197ea56f3146aeaa838a70a5692",
+          "chunk_id": "8fcb7e825bb7de689ba7b32aae97651215b3fb35c6db991186484b6d60b191b3",
+          "title": "Depth Anything V2",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\model_doc\\depth_anything_v2.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "The pipeline allows to use the model in a few lines of code:\nimport requests\nfrom PIL import Image\n\nfrom transformers import pipeline\n\n\n# load pipe\npipe = pipeline(task=\"depth-estimation\", model=\"depth-anything/Depth-Anything-V2-Small-hf\")\n\n# load image\nurl = 'http://images.cocodataset.org/val2017/000000039769.jpg'\nimage = Image.open(requests.get(url, stream=True).raw)\n\n# inference\ndepth = pipe(image)[\"depth\"]"
+        },
+        {
+          "rank": 5,
+          "score": 0.7340505,
+          "source_id": "huggingface_transformers",
+          "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+          "chunk_id": "d5a1cd95d7f67f566b58c5b76fddbab91dfc70b5b745ae80c5643a82e4767228",
+          "title": "Pipeline",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\pipeline_tutorial.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "[`Pipeline`] is compatible with many machine learning tasks across different modalities. Pass an appropriate input to the pipeline and it will handle the rest.\nHere are some examples of how to use [`Pipeline`] for different tasks and modalities.\n<hfoptions id=\"tasks\"> <hfoption id=\"automatic speech recognition\">\nfrom transformers import pipeline\n\npipeline = pipeline(task=\"automatic-speech-recognition\", model=\"openai/whisper-large-v3\")\npipeline(\"https://huggingface.co/datasets/Narsil/asr_dummy/resolve/main/mlk.flac\")\n{'text': ' I have a dream that one day this nation will rise up and live out the true meaning of its creed.'}\n</hfoption> <hfoption id=\"image classification\">\nfrom transformers i"
+        }
+      ]
+    },
+    {
+      "question": "How should a chat template format messages for a causal language model?",
+      "domain": "huggingface_transformers",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 29.451,
+      "retrieval_ms": 27.63,
+      "total_ms": 57.083,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7701655,
+          "source_id": "huggingface_transformers",
+          "document_id": "073d087b1dd796c887c25d1140e0e6b7f59c6d7eaeffd6088b7cf10a6ac763ee",
+          "chunk_id": "f4ccae83874eded8a2219881e219cbb4140aa4bd035d18efe1e889037fb925b2",
+          "title": "Chat templates",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\chat_templating.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "The [chat basics](./conversations) guide covers how to store chat histories and generate text from chat models using [`TextGenerationPipeline`].\nThis guide is intended for more advanced users, and covers the underlying classes and methods, as well as the key concepts for understanding what's actually going on when you chat with a model.\nThe critical insight needed to understand chat models is this: All causal LMs, whether chat-trained or not, continue a sequence of tokens. When causal LMs are trained, the training usually begins with \"pre-training\" on a huge corpus of text, which creates a \"base\" model. These base models are then often \"fine-tuned\" for chat, which means training them on data"
+        },
+        {
+          "rank": 2,
+          "score": 0.76149136,
+          "source_id": "huggingface_transformers",
+          "document_id": "a2cb1823f5c25a2c5a2e82d67ef5050a9282f1e3e73eced2cc16ad6c2974e8ce",
+          "chunk_id": "961abf557942e0d3dbe0527a467d519c7075e25c81a879192a978fe0f6e8e16e",
+          "title": "DeepSeek-V3",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\model_doc\\deepseek_v3.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "Putting it all together, the response should have an example messages array, the applied template, and the final formatted string. Maybe use angle brackets or special tokens as placeholders. Also, mention that this helps in training or fine-tuning models with structured data.\n\nI think that's a solid approach. Let me structure it step by step to make it clear.\n</think>\n\nChat templating is a way to structure conversation data (e.g., user/assistant interactions) into a format that language models understand. This is especially important for models trained to handle multi-turn dialogues, where the input must explicitly separate roles (user, assistant, system, etc.) and messages. Let’s break this"
+        },
+        {
+          "rank": 3,
+          "score": 0.75358456,
+          "source_id": "huggingface_transformers",
+          "document_id": "313085879efe64a024ee962ba394236019f7e569c38071a806b4cabff32a7120",
+          "chunk_id": "3ba05d0b07560ea5d41a476106a0fb90655730335a306096e3a1e67b0ab0d53e",
+          "title": "Response Parsing",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\chat_response_parsing.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "It is increasingly common for chat models to generate structured outputs, rather than just a single reply string. For example, a [reasoning model](https://huggingface.co/reasoning-course) might emit a chain of thought containing its reasoning trace, while a [tool calling](./chat_extras) model might emit function names and arguments.\nThe problem with structured outputs, though, is that LLMs outputs are not inherently structured. LLM APIs usually accept and return message dicts, with keys like `role` and `content` and `reasoning_content`, but internally, LLMs actually just continue a single sequence of tokens. We use a glue layer to connect the user-facing API to the actual token stream of the"
+        },
+        {
+          "rank": 4,
+          "score": 0.7463151,
+          "source_id": "huggingface_transformers",
+          "document_id": "f54ee7584745a7aa66d0655192add9ac7e012d472a8101464521b67fd07510a6",
+          "chunk_id": "0bb580d51e156f355cbfb49ce0f2e8164909bdcdb8e695fd8f618543875dbbf5",
+          "title": "Chat message patterns",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\chat_content_patterns.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "Chat models expect conversations as a list of dictionaries. Each dictionary uses `role` and `content` keys. The `content` key holds the user message passed to the model. Large language models accept text and tools and multimodal models combine text with images, videos, and audio.\nTransformers uses a unified format where each modality type is specified explicitly, making it straightforward to mix and match inputs in a single message.\nThis guide covers message formatting patterns for each modality, tools, batch inference, and multi-turn conversations."
+        },
+        {
+          "rank": 5,
+          "score": 0.74432015,
+          "source_id": "huggingface_transformers",
+          "document_id": "073d087b1dd796c887c25d1140e0e6b7f59c6d7eaeffd6088b7cf10a6ac763ee",
+          "chunk_id": "f571b0bc1427afa76f9e5f400b69506e8ec1acf8c46cdc44f349ce183f9b8c81",
+          "title": "Chat templates",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\chat_templating.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "Training a model with a chat template is a good way to ensure the template matches the tokens the model was trained on. Apply the chat template as a preprocessing step to your dataset. Set `add_generation_prompt=False` because the additional tokens to prompt an assistant response aren't helpful during training.\nAn example of preprocessing a dataset with a chat template is shown below.\nfrom transformers import AutoTokenizer\nfrom datasets import Dataset\n\ntokenizer = AutoTokenizer.from_pretrained(\"HuggingFaceH4/zephyr-7b-beta\")\n\nchat1 = [\n    {\"role\": \"user\", \"content\": \"Which is bigger, the moon or the sun?\"},\n    {\"role\": \"assistant\", \"content\": \"The sun.\"}\n]\nchat2 = [\n    {\"role\": \"user\", \"c"
+        }
+      ]
+    },
+    {
+      "question": "How does autograd compute gradients in PyTorch?",
+      "domain": "pytorch",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 43.912,
+      "retrieval_ms": 27.781,
+      "total_ms": 71.694,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.83473796,
+          "source_id": "pytorch",
+          "document_id": "0291eaa44e8535fe44ce7d811e321582e797783b6ed656af5607c657cd0146c6",
+          "chunk_id": "2112c6efb61d6ae458de00e5b4c2d1cb7383fbd64870b8c4b502c211e55df9a6",
+          "title": "Complex Numbers",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\complex_numbers.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "PyTorch supports autograd for complex tensors. The gradient computed is the Conjugate Wirtinger derivative, the negative of which is precisely the direction of steepest descent used in Gradient Descent algorithm. Thus, all the existing optimizers can be implemented to work out of the box with complex parameters. For more details, check out the note {ref}`complex_autograd-doc`."
+        },
+        {
+          "rank": 2,
+          "score": 0.78544545,
+          "source_id": "pytorch",
+          "document_id": "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842",
+          "chunk_id": "6cf14816ebbb32f9f85c79a15579836b9b5decfbe0fc59b67c27b94bf15b8a6a",
+          "title": "Autograd mechanics",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\notes\\autograd.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "Autograd is a reverse automatic differentiation system. Conceptually, autograd records a graph recording all of the operations that created the data as you execute operations, giving you a directed acyclic graph whose leaves are the input tensors and roots are the output tensors. By tracing this graph from roots to leaves, you can automatically compute the gradients using the chain rule.\nInternally, autograd represents this graph as a graph of {class}`Function` objects (really expressions), which can be {meth}`~torch.autograd.Function.apply` ed to compute the result of evaluating the graph. When computing the forward pass, autograd simultaneously performs the requested computations and build"
+        },
+        {
+          "rank": 3,
+          "score": 0.7825607,
+          "source_id": "pytorch",
+          "document_id": "a865ee1940b3fe4f1dcd3e3df66ca5783892cbb8e5c0d4eaf6f8a2950f03bc9d",
+          "chunk_id": "602d89144b3d655722f2781984d596cfcf06c4d471118b01a11c2a64eba58739",
+          "title": "Extending torch.func with autograd.Function",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\notes\\extending.func.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "Another common case is an {class}`torch.autograd.Function` that is implemented with PyTorch operations. PyTorch is able to compute gradients for PyTorch operations automatically, but perhaps we wish to customize how the gradients are computed. Some reasons why we may want a custom backward different from the one PyTorch gives us are:\n- improving numeric stability - changing the performance characteristics of the backward - changing how edge cases are handled (e.g. nans, inf) - modifying the gradient (e.g. gradient clipping)\nHere's an example of an {class}`torch.autograd.Function` for the function `y = x ** 3` where we change the performance characteristics (some computation that would normal"
+        },
+        {
+          "rank": 4,
+          "score": 0.7802441,
+          "source_id": "pytorch",
+          "document_id": "065b84652c4b275313cee0305970baf8bdcfbc718693e6a0d3e3dbcc486b1674",
+          "chunk_id": "ea7656354c0ae5cf97abaeebc5cd245139ab597a372abd75f9d4c4b8ff4a33d6",
+          "title": "Gradcheck mechanics",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\notes\\gradcheck.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "PyTorch also provide a utility to verify second order gradients. The goal here is to make sure that the backward implementation is also properly differentiable and computes the right thing.\nThis feature is implemented by considering the function {math}`F: x, v \\to v^T J_f` and use the gradcheck defined above on this function. Note that {math}`v` in this case is just a random vector with the same type as {math}`f(x)`.\nThe fast version of gradgradcheck is implemented by using the fast version of gradcheck on that same function {math}`F`."
+        },
+        {
+          "rank": 5,
+          "score": 0.76893437,
+          "source_id": "pytorch",
+          "document_id": "a285361030bd639d6aee3b409e55ad29ba1e2a64ba74197a15b2e8aad4e17190",
+          "chunk_id": "6789fdc0b61227d21496a6e39ed1f7a040db3e336870478526e5af4008954ec2",
+          "title": "PyTorch Contribution Guide",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\community\\contribution_guide.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "PyTorch is a GPU-accelerated Python tensor computation package for building deep neural networks using a tape-based autograd systems."
+        }
+      ]
+    },
+    {
+      "question": "How does PyTorch DataLoader combine datasets, samplers, and batching?",
+      "domain": "pytorch",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 39.463,
+      "retrieval_ms": 25.78,
+      "total_ms": 65.244,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.79656667,
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "chunk_id": "1bdd520812926202635aa1a1c1b5bd5aa78ac188217033d9040641a36dec7c3e",
+          "title": "torch.utils.data",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\utils\\data.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": ".. automodule:: torch.utils.data\nAt the heart of PyTorch data loading utility is the {class}`torch.utils.data.DataLoader` class. It represents a Python iterable over a dataset, with support for\n- {ref}`map-style and iterable-style datasets <dataset-types>`, - {ref}`customizing data loading order <data-loading-order-and-sampler>`, - {ref}`automatic batching <loading-batched-and-non-batched-data>`, - {ref}`single- and multi-process data loading <single-and-multi-process-data-loading>`, - {ref}`automatic memory pinning <memory-pinning>`.\nThese options are configured by the constructor arguments of a {class}`~torch.utils.data.DataLoader`, which has signature:\nDataLoader(dataset, batch_size=1, sh"
+        },
+        {
+          "rank": 2,
+          "score": 0.78531444,
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "chunk_id": "7333fa2f17cd8bf9f017d1b94f7db955a2ca490d2161d5baf6a363ad6f66b9d5",
+          "title": "torch.utils.data",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\utils\\data.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "{class}`~torch.utils.data.DataLoader` supports automatically collating individual fetched data samples into batches via arguments {attr}`batch_size`, {attr}`drop_last`, {attr}`batch_sampler`, and {attr}`collate_fn` (which has a default function).\n(automatic-batching-default)="
+        },
+        {
+          "rank": 3,
+          "score": 0.7825147,
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "chunk_id": "2627be0b1d3aa768c0e0df592c574c343e98183ce7bf00d565f02437de506e69",
+          "title": "torch.utils.data",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\utils\\data.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "The most important argument of {class}`~torch.utils.data.DataLoader` constructor is {attr}`dataset`, which indicates a dataset object to load data from. PyTorch supports two different types of datasets:\n- {ref}`map-style-datasets`, - {ref}`iterable-style-datasets`.\n(map-style-datasets)="
+        },
+        {
+          "rank": 4,
+          "score": 0.77252805,
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "chunk_id": "a6f8d3f1822b302e8390e813af7d93193625943f2e7c4481dcc8062c0fb5450b",
+          "title": "torch.utils.data",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\utils\\data.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "In certain cases, users may want to handle batching manually in dataset code, or simply load individual samples. For example, it could be cheaper to directly load batched data (e.g., bulk reads from a database or reading continuous chunks of memory), or the batch size is data dependent, or the program is designed to work on individual samples. Under these scenarios, it's likely better to not use automatic batching (where {attr}`collate_fn` is used to collate the samples), but let the data loader directly return each member of the {attr}`dataset` object.\nWhen both {attr}`batch_size` and {attr}`batch_sampler` are `None` (default value for {attr}`batch_sampler` is already `None`), automatic bat"
+        },
+        {
+          "rank": 5,
+          "score": 0.7476876,
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "chunk_id": "80e95c9a5e2c33efb5b4ee375dfdf1bcf05848c3238d3239a3717cbaa6e96c88",
+          "title": "torch.utils.data",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\utils\\data.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "dataset_iter = iter(dataset)\nfor indices in batch_sampler:\n    yield collate_fn([next(dataset_iter) for _ in indices])\nA custom {attr}`collate_fn` can be used to customize collation, e.g., padding sequential data to max length of a batch. See {ref}`this section <dataloader-collate_fn>` on more about {attr}`collate_fn`.\n(disable-automatic-batching)="
+        }
+      ]
+    },
+    {
+      "question": "What is overfitting and how can regularization reduce it?",
+      "domain": "machine_learning",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 60.037,
+      "retrieval_ms": 27.148,
+      "total_ms": 87.186,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.69566673,
+          "source_id": "qdrant",
+          "document_id": "29e265d8b2696f43bb97008de33495a82de49516295b4a5791d900fd76d65f28",
+          "chunk_id": "bd9b02537156b215f56b034249504eca3fcefc17f58be3592fa48781969cb073",
+          "title": "sparse-embeddings-ecommerce-part-2",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\tutorials-search-engineering\\sparse-embeddings-ecommerce-part-2.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "`SpladeLoss` wraps two objectives:\n**Contrastive loss** (`SparseMultipleNegativesRankingLoss`): Given a batch of (query, product) pairs, treat other products in the batch as negatives. Push relevant query-product pairs together, push irrelevant ones apart. This is the same in-batch negative approach used for dense embedding training, and it works because most random products are irrelevant to a given query.\n**Sparsity regularization**: Penalizes dense outputs to maintain efficiency. Without it, the model would activate all 30,000 vocabulary dimensions for every input. That's technically optimal for matching but useless for retrieval speed and storage.\nThe regularization weights control this "
+        },
+        {
+          "rank": 2,
+          "score": 0.68585867,
+          "source_id": "qdrant",
+          "document_id": "cdbb78ed297d827b32f6af1a4568be3e354bf12080e388952107c1afe739f23a",
+          "chunk_id": "722ff3318a2ed37263323e7d43f8c0c0136a75a7f6ed48e0fe34ffe6caf27f07",
+          "title": "Candidate Depth: How Much Retrieval Is Enough?",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search-tuning\\candidate-depth.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "`limit` is a query-time budget. Lowering it cuts retrieval work and the candidates a later stage receives, and it leaves the collection's disk and RAM footprint where it was. Quantization moves that footprint, so test it on your labels before lowering `limit` for memory reasons. [TurboQuant in Qdrant](/articles/turboquant-quantization/) compares the storage classes.\nInt8 scalar quantization stores a compressed copy at one-quarter the size of the float32 vectors. We rebuilt SciFact and DBPedia-entity with it to measure dense top-10 agreement and the effect on the final hybrid result.\n| Setting | Dense Top-10 Agreement with Unquantized | Fused `nDCG@10` Change | |---|---|---| | No rescoring | "
+        },
+        {
+          "rank": 3,
+          "score": 0.6775655,
+          "source_id": "qdrant",
+          "document_id": "fdc4b6af54da97726c5afc77adf79fe8f8864c9daa19647d045bb96468705803",
+          "chunk_id": "8d8017da5d8189f8bc1b5aa408135b2910ef4aa50512041fdec1f31ba0972fa1",
+          "title": "Administration",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\ops-configuration\\administration.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "A high oversampling factor increases the number of candidates evaluated during search, which can significantly increase latency.\nSetting `search_max_oversampling` caps the maximum oversampling factor allowed in search parameters.\n{{< code-snippet path=\"/documentation/headless/snippets/strict-mode/search-max-oversampling/\" >}}"
+        },
+        {
+          "rank": 4,
+          "score": 0.67059624,
+          "source_id": "qdrant",
+          "document_id": "af0f10285f4073b789dfebd269413faf169fac29d5e80977f109cafc5114785b",
+          "chunk_id": "7d1f0b90167fcb1b40ea584bc3ea63c9318ac890ed02b861d8cfd7110479931d",
+          "title": "Mistral",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\embeddings\\mistral.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "| Oversampling | | 1 | 1 | 2 | 2 | 3 | 3 | |--------------|---------|----------|----------|----------|----------|----------|--------------| | | **Rescore** | False | True | False | True | False | True | | **Limit** | | | | | | | | | 10 | | 0.53444 | 0.857778 | 0.534444 | 0.918889 | 0.533333 | 0.941111 | | 20 | | 0.508333 | 0.837778 | 0.508333 | 0.903889 | 0.508333 | 0.927778 | | 50 | | 0.492222 | 0.834444 | 0.492222 | 0.903556 | 0.492889 | 0.940889 | | 100 | | 0.499111 | 0.845444 | 0.498556 | 0.918333 | 0.497667 | **0.944556** |"
+        },
+        {
+          "rank": 5,
+          "score": 0.66238785,
+          "source_id": "qdrant",
+          "document_id": "0078f1992434b8690857cff4d57ac46d39d190578c42e82d4216b2687ed23154",
+          "chunk_id": "45323c7cfcb56dc73121551e74932cdff311a83b9279ea3e3238cefeda465e20",
+          "title": "Improve Semantic Search with Reranking using Qdrant",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search-precision\\reranking-semantic-search.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "    \"When working with time series data, feature scaling can help in standardizing the input data, improving model performance across different periods.\",\n\n    \"Normalization is often used in image processing to scale pixel values to a range that enhances model performance in computer vision tasks.\",\n\n    \"Feature scaling is significant when features have different units of measurement, such as height in centimeters and weight in kilograms.\",\n\n    \"In recommendation systems, scaling features such as user ratings can improve the model's ability to find similar users or items.\",\n\n    \"Dimensionality reduction techniques, like t-SNE and UMAP, often require feature scaling to visualize high-dime"
+        }
+      ]
+    },
+    {
+      "question": "How does gradient descent update model parameters?",
+      "domain": "machine_learning",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 51.654,
+      "retrieval_ms": 25.597,
+      "total_ms": 77.252,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7082109,
+          "source_id": "pytorch",
+          "document_id": "2265410e03c5172b682ea83558290986275278b63936c9132baaead457fb013e",
+          "chunk_id": "b4ebca5c9d501b87ca2b9c69ccd039197a4b97312df515b55c9187a6a15b6dcf",
+          "title": "Automatic Mixed Precision examples",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\notes\\amp_examples.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "All gradients produced by `scaler.scale(loss).backward()` are scaled. If you wish to modify or inspect the parameters' `.grad` attributes between `backward()` and `scaler.step(optimizer)`, you should unscale them first. For example, gradient clipping manipulates a set of gradients such that their global norm (see {func}`torch.nn.utils.clip_grad_norm_`) or maximum magnitude (see {func}`torch.nn.utils.clip_grad_value_`) is $<=$ some user-imposed threshold. If you attempted to clip _without_ unscaling, the gradients' norm/maximum magnitude would also be scaled, so your requested threshold (which was meant to be the threshold for _unscaled_ gradients) would be invalid.\n`scaler.unscale_(optimizer"
+        },
+        {
+          "rank": 2,
+          "score": 0.69871986,
+          "source_id": "huggingface_transformers",
+          "document_id": "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+          "chunk_id": "54795a11f65d4b56a6a879c70669b382d006274209588159a38eb2933a5b652a",
+          "title": "Glossary",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\glossary.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "A form of model training that directly uses labeled data to correct and instruct model performance. Data is fed into the model being trained, and its predictions are compared to the known labels. The model updates its weights based on how incorrect its predictions were, and the process is repeated to optimize model performance."
+        },
+        {
+          "rank": 3,
+          "score": 0.69655454,
+          "source_id": "pytorch",
+          "document_id": "c265d48a8fc025d02c5a093fd5e3b695b0518213d896e010264a3d7d2487f12a",
+          "chunk_id": "7d9606e24668d8da2b5bf6c5284b320f3cb1fa549bf721f1c6a957f3d55bf412",
+          "title": "torch.optim",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\optim.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "Some optimization algorithms such as Conjugate Gradient and LBFGS need to reevaluate the function multiple times, so you have to pass in a closure that allows them to recompute your model. The closure should clear the gradients, compute the loss, and return it.\nExample:\nfor input, target in dataset:\n    def closure():\n        optimizer.zero_grad()\n        output = model(input)\n        loss = loss_fn(output, target)\n        loss.backward()\n        return loss\n    optimizer.step(closure)\n(optimizer-algorithms)="
+        },
+        {
+          "rank": 4,
+          "score": 0.6906916,
+          "source_id": "pytorch",
+          "document_id": "c265d48a8fc025d02c5a093fd5e3b695b0518213d896e010264a3d7d2487f12a",
+          "chunk_id": "f18704af88d0769fdc183b30f67cfcba0710e53e92dd209d0e071be2978ef667",
+          "title": "torch.optim",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\pytorch\\docs\\optim.md",
+          "source_reference": "https://pytorch.org/docs/stable/",
+          "text_preview": "This is a simplified version supported by most optimizers. The function can be called once the gradients are computed using e.g. {func}`~torch.autograd.Variable.backward`.\nExample:\nfor input, target in dataset:\n    optimizer.zero_grad()\n    output = model(input)\n    loss = loss_fn(output, target)\n    loss.backward()\n    optimizer.step()"
+        },
+        {
+          "rank": 5,
+          "score": 0.678186,
+          "source_id": "arxiv_machine_learning",
+          "document_id": "0cc9c4a84230581cfb3b48f99e4b336080734540350acd5abaaf52621b244cd4",
+          "chunk_id": "42b67e9bf2f3a1394ad412b91214f2b8f8a6b4e906950e1cc0902af3c44c375d",
+          "title": "Meta-Learning Representations for Continual Learning",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\machine_learning\\1905.12588.pdf",
+          "source_reference": "http://arxiv.org/abs/1905.12588v2",
+          "text_preview": "...\nSample a trajectory\nfrom the stream\nRLNPLN\nW0\nUseL(Yi+1,Y0 i+1)\nto updateW0toW1\nUseL(Yi+k,Y0 i+k)\nto updateWk\u00001toWk\nW1\nRLNPLN RLNPLN\nStest=(Xrand,Yrand)\nSample a random\nbatch of data\n2\nRLNPLN\n‘\nData stream\nT=(X0,Y0),(X1,Y1),...,(Xk,Yk),...,(Xn,Yn),...,\nRLNPLN\nW0 0\n4\n1\n3\nUpdate RLN and PLN using\ngradients from random batch\n✓0\n✓ ✓ ✓\n✓\nSk=(Xi+1,Yi+1),(Xi+2,Yi+2),...,(Xi+k,Yi+k)\nWk\nWk\nXi+1 Y0 i+1 Xi+2 Y0 i+2\nL(Yi+1,Y0 i+1)\nXrand\n+\nXtraj\nY0 rand\n+\nY0 traj\nL(Yrand+Ytraj,Y0 rand+Y0 traj)\nBackpropogation\nMinimize loss on a random\nbatch with respect to\ninitial parameters\nFigure 7: Flowchart elucidating a single gradient update for representation learning. (1) We sample\ntrajectory Sk from our stre"
+        }
+      ]
+    },
+    {
+      "question": "How does BM25 score documents for a query?",
+      "domain": "information_retrieval",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 27.279,
+      "retrieval_ms": 21.752,
+      "total_ms": 49.032,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7577003,
+          "source_id": "qdrant",
+          "document_id": "cc4e3c457b3d874a15caa993b4bca3d6a0b2b8a52091db3c23fb2feab81a7b6e",
+          "chunk_id": "dfcd1c36d7f9d9118fb05123b08c55a8eb091641fbdae0476dcef4ccb184a472",
+          "title": "Full-Text Search",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search\\text-search\\full-text-search.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "[BM25](https://en.wikipedia.org/wiki/Okapi_BM25) (Best Matching 25) is a popular ranking algorithm that takes a probabilistic approach to score calculation. For each search term, BM25 considers several statistics about the term and the document to calculate a relevance score: - Term frequency (TF): the more often a term appears in a document, the more relevant that document is likely to be. - Inverse document frequency (IDF): the rarer a term is across all documents, the higher the weight of that term. - Document length: a term appearing in a shorter document is more relevant than the same term appearing in a longer document.\nQdrant computes BM25 scores from a [full-text index](/documentatio"
+        },
+        {
+          "rank": 2,
+          "score": 0.7512535,
+          "source_id": "qdrant",
+          "document_id": "32bafbfa38eb49de023553fdc3e04cc5243e650f25ef446f1f86dd07917b0e01",
+          "chunk_id": "ae2b4eb242400c5d170b8ca584c244cdcf55420c9b512b28df8ada775ebcfa4c",
+          "title": "_description",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\headless\\snippets\\create-payload-index\\scoring-full-text\\_description.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "This code snippet demonstrates how to create a full-text index with BM25 scoring enabled for a specified field in a collection. The index configuration includes the field name, type (text), tokenizer (word), lowercasing, and the `scoring` parameter set to the `bm25` scoring type. With scoring enabled, the index records document lengths and term frequencies, so points can be ranked by BM25 relevance to a text query in addition to being filtered."
+        },
+        {
+          "rank": 3,
+          "score": 0.7404887,
+          "source_id": "qdrant",
+          "document_id": "cc4e3c457b3d874a15caa993b4bca3d6a0b2b8a52091db3c23fb2feab81a7b6e",
+          "chunk_id": "1efcf280a0ede59c91394e06f58ffbb50cbabffd3d73db81b50727bb47cd516a",
+          "title": "Full-Text Search",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search\\text-search\\full-text-search.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "To rank points with BM25, create a full-text index on the field you want to search and set [`scoring`](/documentation/manage-data/indexing/#bm25-scoring) to `true`. For example, to search the titles of books:\n{{< code-snippet path=\"/documentation/headless/snippets/text-search/create-title-bm25-index/\" >}}\nIf your points already contain the field, Qdrant builds the index from the text stored in the payload, so you don't need to upload your data again."
+        },
+        {
+          "rank": 4,
+          "score": 0.735744,
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "chunk_id": "60ccf407d6a8369874800162f0ff449297cf1b13fb13069bff1aba8ad4bd29a6",
+          "title": "Indexing",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\manage-data\\indexing.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "*Available as of v1.20.0*\nWith scoring enabled, a full-text index can rank points by how relevant their text is to a query, using the [BM25](/documentation/search/text-search/full-text-search/#bm25) ranking function. To enable scoring, set the `scoring` type to `bm25` when you create the index:\n{{< code-snippet path=\"/documentation/headless/snippets/create-payload-index/scoring-full-text/\" >}}\nWith the REST API and some clients, you can set `scoring` to `true` as a shorthand for the `bm25` scoring type:\n{{< code-snippet path=\"/documentation/headless/snippets/create-payload-index/scoring-full-text-shorthand/\" >}}\nThe index's text processing settings, such as the [tokenizer](#tokenizers), [low"
+        },
+        {
+          "rank": 5,
+          "score": 0.72848034,
+          "source_id": "qdrant",
+          "document_id": "cb8d799c225015ca6e31eeb953d7a4f51d83f799d481455b34108930cd276b65",
+          "chunk_id": "02971ffe3dce88670d62c33f29c139e76e4767ca1dbb07f7d17b3b820976eeb7",
+          "title": "BM25 with Qdrant Edge",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\edge\\edge-bm25.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "The BM25 [ranking function](https://en.wikipedia.org/wiki/Okapi_BM25#The_ranking_function) has two parameters that you can set per query:\n- `k`. Controls term frequency saturation. Higher values increase the influence of term frequency. Must be 0 or greater. Defaults to 1.2. - `b`. Controls document length normalization. Ranges from 0 (no normalization) to 1 (full normalization). A higher value means longer documents have less impact. Defaults to 0.75.\nBecause these parameters are set per query, you can change them without rebuilding the index:\n{{< code-snippet path=\"/documentation/headless/snippets/edge/bm25/\" block=\"query-bm25-params\" >}}"
+        }
+      ]
+    },
+    {
+      "question": "What is reciprocal rank fusion and how does it combine search rankings?",
+      "domain": "information_retrieval",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 16.419,
+      "retrieval_ms": 23.875,
+      "total_ms": 40.295,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7951642,
+          "source_id": "qdrant",
+          "document_id": "ca417baae289181b691a8de3ad7a47116c1bcb84fbf87d74b6b599c7bdc42709",
+          "chunk_id": "55ad1ac26d4c28ef86af147ffe7945520a9ab61cd7d8d67704205a9bab2f51c1",
+          "title": "How to Tune Hybrid Search in Qdrant",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search-tuning\\how-to-tune-hybrid-search.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "[Reciprocal Rank Fusion](/documentation/search/hybrid-queries/#reciprocal-rank-fusion-rrf) (RRF) uses only a candidate's position in each prefetch. A document at rank 1 scores the same whether it beat rank 2 by a wide margin or a narrow one. [Distribution-based score fusion](/documentation/search/hybrid-queries/#distribution-based-score-fusion-dbsf) (DBSF) puts both lists on one scale for each query, using each list's average score and how spread out its scores are. Adding the two rescaled scores carries the size of a lead into the fused ranking, and a document only one prefetch retrieved keeps that single rescaled score.\n{{< island path=\"content/documentation/headless/search-tuning/fusion-s"
+        },
+        {
+          "rank": 2,
+          "score": 0.7842362,
+          "source_id": "qdrant",
+          "document_id": "77304d0b274dc6102cabd6b295fefd0ebc9fd925c247a21346f1d4499bad48fd",
+          "chunk_id": "7af4dcdfb67075100daa628b99d6e2cf6aa52064aca06c17fb2271a4cbb1a235",
+          "title": "_description",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\headless\\snippets\\query-points\\hybrid-rrf\\_description.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "This code snippet demonstrates a hybrid search functionality where you can query points from a collection using both a lexical query and a dense vector query. The code showcases how to combine the results of multiple queries with different representations using Reciprocal Rank Fusion (RRF). RRF boosts results that are closer to the top in multiple queries. This hybrid search approach can be useful for obtaining semantic and specific word matching results simultaneously."
+        },
+        {
+          "rank": 3,
+          "score": 0.7793554,
+          "source_id": "qdrant",
+          "document_id": "5ed2d85dbef1fa667df678c6e3fef00c321776e9da766a17a81486e44575e177",
+          "chunk_id": "75cf0e6323fed5af71b566e08258a0d6b2957a96db9119651422bde6abcd37d2",
+          "title": "_description",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\headless\\snippets\\query-points\\hybrid-rrf-k\\_description.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "This code snippet demonstrates a hybrid search functionality where you can query points from a collection using both sparse and dense vectors. The code showcases how to combine the results of multiple queries with different vector representations using Reciprocal Rank Fusion (RRF), parametrized by constant k. RRF boosts results that are closer to the top in multiple queries. This hybrid search approach can be useful for obtaining semantic and specific word matching results simultaneously."
+        },
+        {
+          "rank": 4,
+          "score": 0.77478456,
+          "source_id": "qdrant",
+          "document_id": "530323cb88493a3f5262aa25d18d3d34324bf593b8e7609afeea5149e6ed6a4d",
+          "chunk_id": "8abb9d4efa14b0e16b4cedaf1b0ff3848f81c179a944415920c81d09acd2bd8e",
+          "title": "_description",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\headless\\snippets\\query-points\\hybrid-rrf-sparse\\_description.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "This code snippet demonstrates a hybrid search functionality where you can query points from a collection using both sparse and dense vectors. The code showcases how to combine the results of multiple queries with different vector representations using Reciprocal Rank Fusion (RRF). RRF boosts results that are closer to the top in multiple queries. This hybrid search approach can be useful for obtaining semantic and specific word matching results simultaneously."
+        },
+        {
+          "rank": 5,
+          "score": 0.76286566,
+          "source_id": "qdrant",
+          "document_id": "93c9c6060f0bc4bf841dca13b586e8b35478a761265058642b18c30269d3887e",
+          "chunk_id": "9152e61418fc6d24b0c2364a30f1ec1b86b9a67933f58c3f1ab83e5ce1aef71f",
+          "title": "Multi-Representation Search Across Titles, Abstracts, and Chunks",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\tutorials-search-engineering\\multi-representation-search.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "[Reciprocal Rank Fusion](/documentation/search/hybrid-queries/#reciprocal-rank-fusion-rrf) combines prefetches using document rank rather than raw scores, avoiding issues caused by dense and sparse scores operating on different scales. It’s the default configuration for this tutorial and a reasonable place to begin. In some scenarios, the variants below may produce stronger results.\nFor when RRF isn't enough:\n- **[Weighted RRF](/documentation/search/hybrid-queries/#weighted-rrf).** Per-prefetch weights in the rank-fusion formula. Use when one path is reliably stronger on your data; tune weights against a validation set, since a weight that helps one query class often hurts another. - **[Dist"
+        }
+      ]
+    },
+    {
+      "question": "What are the main stages in a retrieval augmented generation pipeline?",
+      "domain": "rag",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 63.412,
+      "retrieval_ms": 95.463,
+      "total_ms": 158.877,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.73718154,
+          "source_id": "qdrant",
+          "document_id": "2e9e389a7d3147f492bbc37f0b63d6c168fea38f933a5aea260d28b9af6cd0a2",
+          "chunk_id": "cc4d1c9ebf548d5b280eb333ca6f81c9f8c39a7ce279cf4c823d9d33d1b29c0c",
+          "title": "Build a GraphRAG Agent with Neo4j and Qdrant",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\examples\\graphrag-qdrant-neo4j.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "In this section, we will create the retrieval and generation engine for the system."
+        },
+        {
+          "rank": 2,
+          "score": 0.7222035,
+          "source_id": "qdrant",
+          "document_id": "f0dc9cb3765b5e265c146536671f637f7cf78ff05154345f72239c15f957e3c3",
+          "chunk_id": "c5135208866cea1fe69643f2c7f420bfa79e4fd647d62635b97e64cc3b7b82d8",
+          "title": "RAG in 5 Minutes with DeepSeek and Qdrant",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\tutorials-build-essentials\\rag-deepseek.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "| Time: 5 min | Level: Beginner | | --- | --- |\nThis tutorial demonstrates how to build a **Retrieval-Augmented Generation (RAG)** pipeline using FastEmbed for embeddings, Qdrant for vector search, and DeepSeek to answer questions with retrieved context. RAG pipelines enhance Large Language Model (LLM) responses by providing contextually relevant data."
+        },
+        {
+          "rank": 3,
+          "score": 0.7141131,
+          "source_id": "arxiv_llm_transformers",
+          "document_id": "f4501e7fe9dc585f463efc6704d4a6f7ebc64e494fd579f5ddc0ab6243ef0778",
+          "chunk_id": "285d1ab032a50d5b61a95cfa8cb6bcda5b35a58f24651e185a13495431736267",
+          "title": "Exploring Advanced Large Language Models with LLMsuite",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\llm_transformers\\2407.12036.pdf",
+          "source_reference": "http://arxiv.org/abs/2407.12036v2",
+          "text_preview": "G. Roffo - Introduction to Advanced Large Language Models\nFigure 2: Retrieval-Augmented Generation (RAG) Framework. Components: 1. Parametric Component (Generator):\nA pre-trained seq2seq model (e.g., BART) generates responses using context from retrieved documents and the query.\n2. Non-Parametric Component (Retriever): A dense vector index of documents (e.g., Wikipedia) acts as retrievable\nmemory, with a neural retriever (e.g., DPR) fetching relevant documents based on the query. Workflow: 1. Query\nInput: The retriever processes the input query to find relevant context. 2. Document Retrieval: The retriever computes\nvector representations of the query and documents, retrieving the most releva"
+        },
+        {
+          "rank": 4,
+          "score": 0.7033453,
+          "source_id": "qdrant",
+          "document_id": "5f0d07f7b43b1c2a3fddbc2f77267243f227bca5b684a42bb568472e4653ffa8",
+          "chunk_id": "0cf8f3a7bf1ae2acd61eb2127e89277fc66304d5c83b839fa97f43b32a52b875",
+          "title": "Agentic RAG with LangGraph and Qdrant",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\tutorials-build-essentials\\agentic-rag-langgraph.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "| Time: 45 min | Level: Intermediate | Output: Python agent | | --- | --- | --- |\nTraditional Retrieval-Augmented Generation (RAG) systems follow a straightforward path: query → retrieve → generate. Sure, this works well for many scenarios. But let’s face it—this linear approach often struggles when you're dealing with complex queries that demand multiple steps or pulling together diverse types of information.\n[Agentic RAG](https://qdrant.tech/articles/agentic-rag/) takes things up a notch by introducing AI agents that can orchestrate multiple retrieval steps and smartly decide how to gather and use the information you need. Think of it this way: in an Agentic RAG workflow, RAG becomes just "
+        },
+        {
+          "rank": 5,
+          "score": 0.703004,
+          "source_id": "arxiv_llm_rag",
+          "document_id": "d685752ff92e49480117b6f0b22fc54496514f093df823854aef30aa39c292c1",
+          "chunk_id": "de2e3f16859f2a985858713cceff33000c30162f28778b6445823ca39f713113",
+          "title": "CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\llm_rag\\2411.00744.pdf",
+          "source_reference": "http://arxiv.org/abs/2411.00744v2",
+          "text_preview": ",\nJ. Callan, and G. Neubig, “Active retrieval augmented generation,” in\nEMNLP, 2023.\n[18] A. Singh, A. Ehtesham, S. Kumar, and T. T. Khoei, “Agentic\nretrieval-augmented generation: A survey on agentic RAG,” CoRR, vol.\nabs/2501.09136, 2025.\n[19] X. Yang, K. Sun, H. Xin, Y. Sun, N. Bhalla, X. Chen, S. Choudhary,\nR. D. Gui, Z. W. Jiang, Z. Jiang, L. Kong, B. Moran, J. Wang, Y. Xu,\nA. Yan, C. Yang, E. Yuan, H. Zha, N. Tang, L. Chen, N. Scheffer,\nY. Liu, N. Shah, R. Wanga, A. Kumar, S. Yih, and X. Dong, “CRAG\n- comprehensive RAG benchmark,” in NeurIPS 2024, A. Globersons,\nL. Mackey, D. Belgrave, A. Fan, U. Paquet, J. M. Tomczak, and\nC. Zhang, Eds., 2024.\n[20] J. Wang, E. Hanson, G. Li, Y. Papakon"
+        }
+      ]
+    },
+    {
+      "question": "How should retrieved passages be used to ground an answer with citations?",
+      "domain": "rag",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 106.572,
+      "retrieval_ms": 26.73,
+      "total_ms": 133.304,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.6667102,
+          "source_id": "qdrant",
+          "document_id": "8b0e7b30ca722bf2959d9c2cd41db52be7d615f6065b8d035dc0740c40e26c68",
+          "chunk_id": "7728c2078e8e2f636476f60c0f5be85998144dbc064a0532aad6c9bae5c09556",
+          "title": "Evaluating Pipeline Output Quality",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search-evaluation\\pipeline-output-quality.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Run a fixed set of test questions through your pipeline. Record each question, its retrieved passages, and its generated answer. Keep the relevance labels and reference answers separately: different metrics need different reference data.\n[Measuring Retrieval Relevance](/documentation/search-evaluation/retrieval-relevance/) explains how to create and validate relevance labels. Review reference answers for errors before using them to judge generated answers."
+        },
+        {
+          "rank": 2,
+          "score": 0.66149104,
+          "source_id": "arxiv_llm_rag",
+          "document_id": "c09140063cf61a0dbb179d68929db93e0e80cc4cbcfbac570dc07f52e681bd9b",
+          "chunk_id": "f76d99447448179c9909d907c9505a914dee7d14a366d2bd632d0ecfe69278f2",
+          "title": "Improving the Domain Adaptation of Retrieval Augmented Generation (RAG) Models for Open Domain Question Answering",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\llm_rag\\2210.02627.pdf",
+          "source_reference": "http://arxiv.org/abs/2210.02627v1",
+          "text_preview": "Passage Retriever (DPR)’ (Karpukhin et al.,\n2020), which generates embeddings for questions\nand text passages using two BERT (Devlin et al.,\n2018) models. The dot product of the embeddings\nis used as a similarity score between a question\nand a passage. DPR has demonstrated that higher\nretrieval precision results in a higher end-to-end\nQA accuracy. For the answer generation compo-\nnent of QA systems, recent studies have used either\nextractive language models like BERT or genera-\ntive language models like BART/GPT-2 (Min et al.,\n2021; Lewis et al., 2021).\n2.1 Retrieval Augmented Architecture\nRecently, Retrieval Augmented Architectures\n(Lewis et al., 2020b; Guu et al., 2020) have drawn\na lot of"
+        },
+        {
+          "rank": 3,
+          "score": 0.66103464,
+          "source_id": "arxiv_llm_rag",
+          "document_id": "62f0a5d2d1fc67e97e4b97698e4214e1444870eac8f3faa665a331d30ba0df72",
+          "chunk_id": "0bcf0e8944c67fe1dce4982db50a3e2a113d28248b2937536e596d8ec93fee7e",
+          "title": "MUST-RAG: MUSical Text Question Answering with Retrieval Augmented Generation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\llm_rag\\2507.23334.pdf",
+          "source_reference": "http://arxiv.org/abs/2507.23334v2",
+          "text_preview": "is the relevant passage retrieved from an external\ncorpus. By incorporating c as an additional context, the\nmodel is encouraged to utilize external knowledge when\ngenerating answers. This strategy improves the model’s\nability to ground its responses in retrieved evidence, lead-\ning to more accurate and contextually appropriate answers.\nDuring RAG fine-tuning, we used gold passages with high\nrelevance to the answers, ensuring the model learns to ef-\nfectively utilize contextual information.\n4. DATASET\n4.1 MusWikiDB\nTo address the lack of a music-specific vector database\nfor RAG in MQA, we developed MusWikiDB. We be-\ngan by collecting music-related content from Wikipedia\nacross seven categorie"
+        },
+        {
+          "rank": 4,
+          "score": 0.66075367,
+          "source_id": "qdrant",
+          "document_id": "8b0e7b30ca722bf2959d9c2cd41db52be7d615f6065b8d035dc0740c40e26c68",
+          "chunk_id": "43c0fb5afcc260eb2c0732ccda7c2592298d683c1d56fccfdd4903ce745cbd4f",
+          "title": "Evaluating Pipeline Output Quality",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search-evaluation\\pipeline-output-quality.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Set targets from your application's requirements and a sample reviewed by people familiar with the domain. Check individual failures, rather than relying only on averages. A question with more than 10 relevant passages cannot achieve perfect `recall@10`.\n| Retrieval recall | Faithfulness | What to inspect | | --- | --- | --- | | High | High | Check answer relevancy, correctness, and completeness before accepting the result. | | High | Low | Compare unsupported claims with the passages, generation prompt, and judge explanations. | | Low | High | Check label coverage, missing evidence, and whether the answer omits information. | | Low | Low | Inspect where retrieval lost evidence, then inspect"
+        },
+        {
+          "rank": 5,
+          "score": 0.6559684,
+          "source_id": "arxiv_llm_rag",
+          "document_id": "62f0a5d2d1fc67e97e4b97698e4214e1444870eac8f3faa665a331d30ba0df72",
+          "chunk_id": "a55bc0e6c5177994635d2d688c1ee6dc79b9b3f859bba6af79de87bf26919719",
+          "title": "MUST-RAG: MUSical Text Question Answering with Retrieval Augmented Generation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\llm_rag\\2507.23334.pdf",
+          "source_reference": "http://arxiv.org/abs/2507.23334v2",
+          "text_preview": "where q is the input question, D is the entire database of\ntext passages, and c ⊂ D is the filtered context consist-\ning of the top-k passages, such that |c| = k ≪ |D|. Each\npassage 1 p ∈ D is scored based on its similarity to the\ninput question using cosine similarity between their em-\nbeddings:\nsim(q, p) = E(q) · E(p) ∥E(q)∥∥E(p)∥\nHere, E(·) denotes an embedding function that maps both\nquestions and passages into a shared vector space. The\nretriever ranks all passages in D by their similarity scores\nand selects the top-k passages to form c, which serve as the\nexternal context for the generation step.\n3.1.3 Generation\nThe retrieved context c is provided to a generator LLM,\nwhich produces an"
+        }
+      ]
+    },
+    {
+      "question": "How does the context window limit the input and output of a language model?",
+      "domain": "llm",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 54.48,
+      "retrieval_ms": 24.273,
+      "total_ms": 78.754,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7351001,
+          "source_id": "docker",
+          "document_id": "ea07bbafc36174e72f7c867c18f17417ed9ee03095c3a9023d85bdc6048b3843",
+          "chunk_id": "6467bf0f5dc1ba0d7519292e25465ed14543cbd47e2878a02bc0293fb04a102d",
+          "title": "configuration",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\manuals\\ai\\model-runner\\configuration.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "The context size determines the maximum number of tokens a model can process in a single request, including both the input prompt and generated output. This is one of the most important settings affecting memory usage and model capabilities."
+        },
+        {
+          "rank": 2,
+          "score": 0.68787944,
+          "source_id": "huggingface_transformers",
+          "document_id": "b0a09a9014104caf2b617adf880e0f3c6cb3a5759ef6f51c7b7d2881107ac3be",
+          "chunk_id": "52a3730c78e9f8fe4cac9cf32b65682fe524e66b10ce3c7249eda82ddd213520",
+          "title": "XGLM",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\model_doc\\xglm.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "- [Causal language modeling task guide](../tasks/language_modeling)"
+        },
+        {
+          "rank": 3,
+          "score": 0.68787944,
+          "source_id": "huggingface_transformers",
+          "document_id": "2e15763c5142b81bfcfd9a4c44d41bec1f87b30db798ef06313ad2ca32e0518c",
+          "chunk_id": "c75117bf56042c24af145dad32fe4a89d58a0ca698c90c1abe5592d61942d26e",
+          "title": "GPT-NeoX",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\model_doc\\gpt_neox.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "- [Causal language modeling task guide](../tasks/language_modeling)"
+        },
+        {
+          "rank": 4,
+          "score": 0.68787944,
+          "source_id": "huggingface_transformers",
+          "document_id": "80baf5aa94ef34af8cf2b21c07abe6040878bc03934ae72439947cbaec074e02",
+          "chunk_id": "2d1a38ca006704b4dcca399d243060399d72c3cb49e0bfeecd885d32da3802ba",
+          "title": "CodeGen",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\model_doc\\codegen.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "- [Causal language modeling task guide](../tasks/language_modeling)"
+        },
+        {
+          "rank": 5,
+          "score": 0.6751289,
+          "source_id": "huggingface_transformers",
+          "document_id": "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+          "chunk_id": "8e69429e826649bb644244fe88fd5291a5f77b8b7cd1f0696f189f6f46d41ad9",
+          "title": "Glossary",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\glossary.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "See [causal language modeling](#causal-language-modeling) and [decoder models](#decoder-models)"
+        }
+      ]
+    },
+    {
+      "question": "What is the effect of temperature on token sampling during generation?",
+      "domain": "llm",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 35.101,
+      "retrieval_ms": 24.934,
+      "total_ms": 60.036,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.71016365,
+          "source_id": "docker",
+          "document_id": "ea07bbafc36174e72f7c867c18f17417ed9ee03095c3a9023d85bdc6048b3843",
+          "chunk_id": "901c4c51979a1ceddd5cb2c333001fa2881b1e42b34921bbbeaff4daf12d63e7",
+          "title": "configuration",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\content\\manuals\\ai\\model-runner\\configuration.md",
+          "source_reference": "https://docs.docker.com/",
+          "text_preview": "| Flag | Description | Default | Range | |------|-------------|---------|-------| | `--temp` | Temperature for sampling. Lower = more deterministic, higher = more creative | 0.8 | 0.0-2.0 | | `--top-k` | Limit sampling to top K tokens. Lower = more focused | 40 | 1-100 | | `--top-p` | Nucleus sampling threshold. Lower = more focused | 0.9 | 0.0-1.0 | | `--min-p` | Minimum probability threshold | 0.05 | 0.0-1.0 | | `--repeat-penalty` | Penalty for repeating tokens | 1.1 | 1.0-2.0 |\n**Example: Deterministic output (for code generation)**\nruntime_flags:\n  - \"--temp\"\n  - \"0\"\n  - \"--top-k\"\n  - \"1\"\n**Example: Creative output (for storytelling)**\nruntime_flags:\n  - \"--temp\"\n  - \"1.2\"\n  - \"--top-p\"\n"
+        },
+        {
+          "rank": 2,
+          "score": 0.69576466,
+          "source_id": "huggingface_transformers",
+          "document_id": "162d4a5e866bcba4f87b757d182d4c0cdb34b2a1b37889c9b87d129a7961dadd",
+          "chunk_id": "9eff9cfb83f1b0f45e841a894eaf55e2f18b1ceec797d899126a34c44ea682b5",
+          "title": "Assisted decoding",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\assisted_decoding.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "Set `temperature` to control randomness. Lower temperatures often improve latency.\nfrom transformers import AutoModelForCausalLM, AutoTokenizer\n\ntokenizer = AutoTokenizer.from_pretrained(\"HuggingFaceTB/SmolLM-1.7B\")\nmodel = AutoModelForCausalLM.from_pretrained(\"HuggingFaceTB/SmolLM-1.7B\", dtype=\"auto\")\nassistant_model = AutoModelForCausalLM.from_pretrained(\"HuggingFaceTB/SmolLM-135M\", dtype=\"auto\")\ninputs = tokenizer(\"Hugging Face is an open-source company\", return_tensors=\"pt\")\n\noutputs = model.generate(**inputs, assistant_model=assistant_model, do_sample=True, temperature=0.5)\ntokenizer.batch_decode(outputs, skip_special_tokens=True)\n'Hugging Face is an open-source company that is dedicate"
+        },
+        {
+          "rank": 3,
+          "score": 0.6916004,
+          "source_id": "huggingface_transformers",
+          "document_id": "a6136eadd42e726dd92108184aa229db655163ec409eede514df73c4fe121ea6",
+          "chunk_id": "42e3ca44808d9b949145c08233a8716448ae847f0ebe4c05d73537e78923afb8",
+          "title": "Continuous batching",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\continuous_batching.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "Enable `per_request_processors` to apply `temperature`, `top_k`, and `top_p` independently per request within the same forward pass to allow different sampling parameters for different requests (creative, high-temperature outputs versus precise, low-temperature ones for example).\ncb_config = ContinuousBatchingConfig(per_request_processors=True)\n\n# each request gets its own sampling parameters\nmanager.add_request(input_ids=inputs_a, temperature=0.9, top_p=0.95)\nmanager.add_request(input_ids=inputs_b, temperature=0.1, top_k=10)\nEach parameter in [`GenerationConfig`] must be a non-default value in order to create the associated logits processor at runtime. For example, set `temperature` to a va"
+        },
+        {
+          "rank": 4,
+          "score": 0.6883849,
+          "source_id": "huggingface_transformers",
+          "document_id": "785bfa59100f2614a3479e215882ea2280a73ba6f69bb18ee9ec5e8e6e90e7b9",
+          "chunk_id": "d1c3769f786aec6b99e2aad8392e91b7279ce6e9c79ca6fc47be0cf5a0bfb434",
+          "title": "SolarOpen",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\model_doc\\solar_open.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "Recommended inference parameters for optimal performance:\ntemperature=0.8\ntop_p=0.95\ntop_k=50\n**Examples**\nfrom transformers import AutoModelForCausalLM, AutoTokenizer\n\n\nMODEL_ID = \"upstage/Solar-Open-100B\"\n\n# Load model and tokenizer\ntokenizer = AutoTokenizer.from_pretrained(MODEL_ID)\n\nmodel = AutoModelForCausalLM.from_pretrained(\n    pretrained_model_name_or_path=MODEL_ID,\n    device_map=\"auto\",\n)\n\n# Prepare input\nmessages = [{\"role\": \"user\", \"content\": \"who are you?\"}]\ninputs = tokenizer.apply_chat_template(\n    messages,\n    tokenize=True,\n    add_generation_prompt=True,\n    return_dict=True,\n    return_tensors=\"pt\",\n)\ninputs = inputs.to(model.device)\n\n# Generate response\ngenerated_ids ="
+        },
+        {
+          "rank": 5,
+          "score": 0.68595815,
+          "source_id": "huggingface_transformers",
+          "document_id": "9e9ca508d458512d84416466ea86168af2e4f0183b0e0b5c35fc6b553b984e09",
+          "chunk_id": "3bb47c0798e6aca70f6048ff75046b6c912ef44b1fef3438f48891c8bd5482a6",
+          "title": "Serve CLI",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\huggingface_transformers\\docs\\serve-cli\\serving.md",
+          "source_reference": "https://huggingface.co/docs/transformers/",
+          "text_preview": "generation_config = {\n  \"max_new_tokens\": 512,\n  \"temperature\": 0.7,\n  \"top_p\": 0.9,\n  \"top_k\": 50,\n  \"do_sample\": True,\n  \"repetition_penalty\": 1.1,\n  \"no_repeat_ngram_size\": 3,\n}\n\nresponse = client.responses.create(\n  model=\"Qwen/Qwen2.5-7B-Instruct\",\n  instructions=\"You are a helpful weather assistant. Use the get_weather tool to answer questions.\",\n  input=\"What's the weather like in San Francisco?\",\n  tools=tools,\n  stream=True,\n  extra_body={\"generation_config\": json.dumps(generation_config)}\n)\n\nfor event in response:\n  print(event)"
+        }
+      ]
+    },
+    {
+      "question": "What is the difference between cosine similarity and dot product for vector search?",
+      "domain": "vector_database",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 34.695,
+      "retrieval_ms": 26.092,
+      "total_ms": 60.789,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.8132832,
+          "source_id": "qdrant",
+          "document_id": "9b87bfd7c1e96fcc8a52675805729367fe3749483e98c91a3e84605d904c0b90",
+          "chunk_id": "775bbe6280f95105278241978158711f782d72f219088817029875fe7869d669",
+          "title": "Introduction",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\overview\\what-is-qdrant.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Here's a quick overview of the three: - [**Cosine Similarity**](https://en.wikipedia.org/wiki/Cosine_similarity) - Cosine similarity is a way to measure how similar two vectors are. To simplify, it reflects whether the vectors have the same direction (similar) or are poles apart. Cosine similarity is often used with text representations to compare how similar two documents or sentences are to each other. The output of cosine similarity ranges from -1 to 1, where -1 means the two vectors are completely dissimilar, and 1 indicates maximum similarity. - [**Dot Product**](https://en.wikipedia.org/wiki/Dot_product) - The dot product similarity metric is another way of measuring how similar two ve"
+        },
+        {
+          "rank": 2,
+          "score": 0.7940408,
+          "source_id": "qdrant",
+          "document_id": "45781d4a01af3448f6362b370b40aa5eff896973d0581ebec0985a2f0fe0bd5e",
+          "chunk_id": "ea90f081999779b621b4b557d1ac4c33280722206c9971ceb45ce371924e3ed7",
+          "title": "Diagnosing Discrepancies",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\migration-guidance\\diagnosing-discrepancies.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Cosine similarity and dot product produce identical rankings when vectors are unit-normalized (L2 norm = 1.0). If your source system assumed normalized vectors and you switch to dot product (or vice versa) during migration, results will differ.\n# Check if vectors are normalized\nsample_points = client.scroll(\n    collection_name=\"your_collection\",\n    limit=100,\n    with_vectors=True,\n)[0]\n\nnorms = [np.linalg.norm(p.vector) for p in sample_points]\nprint(f\"Vector norms: min={min(norms):.4f}, max={max(norms):.4f}, mean={np.mean(norms):.4f}\")\n\nif all(abs(n - 1.0) < 0.001 for n in norms):\n    print(\"Vectors are unit-normalized. Cosine and Dot produce equivalent rankings.\")\nelse:\n    print(\"Vector"
+        },
+        {
+          "rank": 3,
+          "score": 0.76793474,
+          "source_id": "qdrant",
+          "document_id": "418ce5fe90a65c60d249338163c97bb649cbc46224b8cd58d83c570c447252e1",
+          "chunk_id": "d089291afa77f4ef3f60a1ba9dd069fed41986ebfaea9a6b89c35787d7cf5682",
+          "title": "Search",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search\\_index.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "[Search](/documentation/search/search/) describes similarity search — finding points whose vectors are closest to a query vector in the configured vector space."
+        },
+        {
+          "rank": 4,
+          "score": 0.74948096,
+          "source_id": "qdrant",
+          "document_id": "bf9f538bbbd3feefb4a2e854bcaed686ba86fa3fc452b16a2d625a3c60bafa67",
+          "chunk_id": "4c01eb9a48b4486aad13a15b162c28de2c178fae760eff93dda823c781400a08",
+          "title": "Automate Qdrant Workflows with n8n",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\tutorials-build-essentials\\qdrant-n8n.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "Vector search's ability to determine semantic similarity between objects is often used to address models' hallucinations, powering the memory of Retrieval-Augmented Generation-based applications. Yet there's more to vector search than just a \"knowledge base\" role.\nThe combination of similarity and dissimilarity metrics in vector space expands vector search to recommendations, discovery search, and large-scale unstructured data analysis.\n![overview](/documentation/examples/qdrant-n8n-2/overview.png)"
+        },
+        {
+          "rank": 5,
+          "score": 0.7380839,
+          "source_id": "qdrant",
+          "document_id": "ccd9a7cf5f4afb12a613152723247f6fadaceb2aa72cb01daa1fb644d341c444",
+          "chunk_id": "e1589672178cff824229edb18c9f60f3e57dc07ede4191a3c5e832241d0fc260",
+          "title": "Similarity Search",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\search\\search.md",
+          "source_reference": "https://qdrant.tech/documentation/",
+          "text_preview": "There are many ways to estimate the similarity of vectors with each other. In Qdrant terms, these ways are called metrics. The choice of metric depends on the vectors obtained and, in particular, on the neural network encoder training method.\nQdrant supports these most popular types of metrics:\n* Dot product: `Dot` - <https://en.wikipedia.org/wiki/Dot_product> * Cosine similarity: `Cosine` - <https://en.wikipedia.org/wiki/Cosine_similarity> * Euclidean distance: `Euclid` - <https://en.wikipedia.org/wiki/Euclidean_distance> * Manhattan distance: `Manhattan`*- <https://en.wikipedia.org/wiki/Taxicab_geometry> <i><sup>*Available as of v1.7</sup></i>\nThe most typical metric used in similarity lea"
+        }
+      ]
+    },
+    {
+      "question": "How do approximate nearest neighbor indexes trade search speed for recall?",
+      "domain": "vector_database",
+      "authorization_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "embedding_ms": 30.543,
+      "retrieval_ms": 34.709,
+      "total_ms": 65.254,
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7786925,
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "2b68555a73902d0626b5d27af96bf99b3214bf2489906e8232116b8f6042b5e7",
+          "chunk_id": "1f6cbae4cad2190b231023d67c6be18c5a8c9ceaf01d8ef5aafd4f7578360747",
+          "title": "HAKES: Scalable Vector Database for Embedding Search Service",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\database_vector_search\\2505.12524.pdf",
+          "source_reference": "http://arxiv.org/abs/2505.12524v1",
+          "text_preview": "0.60 0.80 1.00\nRecall\n100\n101\n102\n103\n104\nThroughput (QPS)\n(b) OPENAI-1536\n0.40 0.60 0.80 1.00\nRecall\n101\n102\n103\n104\nThroughput (QPS)\n(c) MBNET-1024\n0.25 0.50 0.75 1.00\nRecall\n100\n101\n102\n103\n104\nThroughput (QPS)\n(d) RSNET-2048\n0.25 0.50 0.75 1.00\nRecall\n101\n102\n103\n104\nThroughput (QPS)\n(e) GIST-960\nFigure 18: Throughput vs. recall for sequential reads.\nnew vectors with drift can impact the recall for HAKES-Index but\nnot more significantly than using the base parameters for search.\nA.6 Number of Near Neighbor (NN) in Learning\nWe plot the throughput-recall curve of Index with varying numbers\nof approximated nearest neighbors (NN) used in training. Figure 20\nshows that increasing NN improves "
+        },
+        {
+          "rank": 2,
+          "score": 0.7553426,
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "a736e72c3e83cb79bef363d08e538bd37d9172ab90181bcbe3b374765d6ab1f4",
+          "chunk_id": "dfb20e61071e9ab5b432134437a8fe8eab3aad492dc53b6806575ef16dd2ac02",
+          "title": "Stop Indexing at Full Precision: Revisiting Clustering for Vector Embeddings",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\database_vector_search\\2608.14648.pdf",
+          "source_reference": "http://arxiv.org/abs/2608.14648v1",
+          "text_preview": "2 PRELIMINARIES\n2.1 Vector Search\nNearest Neighbor Search (NNS) consists of finding the closest vec-\ntors in a collection to a given query vector, based on a distance or\nsimilarity metric. Finding exact answers is often impractical due\nto the large compute and storage requirements. However, modern\napplications such as RAG and Recommender Systems powered by\nNNS typically do not require exact answers as approximate an-\nswers are “good enough\". This is known as Approximate Nearest\nNeighbor Search (ANNS), or Vector Similarity Search (VSS). The\napproximate nature of VSS enables the use of techniques that re-\nduce storage and compute requirements during query time, such\nas quantization [3,16,21,23"
+        },
+        {
+          "rank": 3,
+          "score": 0.7497995,
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "2b68555a73902d0626b5d27af96bf99b3214bf2489906e8232116b8f6042b5e7",
+          "chunk_id": "e983387a19e5b1a257140e90469d9b0c0bb9b506762b7f4d7e86af6b5a8fbddb",
+          "title": "HAKES: Scalable Vector Database for Embedding Search Service",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\database_vector_search\\2505.12524.pdf",
+          "source_reference": "http://arxiv.org/abs/2505.12524v1",
+          "text_preview": "-\nforms both partitioning-based and graph-based index baselines.\nFurthermore, HAKES is scalable, and achieves up to 16× higher\nthroughputs at high recall than the three other baselines do.\nThe remainder of the paper is structured as follows. Section 2\nprovides the background on ANN search and the state-of-the-art\nANN indexes. Section 3 and Section 4 describes the design of our\nindex and the distributed vector database. Section 5 evaluates our\ndesigns against state-of-the-art indexes and systems. Section 6\nreviews the related works, and Section 7 concludes.\n2 PRELIMINARIES\nApproximate nearest neighbor Search. Let D denote a dataset\ncontaining 𝑁 vectors in a 𝑑-dimensional vector space R𝑑. For "
+        },
+        {
+          "rank": 4,
+          "score": 0.74930197,
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "e0b4d6c70933dc0c426a32897f13328a1af5f17c17c3f904a1a4dae86c31eef1",
+          "chunk_id": "7f70351a540dd1c51e55626daa50f1ae6fa72488d9da1afbbc4dd99652b0985a",
+          "title": "Cracking Vector Search Indexes",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\database_vector_search\\2503.01823.pdf",
+          "source_reference": "http://arxiv.org/abs/2503.01823v2",
+          "text_preview": "ries arrive.\nEfficiency is maintained through two control mechanisms: one\ndeciding where to apply cracking and refinement in the search\nspace, and another controlling when, balancing indexing and search\ntimes. In this work we focus on the static setting (i.e., no data\nor query distribution shifts) and evaluate CrackIVF on multiple\nstandard open source datasets for ANN search [6, 10, 40, 66].\nFor partition-based indices, index selection means deciding up-\nfront how many partitions the index will use, which has an impact\non the ANN search performance. More partitions increase the up-\nfront construction cost but improve query performance. This deci-\nsion has to be made without knowing the futur"
+        },
+        {
+          "rank": 5,
+          "score": 0.7455211,
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "2b68555a73902d0626b5d27af96bf99b3214bf2489906e8232116b8f6042b5e7",
+          "chunk_id": "cbf5cdb45f667aa0d345dc8b2b34cd22e279b830ed23d55384ee715ca1114495",
+          "title": "HAKES: Scalable Vector Database for Embedding Search Service",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\research_papers\\database_vector_search\\2505.12524.pdf",
+          "source_reference": "http://arxiv.org/abs/2505.12524v1",
+          "text_preview": "𝑒 the throughput-recall trade-off is worse. In HAKES-\nIndex filter stage, the similarity approximation is lossy and so that\npartitions further away can still add candidates to the 𝑘′ vector\nintermediate results. For some queries, 𝑛𝑡 can only be satisfied\nafter many more partitions than needed are scanned, leading to a\ndrop in throughput. Therefore, HAKES-Index uses both criteria and\nterminates the query when it satisfies one.\nA.5 Drift Tolerance Result on RSNET-2048\nSimilar to Figure 11, Figure 19 shows the tolerance of drift on the\nother ImageNet embeddings where we have access to the true cate-\ngories. We have similar observations that the recall improvement\npersists across different drift"
+        }
+      ]
+    }
+  ]
+}

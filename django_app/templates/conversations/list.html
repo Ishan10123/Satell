@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Your workspace · satell{% endblock %}
+{% block content %}
+<section class="welcome-panel" aria-labelledby="welcome-title">
+  <div class="welcome-orb" aria-hidden="true">✳</div>
+  <p class="eyebrow">satell · SECURE RAG CHAT WORKSPACE</p>
+  <h1 id="welcome-title">What would you like to explore?</h1>
+  <p class="welcome-copy">Start a conversation to ask questions and review its sources in one place.</p>
+  <form class="start-form" method="post" action="{% url 'conversations:create' %}">{% csrf_token %}
+    <label for="start-title">Conversation name <span class="optional">(optional)</span></label>
+    <div class="start-row"><input id="start-title" name="title" maxlength="200" type="text" placeholder="For example, project notes"><button class="primary-button" type="submit">Start a chat <span aria-hidden="true">→</span></button></div>
+  </form>
+</section>
+
+<section class="history-section" aria-labelledby="history-title">
+  <div class="section-heading"><div><p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p><h2 id="history-title">Recent conversations</h2></div><span class="count-pill">{{ conversations_page.paginator.count }}</span></div>
+  {% if conversations %}<div class="history-list">
+    {% for item in conversations %}<div class="history-card"><a class="history-main" href="{% url 'conversations:detail' item.id %}"><span class="history-icon" aria-hidden="true">◌</span><span><strong>{{ item.title }}</strong><small>{% if item.locked_at %}Locked · {% endif %}Updated {{ item.updated_at|date:"M j, Y · P" }}</small></span></a>
+      {% include "conversations/_actions_menu.html" with item=item menu_context="history" %}
+    </div>{% endfor %}
+  </div>
+  {% include "conversations/_pagination.html" with page=conversations_page %}
+  {% else %}<div class="empty-card"><span class="empty-icon" aria-hidden="true">✦</span><h3>No conversations yet</h3><p>Create your first chat above. Your saved conversations will appear here.</p></div>{% endif %}
+</section>
+{% endblock %}

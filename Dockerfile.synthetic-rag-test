@@ -1,0 +1,16 @@
+FROM python:3.13-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PIP_NO_CACHE_DIR=1
+
+WORKDIR /app
+COPY requirements-synthetic-api.txt /tmp/requirements.txt
+RUN python -m pip install --no-cache-dir -r /tmp/requirements.txt \
+    && groupadd --system --gid 10003 fixture \
+    && useradd --system --uid 10003 --gid fixture --home-dir /app --no-create-home fixture
+COPY --chown=fixture:fixture scripts/synthetic_rag_test_api.py /app/synthetic_rag_test_api.py
+
+USER fixture
+CMD ["python", "-m", "uvicorn", "synthetic_rag_test_api:app", "--host", "0.0.0.0", "--port", "8000", "--no-access-log", "--no-server-header"]

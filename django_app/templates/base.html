@@ -1,0 +1,81 @@
+{% load static %}
+<!doctype html>
+<html lang="en" data-theme="{{ user_preferences.theme|default:'system' }}" data-message-spacing="{{ user_preferences.message_spacing|default:'comfortable' }}" data-show-code-blocks="{{ user_preferences.show_code_blocks|default_if_none:True|yesno:'true,false' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{% block title %}satell · SECURE RAG CHAT WORKSPACE{% endblock %}</title>
+  <link rel="icon" type="image/svg+xml" href="{% static 'chat/favicon.svg' %}">
+  <link rel="stylesheet" href="{% static 'chat/app.css' %}">
+  <link rel="stylesheet" href="{% static 'chat/extra.css' %}">
+  <link rel="stylesheet" href="{% static 'chat/phase6c.css' %}">
+  <script defer src="{% static 'chat/app.js' %}"></script>
+</head>
+<body>
+{% if user.is_authenticated %}
+<div class="app-shell" data-app-shell>
+  <aside class="sidebar" id="chat-sidebar" aria-label="Conversation navigation">
+    <div class="sidebar-top">
+      <a class="brand" href="{% url 'conversations:list' %}" aria-label="satell home">
+        <span class="brand-mark" aria-hidden="true">s</span><span>satell<span class="brand-sub">SECURE RAG CHAT WORKSPACE</span></span>
+      </a>
+      <form method="post" action="{% url 'conversations:create' %}">{% csrf_token %}
+        <button class="new-chat" type="submit"><span aria-hidden="true">＋</span> New conversation</button>
+      </form>
+      <div class="sidebar-label">YOUR HISTORY</div>
+      <nav class="conversation-nav" aria-label="Your conversations">
+        {% for item in sidebar_conversations %}
+          <div class="conversation-nav-row">
+            <a class="conversation-link{% if conversation and item.id == conversation.id %} is-active{% endif %}" href="{% url 'conversations:detail' item.id %}" title="{{ item.title }}">
+              <span class="conversation-icon" aria-hidden="true">◌</span><span class="conversation-title">{{ item.title }}</span>{% if item.locked_at %}<span class="lock-mark" aria-label="Locked">▣</span>{% endif %}
+            </a>
+            {% include "conversations/_actions_menu.html" with item=item menu_context="sidebar" %}
+          </div>
+        {% empty %}
+          <p class="sidebar-empty">Your conversations will appear here.</p>
+        {% endfor %}
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <div class="account-row">
+        <button class="account-trigger" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="account-menu" data-dropdown-trigger>
+          <span class="avatar" aria-hidden="true">{{ user.get_username|first|upper }}</span><span class="account-copy"><span class="account-name">{{ user_preferences.display_name|default:user.get_username }}</span><span class="account-email">{{ user.email }}</span></span><span aria-hidden="true">⌄</span>
+        </button>
+        <div class="menu-panel account-menu-panel" id="account-menu" role="menu" aria-label="Account" data-dropdown-panel hidden>
+          <a role="menuitem" href="{% url 'accounts:profile' %}">Profile</a>
+          <a role="menuitem" href="{% url 'accounts:personalization' %}">Personalization</a>
+          <a role="menuitem" href="{% url 'accounts:settings' %}">Settings</a>
+          <a role="menuitem" href="{% url 'accounts:about' %}">About Satell</a>
+          <form method="post" action="{% url 'accounts:logout' %}">{% csrf_token %}<button role="menuitem" class="menu-danger" type="submit">Sign out</button></form>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main class="main-area">
+    <header class="mobile-header"><button class="icon-button menu-toggle" type="button" aria-controls="chat-sidebar" aria-expanded="false" data-menu-toggle aria-label="Open conversation menu">☰</button><a class="mobile-brand" href="{% url 'conversations:list' %}">satell</a><a class="icon-button" href="{% url 'accounts:profile' %}" aria-label="Your profile">{{ user.get_username|first|upper }}</a></header>
+    <div class="mobile-scrim" data-menu-close></div>
+{% else %}
+<main class="auth-layout"><a class="auth-brand" href="{% url 'accounts:login' %}"><span class="brand-mark" aria-hidden="true">s</span><span>satell<span class="brand-sub">SECURE RAG CHAT WORKSPACE</span></span></a>
+{% endif %}
+  <div class="main-content">
+    {% for message in messages %}<div class="flash flash-{{ message.tags }}" role="status">{{ message }}</div>{% endfor %}
+    {% block content %}{% endblock %}
+  </div>
+  <dialog class="rename-dialog" data-rename-dialog aria-labelledby="rename-dialog-title">
+    <form method="post" data-rename-form>{% csrf_token %}
+      <h2 id="rename-dialog-title">Rename conversation</h2>
+      <label for="rename-title">Conversation title</label>
+      <input id="rename-title" name="title" type="text" minlength="1" maxlength="70" required>
+      <div class="dialog-actions"><button class="outline-button" type="button" data-dialog-close>Cancel</button><button class="primary-button" type="submit">Save title</button></div>
+    </form>
+  </dialog>
+{% if user.is_authenticated %}
+    <footer class="app-footer">satell conversations are private to your account.</footer>
+  </main>
+</div>
+{% else %}
+</main>
+{% endif %}
+</body>
+</html>

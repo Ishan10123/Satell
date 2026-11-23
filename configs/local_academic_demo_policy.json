@@ -1,0 +1,11 @@
+{
+  "policy_id": "satell-local-academic-demo-v1",
+  "authorization_scope": "local_academic_demo_only",
+  "permitted_source_types": ["documentation"],
+  "permitted_file_categories": ["documentation"],
+  "excluded_file_categories": ["research_paper", "code", "image", "structured_data", "supporting_artifact"],
+  "legal_review_required": false,
+  "legal_review_status": "pending",
+  "production_authorization": false,
+  "description": "Local academic evaluation only. This policy is operator authorization, not legal license approval."
+}

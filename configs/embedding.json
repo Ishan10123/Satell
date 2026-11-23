@@ -1,0 +1,19 @@
+{
+  "config_version": "1.0",
+  "status": "local_runtime_verified_retrieval_quality_not_benchmarked",
+  "provider": "ollama",
+  "base_url": "http://127.0.0.1:11434",
+  "model_name": "nomic-embed-text:v1.5",
+  "model_digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+  "dimensions": 768,
+  "artifact_size_bytes": 274302450,
+  "runtime_version_observed": "0.40.16",
+  "python_version_observed": "3.13.17",
+  "max_batch_size": 64,
+  "max_input_characters": 12000,
+  "request_timeout_seconds": 60,
+  "max_retries": 1,
+  "vector_distance": "Cosine",
+  "license": "Apache-2.0",
+  "notes": "Model integrity and synthetic local embedding were verified. Retrieval quality, corpus-specific latency, and end-to-end Qdrant performance are not yet benchmarked. Re-evaluate before production indexing."
+}

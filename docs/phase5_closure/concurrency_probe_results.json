@@ -1,0 +1,47 @@
+{
+  "evaluation_path": "browser -> Django -> authenticated FastAPI -> Qdrant/Ollama -> PostgreSQL",
+  "gunicorn_workers": 1,
+  "workloads": {
+    "2": {
+      "request_count": 2,
+      "status_codes": [
+        200,
+        200
+      ],
+      "request_elapsed_ms": [
+        13313,
+        13321
+      ],
+      "wall_elapsed_ms": 13328.18,
+      "assistant_messages_completed": [
+        true,
+        true
+      ],
+      "synthetic_response_detected": false,
+      "persisted_via_redirected_response": true,
+      "inference_concurrency": "serialized by one synchronous Gunicorn worker"
+    },
+    "3": {
+      "request_count": 3,
+      "status_codes": [
+        200,
+        200,
+        200
+      ],
+      "request_elapsed_ms": [
+        5623,
+        5611,
+        5634
+      ],
+      "wall_elapsed_ms": 5639.21,
+      "assistant_messages_completed": [
+        true,
+        true,
+        true
+      ],
+      "synthetic_response_detected": false,
+      "persisted_via_redirected_response": true,
+      "inference_concurrency": "serialized by one synchronous Gunicorn worker"
+    }
+  }
+}

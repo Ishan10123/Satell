@@ -1,0 +1,2089 @@
+{
+  "audit_version": "1.0",
+  "generated_at": "2026-11-14T15:02:34.614027+00:00",
+  "manifest_path": "E:\\RAG_Project\\knowledge_base\\metadata\\documentation_manifest.jsonl",
+  "manifest_records": 9825,
+  "verified_files": 9825,
+  "verified_total_bytes": 163145335,
+  "missing_files": [],
+  "empty_files": [],
+  "small_files_below_100_bytes": [
+    {
+      "source_id": "python_3_13",
+      "relative_path": "_static/default.css",
+      "file_size_bytes": 28
+    },
+    {
+      "source_id": "python_3_13",
+      "relative_path": "_static/minus.png",
+      "file_size_bytes": 90
+    },
+    {
+      "source_id": "python_3_13",
+      "relative_path": "_static/plus.png",
+      "file_size_bytes": 90
+    },
+    {
+      "source_id": "fastapi",
+      "relative_path": "about/index.md",
+      "file_size_bytes": 77
+    },
+    {
+      "source_id": "fastapi",
+      "relative_path": "reference/encoders.md",
+      "file_size_bytes": 74
+    },
+    {
+      "source_id": "fastapi",
+      "relative_path": "resources/index.md",
+      "file_size_bytes": 86
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/audit-logging/query/_description.md",
+      "file_size_bytes": 39
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/audit-logging/query-with-filters/_description.md",
+      "file_size_bytes": 62
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/audit-tracing-id/simple/_description.md",
+      "file_size_bytes": 89
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/authentication/api-key/_description.md",
+      "file_size_bytes": 90
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/check-collection-exists/simple/bash.sh",
+      "file_size_bytes": 72
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/check-collection-exists/simple/generated/bash.md",
+      "file_size_bytes": 86
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/check-collection-exists/simple/generated/csharp.md",
+      "file_size_bytes": 74
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/check-collection-exists/simple/generated/go.md",
+      "file_size_bytes": 96
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/check-collection-exists/simple/generated/java.md",
+      "file_size_bytes": 72
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/check-collection-exists/simple/generated/python.md",
+      "file_size_bytes": 79
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/check-collection-exists/simple/generated/rust.md",
+      "file_size_bytes": 69
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/check-collection-exists/simple/generated/typescript.md",
+      "file_size_bytes": 67
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/check-collection-exists/simple/http.md",
+      "file_size_bytes": 57
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/clear-payload/simple/generated/typescript.md",
+      "file_size_bytes": 93
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/cloud-inference/vector-search/create-sample-query/_description.md",
+      "file_size_bytes": 88
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/cloud-inference/vector-search/create-sample-query/generated/csharp.md",
+      "file_size_bytes": 65
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/cloud-inference/vector-search/create-sample-query/generated/go.md",
+      "file_size_bytes": 57
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/cloud-inference/vector-search/create-sample-query/generated/java.md",
+      "file_size_bytes": 66
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/cloud-inference/vector-search/create-sample-query/generated/python.md",
+      "file_size_bytes": 61
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/cloud-inference/vector-search/create-sample-query/generated/rust.md",
+      "file_size_bytes": 64
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/cloud-inference/vector-search/create-sample-query/generated/typescript.md",
+      "file_size_bytes": 71
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/cloud-inference/vector-search/create-sample-query/python.py",
+      "file_size_bytes": 45
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/cloud-inference/vector-search/create-sample-query/typescript.ts",
+      "file_size_bytes": 51
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/create/generated/java.md",
+      "file_size_bytes": 93
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/delete/generated/csharp.md",
+      "file_size_bytes": 73
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/delete/generated/go.md",
+      "file_size_bytes": 99
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/delete/generated/java.md",
+      "file_size_bytes": 71
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/delete/generated/rust.md",
+      "file_size_bytes": 68
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/list/_description.md",
+      "file_size_bytes": 76
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/list/bash.sh",
+      "file_size_bytes": 73
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/list/generated/bash.md",
+      "file_size_bytes": 87
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/list/http.md",
+      "file_size_bytes": 58
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/list-all/_description.md",
+      "file_size_bytes": 68
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/list-all/bash.sh",
+      "file_size_bytes": 43
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/list-all/generated/bash.md",
+      "file_size_bytes": 57
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-aliases/list-all/http.md",
+      "file_size_bytes": 28
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-info/simple/bash.sh",
+      "file_size_bytes": 65
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-info/simple/generated/bash.md",
+      "file_size_bytes": 79
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-info/simple/generated/csharp.md",
+      "file_size_bytes": 75
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-info/simple/generated/java.md",
+      "file_size_bytes": 73
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-info/simple/generated/python.md",
+      "file_size_bytes": 76
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-info/simple/generated/rust.md",
+      "file_size_bytes": 67
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-info/simple/generated/typescript.md",
+      "file_size_bytes": 64
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/collection-info/simple/http.md",
+      "file_size_bytes": 50
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/create-shard/create-named-shard/generated/python.md",
+      "file_size_bytes": 77
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/create-shard/create-named-shard/http.md",
+      "file_size_bytes": 93
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/create-shard/create-named-shard-default/generated/python.md",
+      "file_size_bytes": 90
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-collection/simple/_description.md",
+      "file_size_bytes": 47
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-collection/simple/bash.sh",
+      "file_size_bytes": 68
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-collection/simple/generated/bash.md",
+      "file_size_bytes": 82
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-collection/simple/generated/csharp.md",
+      "file_size_bytes": 74
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-collection/simple/generated/java.md",
+      "file_size_bytes": 72
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-collection/simple/generated/python.md",
+      "file_size_bytes": 79
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-collection/simple/generated/rust.md",
+      "file_size_bytes": 69
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-collection/simple/generated/typescript.md",
+      "file_size_bytes": 67
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-collection/simple/http.md",
+      "file_size_bytes": 53
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-named-vector/generated/typescript.md",
+      "file_size_bytes": 84
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-named-vector/http.md",
+      "file_size_bytes": 75
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-points/simple/generated/typescript.md",
+      "file_size_bytes": 87
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/delete-points/simple/http.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/edge/quickstart/generated/close-edge-shard/python.md",
+      "file_size_bytes": 36
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/edge/quickstart/generated/close-edge-shard/rust.md",
+      "file_size_bytes": 33
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/edge/quickstart/generated/load-edge-shard/python.md",
+      "file_size_bytes": 62
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/edge/quickstart/generated/optimize/python.md",
+      "file_size_bytes": 39
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/edge/quickstart/generated/optimize/rust.md",
+      "file_size_bytes": 39
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/embeddings/nomic/generated/reduce-vector-size/typescript.md",
+      "file_size_bytes": 85
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/embeddings/ollama/generated/reduce-vector-size/python.md",
+      "file_size_bytes": 94
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/facet-counts/exact/generated/typescript.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/fastembed/optimize/standalone/generated/embed/python.md",
+      "file_size_bytes": 82
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/full-text-match/json.md",
+      "file_size_bytes": 90
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/full-text-match/typescript.md",
+      "file_size_bytes": 88
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/full-text-match-any/json.md",
+      "file_size_bytes": 94
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/full-text-match-any/typescript.md",
+      "file_size_bytes": 92
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-empty/generated/go.md",
+      "file_size_bytes": 89
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-empty/generated/java.md",
+      "file_size_bytes": 95
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-empty/generated/python.md",
+      "file_size_bytes": 95
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-empty/generated/typescript.md",
+      "file_size_bytes": 66
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-empty/json.md",
+      "file_size_bytes": 64
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-empty/rust.md",
+      "file_size_bytes": 87
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-empty/typescript.ts",
+      "file_size_bytes": 46
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-null/generated/go.md",
+      "file_size_bytes": 88
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-null/generated/java.md",
+      "file_size_bytes": 93
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-null/generated/python.md",
+      "file_size_bytes": 93
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-null/generated/typescript.md",
+      "file_size_bytes": 65
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-null/json.md",
+      "file_size_bytes": 71
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-null/rust.md",
+      "file_size_bytes": 86
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/is-null/typescript.ts",
+      "file_size_bytes": 45
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-any/json.md",
+      "file_size_bytes": 90
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-any/rust.md",
+      "file_size_bytes": 92
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-any/typescript.md",
+      "file_size_bytes": 88
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-except/json.md",
+      "file_size_bytes": 93
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-except/typescript.md",
+      "file_size_bytes": 87
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-integer/generated/csharp.md",
+      "file_size_bytes": 83
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-integer/generated/go.md",
+      "file_size_bytes": 91
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-integer/generated/java.md",
+      "file_size_bytes": 92
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-integer/json.md",
+      "file_size_bytes": 74
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-integer/rust.md",
+      "file_size_bytes": 46
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-integer/typescript.md",
+      "file_size_bytes": 72
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-keyword/generated/csharp.md",
+      "file_size_bytes": 94
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-keyword/generated/go.md",
+      "file_size_bytes": 92
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-keyword/json.md",
+      "file_size_bytes": 78
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-keyword/rust.md",
+      "file_size_bytes": 62
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-keyword/typescript.md",
+      "file_size_bytes": 73
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-prefix/json.md",
+      "file_size_bytes": 89
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-prefix/typescript.md",
+      "file_size_bytes": 83
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-substring/json.md",
+      "file_size_bytes": 89
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-substring/typescript.md",
+      "file_size_bytes": 83
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/match-uuid/rust.md",
+      "file_size_bytes": 94
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/phrase-match/json.md",
+      "file_size_bytes": 91
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/phrase-match/typescript.md",
+      "file_size_bytes": 85
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/values-count/json.md",
+      "file_size_bytes": 81
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/filter-condition/values-count/typescript.md",
+      "file_size_bytes": 79
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/install-client/csharp.md",
+      "file_size_bytes": 50
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/install-client/go.md",
+      "file_size_bytes": 48
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/install-client/python.md",
+      "file_size_bytes": 43
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/install-client/rust.md",
+      "file_size_bytes": 39
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/install-client/typescript.md",
+      "file_size_bytes": 56
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/list-all-collections/simple/_description.md",
+      "file_size_bytes": 64
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/list-all-collections/simple/bash.sh",
+      "file_size_bytes": 47
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/list-all-collections/simple/generated/bash.md",
+      "file_size_bytes": 61
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/list-all-collections/simple/http.md",
+      "file_size_bytes": 32
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/list-shard-keys/_description.md",
+      "file_size_bytes": 62
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/list-shard-keys/generated/csharp.md",
+      "file_size_bytes": 95
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/list-shard-keys/generated/rust.md",
+      "file_size_bytes": 97
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/list-shard-keys/generated/typescript.md",
+      "file_size_bytes": 64
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/list-shard-keys/http.md",
+      "file_size_bytes": 57
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/optimizations/http.md",
+      "file_size_bytes": 84
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/query-groups/basic/_edge/python.md",
+      "file_size_bytes": 39
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/query-points/score-boost-hyperbolic-distance/_description.md",
+      "file_size_bytes": 91
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/retrieve-points/simple/generated/typescript.md",
+      "file_size_bytes": 86
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/retrieve-points/simple/http.md",
+      "file_size_bytes": 88
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/retrieve-points/single/http.md",
+      "file_size_bytes": 68
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/scroll-points/with-order-by-simple/generated/csharp.md",
+      "file_size_bytes": 97
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/snapshots/create-collection-snapshot/http.md",
+      "file_size_bytes": 61
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/snapshots/create-full-snapshot/_description.md",
+      "file_size_bytes": 69
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/snapshots/create-full-snapshot/http.md",
+      "file_size_bytes": 31
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/snapshots/delete-collection-snapshot/http.md",
+      "file_size_bytes": 79
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/snapshots/delete-full-snapshot/http.md",
+      "file_size_bytes": 49
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/snapshots/download-collection-snapshot/http.md",
+      "file_size_bytes": 76
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/snapshots/download-full-snapshot/http.md",
+      "file_size_bytes": 46
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/snapshots/list-collection-snapshots/http.md",
+      "file_size_bytes": 60
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/snapshots/list-full-snapshots/_description.md",
+      "file_size_bytes": 75
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/snapshots/list-full-snapshots/http.md",
+      "file_size_bytes": 30
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/strict-mode/disable/_description.md",
+      "file_size_bytes": 78
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/text-search/create-author-keyword-index/_description.md",
+      "file_size_bytes": 91
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/text-search/create-title-bm25-index/_description.md",
+      "file_size_bytes": 99
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/text-search/create-title-phrase-index/_description.md",
+      "file_size_bytes": 84
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/text-search/filter-title-phrase/_description.md",
+      "file_size_bytes": 87
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/text-search/filter-title-text/_description.md",
+      "file_size_bytes": 63
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/text-search/ingest-bm25-spanish/_description.md",
+      "file_size_bytes": 73
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/text-search/query-bm25/_description.md",
+      "file_size_bytes": 82
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/text-search/query-description-dense/_description.md",
+      "file_size_bytes": 77
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/tutorial-incremental-embedding-updates/generated/run-sync/go.md",
+      "file_size_bytes": 58
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/tutorial-incremental-embedding-updates/generated/run-sync/python.md",
+      "file_size_bytes": 55
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/tutorial-incremental-embedding-updates/generated/run-sync/rust.md",
+      "file_size_bytes": 85
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/tutorial-incremental-embedding-updates/generated/run-sync/typescript.md",
+      "file_size_bytes": 79
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/tutorial-model-migration/generated/delete-old-named-vector/typescript.md",
+      "file_size_bytes": 76
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/update-collection/disable-quantization/_description.md",
+      "file_size_bytes": 73
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/update-collection/disable-quantization/http.md",
+      "file_size_bytes": 97
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/update-collection/trigger-indexing/generated/typescript.md",
+      "file_size_bytes": 99
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "headless/snippets/update-collection/trigger-indexing/http.md",
+      "file_size_bytes": 87
+    },
+    {
+      "source_id": "qdrant",
+      "relative_path": "snippets/_index.md",
+      "file_size_bytes": 99
+    },
+    {
+      "source_id": "huggingface_transformers",
+      "relative_path": "contributing.md",
+      "file_size_bytes": 24
+    },
+    {
+      "source_id": "huggingface_transformers",
+      "relative_path": "notebooks.md",
+      "file_size_bytes": 28
+    },
+    {
+      "source_id": "pytorch",
+      "relative_path": "_static/css/jit.css",
+      "file_size_bytes": 79
+    },
+    {
+      "source_id": "pytorch",
+      "relative_path": "docutils.conf",
+      "file_size_bytes": 45
+    },
+    {
+      "source_id": "pytorch",
+      "relative_path": "notes.md",
+      "file_size_bytes": 93
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/get-started/docker-concepts/_index.md",
+      "file_size_bytes": 65
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/get-started/docker-concepts/running-containers/_index.md",
+      "file_size_bytes": 68
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/get-started/docker-concepts/the-basics/_index.md",
+      "file_size_bytes": 60
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/includes/_index.md",
+      "file_size_bytes": 88
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/ai/gordon/concepts/_index.md",
+      "file_size_bytes": 58
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/ai/gordon/how-to/_index.md",
+      "file_size_bytes": 63
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/ai/governance/reference/_index.md",
+      "file_size_bytes": 59
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/build/building/_index.md",
+      "file_size_bytes": 58
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/build/concepts/_index.md",
+      "file_size_bytes": 63
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/build/debug/_index.md",
+      "file_size_bytes": 60
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/build/metadata/_index.md",
+      "file_size_bytes": 58
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/compose/how-tos/_index.md",
+      "file_size_bytes": 56
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/compose/intro/_index.md",
+      "file_size_bytes": 73
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/compose/support-and-feedback/_index.md",
+      "file_size_bytes": 69
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/desktop/enterprise/_index.md",
+      "file_size_bytes": 61
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/desktop/features/_index.md",
+      "file_size_bytes": 74
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/desktop/previous-versions/_index.md",
+      "file_size_bytes": 83
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/desktop/settings-and-maintenance/_index.md",
+      "file_size_bytes": 73
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/desktop/setup/_index.md",
+      "file_size_bytes": 54
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/desktop/setup/install/_index.md",
+      "file_size_bytes": 57
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/desktop/troubleshoot-and-support/_index.md",
+      "file_size_bytes": 73
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/desktop/troubleshoot-and-support/faqs/_index.md",
+      "file_size_bytes": 54
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/dhi/release-notes/_index.md",
+      "file_size_bytes": 64
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/docker-hub/repos/manage/_index.md",
+      "file_size_bytes": 56
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/engine/cli/_index.md",
+      "file_size_bytes": 53
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/engine/containers/_index.md",
+      "file_size_bytes": 60
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/engine/logging/drivers/_index.md",
+      "file_size_bytes": 54
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/engine/manage-resources/_index.md",
+      "file_size_bytes": 66
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/engine/release-notes/_index.md",
+      "file_size_bytes": 77
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/engine/swarm/how-swarm-mode-works/_index.md",
+      "file_size_bytes": 54
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/extensions/extensions-sdk/build/_index.md",
+      "file_size_bytes": 67
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/extensions/extensions-sdk/dev/_index.md",
+      "file_size_bytes": 58
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/extensions/extensions-sdk/dev/api/_index.md",
+      "file_size_bytes": 53
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/extensions/extensions-sdk/guides/_index.md",
+      "file_size_bytes": 55
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/scout/deep-dive/_index.md",
+      "file_size_bytes": 59
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/scout/explore/_index.md",
+      "file_size_bytes": 57
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/scout/how-tos/_index.md",
+      "file_size_bytes": 57
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/scout/release-notes/_index.md",
+      "file_size_bytes": 64
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/dvp/_index.md",
+      "file_size_bytes": 52
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.40.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.41.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.42.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.43.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.44.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.45.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.46.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.47.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.48.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.49.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.50.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.51.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.52.md",
+      "file_size_bytes": 66
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.53.md",
+      "file_size_bytes": 66
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.54.md",
+      "file_size_bytes": 66
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/engine/version/v1.55.md",
+      "file_size_bytes": 66
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/hub/_index.md",
+      "file_size_bytes": 54
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/hub/dvp.yaml",
+      "file_size_bytes": 67
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/api/registry/_index.md",
+      "file_size_bytes": 50
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/cli/_index.md",
+      "file_size_bytes": 63
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/samples/agentic-ai.md",
+      "file_size_bytes": 98
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/reference/samples/go.md",
+      "file_size_bytes": 98
+    }
+  ],
+  "checksum_mismatches": [],
+  "unknown_extension_files": [
+    {
+      "source_id": "python_3_13",
+      "relative_path": ".buildinfo"
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/engine/security/https/Dockerfile"
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "content/manuals/engine/security/https/Makefile"
+    },
+    {
+      "source_id": "docker",
+      "relative_path": "LICENSE"
+    }
+  ],
+  "duplicate_hash_groups": [
+    {
+      "sha256": "ca833d506fadebca57848b497aeff21ab3d3e95595908b9f46bb6ac5e34fb84e",
+      "duplicate_count": 7,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/memory-tiers/double-copy/index.css",
+          "file_size_bytes": 3555
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/memory-tiers/efficient-corner/index.css",
+          "file_size_bytes": 3555
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/memory-tiers/hnsw-inline/index.css",
+          "file_size_bytes": 3555
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/memory-tiers/page-faults/index.css",
+          "file_size_bytes": 3555
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/memory-tiers/ram-ceiling/index.css",
+          "file_size_bytes": 3555
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/memory-tiers/tiers/index.css",
+          "file_size_bytes": 3555
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/memory-tiers/tradeoffs/index.css",
+          "file_size_bytes": 3555
+        }
+      ]
+    },
+    {
+      "sha256": "1c27338e1c330af06ff8b892c681ecbb6714efbfb1f860b55244b409d043ecba",
+      "duplicate_count": 7,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/production-operations/bulk-batching/index.css",
+          "file_size_bytes": 1514
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/production-operations/bulk-memory/index.css",
+          "file_size_bytes": 1514
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/production-operations/bulk-parallel/index.css",
+          "file_size_bytes": 1514
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/production-operations/bulk-payload-index/index.css",
+          "file_size_bytes": 1514
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/production-operations/bulk-quantization/index.css",
+          "file_size_bytes": 1514
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/production-operations/bulk-sharding/index.css",
+          "file_size_bytes": 1514
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/production-operations/bulk-sparse-index/index.css",
+          "file_size_bytes": 1514
+        }
+      ]
+    },
+    {
+      "sha256": "b24f71770ebbd40dc5477323a087bbc4d4c3374e2ae6efe8389c4ec802760a3d",
+      "duplicate_count": 4,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/time-based-sharding/generated/initialize-client/go.md",
+          "file_size_bytes": 129
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-multimodal-search/generated/client-connection/go.md",
+          "file_size_bytes": 129
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-reranking-hybrid-search/generated/client-connection/go.md",
+          "file_size_bytes": 129
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-semantic-search-101/generated/client-connection/go.md",
+          "file_size_bytes": 129
+        }
+      ]
+    },
+    {
+      "sha256": "dc8ae9ceffe87733ab1edffde876b7976e5950788061d62c803adbd719abdc6d",
+      "duplicate_count": 4,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/time-based-sharding/generated/initialize-client/java.md",
+          "file_size_bytes": 186
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-multimodal-search/generated/client-connection/java.md",
+          "file_size_bytes": 186
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-reranking-hybrid-search/generated/client-connection/java.md",
+          "file_size_bytes": 186
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-semantic-search-101/generated/client-connection/java.md",
+          "file_size_bytes": 186
+        }
+      ]
+    },
+    {
+      "sha256": "979c79cfea4b6a0af065541e1c550183a06b311bf33cc8a446a961e6b999ca0a",
+      "duplicate_count": 3,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/time-based-sharding/generated/initialize-client/csharp.md",
+          "file_size_bytes": 112
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-multimodal-search/generated/client-connection/csharp.md",
+          "file_size_bytes": 112
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-reranking-hybrid-search/generated/client-connection/csharp.md",
+          "file_size_bytes": 112
+        }
+      ]
+    },
+    {
+      "sha256": "6a5b9d4b613b61f2204f33c5a40ce1823ef8fe434ff08484020793b2b7f8e39f",
+      "duplicate_count": 3,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/time-based-sharding/generated/initialize-client/typescript.md",
+          "file_size_bytes": 111
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-reranking-hybrid-search/generated/client-connection/typescript.md",
+          "file_size_bytes": 111
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-semantic-search-101/generated/client-connection/typescript.md",
+          "file_size_bytes": 111
+        }
+      ]
+    },
+    {
+      "sha256": "4cf4d2bedf691e96d176d12fa4d3ba302de5117193b929b293156695c94673e5",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/query-decomposition/rrf-helps-hurts/index.css",
+          "file_size_bytes": 1054
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/query-decomposition/rrf-merge/index.css",
+          "file_size_bytes": 1054
+        }
+      ]
+    },
+    {
+      "sha256": "785fdcd0628cf732cc09bd1fa4c3e78a1f0164c10cb3e242748723a0e18a2f62",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/embeddings/mixedbread/generated/mixedbread-api-legacy/typescript.md",
+          "file_size_bytes": 538
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/embeddings/mixedbread/generated/typescript.md",
+          "file_size_bytes": 538
+        }
+      ]
+    },
+    {
+      "sha256": "34c14950b59fb0e6038b459cc70ac49e9e93dce23befdf924409b90ac057bf67",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/csharp.cs",
+          "file_size_bytes": 354
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/csharp.cs",
+          "file_size_bytes": 354
+        }
+      ]
+    },
+    {
+      "sha256": "2014a8551dc0a028d571d65b0c11641b26b9df195fe6a8d60c92bf3e415350e1",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/generated/csharp.md",
+          "file_size_bytes": 285
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/generated/csharp.md",
+          "file_size_bytes": 285
+        }
+      ]
+    },
+    {
+      "sha256": "2e3d5d1e27f168d5b728ef0e780cfd107af0251a3f24209df5a97d847a0359c4",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/generated/go.md",
+          "file_size_bytes": 412
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/generated/go.md",
+          "file_size_bytes": 412
+        }
+      ]
+    },
+    {
+      "sha256": "82278871bc5f78e0d2aa963f98aad2aa757f02cd24fa0efa13c984e48fe6e3cf",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/generated/java.md",
+          "file_size_bytes": 541
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/generated/java.md",
+          "file_size_bytes": 541
+        }
+      ]
+    },
+    {
+      "sha256": "8e4326ce248f1df4d75cd9326ff73dd0cefef79de68ddeafea4c858eabb18b7f",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/generated/python.md",
+          "file_size_bytes": 337
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/generated/python.md",
+          "file_size_bytes": 337
+        }
+      ]
+    },
+    {
+      "sha256": "31f2c7020c3f2d074f2d94212a82912523279ec704127a025f7433ce3366164a",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/generated/rust.md",
+          "file_size_bytes": 362
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/generated/rust.md",
+          "file_size_bytes": 362
+        }
+      ]
+    },
+    {
+      "sha256": "a395f7b5b7d4347078b4299fdf5cdb3bd0d8318fce624b909cee1e6146a2e58e",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/generated/typescript.md",
+          "file_size_bytes": 152
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/generated/typescript.md",
+          "file_size_bytes": 152
+        }
+      ]
+    },
+    {
+      "sha256": "f81c339f3fc31c38c67e6d82da8756cb865bb5c354f4508cc4c86733334b737a",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/go.go",
+          "file_size_bytes": 489
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/go.go",
+          "file_size_bytes": 489
+        }
+      ]
+    },
+    {
+      "sha256": "f65966c0a39193db920770513b8482485ee8f38d865c41228ab48830f95b2924",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/http.md",
+          "file_size_bytes": 356
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/http.md",
+          "file_size_bytes": 356
+        }
+      ]
+    },
+    {
+      "sha256": "b9df923df92faca17ccae51e8b6015bba7f493880f46fe3de37ba87ac05d3c20",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/java.java",
+          "file_size_bytes": 1064
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/java.java",
+          "file_size_bytes": 1064
+        }
+      ]
+    },
+    {
+      "sha256": "d2e2f8417a640c5afd10262d1b20067e3e36a9014186cb1e452fa9567f1923c6",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/python.py",
+          "file_size_bytes": 435
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/python.py",
+          "file_size_bytes": 435
+        }
+      ]
+    },
+    {
+      "sha256": "92bb544a40939da8a08a3757b9dcabd97d96e3c6b35068a2bc9ced1c8c7fdab2",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/rust.rs",
+          "file_size_bytes": 546
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/rust.rs",
+          "file_size_bytes": 546
+        }
+      ]
+    },
+    {
+      "sha256": "c31b1cf5f85b88cb7e783ba8c2ac7de75acd7ac5b065ac122fcd7b348b9755d4",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/_server/typescript.ts",
+          "file_size_bytes": 279
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-groups/basic/typescript.ts",
+          "file_size_bytes": 279
+        }
+      ]
+    },
+    {
+      "sha256": "ce0ae2ac536fe3c9ed3396fcbd5eefbc68838f96a7201570c2b1c4880026293e",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/csharp.cs",
+          "file_size_bytes": 431
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/csharp.cs",
+          "file_size_bytes": 431
+        }
+      ]
+    },
+    {
+      "sha256": "d526933dd356ce4532fd8090487c6c87d6c29edbd0de07a643c9dd9e66ee6311",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/generated/csharp.md",
+          "file_size_bytes": 358
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/generated/csharp.md",
+          "file_size_bytes": 358
+        }
+      ]
+    },
+    {
+      "sha256": "7f823b2aea2edaa8c72267144af174954c20d92ba32da9431a78307866046c40",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/generated/go.md",
+          "file_size_bytes": 453
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/generated/go.md",
+          "file_size_bytes": 453
+        }
+      ]
+    },
+    {
+      "sha256": "31c8018d480d31afa1b924c0cbce343bfbf5a7f0ed3b6c2f974431d02747eb23",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/generated/java.md",
+          "file_size_bytes": 954
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/generated/java.md",
+          "file_size_bytes": 954
+        }
+      ]
+    },
+    {
+      "sha256": "12bcc9a66aeceee672177322b6b4d5ddfcea0e4efd84370d684394f3fa9af0ef",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/generated/python.md",
+          "file_size_bytes": 337
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/generated/python.md",
+          "file_size_bytes": 337
+        }
+      ]
+    },
+    {
+      "sha256": "ed71c136783688034d4d633d360944f881d2d05030c9c203c77aee0782db038c",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/generated/rust.md",
+          "file_size_bytes": 571
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/generated/rust.md",
+          "file_size_bytes": 571
+        }
+      ]
+    },
+    {
+      "sha256": "78a3f13668945fbe9e7b2b424b5fb2f08336171ae71f88dda405f5b3584d5ef9",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/generated/typescript.md",
+          "file_size_bytes": 314
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/generated/typescript.md",
+          "file_size_bytes": 314
+        }
+      ]
+    },
+    {
+      "sha256": "f43c6ae08710465e55347f0a0db481016efde45631d78068d74e04ab38786000",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/http.md",
+          "file_size_bytes": 216
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/http.md",
+          "file_size_bytes": 216
+        }
+      ]
+    },
+    {
+      "sha256": "8764f55ee83791b33e69e9fd44d50b7c8853ba3d1c62799aad7c64d608b51b69",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/java.java",
+          "file_size_bytes": 1301
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/java.java",
+          "file_size_bytes": 1301
+        }
+      ]
+    },
+    {
+      "sha256": "68f918882d9f5715dfc4b7bae240dd21f3aebb4bfb12c4684f313e639bb0582d",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/python.py",
+          "file_size_bytes": 321
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/python.py",
+          "file_size_bytes": 321
+        }
+      ]
+    },
+    {
+      "sha256": "03cf08ecfa9b265481ae861defad53c1797ae101ce6c2326bbe534fff7bb1473",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/rust.rs",
+          "file_size_bytes": 667
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/rust.rs",
+          "file_size_bytes": 667
+        }
+      ]
+    },
+    {
+      "sha256": "b047cd5685c78c98c60083e7144646b7d3c797e6bc62e767fb58afaa9394fac6",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/disable-quantization-rescoring/typescript.ts",
+          "file_size_bytes": 294
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/query-points/with-disabled-rescoring/typescript.ts",
+          "file_size_bytes": 294
+        }
+      ]
+    },
+    {
+      "sha256": "10c9ce9f0dfd624c6b3f202f14bd71b3c4d0838d6f826f83ed76a1873ea40be6",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/text-search/query-filter-author-any/generated/java.md",
+          "file_size_bytes": 1079
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/text-search/query-filter-authors-or/generated/java.md",
+          "file_size_bytes": 1079
+        }
+      ]
+    },
+    {
+      "sha256": "93516b443f3404b112640e1ad03dae17405e064295fbc25d164665958491a352",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/text-search/query-filter-author-any/generated/rust.md",
+          "file_size_bytes": 668
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/text-search/query-filter-authors-or/generated/rust.md",
+          "file_size_bytes": 668
+        }
+      ]
+    },
+    {
+      "sha256": "3f4324feded59302564655d360e0e7d8606c10016ba47327829705117cbb710d",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/text-search/query-filter-author-any/java.java",
+          "file_size_bytes": 1373
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/text-search/query-filter-authors-or/java.java",
+          "file_size_bytes": 1373
+        }
+      ]
+    },
+    {
+      "sha256": "b74d890428249f6b40cd4e6e1c61a58dacb643aee4b273436c9046619593addb",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/text-search/query-filter-author-any/rust.rs",
+          "file_size_bytes": 865
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/text-search/query-filter-authors-or/rust.rs",
+          "file_size_bytes": 865
+        }
+      ]
+    },
+    {
+      "sha256": "dbf9c5397016a92032bc83da774f2d781c9f567c58b3d566a8e5967b215e872b",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/time-based-sharding/generated/initialize-client/python.md",
+          "file_size_bytes": 169
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-semantic-search-101/generated/client-connection/python.md",
+          "file_size_bytes": 169
+        }
+      ]
+    },
+    {
+      "sha256": "465a5f667d240f0d8a2b66786ae0c4db10eacd9935be4242a0e4ae1487b398d5",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/time-based-sharding/generated/initialize-client/rust.md",
+          "file_size_bytes": 103
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-semantic-search-101/generated/client-connection/rust.md",
+          "file_size_bytes": 103
+        }
+      ]
+    },
+    {
+      "sha256": "5f8955bc7d122f6c1f514a4568895f6f8a1d2f9b7d9c8d17a3b5450a00585bd7",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/time-based-sharding/generated/parse-csv/python.md",
+          "file_size_bytes": 228
+        },
+        {
+          "source_id": "qdrant",
+          "relative_path": "headless/snippets/tutorial-reranking-hybrid-search/generated/parse-csv/python.md",
+          "file_size_bytes": 228
+        }
+      ]
+    },
+    {
+      "sha256": "d69482335608faab7d1197e6078e833bfbfb7465a9169cb3fb4fabe0a2aa64fe",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "docker",
+          "relative_path": "content/manuals/build/ci/images/build_summary_error.png",
+          "file_size_bytes": 7944
+        },
+        {
+          "source_id": "docker",
+          "relative_path": "content/manuals/build/images/build_summary_error.png",
+          "file_size_bytes": 7944
+        }
+      ]
+    },
+    {
+      "sha256": "11207647e8043aabc1c04e5ed4ed6d5ef212c91195a508e31538e38fbf0bd6ab",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "docker",
+          "relative_path": "content/manuals/build/ci/images/continuous-integration.svg",
+          "file_size_bytes": 13460
+        },
+        {
+          "source_id": "docker",
+          "relative_path": "content/manuals/build/images/continuous-integration.svg",
+          "file_size_bytes": 13460
+        }
+      ]
+    },
+    {
+      "sha256": "7e93677e0d2d89365ecce1e242bf4ab00d9d9b474eeb46eb658316ad15f3ba0a",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "docker",
+          "relative_path": "content/manuals/build/ci/images/gha_build_summary.png",
+          "file_size_bytes": 127300
+        },
+        {
+          "source_id": "docker",
+          "relative_path": "content/manuals/build/images/gha_build_summary.png",
+          "file_size_bytes": 127300
+        }
+      ]
+    },
+    {
+      "sha256": "0fc03c8b46aa3cefb1b9f72a517b8cb5aeacce71e59c311e7ccdeeb0bc51e05b",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "docker",
+          "relative_path": "content/manuals/desktop/images/whale-x.svg",
+          "file_size_bytes": 2359
+        },
+        {
+          "source_id": "docker",
+          "relative_path": "content/manuals/desktop/setup/install/images/whale-x.svg",
+          "file_size_bytes": 2359
+        }
+      ]
+    },
+    {
+      "sha256": "d1e225bde638ccb12f040d8d43c1f4f200bf7cabf94271b23888bebd3f9d0682",
+      "duplicate_count": 2,
+      "files": [
+        {
+          "source_id": "docker",
+          "relative_path": "content/manuals/dhi/release-notes/_index.md",
+          "file_size_bytes": 64
+        },
+        {
+          "source_id": "docker",
+          "relative_path": "content/manuals/scout/release-notes/_index.md",
+          "file_size_bytes": 64
+        }
+      ]
+    }
+  ],
+  "duplicate_file_count_in_groups": 106,
+  "duplicate_excess_copies": 61,
+  "license_file_candidates": [
+    {
+      "source_id": "docker",
+      "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\LICENSE",
+      "location": "documentation_copy"
+    },
+    {
+      "source_id": "fastapi",
+      "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\fastapi\\LICENSE",
+      "location": "source_repository_root"
+    },
+    {
+      "source_id": "huggingface_transformers",
+      "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\huggingface_transformers\\LICENSE",
+      "location": "source_repository_root"
+    },
+    {
+      "source_id": "pytorch",
+      "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\pytorch\\LICENSE",
+      "location": "source_repository_root"
+    },
+    {
+      "source_id": "pytorch",
+      "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\pytorch\\NOTICE",
+      "location": "source_repository_root"
+    },
+    {
+      "source_id": "docker",
+      "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\docker\\LICENSE",
+      "location": "source_repository_root"
+    }
+  ],
+  "source_counts": {
+    "python_3_13": 602,
+    "postgresql_18": 1,
+    "fastapi": 410,
+    "qdrant": 5735,
+    "huggingface_transformers": 790,
+    "pytorch": 352,
+    "docker": 1935
+  },
+  "extension_counts": {
+    "[no_extension]": 4,
+    ".html": 553,
+    ".py": 364,
+    ".png": 337,
+    ".json": 4,
+    ".css": 119,
+    ".js": 125,
+    ".woff2": 1,
+    ".xml": 1,
+    ".svg": 102,
+    ".inv": 1,
+    ".pdf": 1,
+    ".md": 5927,
+    ".jpg": 12,
+    ".mjs": 9,
+    ".csv": 1,
+    ".sh": 61,
+    ".cs": 300,
+    ".go": 299,
+    ".java": 301,
+    ".rs": 306,
+    ".ts": 302,
+    ".gotmpl": 4,
+    ".yml": 3,
+    ".gif": 1,
+    ".rst": 7,
+    ".conf": 1,
+    ".txt": 1,
+    ".webp": 110,
+    ".avif": 21,
+    ".yaml": 535,
+    ".dot": 3,
+    ".excalidraw": 1,
+    ".gliffy": 8
+  },
+  "category_counts": {
+    "supporting_artifact": 142,
+    "documentation": 6489,
+    "code": 2067,
+    "image": 583,
+    "structured_data": 544
+  }
+}

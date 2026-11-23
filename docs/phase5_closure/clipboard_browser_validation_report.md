@@ -1,0 +1,7 @@
+# Clipboard and browser workflow validation
+
+The final browser run used Chrome against `http://127.0.0.1:8001/` after the PostgreSQL recreation and Gunicorn/WhiteNoise image build. It authenticated a temporary account, submitted a real corpus question through the actual RAG HTTP adapter, saw a complete answer with one citation and verification status, reopened history, and removed the temporary account and fixture afterward.
+
+Verified scenarios: app/login HTTP 200; invalid login rejected; valid login/dashboard/conversation creation; real answer/citation with no synthetic banner; missing-CSRF POST rejected with 403; saved history reopened; response clipboard exactly matched rendered answer; code block copied as exact code text; citation copy contained citation ID, public title and public URL only; forced Clipboard API and fallback failure displayed “Copy unavailable”; mobile navigation had no horizontal overflow; safe request for an internal service secret received a refusal; logout invalidated access to protected pages. There were no page JavaScript exceptions. The one browser console error was the intentional missing-CSRF 403.
+
+Citation cards no longer render internal `source_id`, `document_id`, or `chunk_id`; these stay in server-side citation snapshots. `scripts/phase5_browser_e2e.py` stores the safe run results in `docs/phase5/browser_e2e_results.json` and captures screenshots in `docs/phase5/screenshots/`.

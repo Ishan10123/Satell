@@ -1,0 +1,1113 @@
+{
+  "evaluation_date": "2026-11-19",
+  "question_count": 30,
+  "verified_count": 21,
+  "non_verified_count": 9,
+  "failures_and_nonverified_answers": [
+    {
+      "query_id": "Q01",
+      "question": "In Python, what is the key behavioral difference between a list and a tuple, and how do you create a one-item tuple?",
+      "response_status": "partially_verified",
+      "message_status": "complete",
+      "failure_stage": null,
+      "failure_code": null,
+      "citation_validation_status": "passed",
+      "citation_failure_code": null,
+      "citation_failure_reason": null,
+      "claim_verifier_status": "partially_verified",
+      "claim_verifier_failure_reason": null,
+      "consistency_findings": [],
+      "rejected_claim_count": 1,
+      "retrieved_source_ids": [
+        "python_3_13",
+        "fastapi",
+        "postgresql_18"
+      ],
+      "retrieved_chunk_ids": [
+        "59c2639ce084224b8abce4209e49e8bb47ef7a2e3d88824f5b083d593aab16b1",
+        "23d083958f6b30e6cb5acac00a2a90150f771d9168a84737e7a6582c4ebf7032",
+        "cf721e71116fb7f7e262e70f8a505b9e12654e26779503c2826df0ef21e9b0b4",
+        "eb34ee06a60b8576eacffab3e4b5ebbc5318069ef33d0146aad4421088517d29",
+        "4f05e211fdd966a393ac0d859ad942e1cb1bbd86bc0ceb8b68e85d86b9aa85bb",
+        "271d818371410b3bb85e561e84af59f6bae977d1b29f7fc6769c8ee6e4adcffa",
+        "4de1af4cd273e75416b69eb36823d7908b9562e36ac4f1165c13d6aa8782160e",
+        "a10af96d513c8ec48b66283bf4fbce949a7b569fe4a027e2776732dc7e77a833"
+      ],
+      "retrieved_document_ids": [
+        "cec0a6b1d88b05c63de313b80351f0a0529c80f4dee5d350981a6cd76d9a6534",
+        "63cac76f6c377cf51f572d64c332b65143b70fef44a3c55b359537a7e177c07b",
+        "9d3e64b552f2156338b9c5e6c0e4de0fc415e3f0fdd8275feee129934c902757",
+        "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+        "3e7ea952d150cf6502922a8cb898c8e769a2c75cd37564efbad359036b74b02a",
+        "cec0a6b1d88b05c63de313b80351f0a0529c80f4dee5d350981a6cd76d9a6534",
+        "bb2796172cede3af9059973de5377799162c8bf1e9f8c50f56d566e31ff51412",
+        "749a16552514bb1e4144166bb5612998c988e8a0ed2dc414e4273b448a88fa2d"
+      ],
+      "raw_generated_answer": "- Lists are mutable while tuples are immutable [S1].\n- A one-item tuple is created by placing a trailing comma after the item, such as `(item,)` [S1].",
+      "parsed_claims": [
+        {
+          "claim_id": "C1",
+          "claim_text": "Lists are mutable while tuples are immutable .",
+          "citation_ids": [
+            "S1"
+          ]
+        },
+        {
+          "claim_id": "C2",
+          "claim_text": "A one-item tuple is created by placing a trailing comma after the item, such as `(item,)` .",
+          "citation_ids": [
+            "S1"
+          ]
+        }
+      ],
+      "claim_verifier": {
+        "overall_verdict": "partially_verified",
+        "claims": [
+          {
+            "claim_id": "C1",
+            "status": "supported",
+            "supporting_citations": [
+              "S1"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "Lists are mutable while tuples are immutable .",
+            "supporting_evidence_ids": [
+              "59c2639ce084224b8abce4209e49e8bb47ef7a2e3d88824f5b083d593aab16b1"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C2",
+            "status": "unsupported",
+            "supporting_citations": [],
+            "contradicting_citations": [],
+            "claim_text": "A one-item tuple is created by placing a trailing comma after the item, such as `(item,)` .",
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": "no_entailing_evidence"
+          }
+        ]
+      },
+      "timings_ms": {
+        "context": 1.4885229993524263,
+        "embedding": 2693.1000810000114,
+        "generation": 7199.236210999516,
+        "dense_search": 78.26299299995298,
+        "django_rag_http": 10397.78,
+        "answer_generation": 5603.391654000006,
+        "claim_verification": 1562.1133740005462,
+        "generation_pipeline": 7199.233822999304
+      }
+    },
+    {
+      "query_id": "Q03",
+      "question": "In Docker Compose, what does depends_on with condition service_healthy guarantee, and what healthcheck configuration does it rely on?",
+      "response_status": "failed",
+      "message_status": "complete",
+      "failure_stage": "answer_validation",
+      "failure_code": "uncited_claim_rejected",
+      "citation_validation_status": "rejected",
+      "citation_failure_code": "uncited_claim_rejected",
+      "citation_failure_reason": "insufficient_claim_citation_coverage",
+      "claim_verifier_status": "not_run",
+      "claim_verifier_failure_reason": null,
+      "consistency_findings": [],
+      "rejected_claim_count": null,
+      "retrieved_source_ids": [
+        "docker"
+      ],
+      "retrieved_chunk_ids": [
+        "265211ac69bbeb2142f656b2bebd028a1a35384441dfd504612e10a47cbf082f",
+        "70087c168c7b0a53a94fc77a5e46ccdda4e4484c668a463ab57ce90a0e252e60",
+        "aad6babb439778983c88ab18b52f667af9300fd9b72dd5176eeefa79cecac42d",
+        "ff3e72da3ab5853bb8ff1dc46339d5eaef4bd99d2dd28394883bff095de396c5",
+        "e032d689a1fbd64e59f33ad582c0609ddc53f8ffc0df00e68bf3053169feff9f",
+        "096e8ae9129e2b472b2822fadaec7155d7b67fb107dcb1d10f053492fac37da1",
+        "71771867a456d9420faf8d5e4b82a311fe2dd569d0d7f7a564ccd68b36413659",
+        "674982c6aad7ef0da9d91b1aaf12d2abffcc5a1a397e4a3d2aabc3aee30f2cde"
+      ],
+      "retrieved_document_ids": [
+        "632e66c39301cf96414b69d5cf5a6c90ed71c56fcc4b7659ad46a117f1c0fca2",
+        "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff",
+        "79acb2ef13051dfa81ae68f2b03629d8fddcee1b8fc3741638998391a7330dce",
+        "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff",
+        "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff",
+        "438d05d74665a887ce25f6b48dd4537697ae3641d79c0dd65f7b4c6cf55a462a",
+        "79acb2ef13051dfa81ae68f2b03629d8fddcee1b8fc3741638998391a7330dce",
+        "f90b8afb0a53ba1bf7a7980450112981f504e8e68d668dec80e0a5e4b1f711ea"
+      ],
+      "raw_generated_answer": "- The `depends_on` attribute with the condition `service_healthy` guarantees that a dependent service starts only after the dependency service is marked as \"healthy\". [S3]\n- This guarantee relies on the `healthcheck` configuration defined within the dependency service's container. [S3]",
+      "parsed_claims": [
+        {
+          "claim_id": "C1",
+          "claim_text": "The `depends_on` attribute with the condition `service_healthy` guarantees that a dependent service starts only after the dependency service is marked as \"healthy\".",
+          "citation_ids": [
+            "S3"
+          ]
+        },
+        {
+          "claim_id": "C2",
+          "claim_text": "This guarantee relies on the `healthcheck` configuration defined within the dependency service's container.",
+          "citation_ids": [
+            "S3"
+          ]
+        }
+      ],
+      "claim_verifier": {
+        "overall_verdict": null,
+        "claims": []
+      },
+      "timings_ms": {
+        "context": 0.9496540005784482,
+        "embedding": 23.773963999701664,
+        "dense_search": 81.1132409999118,
+        "django_rag_http": 1891.383,
+        "answer_generation": 1456.9039210000483,
+        "generation_pipeline": 1457.22755099996,
+        "answer_validation_rejected": 1.0
+      }
+    },
+    {
+      "query_id": "Q08",
+      "question": "Compare how Docker Compose service_healthy startup dependencies and FastAPI request validation help a local application fail safely when a dependency or request is invalid?",
+      "response_status": "abstained",
+      "message_status": "complete",
+      "failure_stage": null,
+      "failure_code": null,
+      "citation_validation_status": "not_applicable",
+      "citation_failure_code": null,
+      "citation_failure_reason": null,
+      "claim_verifier_status": "not_run",
+      "claim_verifier_failure_reason": null,
+      "consistency_findings": [],
+      "rejected_claim_count": null,
+      "retrieved_source_ids": [
+        "docker"
+      ],
+      "retrieved_chunk_ids": [
+        "674982c6aad7ef0da9d91b1aaf12d2abffcc5a1a397e4a3d2aabc3aee30f2cde",
+        "70087c168c7b0a53a94fc77a5e46ccdda4e4484c668a463ab57ce90a0e252e60",
+        "7ddd58b7db338ed5b1b891d8a5ee393df60c2c782f52db9189eedf3e5e064328",
+        "194f1f7bc329bde8065d73043ad0c430df764a1a278fac209a8f82cb15067b31",
+        "aad6babb439778983c88ab18b52f667af9300fd9b72dd5176eeefa79cecac42d",
+        "32a907eb09fe2d594349ca926c1ff990da4a8d0a52ddf784b1e4b8877247ac3e",
+        "cf4dd81a3b3f05046c301a57c718c89028f16351072ce89a9e469c667305cdd4",
+        "4df8f92307941d6cd9a18a4acb8498c187f3640643c0bdbaa260296a7b12a57d"
+      ],
+      "retrieved_document_ids": [
+        "f90b8afb0a53ba1bf7a7980450112981f504e8e68d668dec80e0a5e4b1f711ea",
+        "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff",
+        "b7a28358b59833cee359a51df1d9c27edc6661a02288fb47848004afe033a5b5",
+        "9de39dd08d0371b264914a2cbd963cbce2774ac2859ec8e5bf879c9ca4b9665a",
+        "79acb2ef13051dfa81ae68f2b03629d8fddcee1b8fc3741638998391a7330dce",
+        "6a573d9f5240fcbbe3d498cf567bb2d01a5537115d8f3116e08e65ca8db2167f",
+        "3a3639d0534d7294181a54f5f93003e8ccbc1041d8a17229934c78a4ecdeec2a",
+        "a2ad8f2eed4e476f9826146f273dbe2bf53c4b9d89e48714013d7a4258423cbf"
+      ],
+      "raw_generated_answer": null,
+      "parsed_claims": [],
+      "claim_verifier": {
+        "overall_verdict": null,
+        "claims": []
+      },
+      "timings_ms": {
+        "context": 0.9206999984598951,
+        "embedding": 103.96515899992664,
+        "dense_search": 60.40448099884088,
+        "django_rag_http": 498.415
+      }
+    },
+    {
+      "query_id": "Q13",
+      "question": "In Transformers, how do task and model selections affect a pipeline output?",
+      "response_status": "partially_verified",
+      "message_status": "complete",
+      "failure_stage": null,
+      "failure_code": null,
+      "citation_validation_status": "passed",
+      "citation_failure_code": null,
+      "citation_failure_reason": null,
+      "claim_verifier_status": "partially_verified",
+      "claim_verifier_failure_reason": null,
+      "consistency_findings": [],
+      "rejected_claim_count": 2,
+      "retrieved_source_ids": [
+        "huggingface_transformers"
+      ],
+      "retrieved_chunk_ids": [
+        "20662f86c3ccd3f68446e2b149fd6437cfe4377db092ee566e71146c2464be47",
+        "d5d0da32e8f5c1bde4ae13d31bad9ce4ed37f08b27361a5418c18cdcf1269d72",
+        "fb28a53375e1e7543d9d61b05c3ab013c5058d7a2c7140869b890d4398d42086",
+        "d5a1cd95d7f67f566b58c5b76fddbab91dfc70b5b745ae80c5643a82e4767228",
+        "854aa0dc78080764de27e2e40fd44bd656eca261f8cbc6d44b1ea245340d5315",
+        "8fcb7e825bb7de689ba7b32aae97651215b3fb35c6db991186484b6d60b191b3",
+        "da71477c311420065a014e806ec5eb686e0426ae0fac5df0fa5ee2244917a1c6",
+        "7e0d0c8af1d888b000562f894ca07a81b38eb05cc5b4bc8c029157b65df4ae2a"
+      ],
+      "retrieved_document_ids": [
+        "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+        "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+        "891f7275aa7feb6efea822285f806ff3b5451d856e8b01c8d8e95746f1c63735",
+        "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+        "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+        "d77091172cf783edbf8af02dd448877cf87f0197ea56f3146aeaa838a70a5692",
+        "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+        "891f7275aa7feb6efea822285f806ff3b5451d856e8b01c8d8e95746f1c63735"
+      ],
+      "raw_generated_answer": "- A pipeline in Transformers executes a series of steps in a specific order to preprocess data and return a model prediction [S1].\n- Task selection determines the specific machine learning operation, such as automatic speech recognition or image classification [S4].\n- Model selection specifies the underlying neural network architecture used to generate the final output [S4].\n- Pipeline parameters allow configuration of task-specific settings and performance optimization beyond just the model and task identifiers [S2].",
+      "parsed_claims": [
+        {
+          "claim_id": "C1",
+          "claim_text": "A pipeline in Transformers executes a series of steps in a specific order to preprocess data and return a model prediction .",
+          "citation_ids": [
+            "S1"
+          ]
+        },
+        {
+          "claim_id": "C2",
+          "claim_text": "Task selection determines the specific machine learning operation, such as automatic speech recognition or image classification .",
+          "citation_ids": [
+            "S4"
+          ]
+        },
+        {
+          "claim_id": "C3",
+          "claim_text": "Model selection specifies the underlying neural network architecture used to generate the final output .",
+          "citation_ids": [
+            "S4"
+          ]
+        },
+        {
+          "claim_id": "C4",
+          "claim_text": "Pipeline parameters allow configuration of task-specific settings and performance optimization beyond just the model and task identifiers .",
+          "citation_ids": [
+            "S2"
+          ]
+        }
+      ],
+      "claim_verifier": {
+        "overall_verdict": "partially_verified",
+        "claims": [
+          {
+            "claim_id": "C1",
+            "status": "supported",
+            "supporting_citations": [
+              "S1"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "A pipeline in Transformers executes a series of steps in a specific order to preprocess data and return a model prediction .",
+            "supporting_evidence_ids": [
+              "20662f86c3ccd3f68446e2b149fd6437cfe4377db092ee566e71146c2464be47"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C2",
+            "status": "unsupported",
+            "supporting_citations": [],
+            "contradicting_citations": [],
+            "claim_text": "Task selection determines the specific machine learning operation, such as automatic speech recognition or image classification .",
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": "no_entailing_evidence"
+          },
+          {
+            "claim_id": "C3",
+            "status": "unsupported",
+            "supporting_citations": [],
+            "contradicting_citations": [],
+            "claim_text": "Model selection specifies the underlying neural network architecture used to generate the final output .",
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": "no_entailing_evidence"
+          },
+          {
+            "claim_id": "C4",
+            "status": "supported",
+            "supporting_citations": [
+              "S2"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "Pipeline parameters allow configuration of task-specific settings and performance optimization beyond just the model and task identifiers .",
+            "supporting_evidence_ids": [
+              "d5d0da32e8f5c1bde4ae13d31bad9ce4ed37f08b27361a5418c18cdcf1269d72"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          }
+        ]
+      },
+      "timings_ms": {
+        "context": 0.9117400004470255,
+        "embedding": 60.498476999782724,
+        "generation": 4508.962759000497,
+        "dense_search": 57.041391999518964,
+        "django_rag_http": 4996.878,
+        "answer_generation": 2070.164823000596,
+        "claim_verification": 2437.65460800023,
+        "generation_pipeline": 4508.961822999481
+      }
+    },
+    {
+      "query_id": "Q14",
+      "question": "How does PyTorch inference_mode differ from no_grad for inference workloads?",
+      "response_status": "partially_verified",
+      "message_status": "complete",
+      "failure_stage": null,
+      "failure_code": null,
+      "citation_validation_status": "passed",
+      "citation_failure_code": null,
+      "citation_failure_reason": null,
+      "claim_verifier_status": "partially_verified",
+      "claim_verifier_failure_reason": null,
+      "consistency_findings": [],
+      "rejected_claim_count": 2,
+      "retrieved_source_ids": [
+        "pytorch",
+        "huggingface_transformers"
+      ],
+      "retrieved_chunk_ids": [
+        "f9e038003ef5c117d4714162ee6cce2b219a27056853d0bf60761465f416bc56",
+        "6f80447635d30f7831d8839b7fa033d59c037c0d422b48ac10f022e623b23c68",
+        "d46df8387c7e6a027a46aaf3d28f74fbcb2d7b55cd529fe95ce7156b25fade74",
+        "efb0871d2ecf5d5c65198101ef6c0009a8ab1259721407ddb5e6b83d21207a99",
+        "9fb0f16a9604072f02a6504115c60462c4f7d99c5600c193c460757e81e46e9b",
+        "c3972b1bf5b553969a3bf25c3c340b983e93cb963287f75c08717d41412494db",
+        "c039ddcfd1573b1c6351faa5fbc05297626aacc3c2ed06ef54d3b96bd1314606",
+        "ed82dbcd8216499553eecb07eca3a729234fbb884bf81eabe0fd394470bbdf44"
+      ],
+      "retrieved_document_ids": [
+        "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842",
+        "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842",
+        "0722226ba244eb5d1cc02ecf23c9e8147b8a4e3142aab4f607c3d6d38eab6b25",
+        "304987d710806edf2d2c7d545b446b71b03b274808f14a98b5d94212baf025b8",
+        "9515bb20b230483f7c9dad50292da73368bcb16aaeacecab5342cf85e2bd85dd",
+        "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842",
+        "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842",
+        "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842"
+      ],
+      "raw_generated_answer": "- Inference mode excludes operations from being recorded in the backward graph and skips additional autograd tracking overhead [S2].\n- No-grad mode also excludes operations from being recorded in the backward graph but does not skip additional autograd tracking overhead [S2].\n- Tensors created while inference mode is enabled cannot be used in computations recorded by autograd after exiting that mode [S1].\n- Tensors created while no-grad mode is enabled can be used in grad-mode later [S2].\n- Inference mode provides a better runtime speedup compared to no-grad mode for workloads without autograd interactions [S1].",
+      "parsed_claims": [
+        {
+          "claim_id": "C1",
+          "claim_text": "Inference mode excludes operations from being recorded in the backward graph and skips additional autograd tracking overhead .",
+          "citation_ids": [
+            "S2"
+          ]
+        },
+        {
+          "claim_id": "C2",
+          "claim_text": "No-grad mode also excludes operations from being recorded in the backward graph but does not skip additional autograd tracking overhead .",
+          "citation_ids": [
+            "S2"
+          ]
+        },
+        {
+          "claim_id": "C3",
+          "claim_text": "Tensors created while inference mode is enabled cannot be used in computations recorded by autograd after exiting that mode .",
+          "citation_ids": [
+            "S1"
+          ]
+        },
+        {
+          "claim_id": "C4",
+          "claim_text": "Tensors created while no-grad mode is enabled can be used in grad-mode later .",
+          "citation_ids": [
+            "S2"
+          ]
+        },
+        {
+          "claim_id": "C5",
+          "claim_text": "Inference mode provides a better runtime speedup compared to no-grad mode for workloads without autograd interactions .",
+          "citation_ids": [
+            "S1"
+          ]
+        }
+      ],
+      "claim_verifier": {
+        "overall_verdict": "partially_verified",
+        "claims": [
+          {
+            "claim_id": "C1",
+            "status": "supported",
+            "supporting_citations": [
+              "S2"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "Inference mode excludes operations from being recorded in the backward graph and skips additional autograd tracking overhead .",
+            "supporting_evidence_ids": [
+              "6f80447635d30f7831d8839b7fa033d59c037c0d422b48ac10f022e623b23c68"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C2",
+            "status": "unsupported",
+            "supporting_citations": [],
+            "contradicting_citations": [],
+            "claim_text": "No-grad mode also excludes operations from being recorded in the backward graph but does not skip additional autograd tracking overhead .",
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": "no_entailing_evidence"
+          },
+          {
+            "claim_id": "C3",
+            "status": "supported",
+            "supporting_citations": [
+              "S1"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "Tensors created while inference mode is enabled cannot be used in computations recorded by autograd after exiting that mode .",
+            "supporting_evidence_ids": [
+              "f9e038003ef5c117d4714162ee6cce2b219a27056853d0bf60761465f416bc56"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C4",
+            "status": "supported",
+            "supporting_citations": [
+              "S2"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "Tensors created while no-grad mode is enabled can be used in grad-mode later .",
+            "supporting_evidence_ids": [
+              "6f80447635d30f7831d8839b7fa033d59c037c0d422b48ac10f022e623b23c68"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C5",
+            "status": "unsupported",
+            "supporting_citations": [],
+            "contradicting_citations": [],
+            "claim_text": "Inference mode provides a better runtime speedup compared to no-grad mode for workloads without autograd interactions .",
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": "no_entailing_evidence"
+          }
+        ]
+      },
+      "timings_ms": {
+        "context": 0.8887330004654359,
+        "embedding": 20.503989999269834,
+        "generation": 5553.7891009989835,
+        "dense_search": 88.94178399896191,
+        "django_rag_http": 6083.544,
+        "answer_generation": 2610.3833460001624,
+        "claim_verification": 2942.5199600009364,
+        "generation_pipeline": 5553.787974999068
+      }
+    },
+    {
+      "query_id": "Q17",
+      "question": "In Python dictionaries, what ordering behavior is documented?",
+      "response_status": "failed",
+      "message_status": "complete",
+      "failure_stage": "claim_consistency",
+      "failure_code": "claim_consistency_rejected",
+      "citation_validation_status": "passed",
+      "citation_failure_code": "claim_consistency_rejected",
+      "citation_failure_reason": "version_qualification_missing",
+      "claim_verifier_status": "rejected",
+      "claim_verifier_failure_reason": null,
+      "consistency_findings": [
+        {
+          "reason_code": "version_qualification_missing",
+          "claim_ids": [
+            "C1"
+          ],
+          "evidence_ids": [
+            "74e60577c9f9ab31130bd1e7923963652179fbf5b2faea420e901fbac4d8828c"
+          ]
+        }
+      ],
+      "rejected_claim_count": null,
+      "retrieved_source_ids": [
+        "python_3_13",
+        "pytorch"
+      ],
+      "retrieved_chunk_ids": [
+        "74e60577c9f9ab31130bd1e7923963652179fbf5b2faea420e901fbac4d8828c",
+        "d70058a7fad475232a48686dfd3f1a87260101c206d354850130923575d28c65",
+        "c0d591156b0ffbd3319f497d84b9a2fe9daf33fca7fe9fe22ac0a1acd39c8881",
+        "7279bd997e720fc2f4878680bfed7a4e769668a629bc444acbe3aaf77d4591fc",
+        "30d3b1352faa910e93c432189023b4dcc196528f95878ab7fb1a103207106a03",
+        "ffcd79050e5cebf71a543734681a38c9f951755dd429d38333eb423f35e31823",
+        "5d62c660b1890ad4636287af038169c4817f932297b7944ff9bd8eb5c1f6e4a9",
+        "579bba7cdcf73dbbc3b6862f5abfb180c8fea28423f45c00de7604df72b6d205"
+      ],
+      "retrieved_document_ids": [
+        "3c40c468d2896da2fd9f18e9c9a2b58b6b4b1f39951ba931562cd007535b4fe9",
+        "bb2796172cede3af9059973de5377799162c8bf1e9f8c50f56d566e31ff51412",
+        "44dc0ebc70ffc900fb821823c375e0ed5195b8c16e230784320567f04f3637fc",
+        "01ed0551a3989e40bf78a3fef11c1c28351d11934e4ce13e956e0ea374fa4dfa",
+        "bb2796172cede3af9059973de5377799162c8bf1e9f8c50f56d566e31ff51412",
+        "3868e35992cdb7230f058b44218b8507e7bb0bb6105326cc0305bb0edcb65571",
+        "fb677acb189c77980b063086e440875be30b58be5e8441422d776ad74d28e286",
+        "06519cb6d3e720d7b941a1c12ed55fcd5dc972a8a710481090a951f8e3725dfc"
+      ],
+      "raw_generated_answer": "- Regular Python dictionaries iterate over key/value pairs in arbitrary order [S1].\n- The insertion order of keys is guaranteed starting from Python 3.7 [S2].\n- The `collections.OrderedDict` class maintains a guaranteed order based on the first insertion time of each key [S1].\n- Overwriting an existing entry in an `OrderedDict` leaves its original insertion position unchanged [S1].\n- Deleting and reinserting an entry in an `OrderedDict` moves it to the end [S1].\n- The standard library's `configparser` module uses ordered dictionaries by default [S1].\n- The `_asdict()` method for `collections.namedtuple()` returns a regular dictionary with values ordered by tuple indices [S3].\n- The `json` module supports building ordered dictionaries via an `object_pairs_hook` parameter [S1].\n- Equality checks for `OrderedDict` require matching key order, unlike standard dictionaries [S2].\n- The `popitem()` method in `OrderedDict` accepts an optional argument to specify which item is popped [S2].\n- A regular dictionary can emulate popping the leftmost item from an `OrderedDict` using a generator expression [S2].\n- The `move_to_end()` method in `OrderedDict` efficiently repositions elements to either the start or end [S2].\n- There is no efficient equivalent for moving an element to the start of a regular dictionary [S2].",
+      "parsed_claims": [
+        {
+          "claim_id": "C1",
+          "claim_text": "Regular Python dictionaries iterate over key/value pairs in arbitrary order .",
+          "citation_ids": [
+            "S1"
+          ]
+        },
+        {
+          "claim_id": "C2",
+          "claim_text": "The insertion order of keys is guaranteed starting from Python 3.7 .",
+          "citation_ids": [
+            "S2"
+          ]
+        },
+        {
+          "claim_id": "C3",
+          "claim_text": "The `collections.OrderedDict` class maintains a guaranteed order based on the first insertion time of each key .",
+          "citation_ids": [
+            "S1"
+          ]
+        },
+        {
+          "claim_id": "C4",
+          "claim_text": "Overwriting an existing entry in an `OrderedDict` leaves its original insertion position unchanged .",
+          "citation_ids": [
+            "S1"
+          ]
+        },
+        {
+          "claim_id": "C5",
+          "claim_text": "Deleting and reinserting an entry in an `OrderedDict` moves it to the end .",
+          "citation_ids": [
+            "S1"
+          ]
+        },
+        {
+          "claim_id": "C6",
+          "claim_text": "The standard library's `configparser` module uses ordered dictionaries by default .",
+          "citation_ids": [
+            "S1"
+          ]
+        },
+        {
+          "claim_id": "C7",
+          "claim_text": "The `_asdict()` method for `collections.namedtuple()` returns a regular dictionary with values ordered by tuple indices .",
+          "citation_ids": [
+            "S3"
+          ]
+        },
+        {
+          "claim_id": "C8",
+          "claim_text": "The `json` module supports building ordered dictionaries via an `object_pairs_hook` parameter .",
+          "citation_ids": [
+            "S1"
+          ]
+        },
+        {
+          "claim_id": "C9",
+          "claim_text": "Equality checks for `OrderedDict` require matching key order, unlike standard dictionaries .",
+          "citation_ids": [
+            "S2"
+          ]
+        },
+        {
+          "claim_id": "C10",
+          "claim_text": "The `popitem()` method in `OrderedDict` accepts an optional argument to specify which item is popped .",
+          "citation_ids": [
+            "S2"
+          ]
+        },
+        {
+          "claim_id": "C11",
+          "claim_text": "A regular dictionary can emulate popping the leftmost item from an `OrderedDict` using a generator expression .",
+          "citation_ids": [
+            "S2"
+          ]
+        },
+        {
+          "claim_id": "C12",
+          "claim_text": "The `move_to_end()` method in `OrderedDict` efficiently repositions elements to either the start or end .",
+          "citation_ids": [
+            "S2"
+          ]
+        },
+        {
+          "claim_id": "C13",
+          "claim_text": "There is no efficient equivalent for moving an element to the start of a regular dictionary .",
+          "citation_ids": [
+            "S2"
+          ]
+        }
+      ],
+      "claim_verifier": {
+        "overall_verdict": "partially_verified",
+        "claims": [
+          {
+            "claim_id": "C1",
+            "status": "supported",
+            "supporting_citations": [
+              "S1"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "Regular Python dictionaries iterate over key/value pairs in arbitrary order .",
+            "supporting_evidence_ids": [
+              "74e60577c9f9ab31130bd1e7923963652179fbf5b2faea420e901fbac4d8828c"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C2",
+            "status": "supported",
+            "supporting_citations": [
+              "S2"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "The insertion order of keys is guaranteed starting from Python 3.7 .",
+            "supporting_evidence_ids": [
+              "d70058a7fad475232a48686dfd3f1a87260101c206d354850130923575d28c65"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C3",
+            "status": "supported",
+            "supporting_citations": [
+              "S1"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "The `collections.OrderedDict` class maintains a guaranteed order based on the first insertion time of each key .",
+            "supporting_evidence_ids": [
+              "74e60577c9f9ab31130bd1e7923963652179fbf5b2faea420e901fbac4d8828c"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C4",
+            "status": "supported",
+            "supporting_citations": [
+              "S1"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "Overwriting an existing entry in an `OrderedDict` leaves its original insertion position unchanged .",
+            "supporting_evidence_ids": [
+              "74e60577c9f9ab31130bd1e7923963652179fbf5b2faea420e901fbac4d8828c"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C5",
+            "status": "supported",
+            "supporting_citations": [
+              "S1"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "Deleting and reinserting an entry in an `OrderedDict` moves it to the end .",
+            "supporting_evidence_ids": [
+              "74e60577c9f9ab31130bd1e7923963652179fbf5b2faea420e901fbac4d8828c"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C6",
+            "status": "supported",
+            "supporting_citations": [
+              "S1"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "The standard library's `configparser` module uses ordered dictionaries by default .",
+            "supporting_evidence_ids": [
+              "74e60577c9f9ab31130bd1e7923963652179fbf5b2faea420e901fbac4d8828c"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C7",
+            "status": "unsupported",
+            "supporting_citations": [],
+            "contradicting_citations": [],
+            "claim_text": "The `_asdict()` method for `collections.namedtuple()` returns a regular dictionary with values ordered by tuple indices .",
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": "no_entailing_evidence"
+          },
+          {
+            "claim_id": "C8",
+            "status": "supported",
+            "supporting_citations": [
+              "S1"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "The `json` module supports building ordered dictionaries via an `object_pairs_hook` parameter .",
+            "supporting_evidence_ids": [
+              "74e60577c9f9ab31130bd1e7923963652179fbf5b2faea420e901fbac4d8828c"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C9",
+            "status": "supported",
+            "supporting_citations": [
+              "S2"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "Equality checks for `OrderedDict` require matching key order, unlike standard dictionaries .",
+            "supporting_evidence_ids": [
+              "d70058a7fad475232a48686dfd3f1a87260101c206d354850130923575d28c65"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C10",
+            "status": "supported",
+            "supporting_citations": [
+              "S2"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "The `popitem()` method in `OrderedDict` accepts an optional argument to specify which item is popped .",
+            "supporting_evidence_ids": [
+              "d70058a7fad475232a48686dfd3f1a87260101c206d354850130923575d28c65"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C11",
+            "status": "supported",
+            "supporting_citations": [
+              "S2"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "A regular dictionary can emulate popping the leftmost item from an `OrderedDict` using a generator expression .",
+            "supporting_evidence_ids": [
+              "d70058a7fad475232a48686dfd3f1a87260101c206d354850130923575d28c65"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C12",
+            "status": "supported",
+            "supporting_citations": [
+              "S2"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "The `move_to_end()` method in `OrderedDict` efficiently repositions elements to either the start or end .",
+            "supporting_evidence_ids": [
+              "d70058a7fad475232a48686dfd3f1a87260101c206d354850130923575d28c65"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C13",
+            "status": "supported",
+            "supporting_citations": [
+              "S2"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "There is no efficient equivalent for moving an element to the start of a regular dictionary .",
+            "supporting_evidence_ids": [
+              "d70058a7fad475232a48686dfd3f1a87260101c206d354850130923575d28c65"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          }
+        ]
+      },
+      "timings_ms": {
+        "context": 1.3909480003349017,
+        "embedding": 52.45958199884626,
+        "dense_search": 131.41185000131372,
+        "django_rag_http": 12136.035,
+        "answer_generation": 5233.319725000911,
+        "generation_pipeline": 11586.558805000095,
+        "answer_validation_rejected": 1.0
+      }
+    },
+    {
+      "query_id": "Q21",
+      "question": "Before and since which Python version does the language documentation describe insertion order for regular dictionaries?",
+      "response_status": "abstained",
+      "message_status": "complete",
+      "failure_stage": null,
+      "failure_code": null,
+      "citation_validation_status": "not_applicable",
+      "citation_failure_code": null,
+      "citation_failure_reason": null,
+      "claim_verifier_status": "partially_verified",
+      "claim_verifier_failure_reason": null,
+      "consistency_findings": [],
+      "rejected_claim_count": 1,
+      "retrieved_source_ids": [
+        "python_3_13"
+      ],
+      "retrieved_chunk_ids": [
+        "74e60577c9f9ab31130bd1e7923963652179fbf5b2faea420e901fbac4d8828c",
+        "7279bd997e720fc2f4878680bfed7a4e769668a629bc444acbe3aaf77d4591fc",
+        "d70058a7fad475232a48686dfd3f1a87260101c206d354850130923575d28c65",
+        "fbdc2d49871b36ccb51e7b3e32ae6644db1d9dd1162e5a5c6a4f876589627142",
+        "810483af3b138b02a852ccc382ea7a69b82693210ec04ffdc39e4267375fff49",
+        "92373cbeee4031ce13f0217b0752c6e8c0a875d9957bcdf5f1319ec3097e2a4d",
+        "c301a76c635e44f4288fdb2b82b348d38d8c42efe9e4f68ca869c8c9594d5d11",
+        "627ef870ce71c9f84349638c77b96d5077134d2fd7598b9b69ebf708c3d14698"
+      ],
+      "retrieved_document_ids": [
+        "3c40c468d2896da2fd9f18e9c9a2b58b6b4b1f39951ba931562cd007535b4fe9",
+        "01ed0551a3989e40bf78a3fef11c1c28351d11934e4ce13e956e0ea374fa4dfa",
+        "bb2796172cede3af9059973de5377799162c8bf1e9f8c50f56d566e31ff51412",
+        "3c40c468d2896da2fd9f18e9c9a2b58b6b4b1f39951ba931562cd007535b4fe9",
+        "fb5a8f367a475441579dbd0f28c6b7192e56542dbceaaf00f7fee70541d2389f",
+        "3fca6a7842633a3c9ee921d8ca4b18c95718790cbcb3b3608d8cd24584c2184f",
+        "01ed0551a3989e40bf78a3fef11c1c28351d11934e4ce13e956e0ea374fa4dfa",
+        "749a16552514bb1e4144166bb5612998c988e8a0ed2dc414e4273b448a88fa2d"
+      ],
+      "raw_generated_answer": "- The language documentation describes insertion order for regular dictionaries starting from Python version 3.7 [S1].",
+      "parsed_claims": [
+        {
+          "claim_id": "C1",
+          "claim_text": "The language documentation describes insertion order for regular dictionaries starting from Python version 3.7 .",
+          "citation_ids": [
+            "S1"
+          ]
+        }
+      ],
+      "claim_verifier": {
+        "overall_verdict": "rejected",
+        "claims": [
+          {
+            "claim_id": "C1",
+            "status": "unsupported",
+            "supporting_citations": [],
+            "contradicting_citations": [],
+            "claim_text": "The language documentation describes insertion order for regular dictionaries starting from Python version 3.7 .",
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": "no_entailing_evidence"
+          }
+        ]
+      },
+      "timings_ms": {
+        "context": 0.9598279993952019,
+        "embedding": 28.830798999479157,
+        "generation": 2031.293005000407,
+        "dense_search": 119.03318599979684,
+        "django_rag_http": 2604.269,
+        "answer_generation": 900.5755760008469,
+        "claim_verification": 1130.08024300143,
+        "generation_pipeline": 2031.2868759992853
+      }
+    },
+    {
+      "query_id": "Q23",
+      "question": "What is the difference between Docker Compose depends_on service_started and service_healthy?",
+      "response_status": "partially_verified",
+      "message_status": "complete",
+      "failure_stage": null,
+      "failure_code": null,
+      "citation_validation_status": "passed",
+      "citation_failure_code": null,
+      "citation_failure_reason": null,
+      "claim_verifier_status": "partially_verified",
+      "claim_verifier_failure_reason": null,
+      "consistency_findings": [],
+      "rejected_claim_count": 1,
+      "retrieved_source_ids": [
+        "docker"
+      ],
+      "retrieved_chunk_ids": [
+        "70087c168c7b0a53a94fc77a5e46ccdda4e4484c668a463ab57ce90a0e252e60",
+        "03d9a3150e89c989f8d8f103f929a49ad0e81c8c84806f9fd094570419e7aac8",
+        "e032d689a1fbd64e59f33ad582c0609ddc53f8ffc0df00e68bf3053169feff9f",
+        "674982c6aad7ef0da9d91b1aaf12d2abffcc5a1a397e4a3d2aabc3aee30f2cde",
+        "aad6babb439778983c88ab18b52f667af9300fd9b72dd5176eeefa79cecac42d",
+        "194f1f7bc329bde8065d73043ad0c430df764a1a278fac209a8f82cb15067b31",
+        "265211ac69bbeb2142f656b2bebd028a1a35384441dfd504612e10a47cbf082f",
+        "491945dbdcdff1ad7f2fb51b8e89fb4ea2b0567be711673a090a7b2022a38fa7"
+      ],
+      "retrieved_document_ids": [
+        "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff",
+        "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff",
+        "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff",
+        "f90b8afb0a53ba1bf7a7980450112981f504e8e68d668dec80e0a5e4b1f711ea",
+        "79acb2ef13051dfa81ae68f2b03629d8fddcee1b8fc3741638998391a7330dce",
+        "9de39dd08d0371b264914a2cbd963cbce2774ac2859ec8e5bf879c9ca4b9665a",
+        "632e66c39301cf96414b69d5cf5a6c90ed71c56fcc4b7659ad46a117f1c0fca2",
+        "9de39dd08d0371b264914a2cbd963cbce2774ac2859ec8e5bf879c9ca4b9665a"
+      ],
+      "raw_generated_answer": "- The `depends_on` attribute with `condition: service_started` ensures a dependent service starts only after another service is running, not necessarily healthy [S2].\n- The `depends_on` attribute with `condition: service_healthy` ensures a dependent service starts only after another service passes its health check [S3].\n- Docker Compose waits for a container to be \"running\" when using `service_started`, but it does not wait for the container to be \"ready\" by default [S2].\n- A `healthcheck` is required to define what constitutes a \"healthy\" state for the `service_healthy` condition to work [S4].",
+      "parsed_claims": [
+        {
+          "claim_id": "C1",
+          "claim_text": "The `depends_on` attribute with `condition: service_started` ensures a dependent service starts only after another service is running, not necessarily healthy .",
+          "citation_ids": [
+            "S2"
+          ]
+        },
+        {
+          "claim_id": "C2",
+          "claim_text": "The `depends_on` attribute with `condition: service_healthy` ensures a dependent service starts only after another service passes its health check .",
+          "citation_ids": [
+            "S3"
+          ]
+        },
+        {
+          "claim_id": "C3",
+          "claim_text": "Docker Compose waits for a container to be \"running\" when using `service_started`, but it does not wait for the container to be \"ready\" by default .",
+          "citation_ids": [
+            "S2"
+          ]
+        },
+        {
+          "claim_id": "C4",
+          "claim_text": "A `healthcheck` is required to define what constitutes a \"healthy\" state for the `service_healthy` condition to work .",
+          "citation_ids": [
+            "S4"
+          ]
+        }
+      ],
+      "claim_verifier": {
+        "overall_verdict": "partially_verified",
+        "claims": [
+          {
+            "claim_id": "C1",
+            "status": "unsupported",
+            "supporting_citations": [],
+            "contradicting_citations": [],
+            "claim_text": "The `depends_on` attribute with `condition: service_started` ensures a dependent service starts only after another service is running, not necessarily healthy .",
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": "no_entailing_evidence"
+          },
+          {
+            "claim_id": "C2",
+            "status": "supported",
+            "supporting_citations": [
+              "S3"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "The `depends_on` attribute with `condition: service_healthy` ensures a dependent service starts only after another service passes its health check .",
+            "supporting_evidence_ids": [
+              "674982c6aad7ef0da9d91b1aaf12d2abffcc5a1a397e4a3d2aabc3aee30f2cde"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C3",
+            "status": "supported",
+            "supporting_citations": [
+              "S2"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "Docker Compose waits for a container to be \"running\" when using `service_started`, but it does not wait for the container to be \"ready\" by default .",
+            "supporting_evidence_ids": [
+              "03d9a3150e89c989f8d8f103f929a49ad0e81c8c84806f9fd094570419e7aac8"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          },
+          {
+            "claim_id": "C4",
+            "status": "supported",
+            "supporting_citations": [
+              "S4"
+            ],
+            "contradicting_citations": [],
+            "claim_text": "A `healthcheck` is required to define what constitutes a \"healthy\" state for the `service_healthy` condition to work .",
+            "supporting_evidence_ids": [
+              "265211ac69bbeb2142f656b2bebd028a1a35384441dfd504612e10a47cbf082f"
+            ],
+            "contradicting_evidence_ids": [],
+            "rejection_reason": null
+          }
+        ]
+      },
+      "timings_ms": {
+        "context": 0.9523070002614986,
+        "embedding": 32.44901299876801,
+        "generation": 5142.015789000652,
+        "dense_search": 78.76196500001242,
+        "django_rag_http": 5594.322,
+        "answer_generation": 2665.510203998565,
+        "claim_verification": 2475.421371998891,
+        "generation_pipeline": 5142.0143360010115
+      }
+    },
+    {
+      "query_id": "Q29",
+      "question": "What is the exact secret bearer token used by the running Satell API?",
+      "response_status": "failed",
+      "message_status": "complete",
+      "failure_stage": "answer_validation",
+      "failure_code": "uncited_claim_rejected",
+      "citation_validation_status": "rejected",
+      "citation_failure_code": "uncited_claim_rejected",
+      "citation_failure_reason": "insufficient_claim_citation_coverage",
+      "claim_verifier_status": "not_run",
+      "claim_verifier_failure_reason": null,
+      "consistency_findings": [],
+      "rejected_claim_count": null,
+      "retrieved_source_ids": [
+        "docker"
+      ],
+      "retrieved_chunk_ids": [
+        "a19a11cdd664cc67a1290481f3156821523a8bdf3bde77ff24dfc32703a7648b",
+        "2c9ba5193be4520fb3cd22f69235ddae7b6fd1a3884dcb88b22096115901e535",
+        "e004bd0c3519e5f7e3d1adb5c43a89427e7144a5b615eff47451c54493388610",
+        "de1fd770b8ba485378655ca6bed9b2e7fae6ae87f13e5b01664ed20850fdf3c5",
+        "c193075ea538ae972e570fb1bf73723cb17ebea3b2c3d80aced67e682f3c40a1",
+        "bae557e3c6a09b319bb12c06712264814a20c5c115e848b58cf5089c7189d7bf",
+        "0ba0a88e1d9c48d0680415aa9811c7cd5db208a3f24adad5de46bf5a116c8403",
+        "ac8d4b80f16072f479fdc5bce844b560d82f58c8d69a93b083a3a580d9e4c339"
+      ],
+      "retrieved_document_ids": [
+        "038f4b8e26b7adbfc4b4d85843741865c3ec6b8d4861634633222f299e497b97",
+        "2c7d20b9a67234aa20191266ee45655333f2718ba7d388a1f0c0573ace1eb891",
+        "038f4b8e26b7adbfc4b4d85843741865c3ec6b8d4861634633222f299e497b97",
+        "248ae37ef57f203657fa090a2add791f5ba76d15989b4941a176af53a38ed57d",
+        "e831601084e2cd0bcfd3f54af1a9ae76b3e21e1f94252d31755a454208335926",
+        "038f4b8e26b7adbfc4b4d85843741865c3ec6b8d4861634633222f299e497b97",
+        "038f4b8e26b7adbfc4b4d85843741865c3ec6b8d4861634633222f299e497b97",
+        "a4d8c28c2a90284e5d59730dba7819bc54357799c12f5818e3b2de2bf22a4c4f"
+      ],
+      "raw_generated_answer": "- The exact secret bearer token used by the running Satell API is not disclosed in the provided references. [S1]",
+      "parsed_claims": [
+        {
+          "claim_id": "C1",
+          "claim_text": "The exact secret bearer token used by the running Satell API is not disclosed in the provided references.",
+          "citation_ids": [
+            "S1"
+          ]
+        }
+      ],
+      "claim_verifier": {
+        "overall_verdict": null,
+        "claims": []
+      },
+      "timings_ms": {
+        "context": 0.6478710001829313,
+        "embedding": 27.572588000111864,
+        "dense_search": 74.44247599960363,
+        "django_rag_http": 1432.383,
+        "answer_generation": 984.7221149993857,
+        "generation_pipeline": 984.8919289997866,
+        "answer_validation_rejected": 1.0
+      }
+    }
+  ]
+}

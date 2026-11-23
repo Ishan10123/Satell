@@ -1,0 +1,402 @@
+{
+  "config_version": "1.0",
+  "note": "Parser availability is independent of source/document authorization. configs/ingestion_sources.json controls the narrower ingestion-eligible extension allowlist; enabling a parser never approves or auto-ingests files.",
+  "parsers": {
+    ".html": {
+      "enabled": true,
+      "parser": "html"
+    },
+    ".htm": {
+      "enabled": true,
+      "parser": "html"
+    },
+    ".md": {
+      "enabled": true,
+      "parser": "markdown"
+    },
+    ".markdown": {
+      "enabled": true,
+      "parser": "markdown"
+    },
+    ".rst": {
+      "enabled": true,
+      "parser": "rst"
+    },
+    ".pdf": {
+      "enabled": true,
+      "parser": "pdf",
+      "limits": {
+        "max_file_bytes": 52428800
+      }
+    },
+    ".txt": {
+      "enabled": true,
+      "parser": "text"
+    },
+    ".json": {
+      "enabled": true,
+      "parser": "json",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000
+      }
+    },
+    ".jsonl": {
+      "enabled": true,
+      "parser": "jsonl",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000
+      }
+    },
+    ".yaml": {
+      "enabled": true,
+      "parser": "yaml",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000
+      }
+    },
+    ".yml": {
+      "enabled": true,
+      "parser": "yaml",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000
+      }
+    },
+    ".csv": {
+      "enabled": true,
+      "parser": "csv",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000
+      }
+    },
+    ".xml": {
+      "enabled": true,
+      "parser": "xml",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000
+      }
+    },
+    ".toml": {
+      "enabled": true,
+      "parser": "toml",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000
+      }
+    },
+    ".ini": {
+      "enabled": true,
+      "parser": "ini",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000
+      }
+    },
+    ".py": {
+      "enabled": true,
+      "parser": "source_code",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".js": {
+      "enabled": true,
+      "parser": "source_code",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".mjs": {
+      "enabled": true,
+      "parser": "source_code",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".ts": {
+      "enabled": true,
+      "parser": "source_code",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".java": {
+      "enabled": true,
+      "parser": "source_code",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".cs": {
+      "enabled": true,
+      "parser": "source_code",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".go": {
+      "enabled": true,
+      "parser": "source_code",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".rs": {
+      "enabled": true,
+      "parser": "source_code",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".sh": {
+      "enabled": true,
+      "parser": "source_code",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".dot": {
+      "enabled": true,
+      "parser": "dot",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".gotmpl": {
+      "enabled": true,
+      "parser": "gotmpl",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".conf": {
+      "enabled": true,
+      "parser": "conf",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".excalidraw": {
+      "enabled": true,
+      "parser": "excalidraw",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".gliffy": {
+      "enabled": true,
+      "parser": "gliffy",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".svg": {
+      "enabled": true,
+      "parser": "svg",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".docx": {
+      "enabled": true,
+      "parser": "docx",
+      "limits": {
+        "max_file_bytes": 52428800,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000,
+        "max_archive_entries": 20000,
+        "max_archive_uncompressed_bytes": 104857600,
+        "max_archive_ratio": 200
+      }
+    },
+    ".xlsx": {
+      "enabled": true,
+      "parser": "xlsx",
+      "limits": {
+        "max_file_bytes": 52428800,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000,
+        "max_archive_entries": 20000,
+        "max_archive_uncompressed_bytes": 104857600,
+        "max_archive_ratio": 200
+      }
+    },
+    ".pptx": {
+      "enabled": true,
+      "parser": "pptx",
+      "limits": {
+        "max_file_bytes": 52428800,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000,
+        "max_archive_entries": 20000,
+        "max_archive_uncompressed_bytes": 104857600,
+        "max_archive_ratio": 200
+      }
+    },
+    ".ipynb": {
+      "enabled": true,
+      "parser": "notebook",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    },
+    ".sql": {
+      "enabled": true,
+      "parser": "sql",
+      "limits": {
+        "max_file_bytes": 10485760,
+        "max_depth": 64,
+        "max_nodes": 100000,
+        "max_records": 50000,
+        "max_columns": 512,
+        "max_cell_chars": 100000,
+        "max_output_chars": 5000000
+      }
+    }
+  }
+}

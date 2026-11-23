@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Personalization · satell{% endblock %}
+{% block content %}<section class="settings-page"><p class="eyebrow">PREFERENCES</p><h1>Personalization</h1><form method="post" class="settings-card">{% csrf_token %}
+  <fieldset><legend>Appearance</legend>{% for value,label in form.theme.field.choices %}<label class="choice-row"><input type="radio" name="theme" value="{{ value }}"{% if form.theme.value == value %} checked{% endif %}>{{ label }}{% if value == "system" %}<span class="field-help">Follows your device preference.</span>{% endif %}</label>{% endfor %}</fieldset>
+  <label for="id_message_spacing">Message spacing</label>{{ form.message_spacing }}
+  <label for="id_response_style">Default response style</label>{{ form.response_style }}
+  <label class="toggle-row">{{ form.show_code_blocks }}<span>Show code blocks</span></label>
+  <label class="toggle-row">{{ form.show_source_cards }}<span>Show source cards</span></label>
+  <p class="field-help">These preferences change presentation only; they do not change retrieval, authorization, citation checks or answer verification.</p>
+  <button class="primary-button" type="submit">Save preferences</button></form></section>{% endblock %}

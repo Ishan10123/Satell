@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Profile · satell{% endblock %}
+{% block content %}
+<section class="settings-page" aria-labelledby="profile-title">
+  <p class="eyebrow">YOUR ACCOUNT</p><h1 id="profile-title">Profile</h1>
+  <div class="profile-hero"><span class="profile-avatar" aria-hidden="true">{{ user.get_username|first|upper }}</span><div><h2>{{ form.instance.display_name|default:user.get_full_name|default:user.get_username }}</h2><p>{{ user.email|default:"No email address set" }}</p></div></div>
+  <form method="post" class="settings-card">{% csrf_token %}<h2>Account profile</h2>
+    <label for="id_display_name">Display name</label>{{ form.display_name }}{{ form.display_name.errors }}
+    <p class="field-help">Your email is read-only here so account recovery remains tied to a confirmed address. Contact an administrator to change it.</p>
+    <button class="primary-button" type="submit">Save profile</button>
+  </form>
+  {% if creator_visibility_form %}
+  <form method="post" action="{% url 'accounts:profile' %}" class="settings-card creator-profile-edit">{% csrf_token %}<h2>Professional profile details</h2>
+    <p>These profile details were supplied by the owner and are not independently verified. They stay private unless you enable each matching visibility option below.</p>
+    <input type="hidden" name="save_creator_profile" value="1">
+    {% for field in creator_profile_form %}<div class="form-field"><label for="{{ field.id_for_label }}">{{ field.label }}</label>{{ field }}{{ field.errors }}{% if field.help_text %}<p class="field-help">{{ field.help_text }}</p>{% endif %}</div>{% endfor %}
+    <p class="field-help">Profile verification status: {{ creator.get_verification_status_display }}. This status cannot be changed from this form.</p>
+    <button class="primary-button" type="submit">Save professional profile</button>
+  </form>
+  <form method="post" action="{% url 'accounts:creator_visibility' %}" class="settings-card creator-visibility">{% csrf_token %}<h2>Public creator profile</h2>
+    <p>Choose which creator-profile fields are visible at <a href="{% url 'creator_public' %}" target="_blank" rel="noopener noreferrer">Satell's public profile</a>.</p>
+    {% for field in creator_visibility_form %}<label class="toggle-row">{{ field }}<span>{{ field.label }}</span></label>{% endfor %}
+    <button class="primary-button" type="submit">Save visibility</button>
+  </form>
+  {% endif %}
+  {% if public_profile %}<section class="settings-card"><h2>Public professional links</h2><div class="profile-links">{% for link in public_profile.links %}<a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">{{ link.icon }}</span>{{ link.label }}<span aria-hidden="true">↗</span></a>{% empty %}<p>No profile links are currently public.</p>{% endfor %}</div></section>{% endif %}
+</section>
+{% endblock %}

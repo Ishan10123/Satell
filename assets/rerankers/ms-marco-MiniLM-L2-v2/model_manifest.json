@@ -1,0 +1,19 @@
+{
+  "model_id": "cross-encoder/ms-marco-MiniLM-L2-v2",
+  "revision": "f5f4b747a632df48bdc5572fc23e8fd991714edb",
+  "license": "Apache-2.0",
+  "source": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L2-v2",
+  "runtime": "onnxruntime==1.32.0",
+  "execution_provider": "CPUExecutionProvider",
+  "files": {
+    "model_O4.onnx": {
+      "sha256": "b585f2d0cb5dac59d28334df5b9badc0417dced4626c86a9815c4c6b78a86ba1",
+      "bytes": 31268615
+    },
+    "tokenizer.json": {
+      "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "bytes": 711396
+    }
+  },
+  "model_sha256_verified": true
+}

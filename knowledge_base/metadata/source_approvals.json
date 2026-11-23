@@ -1,0 +1,147 @@
+{
+  "registry_version": "1.0",
+  "approval_policy": "explicit_source_level_approval",
+  "default_status": "pending_review",
+  "sources": {
+    "arxiv_ai_systems": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 15
+    },
+    "arxiv_artificial_intelligence": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 13
+    },
+    "arxiv_database_vector_search": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 15
+    },
+    "arxiv_information_retrieval": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 15
+    },
+    "arxiv_llm_rag": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 16
+    },
+    "arxiv_llm_transformers": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 15
+    },
+    "arxiv_machine_learning": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 18
+    },
+    "docker": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 1114
+    },
+    "fastapi": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 158
+    },
+    "huggingface_transformers": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 787
+    },
+    "postgresql_18": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 1
+    },
+    "python_3_13": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 553
+    },
+    "pytorch": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 263
+    },
+    "qdrant": {
+      "status": "pending_review",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "license_name": null,
+      "license_url": null,
+      "evidence_path": null,
+      "review_notes": null,
+      "discovered_document_count": 3613
+    }
+  }
+}

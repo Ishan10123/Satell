@@ -1,0 +1,92 @@
+# satell documentation corpus eligibility and source licensing audit
+
+**Audit date:** 2026-11-18  
+**Overall verdict:** **NOT_READY** for production or real-corpus retrieval. This read-only audit made no license decisions and changed no inventory, approval, manifest, index, or Qdrant data.
+
+## Executive assessment
+
+The inventory has **6,489** records with `source_type=documentation` and `file_category=documentation`. Every record is currently `candidate_not_reviewed`, `pending_license_review`, and `eligible_for_processing=false`. All have a source ID, relative path, source URL, SHA-256 and recorded file size. A read-only check of every local file found **zero missing files, checksum mismatches, or size mismatches**.
+
+These records are structurally in the current documentation candidate scope: they have the allowed documentation category, allowed extensions (`.md`, `.html`, `.rst`, `.pdf`, `.txt`) and candidate ingestion status. That does not mean all 6,489 items qualify for a corpus. Content may contain third-party text, example code, generated pages, legal notices, embedded media references, or material with separate terms.
+
+All seven documentation source approvals remain `pending_review`; the evidence catalog has license artifacts for only four of the seven sources, and the document approval registry is absent. No documentation record is currently eligible. The existing index is an `operator_authorized_unreviewed` development index, not evidence of human approval or production authorization.
+
+## Inventory and eligibility rules
+
+### Documentation records by source, extension, and ingestion status
+
+| Source ID | Documentation records | Extensions | Ingestion status | Discovery / license / eligibility |
+|---|---:|---|---|---|
+| `docker` | 1,114 | `.md` 1,114 | `candidate_not_reviewed` 1,114 | `pending_license_review` 1,114; all ineligible |
+| `fastapi` | 158 | `.md` 158 | `candidate_not_reviewed` 158 | `pending_license_review` 158; all ineligible |
+| `huggingface_transformers` | 787 | `.md` 787 | `candidate_not_reviewed` 787 | `pending_license_review` 787; all ineligible |
+| `postgresql_18` | 1 | `.pdf` 1 | `candidate_not_reviewed` 1 | `pending_license_review` 1; ineligible |
+| `python_3_13` | 553 | `.html` 553 | `candidate_not_reviewed` 553 | `pending_license_review` 553; all ineligible |
+| `pytorch` | 263 | `.md` 255, `.rst` 7, `.txt` 1 | `candidate_not_reviewed` 263 | `pending_license_review` 263; all ineligible |
+| `qdrant` | 3,613 | `.md` 3,613 | `candidate_not_reviewed` 3,613 | `pending_license_review` 3,613; all ineligible |
+| **Total** | **6,489** |  | **6,489 candidate_not_reviewed** | **6,489 pending; 0 eligible** |
+
+`configs/ingestion_sources.json` allows those five extensions, category `documentation`, and requires license status `approved`. `src/rag_pipeline/ingestion/discovery.py::documentation_candidates()` marks the records `pending_license_review` because the inventory's license status is pending, then leaves `eligible_for_processing` false. Parser availability is separate from eligibility.
+
+### Human-controlled authorization
+
+- `src/rag_pipeline/ingestion/approval.py::authorize_document()` checks local path containment, file existence, extension, documentation category, ingestion status, discovery denials, current SHA-256 and file size before it considers approval. It then requires an approved source decision with a valid evidence binding and `documentation_candidates` scope. A document explicitly rejected at document level overrides source approval.
+- `src/rag_pipeline/ingestion/approval_workflow.py::decide_source()` requires a reviewer, license name, notes, and a source-bound evidence record. `_evidence()` verifies that the catalog record names the source and that the evidence artifact exists under the project with a matching SHA-256. `validate_record()` rechecks the artifact, catalog record, source binding, and evidence-record hash at authorization time.
+- For ordinary documentation, an evidence-backed source decision can cover documentation candidates in its declared scope. A document-level approval is not automatically required for every documentation file, but a recorded document rejection is enforced. Research papers have a separate per-paper decision path and are outside this report's 6,489 documentation records.
+- `scripts/ragctl.py::main()` for indexing prefilters candidate statuses and configured extensions, then invokes `authorize_document()`. `src/rag_pipeline/ingestion/parsing_job.py::parse_documents()` and `src/rag_pipeline/ingestion/indexing.py::index_normalized_run()` also check authorization before parsing/indexing. The inventory's eligibility flag is not itself the authorization source of truth.
+- `src/rag_pipeline/api/app.py::check_index()` requires manifest mode `reviewed_source_and_document_approval`. The current manifest is still in development-unreviewed mode.
+
+## Source-by-source review matrix
+
+Recommendations below are status labels for the next human review step only. None is an approval or an eligibility change.
+
+| Source | Source license evidence in catalog | Provenance and content concerns | Human review / potential exclusions | Recommendation |
+|---|---|---|---|---|
+| **Docker** — 1,114 `.md` | Two catalog records: `knowledge_base/raw/official_documentation/docker/docs/LICENSE` and `knowledge_base/raw/official_documentation/_sources/docker/LICENSE`. Both files exist, have matching catalog hashes, and contain Apache License 2.0 text. | Source URL is `https://docs.docker.com/`; Git repo and commit `553482ce632f00c6e7faabab863422b4916e7c18` are recorded. Release version is unset, but the commit pins the checkout. Path/content heuristic found 52 example/sample path names, 65 documents mentioning “third party”, and four license-related paths. Those text hits can describe product topics; they are indicators for review, not proof of embedded third-party ownership. | Human reviewer should verify the docs tree is within the license scope and identify embedded third-party examples, copied specifications, logos/diagrams, and any separately licensed material. Consider a path-specific exclusion for license/legal pages if they are not useful answer content. | **CANDIDATE_FOR_HUMAN_REVIEW** — evidence is present and commit provenance is pinned; no decision has been made. |
+| **FastAPI** — 158 `.md` | One catalog record: `knowledge_base/raw/official_documentation/_sources/fastapi/LICENSE`. It exists, its hash matches, and it contains MIT License text. | Source version `0.162.7`, repository `https://github.com/fastapi/fastapi.git`, and commit `5758a9c8347d911444dca97a55b708cc4a8de4f8` are recorded. Nine documents contain third-party phrasing; examples include `advanced/middleware.md` and `advanced/security/oauth2-scopes.md`. Mentions alone do not establish third-party content. | Review MIT terms against this exact docs commit, including embedded examples and references to Starlette/Pydantic/OAuth integrations. Exclude any material the reviewer finds outside the approved documentation scope. | **CANDIDATE_FOR_HUMAN_REVIEW** — source evidence and version/commit metadata are available; not approved. |
+| **Hugging Face Transformers** — 787 `.md` | One catalog record: `knowledge_base/raw/official_documentation/_sources/huggingface_transformers/LICENSE`. It exists, its hash matches, and it contains Apache License 2.0 text. | Repository `https://github.com/huggingface/transformers.git` and commit `3a134bc37f7c22c801b618e289b0255425f22647` are recorded; `source_version` is unset. Content scan found third-party phrases in six pages, including `model_doc/musicgen.md` and `model_doc/musicgen_melody.md`. Hundreds of pages contain copyright/license strings, likely including repeated site/documentation attribution; this does not establish that all referenced models, datasets, or assets share the repository license. | Review the pinned commit and distinguish Transformers docs text from separately licensed models, datasets, code, media, or third-party notices. Pay particular attention to model-specific pages and examples. | **CANDIDATE_FOR_HUMAN_REVIEW** — repository license artifact and commit are available, but scope must be reviewed. |
+| **PostgreSQL 18** — 1 `.pdf` | No PostgreSQL license/notice artifact is present in `license_evidence.jsonl`; no separate local `LICENSE`/`NOTICE` file was found in the captured docs. | Inventory points to the official PostgreSQL PDF URL and records version `18`; local PDF metadata identifies **PostgreSQL 18.7 Documentation**, 3,178 pages, by The PostgreSQL Global Development Group. The inventory therefore records only the major release while the file identifies a minor release. Local file SHA/size match inventory. | Obtain and verify the applicable documentation license/notice for this exact PDF, confirm the 18.7 snapshot is intended under the `18` source record, and review incorporated third-party acknowledgments before any decision. | **INSUFFICIENT_EVIDENCE** — provenance is traceable, but the source-bound license evidence required by the approval workflow is missing. |
+| **Python 3.13** — 553 `.html` | No Python record exists in `license_evidence.jsonl`. The captured tree does contain `license.html` and `copyright.html` (both counted as documentation files); `license.html` includes a “Licenses and Acknowledgements for Incorporated Software” section and references Apache, MIT, and BSD terms. Those files are not currently bound as evidence catalog records. | Inventory source is `https://docs.python.org/3.13/`, version `3.13`, with no repository/commit. Rendered pages identify Python **3.13.18**. Each local file has a matching inventory hash, but exact upstream build provenance is less specific than a pinned repository commit. A text scan found third-party wording in 88 pages; many pages repeat copyright/license boilerplate. | Human reviewer should establish the terms for this exact rendered 3.13.18 corpus, review the incorporated-software acknowledgments, and determine whether pages such as `license.html`/`copyright.html` belong in the answer corpus or only serve as license evidence. Bind valid source evidence before approval. | **INSUFFICIENT_EVIDENCE** — useful local terms exist, but there is no source-bound evidence-catalog record and third-party acknowledgments need review. |
+| **PyTorch** — 263 (`.md` 255, `.rst` 7, `.txt` 1) | Two catalog records: `knowledge_base/raw/official_documentation/_sources/pytorch/LICENSE` and `.../_sources/pytorch/NOTICE`. Both exist and match their catalog hashes. The NOTICE contains multiple license sections, including Apache and BSD material, so the repository has more complex third-party notices than one top-level license alone conveys. | Repository `https://github.com/pytorch/pytorch.git` and commit `242a9cf0e013551eaada7827cfff1aa8d293dfb1` are recorded; release version is unset. A content scan found third-party phrasing in seven pages and copyright text in three. Example paths include `distributed/custom_backends.md` and `community/governance.md`. | Keep excluded until a reviewer maps the repository LICENSE/NOTICE to the documentation subset, reviews embedded code and third-party materials, and records any document-level rejection or narrow scope. | **EXCLUDE_PENDING_REVIEW** — evidence is available, but the multi-license NOTICE and embedded examples require explicit scope decisions before this source should enter the corpus. |
+| **Qdrant** — 3,613 `.md` | No Qdrant license/notice record exists in the evidence catalog; no source license/notice file was found in the captured documentation tree. This does not prove the upstream repository has no license; the local source root is only the documentation subtree. | Repository `https://github.com/qdrant/landing_page.git` and commit `799edaa9d0ef562790402d6d4ddf370db92162e5` are recorded; release version is unset. Path heuristics match 3,222 names containing “example/sample” and 2,563 containing “generated”; examples include `headless/snippets/agentic-rag-crewai/generated/agents/python.md`. Those are source/provenance signals that need review, not automatic exclusions. Four pages mention third-party content. | Obtain the applicable license/notice for the pinned docs commit and establish whether generated headless snippets are first-party, third-party, or generated from separately licensed examples. Review embedded code, integration examples, copied configuration, and duplicate/generated material. | **INSUFFICIENT_EVIDENCE** — commit provenance exists, but no source-bound license artifact is available and generated/example-heavy content needs scope review. |
+
+## Evidence inventory limitations
+
+`knowledge_base/metadata/license_evidence.jsonl` has **six** candidate artifact records: Docker (two), FastAPI (one), Hugging Face Transformers (one), and PyTorch (two). Each artifact exists inside the project and its bytes match the catalog SHA-256. All catalog records are marked `text_extracted`; this is an extraction status, not a legal determination. They do not contain a `license_name` or reviewer decision. `knowledge_base/metadata/license_evidence_summary.json` reports `approval_status=not_approved`.
+
+The evidence catalog has no source-bound artifact for `python_3_13`, `postgresql_18`, or `qdrant`. The Python rendered license/copyright pages are relevant local materials, but they are not yet catalog-bound. Root/source repository LICENSE and NOTICE files do not automatically cover every copied code block, model/dataset reference, image, logo, generated snippet, or other third-party content in documentation.
+
+`knowledge_base/metadata/source_approvals.json` has all **14** source decisions at `pending_review`, including all seven documentation sources. `knowledge_base/metadata/document_approvals.json` is absent. No approval is evidence-bound as a human decision, and no document-level rejection has been recorded.
+
+## Provenance, third-party indicators, and exclusions
+
+- The 6,489 documentation rows all have `source_id`, `relative_path`, `source_url`, and `sha256`; current local file hash and size checks match all inventory records.
+- Five Git documentation sources have pinned commits (Docker, FastAPI, Hugging Face, PyTorch, Qdrant). Docker/HF/PyTorch/Qdrant have no `source_version` set, but their commits identify the checked-out content. FastAPI has version and commit. Python has a versioned docs URL but no repository/commit; the rendered content is 3.13.18 while inventory says 3.13. PostgreSQL has an official PDF URL and local file hash, but the inventory's `18` version is less specific than the PDF's 18.7 metadata.
+- The top-level source URL is generally a docs landing page or repository URL rather than a URL for each individual file. Relative paths plus commit/hash provide local traceability for repo sources, but direct upstream path provenance is not uniformly recorded.
+- The captured documentation manifest classifies these rows as documentation; that does not mean every embedded passage, code example, asset, generated page, or referenced software component is first-party. Text searches for “third party”, “copyright”, and license phrases were used only as review indicators. A phrase match is not a rights finding, and absence of a match is not proof of no third-party material.
+- Potential document-level exclusions for human review include Python `license.html`/`copyright.html` (legal notices rather than ordinary technical help), PyTorch pages affected by NOTICE/third-party scope, and generated/example-heavy Qdrant paths. Docker/FastAPI/Hugging Face examples and integration content may also contain separately governed material. Reviewers should record exclusions at the narrowest path/document level that fits the evidence.
+
+## Existing index comparison
+
+The current `knowledge_base/metadata/index_manifests/rag_docs_v2.json` reports status `ready`, **6,565 documents**, **58,856 chunks**, authorization mode `operator_authorized_unreviewed`, and `authorized_source_ids` listing the 14 configured sources. Its `source_manifest_sha256` exactly matches the current `ingestion_inventory.jsonl` hash.
+
+The manifest does not include per-source or per-category document counts, so it cannot show which of the 6,489 documentation records are present. The full inventory has 6,489 documentation records plus 107 research-paper records (6,596 non-unsupported candidates); the index count is 31 lower. This audit does not attribute that gap or query Qdrant. The manifest's source ID list in operator-authorized mode is not a record of human license approvals. The manifest and Qdrant were not modified.
+
+## Other ingestion and security controls
+
+Even after human review, each document remains subject to:
+
+1. Project-contained, existing path and matching file checksum/size checks.
+2. Allowed documentation category, allowed extension, and candidate ingestion status. `review_required` and `supporting_asset` remain excluded.
+3. Parser registry support and parser resource/format limits; parser support is not ingestion authorization.
+4. Valid source evidence binding and approval scope `documentation_candidates`; pending/rejected sources remain blocked.
+5. Explicit document-level rejection precedence, where a document decision exists.
+6. Index validation and production API readiness requiring `reviewed_source_and_document_approval` manifest mode.
+
+These controls are independent of whether the content is publicly accessible. This audit did not test runtime retrieval and does not relax any gate.
+
+## Overall readiness verdict
+
+**NOT_READY.** The 6,489 records are structural candidates for source review, not approved corpus documents. Four sources have checksum-verified source-level license artifacts available for human review (Docker, FastAPI, Hugging Face Transformers, PyTorch); three lack a bound evidence-catalog artifact (Python, PostgreSQL, Qdrant). All seven source decisions remain pending, all 6,489 license statuses remain pending, no documents are eligible, and the production manifest gate is not satisfied.
+
+Human reviewers must verify each source's applicable terms and exact corpus scope, assess third-party and generated/example content, record evidence-bound decisions, and use document-level rejections where needed. No recommendation in this report constitutes an approval. No tests were run; this was a read-only inspection and content/provenance audit.

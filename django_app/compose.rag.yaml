@@ -1,0 +1,73 @@
+services:
+  rag-api:
+    build:
+      context: ..
+      dockerfile: Dockerfile.rag-api
+    environment:
+      RAG_API_TOKEN: ${RAG_API_TOKEN:?Set RAG_API_TOKEN to a random value of at least 32 characters}
+      RAG_TENANT_ID: ${RAG_TENANT_ID:-local}
+      RAG_PRINCIPAL_ID: ${RAG_PRINCIPAL_ID:-local-admin}
+      RAG_API_BIND_HOST: 0.0.0.0
+      RAG_API_PORT: "8000"
+      RAG_AUTHORIZATION_MODE: ${RAG_AUTHORIZATION_MODE:-production}
+      RAG_LOCAL_ACADEMIC_DEMO_ENABLED: ${RAG_LOCAL_ACADEMIC_DEMO_ENABLED:-0}
+      RAG_QDRANT_URL: http://qdrant:6333
+      RAG_OLLAMA_BASE_URL: http://host.docker.internal:11434
+      RAG_EVALUATION_DIAGNOSTICS_ENABLED: ${RAG_EVALUATION_DIAGNOSTICS_ENABLED:-0}
+      RAG_EVALUATION_ARTIFACT_PATH: ${RAG_EVALUATION_ARTIFACT_PATH:-knowledge_base/logs/phase4b_evaluation_diagnostics.jsonl}
+      RAG_EVALUATION_MAX_RECORDS: ${RAG_EVALUATION_MAX_RECORDS:-200}
+      RAG_EVALUATION_MAX_BYTES: ${RAG_EVALUATION_MAX_BYTES:-10000000}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - chat-rag
+      - vector-private
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m,mode=1777
+      - /app/knowledge_base/logs:size=16m,mode=0700,uid=10002,gid=10002
+    init: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://127.0.0.1:8000/health', timeout=2).read()"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 25s
+    restart: unless-stopped
+
+  rag-api-synthetic:
+    profiles: [synthetic-test]
+    build:
+      context: ..
+      dockerfile: Dockerfile.synthetic-rag-test
+    environment:
+      RAG_SYNTHETIC_TEST_TOKEN: ${RAG_SYNTHETIC_TEST_TOKEN:-synthetic-test-token-only-never-use-for-real-rag}
+    networks:
+      - chat-rag
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    init: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://127.0.0.1:8000/health', timeout=2).read()"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    restart: "no"
+
+networks:
+  chat-rag:
+    name: satell-chat-rag
+    external: true
+  vector-private:
+    name: satell-rag-service
+    external: true

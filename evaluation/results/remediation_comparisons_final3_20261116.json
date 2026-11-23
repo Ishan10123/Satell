@@ -1,0 +1,181 @@
+{
+  "read_only": true,
+  "result_type": "unreviewed_generation_diagnostic",
+  "index_id": "index-20261116T044640Z-b53eb021",
+  "query_count": 2,
+  "results": [
+    {
+      "query_id": "m01",
+      "question": "Compare PostgreSQL B-tree indexes with Qdrant vector indexes: what data and query patterns is each designed for?",
+      "domain": "postgresql_qdrant",
+      "test_case_type": "multi_document",
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "5b6958c2310d6eca029192376c0fa6d97135dd7aea59b3aba14edc62e4b7f1ab",
+        "c85725e56dfd9b899104a1bb67270d9f3299d160b60839c9b2944ab7a19ba8bd"
+      ],
+      "context_budget_estimated_tokens": 2500,
+      "context_chunks_omitted": 3,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": true,
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "5b6958c2310d6eca029192376c0fa6d97135dd7aea59b3aba14edc62e4b7f1ab",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rrf_score": 0.03177805800756621,
+          "rerank_score": 5.627252101898193,
+          "dense_rank": 1,
+          "sparse_rank": 5,
+          "text": "data that can be sorted into some ordering. In\nparticular, the PostgreSQL query planner will consider using a B-tree index whenever an indexed\ncolumn is involved in a comparison using one of these operators:\n< <= = >= >\nConstructs equivalent to combinations of these operators, such as BETWEEN and IN, can also be\nimplemented with a B-tree index search. Also, an IS NULL or IS NOT NULL condition on an index\ncolumn can be used with a B-tree index.\nThe optimizer can also use a B-tree index for queries involving the pattern matching operators LIKE\nand ~ if the pattern is a constant and is anchored to the beginning of the string — for example, col\nLIKE 'foo%' or col ~ '^foo', but not col LIKE '%bar'. However, if your database\ndoes not use the C locale you will need to create the index with a special operator class to support\nindexing of pattern-matching queries; see Section 11.10 below. It is also possible to use B-tree indexes\nfor ILIKE and ~*, but only if the pattern starts with non-alphabetic characters, i.e., characters that\nare not affected by upper/lower case conversion.\nB-tree indexes can also be used to retrieve data in sorted order. This is not always faster than a simple\nscan and sort, but it is often helpful.\n456"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "c85725e56dfd9b899104a1bb67270d9f3299d160b60839c9b2944ab7a19ba8bd",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rrf_score": 0.02976190476190476,
+          "rerank_score": 3.194331169128418,
+          "dense_rank": 3,
+          "sparse_rank": 12,
+          "text": "Chapter 65. Built-in Index Access\nMethods\n65.1. B-Tree Indexes\n65.1.1. Introduction\nPostgreSQL includes an implementation of the standard btree (multi-way balanced tree) index data\nstructure. Any data type that can be sorted into a well-defined linear order can be indexed by a btree\nindex. The only limitation is that an index entry cannot exceed approximately one-third of a page (after\nTOAST compression, if applicable).\nBecause each btree operator class imposes a sort order on its data type, btree operator classes (or, really,\noperator families) have come to be used as PostgreSQL's general representation and understanding of\nsorting semantics. Therefore, they've acquired some features that go beyond what would be needed\njust to support btree indexes, and parts of the system that are quite distant from the btree AM make\nuse of them.\n65.1.2. Behavior of B-Tree Operator Classes\nAs shown in Table 36.3, a btree operator class must provide five comparison operators, <, <=, =, >=\nand >. One might expect that <> should also be part of the operator class, but it is not, because it\nwould almost never be useful to use a <> WHERE clause in an index search. (For some purposes, the\nplanner treats <> as associated with a btree operator class; but it finds that operator via the = operator's\nnegator link, rather than from pg_amop.)\nWhen several data types share near-identical sorting semantics, their operator classes can be grouped\ninto an operator family. Doing so is advantageous because it allows the planner to make deductions\nabout cross-type comparisons. Each operator class within the family should contain the single-type\noperators (and associated support functions) for its input data type, while cross-type comparison\noperators and support functions are “loose” in the family. It is recommendable that a complete set\nof cross-type operators be included in the family, thus ensuring that the planner can represent any\ncomparison conditions that it deduces from transitivity.\nThere are some basic assumptions that a btree operator family must satisfy:\n• An = operator must be an equivalence relation; that is, for all non-null values A, B, C of the data type:\n• A = A is true (reflexive law)\n• if A = B, then B = A (symmetric law)\n• if A = B"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "pages": [
+            495
+          ],
+          "section": "",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "pages": [
+            2633
+          ],
+          "section": "",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 67.68780000129482,
+        "dense_search": 17.387599997164216,
+        "sparse_search": 145.63469999848166,
+        "fusion": 0.14269999519456178,
+        "rerank": 267.498399996839,
+        "context": 1.1972000065725297,
+        "generation": 3085.5380999928457,
+        "end_to_end": 3607.591299994965
+      },
+      "answer": "UNREVIEWED LOCAL DIAGNOSTIC; NOT APPROVED FOR PRODUCTION.\n- PostgreSQL B-tree indexes support data types that can be sorted into a well-defined linear order [S2].\n- A B-tree index is used when an indexed column involves comparison operators such as <, <=, =, >=, or > [S1].\n- Constructs equivalent to these operators, including BETWEEN and IN, can utilize a B-tree index [S1].\n- An IS NULL or IS NOT NULL condition on an index column can be used with a B-tree index [S1].\n- PostgreSQL B-tree indexes support pattern matching operators LIKE and ~ if the pattern is constant and anchored to the beginning of the string [S1].\n- Any data type capable of being sorted into some ordering can be indexed by a btree index in PostgreSQL [S2].",
+      "answer_citations": [
+        "S2",
+        "S1"
+      ],
+      "generation_prompt_tokens_estimated": 3201,
+      "generation_prompt_tokens_reported": 830,
+      "status": "generated"
+    },
+    {
+      "query_id": "m05",
+      "question": "Compare PyTorch autograd gradient tracking with how Transformer attention masks affect model inputs.",
+      "domain": "pytorch_transformers",
+      "test_case_type": "multi_document",
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "3b7c0195b126e296592b1cef79bd7974ff9454fe0f0818c49fa4be4fd6bf6fae",
+        "0596a9c896c1ca38727f07f387ef700cf3a71f9b25c94cf060872c51bb402c91"
+      ],
+      "context_budget_estimated_tokens": 2254,
+      "context_chunks_omitted": 2,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget"
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": true,
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "3b7c0195b126e296592b1cef79bd7974ff9454fe0f0818c49fa4be4fd6bf6fae",
+          "source_id": "huggingface_transformers",
+          "document_id": "704496c838746cf662c5a2abdd7cbcf3c1f769c7c427c012cec598c2d433729b",
+          "title": "Apple Silicon",
+          "rrf_score": 0.015384615384615385,
+          "rerank_score": 2.140665292739868,
+          "dense_rank": 5,
+          "sparse_rank": null,
+          "text": "Set the attention backend with `attn_implementation` when you load a model, and it applies to both inference and training. Models use [SDPA](./attention_interface) by default. With PyTorch 2.13 or later, SDPA on MPS handles grouped-query attention directly, without repeating the key and value heads first.\nUse SDPA for training.\n- [kernels-community/metal-flash-sdpa](https://huggingface.co/kernels-community/metal-flash-sdpa) only supports variable-length inputs, such as packed sequences or a batch whose attention mask contains padding. A batch without padding, such as a single prompt, raises an error. It doesn't compute gradients for the query, key, and value projections. [gpt-oss](./model_doc/gpt_oss) switches to it automatically when you request flash attention on MPS. - [ggml-org/ggml-attn](https://huggingface.co/kernels/ggml-org/ggml-attn) is the default for `transformers serve` and for [GGUF](./quantization/gguf#attention) models when `kernels` is installed.\nInstall the `kernels` extra to use either kernel. It installs a version that Transformers supports.\npip install \"transformers[kernels]\""
+        },
+        {
+          "rank": 5,
+          "chunk_id": "0596a9c896c1ca38727f07f387ef700cf3a71f9b25c94cf060872c51bb402c91",
+          "source_id": "huggingface_transformers",
+          "document_id": "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+          "title": "Glossary",
+          "rrf_score": 0.01639344262295082,
+          "rerank_score": -0.36754730343818665,
+          "dense_rank": 1,
+          "sparse_rank": null,
+          "text": "This can then be converted into a tensor in PyTorch. The attention mask is a binary tensor indicating the position of the padded indices so that the model does not attend to them. For the [`BertTokenizer`], `1` indicates a value that should be attended to, while `0` indicates a padded value. This attention mask is in the dictionary returned by the tokenizer under the key \"attention_mask\":\n>>> padded_sequences[\"attention_mask\"]\n[[1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "huggingface_transformers",
+          "document_id": "704496c838746cf662c5a2abdd7cbcf3c1f769c7c427c012cec598c2d433729b",
+          "title": "Apple Silicon",
+          "pages": [],
+          "section": "Apple Silicon > Choose an attention backend",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "huggingface_transformers",
+          "document_id": "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+          "title": "Glossary",
+          "pages": [],
+          "section": "Glossary > A > attention mask",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 30.949300002248492,
+        "dense_search": 18.664200004423037,
+        "sparse_search": 84.54899999924237,
+        "fusion": 0.12589999823831022,
+        "rerank": 266.4606999969692,
+        "context": 0.4994000046281144,
+        "generation": 2386.430399994424,
+        "end_to_end": 2788.0332000058843
+      },
+      "answer": "UNREVIEWED LOCAL DIAGNOSTIC; NOT APPROVED FOR PRODUCTION.\n- PyTorch autograd gradient tracking computes gradients for query, key, and value projections during training [S1].\n- Transformer attention masks are binary tensors indicating padded indices to prevent the model from attending to them [S2].\n- A value of 1 in an attention mask indicates a position that should be attended to [S2].\n- A value of 0 in an attention mask indicates a padded value [S2].\n- SDPA on MPS handles grouped-query attention directly without repeating key and value heads for variable-length inputs [S1].\n- Flash Attention does not compute gradients for query, key, and value projections when used with certain configurations [S1].",
+      "answer_citations": [
+        "S1",
+        "S2"
+      ],
+      "generation_prompt_tokens_estimated": 2943,
+      "generation_prompt_tokens_reported": 863,
+      "status": "generated"
+    }
+  ]
+}

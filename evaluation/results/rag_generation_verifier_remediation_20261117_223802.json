@@ -1,0 +1,4941 @@
+{
+  "read_only": true,
+  "result_type": "unreviewed_generation_diagnostic",
+  "index_id": "index-20261116T044640Z-b53eb021",
+  "query_count": 24,
+  "evaluation": {
+    "automated_claim_support_rate": 0.9746835443037974,
+    "automated_claims": 79,
+    "automated_supported_claims": 77,
+    "automated_rejected_claims": 2,
+    "human_labeled_claims": 0,
+    "human_answer_correctness": "not_assessed",
+    "limitation": "Local-model verdicts are diagnostic estimates; they are not independent human correctness labels.",
+    "error_counts_by_code": {
+      "uncited_claim_rejected": 4
+    },
+    "verifier_done_reason_counts": {
+      "stop": 19
+    },
+    "truncated_verifier_responses": 0
+  },
+  "results": [
+    {
+      "query_id": "q001",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "fastapi",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "515553cf4cfb74de7ff607590b4596662da67f849be258a34ececae7198f7282",
+        "6082e1141b744ebda55a6b8ef6eb5758e1333bd72118450314b9e92653608f3f"
+      ],
+      "context_budget_estimated_tokens": 2108,
+      "context_chunks_omitted": 3,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "f70299b8a0885e2961cfc1a44dfac9b0180e35f09436e4b861ed0b43de31d763",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "a0e1934f6cd4816f3ac6757857b6a90b4e42a67a48de4d3fad56ce4d0f4adee5",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "a930a6d13c5dccc4cc8870a7779f014fa1fd5910f1299ac0f4caa6c841588687",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "515553cf4cfb74de7ff607590b4596662da67f849be258a34ececae7198f7282",
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "title": "Dependencies { #dependencies }",
+          "rrf_score": 0.032266458495966696,
+          "rerank_score": 5.5006914138793945,
+          "dense_rank": 3,
+          "sparse_rank": 1,
+          "text_characters": 815
+        },
+        {
+          "rank": 2,
+          "chunk_id": "6082e1141b744ebda55a6b8ef6eb5758e1333bd72118450314b9e92653608f3f",
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "title": "Dependencies { #dependencies }",
+          "rrf_score": 0.031009615384615385,
+          "rerank_score": 5.2169928550720215,
+          "dense_rank": 4,
+          "sparse_rank": 5,
+          "text_characters": 631
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "515553cf4cfb74de7ff607590b4596662da67f849be258a34ececae7198f7282",
+          "title": "Dependencies { #dependencies }",
+          "rerank_score": 5.5006914138793945,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "6082e1141b744ebda55a6b8ef6eb5758e1333bd72118450314b9e92653608f3f",
+          "title": "Dependencies { #dependencies }",
+          "rerank_score": 5.2169928550720215,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "chunk_id": "a0e1934f6cd4816f3ac6757857b6a90b4e42a67a48de4d3fad56ce4d0f4adee5",
+          "title": "Dependencies { #dependencies }",
+          "rerank_score": 5.131711006164551,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "fastapi",
+          "document_id": "7c66e83be595273df54efe900d4f4f896d82375b4ff17c4dfe54bd9606ae811d",
+          "chunk_id": "f70299b8a0885e2961cfc1a44dfac9b0180e35f09436e4b861ed0b43de31d763",
+          "title": "Background Tasks { #background-tasks }",
+          "rerank_score": 5.0118584632873535,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "fastapi",
+          "document_id": "2abc20f5dfb4f9ab490d27d25699d2c1dfc1eccb59ea6a37534dcf98e8059203",
+          "chunk_id": "a930a6d13c5dccc4cc8870a7779f014fa1fd5910f1299ac0f4caa6c841588687",
+          "title": "Features { #features }",
+          "rerank_score": 4.2455339431762695,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "title": "Dependencies { #dependencies }",
+          "pages": [],
+          "section": "Dependencies { #dependencies } > Simple usage { #simple-usage }",
+          "source_reference": "https://github.com/fastapi/fastapi"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "fastapi",
+          "document_id": "cf129f55180a8970cfc0202466b38131fe9bfedb69c63d97a52d83197c3c0f53",
+          "title": "Dependencies { #dependencies }",
+          "pages": [],
+          "section": "Dependencies { #dependencies } > What is \"Dependency Injection\" { #what-is-dependency-injection }",
+          "source_reference": "https://github.com/fastapi/fastapi"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 3509.052499999598,
+        "dense_search": 106.47839999910502,
+        "sparse_search": 185.6778999990638,
+        "fusion": 0.9647999995650025,
+        "rerank": 4544.739099999788,
+        "context": 7.118800000171177,
+        "generation": 15210.320399999546,
+        "answer_generation": 10416.730599999937,
+        "claim_verification": 4080.065800000739,
+        "generation_pipeline": 15210.316000000603,
+        "end_to_end": 23565.8913999996
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1",
+        "S2"
+      ],
+      "answer_generation_ms": 10416.730599999937,
+      "claim_verification_ms": 4080.065800000739,
+      "generation_pipeline_ms": 15210.316000000603,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2740,
+      "generation_prompt_tokens_reported": 703,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 8,
+        "supported": 8,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 230,
+        "prompt_eval_count": 924,
+        "response_chars": 798,
+        "output_token_allowance": 512,
+        "estimated_input_tokens": 2306,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 43,
+      "answer_characters": 705,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 230,
+      "verification_prompt_eval_count": 924,
+      "verification_response_chars": 798,
+      "verification_output_tokens": 512,
+      "verification_input_tokens_estimated": 2306,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 8
+    },
+    {
+      "query_id": "q002",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "fastapi",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "c311ba55c080a48d0bd82d9f7ab8e2336474e1bd1481361f961d1f2d51ff3bb8",
+        "62fa518f60fc86271f55c00880756c3afb351855efb0c3d980921555e0c59d69"
+      ],
+      "context_budget_estimated_tokens": 2263,
+      "context_chunks_omitted": 3,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "dce9ceef26823e614f52c47fdbae2267b8411b64da8d152bd488d8e29f47a06d",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "7111af5c501f9bab9464e93617176c55b17c2186f3f525abdd669cb231cd4070",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "22a86a7bbc1d41c248976bf3ffe02543b35dc184e8f2f92741f87f7bc4ab9c04",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "c311ba55c080a48d0bd82d9f7ab8e2336474e1bd1481361f961d1f2d51ff3bb8",
+          "source_id": "fastapi",
+          "document_id": "e67df7cfd90a7354d0e84ca69fddefc26c3d4df4dce06af576f655d27a905a1c",
+          "title": "OAuth2 scopes { #oauth2-scopes }",
+          "rrf_score": 0.03225806451612903,
+          "rerank_score": 5.81787109375,
+          "dense_rank": 2,
+          "sparse_rank": 2,
+          "text_characters": 1281
+        },
+        {
+          "rank": 3,
+          "chunk_id": "62fa518f60fc86271f55c00880756c3afb351855efb0c3d980921555e0c59d69",
+          "source_id": "fastapi",
+          "document_id": "0434e012e7040cdd487e349494dc54d8a5851b5c23a5aa2ada20d6cee32f06e1",
+          "title": "Dependencies - `Depends()` and `Security()`",
+          "rrf_score": 0.030090497737556562,
+          "rerank_score": 4.770813941955566,
+          "dense_rank": 8,
+          "sparse_rank": 5,
+          "text_characters": 320
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "fastapi",
+          "document_id": "e67df7cfd90a7354d0e84ca69fddefc26c3d4df4dce06af576f655d27a905a1c",
+          "chunk_id": "c311ba55c080a48d0bd82d9f7ab8e2336474e1bd1481361f961d1f2d51ff3bb8",
+          "title": "OAuth2 scopes { #oauth2-scopes }",
+          "rerank_score": 5.81787109375,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "fastapi",
+          "document_id": "d8aea3621898c42578c992672557763ef79eba753cb306dd1cf84fa62897467a",
+          "chunk_id": "dce9ceef26823e614f52c47fdbae2267b8411b64da8d152bd488d8e29f47a06d",
+          "title": "Security Tools",
+          "rerank_score": 4.810622215270996,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "fastapi",
+          "document_id": "0434e012e7040cdd487e349494dc54d8a5851b5c23a5aa2ada20d6cee32f06e1",
+          "chunk_id": "62fa518f60fc86271f55c00880756c3afb351855efb0c3d980921555e0c59d69",
+          "title": "Dependencies - `Depends()` and `Security()`",
+          "rerank_score": 4.770813941955566,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "fastapi",
+          "document_id": "132258acfd60385b80171b8f164739bfd48bbd26ecedadaf60bdc935e0c26e69",
+          "chunk_id": "7111af5c501f9bab9464e93617176c55b17c2186f3f525abdd669cb231cd4070",
+          "title": "OAuth2 with Password (and hashing), Bearer with JWT tokens { #oauth2-with-password-and-hashing-bearer-with-jwt-tokens }",
+          "rerank_score": 4.456577301025391,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "fastapi",
+          "document_id": "e361a358a9db7c5bcac3b166a2b87e608c2ea5f99031b3075d9ad3fbeb9cadd5",
+          "chunk_id": "22a86a7bbc1d41c248976bf3ffe02543b35dc184e8f2f92741f87f7bc4ab9c04",
+          "title": "Release Notes",
+          "rerank_score": 3.611363410949707,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "fastapi",
+          "document_id": "e67df7cfd90a7354d0e84ca69fddefc26c3d4df4dce06af576f655d27a905a1c",
+          "title": "OAuth2 scopes { #oauth2-scopes }",
+          "pages": [],
+          "section": "OAuth2 scopes { #oauth2-scopes }",
+          "source_reference": "https://github.com/fastapi/fastapi"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "fastapi",
+          "document_id": "0434e012e7040cdd487e349494dc54d8a5851b5c23a5aa2ada20d6cee32f06e1",
+          "title": "Dependencies - `Depends()` and `Security()`",
+          "pages": [],
+          "section": "Dependencies - `Depends()` and `Security()` > `Security()`",
+          "source_reference": "https://github.com/fastapi/fastapi"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 148.96460000090883,
+        "dense_search": 111.93790000106674,
+        "sparse_search": 1264.2741999989084,
+        "fusion": 0.37800000063725747,
+        "rerank": 4534.670500001084,
+        "context": 1.1704999997164123,
+        "generation": 5268.98810000057,
+        "answer_generation": 2558.028600000398,
+        "claim_verification": 2707.43819999916,
+        "generation_pipeline": 5268.983800000569,
+        "end_to_end": 11331.506099999388
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1",
+        "S2"
+      ],
+      "answer_generation_ms": 2558.028600000398,
+      "claim_verification_ms": 2707.43819999916,
+      "generation_pipeline_ms": 5268.983800000569,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2908,
+      "generation_prompt_tokens_reported": 743,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 4,
+        "supported": 4,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 115,
+        "prompt_eval_count": 878,
+        "response_chars": 406,
+        "output_token_allowance": 512,
+        "estimated_input_tokens": 2115,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 56,
+      "answer_characters": 409,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 115,
+      "verification_prompt_eval_count": 878,
+      "verification_response_chars": 406,
+      "verification_output_tokens": 512,
+      "verification_input_tokens_estimated": 2115,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 4
+    },
+    {
+      "query_id": "q003",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "python",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "4b9709470d9fee7a4ae578d1ee31cbe4c3863910b98cd97bf3684a52b0a4a923"
+      ],
+      "context_budget_estimated_tokens": 1725,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "773c8d11c2f8cd4ab31322ea9e104d3c394a35fec03aae545f2b9a9a18620b1a",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "ee1af389f59a6d8535b97742a136ad2431eb9b615e1ead9bdcbf9f83f4215afb",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "aa469145d46143dd180c0b798ec40fd5622dd43274c5798bb5612c588dda9f7b",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "9a9da1395625b17c1c03d1fb4474fd44e1eb598db7f7e47261acf6a0e48d7c6a",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "4b9709470d9fee7a4ae578d1ee31cbe4c3863910b98cd97bf3684a52b0a4a923",
+          "source_id": "python_3_13",
+          "document_id": "75095fb232ef8d385af04a3512737528dcf8e7243a02a32f4bd570b6640b1fd6",
+          "title": "High-level API Index — Python 3.13.18 documentation",
+          "rrf_score": 0.03057889822595705,
+          "rerank_score": 3.2045860290527344,
+          "dense_rank": 3,
+          "sparse_rank": 8,
+          "text_characters": 1238
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "python_3_13",
+          "document_id": "75095fb232ef8d385af04a3512737528dcf8e7243a02a32f4bd570b6640b1fd6",
+          "chunk_id": "4b9709470d9fee7a4ae578d1ee31cbe4c3863910b98cd97bf3684a52b0a4a923",
+          "title": "High-level API Index — Python 3.13.18 documentation",
+          "rerank_score": 3.2045860290527344,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "773c8d11c2f8cd4ab31322ea9e104d3c394a35fec03aae545f2b9a9a18620b1a",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "rerank_score": 3.0710206031799316,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "ee1af389f59a6d8535b97742a136ad2431eb9b615e1ead9bdcbf9f83f4215afb",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "rerank_score": 2.9613611698150635,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "python_3_13",
+          "document_id": "fcd96628946e8c16ccbc5e5847035f12396e5df0dc22f76ad9efcfba40981b32",
+          "chunk_id": "aa469145d46143dd180c0b798ec40fd5622dd43274c5798bb5612c588dda9f7b",
+          "title": "Extending — Python 3.13.18 documentation",
+          "rerank_score": 2.5063323974609375,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "9a9da1395625b17c1c03d1fb4474fd44e1eb598db7f7e47261acf6a0e48d7c6a",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "rerank_score": 2.0999467372894287,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "python_3_13",
+          "document_id": "75095fb232ef8d385af04a3512737528dcf8e7243a02a32f4bd570b6640b1fd6",
+          "title": "High-level API Index — Python 3.13.18 documentation",
+          "pages": [],
+          "section": "High-level API Index¶ > Tasks¶",
+          "source_reference": "https://docs.python.org/3.13/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 90.23609999894688,
+        "dense_search": 113.0723999995098,
+        "sparse_search": 163.48459999971965,
+        "fusion": 0.3628000013122801,
+        "rerank": 4418.790900001113,
+        "context": 43.38789999928849,
+        "generation": 2973.3040999999503,
+        "answer_generation": 1370.5592999995133,
+        "claim_verification": 1599.0039999996952,
+        "generation_pipeline": 2973.302299998977,
+        "end_to_end": 7803.945499999827
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1"
+      ],
+      "answer_generation_ms": 1370.5592999995133,
+      "claim_verification_ms": 1599.0039999996952,
+      "generation_pipeline_ms": 2973.302299998977,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2378,
+      "generation_prompt_tokens_reported": 604,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 2,
+        "supported": 2,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 62,
+        "prompt_eval_count": 615,
+        "response_chars": 210,
+        "output_token_allowance": 320,
+        "estimated_input_tokens": 1642,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 66,
+      "answer_characters": 170,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 62,
+      "verification_prompt_eval_count": 615,
+      "verification_response_chars": 210,
+      "verification_output_tokens": 320,
+      "verification_input_tokens_estimated": 1642,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 2
+    },
+    {
+      "query_id": "q004",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "python",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "9a9da1395625b17c1c03d1fb4474fd44e1eb598db7f7e47261acf6a0e48d7c6a",
+        "34c73cf4f96726eafed9d592664307dbe09300e9e8c076f68efe7bb6ee677a03"
+      ],
+      "context_budget_estimated_tokens": 1855,
+      "context_chunks_omitted": 3,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "07b63036e0730e9ab43560de3a550547d2bae048b845e02150e06f7f341c6305",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "773c8d11c2f8cd4ab31322ea9e104d3c394a35fec03aae545f2b9a9a18620b1a",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "3fa7c5ddea47238928a67b4e297897ff19b3d49444ea3847e7e5e763f095755c",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "9a9da1395625b17c1c03d1fb4474fd44e1eb598db7f7e47261acf6a0e48d7c6a",
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "rrf_score": 0.032018442622950824,
+          "rerank_score": 7.4277238845825195,
+          "dense_rank": 1,
+          "sparse_rank": 4,
+          "text_characters": 892
+        },
+        {
+          "rank": 3,
+          "chunk_id": "34c73cf4f96726eafed9d592664307dbe09300e9e8c076f68efe7bb6ee677a03",
+          "source_id": "python_3_13",
+          "document_id": "75095fb232ef8d385af04a3512737528dcf8e7243a02a32f4bd570b6640b1fd6",
+          "title": "High-level API Index — Python 3.13.18 documentation",
+          "rrf_score": 0.03200204813108039,
+          "rerank_score": 7.163058280944824,
+          "dense_rank": 2,
+          "sparse_rank": 3,
+          "text_characters": 293
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "9a9da1395625b17c1c03d1fb4474fd44e1eb598db7f7e47261acf6a0e48d7c6a",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "rerank_score": 7.4277238845825195,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "07b63036e0730e9ab43560de3a550547d2bae048b845e02150e06f7f341c6305",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "rerank_score": 7.315952301025391,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "python_3_13",
+          "document_id": "75095fb232ef8d385af04a3512737528dcf8e7243a02a32f4bd570b6640b1fd6",
+          "chunk_id": "34c73cf4f96726eafed9d592664307dbe09300e9e8c076f68efe7bb6ee677a03",
+          "title": "High-level API Index — Python 3.13.18 documentation",
+          "rerank_score": 7.163058280944824,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "chunk_id": "773c8d11c2f8cd4ab31322ea9e104d3c394a35fec03aae545f2b9a9a18620b1a",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "rerank_score": 7.020829200744629,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "python_3_13",
+          "document_id": "6b947c3781b049165f537f3ab51fab7e82ff78e3797fea34c350196ce580f810",
+          "chunk_id": "3fa7c5ddea47238928a67b4e297897ff19b3d49444ea3847e7e5e763f095755c",
+          "title": "Synchronization Primitives — Python 3.13.18 documentation",
+          "rerank_score": 6.271448135375977,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "python_3_13",
+          "document_id": "79d3841a75dfa01db2f1ce3f312edbada656b335425cccaadc5076c13ef71351",
+          "title": "Coroutines and tasks — Python 3.13.18 documentation",
+          "pages": [],
+          "section": "Coroutines and tasks¶ > Task cancellation¶",
+          "source_reference": "https://docs.python.org/3.13/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "python_3_13",
+          "document_id": "75095fb232ef8d385af04a3512737528dcf8e7243a02a32f4bd570b6640b1fd6",
+          "title": "High-level API Index — Python 3.13.18 documentation",
+          "pages": [],
+          "section": "High-level API Index¶ > Exceptions¶",
+          "source_reference": "https://docs.python.org/3.13/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 72.00770000054035,
+        "dense_search": 61.254899999767076,
+        "sparse_search": 620.2198999999382,
+        "fusion": 0.43870000081369653,
+        "rerank": 4000.5839000004926,
+        "context": 76.29889999952866,
+        "generation": 4213.3623999998235,
+        "answer_generation": 2170.61509999985,
+        "claim_verification": 2040.298800000528,
+        "generation_pipeline": 4213.360499999908,
+        "end_to_end": 9045.822199999748
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1"
+      ],
+      "answer_generation_ms": 2170.61509999985,
+      "claim_verification_ms": 2040.298800000528,
+      "generation_pipeline_ms": 4213.360499999908,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2491,
+      "generation_prompt_tokens_reported": 672,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 3,
+        "supported": 3,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 91,
+        "prompt_eval_count": 795,
+        "response_chars": 308,
+        "output_token_allowance": 448,
+        "estimated_input_tokens": 1906,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 47,
+      "answer_characters": 380,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 91,
+      "verification_prompt_eval_count": 795,
+      "verification_response_chars": 308,
+      "verification_output_tokens": 448,
+      "verification_input_tokens_estimated": 1906,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 3
+    },
+    {
+      "query_id": "q005",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "postgresql",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "25b4fe868d856c92996c75da92a50b3fb4ee7294431c073324037f2a8106f53e"
+      ],
+      "context_budget_estimated_tokens": 2500,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "7be3473e645366d60ae1020a19db105e5d254f74dd17dce546aa6755c7c3d2a3",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "cdef159ea590e4f4ebb43d08623d3ee5b3f1f8c338d0fb69facac40cd34f9497",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "ae61182e3a3427388d429b84472c19d23cd3fc1e47950cf2c4180253e5daf08e",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "7d3d37b21973ccafcc97ebbfecbc5a20d04d3d63f5c0024de1e97d308c73ce83",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "25b4fe868d856c92996c75da92a50b3fb4ee7294431c073324037f2a8106f53e",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rrf_score": 0.03225806451612903,
+          "rerank_score": 7.839939117431641,
+          "dense_rank": 2,
+          "sparse_rank": 2,
+          "text_characters": 2643
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "25b4fe868d856c92996c75da92a50b3fb4ee7294431c073324037f2a8106f53e",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 7.839939117431641,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "7be3473e645366d60ae1020a19db105e5d254f74dd17dce546aa6755c7c3d2a3",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 6.423762321472168,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "cdef159ea590e4f4ebb43d08623d3ee5b3f1f8c338d0fb69facac40cd34f9497",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 5.9872870445251465,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "ae61182e3a3427388d429b84472c19d23cd3fc1e47950cf2c4180253e5daf08e",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 4.910702705383301,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "7d3d37b21973ccafcc97ebbfecbc5a20d04d3d63f5c0024de1e97d308c73ce83",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 4.080029487609863,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "pages": [
+            553
+          ],
+          "section": "",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 45.63150000103633,
+        "dense_search": 175.4622999997082,
+        "sparse_search": 179.9881999995705,
+        "fusion": 0.6059999996068655,
+        "rerank": 4113.752499999464,
+        "context": 39.68739999982063,
+        "generation": 6237.160000000586,
+        "answer_generation": 3150.0452999989648,
+        "claim_verification": 3075.6756999999197,
+        "generation_pipeline": 6237.155599999824,
+        "end_to_end": 10794.371599999067
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1"
+      ],
+      "answer_generation_ms": 3150.0452999989648,
+      "claim_verification_ms": 3075.6756999999197,
+      "generation_pipeline_ms": 6237.155599999824,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 3170,
+      "generation_prompt_tokens_reported": 707,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 5,
+        "supported": 4,
+        "rejected": 1,
+        "support_rate_automated": 0.8,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 144,
+        "prompt_eval_count": 793,
+        "response_chars": 507,
+        "output_token_allowance": 512,
+        "estimated_input_tokens": 2248,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated_partial",
+      "question_characters": 83,
+      "answer_characters": 562,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 144,
+      "verification_prompt_eval_count": 793,
+      "verification_response_chars": 507,
+      "verification_output_tokens": 512,
+      "verification_input_tokens_estimated": 2248,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 5
+    },
+    {
+      "query_id": "q006",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "postgresql",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "f40e3c8d78c331bfa9483fd6149d971d1997061fecf8e95adcd937f4295530fb"
+      ],
+      "context_budget_estimated_tokens": 2500,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "f2039f22205c9d73970662a967adab89407d326ed224fdffb6d9c6f224b99de9",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "07b58d7cb5296a1388ce8aa0458e9706d00eacace6d8d82ca40f108d14dbdc37",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "57bb8fa2fe2424a113578f2ddf6c8ca9655c149be23ce7d35310b4a7552015fe",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "785fadeec7fa3bd3587b8fa88416364f737e5455a6575ca860de3f2303213358",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "f40e3c8d78c331bfa9483fd6149d971d1997061fecf8e95adcd937f4295530fb",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rrf_score": 0.01639344262295082,
+          "rerank_score": 5.58110237121582,
+          "dense_rank": 1,
+          "sparse_rank": null,
+          "text_characters": 2527
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "f40e3c8d78c331bfa9483fd6149d971d1997061fecf8e95adcd937f4295530fb",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 5.58110237121582,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "07b58d7cb5296a1388ce8aa0458e9706d00eacace6d8d82ca40f108d14dbdc37",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 4.561044692993164,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "f2039f22205c9d73970662a967adab89407d326ed224fdffb6d9c6f224b99de9",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 3.896322250366211,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "57bb8fa2fe2424a113578f2ddf6c8ca9655c149be23ce7d35310b4a7552015fe",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 2.490006446838379,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "785fadeec7fa3bd3587b8fa88416364f737e5455a6575ca860de3f2303213358",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 1.0506205558776855,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "pages": [
+            568
+          ],
+          "section": "",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 43.64920000080019,
+        "dense_search": 183.7974000009126,
+        "sparse_search": 1275.483700001132,
+        "fusion": 0.4000999997515464,
+        "rerank": 3810.88550000095,
+        "context": 21.362900000895024,
+        "answer_generation": 1814.9979000008898,
+        "generation_pipeline": 1815.394400000514,
+        "end_to_end": 7152.144899999257
+      },
+      "comparison_evidence_complete": true,
+      "status": "generation_failed",
+      "error_code": "uncited_claim_rejected",
+      "claim_count": 3,
+      "error_type": "UncitedClaimError",
+      "error_stage": "answer_validation",
+      "error_message": "Answer contains a substantive sentence without a citation.",
+      "original_cause_type": null,
+      "generation_duration_ms": 1814.9979000008898,
+      "verification_duration_ms": null,
+      "retry_count": 0,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "http_status": 200,
+      "generation_http_status": 200,
+      "verification_http_status": null,
+      "generation_pipeline_duration_ms": 1815.394400000514,
+      "verification_done_reason": null,
+      "verification_eval_count": null,
+      "verification_prompt_eval_count": null,
+      "verification_response_chars": null,
+      "verification_output_tokens": null,
+      "verification_input_tokens_estimated": null,
+      "verification_context_window_tokens": null,
+      "verification_safety_margin_tokens": null,
+      "question_characters": 62
+    },
+    {
+      "query_id": "q007",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "qdrant",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "7a3f29b732035bf0427f2f09365b7bf9e35fac6da6c1a04deb039e118f07f617",
+        "9d171264bae3a6b8fe05b33a1c4a2e430fa4dbf5ba2b03cd9ee5daf466066049"
+      ],
+      "context_budget_estimated_tokens": 1959,
+      "context_chunks_omitted": 3,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "4f8cf0092678c0e2ec7f849fadc863061c3dd98666f030cb7e9b2a7f1114a1b9",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "2d0b3e0de1c6beb2665771e892cb4c4a0848fdb3af9514b1a13afd2bc149098a",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "2de1be63bf8d972c41e571a8d76f1b0f6fa7bf986613240bfb6b4a8c3152288b",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "7a3f29b732035bf0427f2f09365b7bf9e35fac6da6c1a04deb039e118f07f617",
+          "source_id": "qdrant",
+          "document_id": "186a54ed68ec61d70bc9b09fb2a48b5c7c7223570a5385257f687f9a31a9f6b1",
+          "title": "_description",
+          "rrf_score": 0.02889344262295082,
+          "rerank_score": 6.849989414215088,
+          "dense_rank": 1,
+          "sparse_rank": 20,
+          "text_characters": 537
+        },
+        {
+          "rank": 2,
+          "chunk_id": "9d171264bae3a6b8fe05b33a1c4a2e430fa4dbf5ba2b03cd9ee5daf466066049",
+          "source_id": "qdrant",
+          "document_id": "487ad0f49db3332ffab2182f5b64a473fe96a3246204a92d8bd83276b561d354",
+          "title": "Tips for Low-Latency Search with Qdrant",
+          "rrf_score": 0.029273504273504274,
+          "rerank_score": 6.724735260009766,
+          "dense_rank": 12,
+          "sparse_rank": 5,
+          "text_characters": 762
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "qdrant",
+          "document_id": "186a54ed68ec61d70bc9b09fb2a48b5c7c7223570a5385257f687f9a31a9f6b1",
+          "chunk_id": "7a3f29b732035bf0427f2f09365b7bf9e35fac6da6c1a04deb039e118f07f617",
+          "title": "_description",
+          "rerank_score": 6.849989414215088,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "qdrant",
+          "document_id": "487ad0f49db3332ffab2182f5b64a473fe96a3246204a92d8bd83276b561d354",
+          "chunk_id": "9d171264bae3a6b8fe05b33a1c4a2e430fa4dbf5ba2b03cd9ee5daf466066049",
+          "title": "Tips for Low-Latency Search with Qdrant",
+          "rerank_score": 6.724735260009766,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "qdrant",
+          "document_id": "79a7c67443b91b7bd49bc3ad0ee231f27c558d3fc46f5b0bb93e0b76058c4511",
+          "chunk_id": "2d0b3e0de1c6beb2665771e892cb4c4a0848fdb3af9514b1a13afd2bc149098a",
+          "title": "Filtering in Vector Search: When to Use What",
+          "rerank_score": 6.586942672729492,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "qdrant",
+          "document_id": "d8a86d56a7e183f10949759ea84780f077b6e6a397f6e8d5827cd70a2db2cfdb",
+          "chunk_id": "2de1be63bf8d972c41e571a8d76f1b0f6fa7bf986613240bfb6b4a8c3152288b",
+          "title": "Payload",
+          "rerank_score": 6.532081127166748,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "7f9a1678504c5c5c8f0ebde093d39bc1f8270f05dacc275397084702bb798a91",
+          "chunk_id": "4f8cf0092678c0e2ec7f849fadc863061c3dd98666f030cb7e9b2a7f1114a1b9",
+          "title": "Build a Semantic Search Engine in 5 Minutes",
+          "rerank_score": 6.360781669616699,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "qdrant",
+          "document_id": "186a54ed68ec61d70bc9b09fb2a48b5c7c7223570a5385257f687f9a31a9f6b1",
+          "title": "_description",
+          "pages": [],
+          "section": "",
+          "source_reference": "https://qdrant.tech/documentation/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "qdrant",
+          "document_id": "487ad0f49db3332ffab2182f5b64a473fe96a3246204a92d8bd83276b561d354",
+          "title": "Tips for Low-Latency Search with Qdrant",
+          "pages": [],
+          "section": "Tips for Low-Latency Search with Qdrant > Create Payload Indexes",
+          "source_reference": "https://qdrant.tech/documentation/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 293.0426000002626,
+        "dense_search": 217.24499999982072,
+        "sparse_search": 1352.9173999995692,
+        "fusion": 0.3820000001724111,
+        "rerank": 4859.698199999912,
+        "context": 4.102400000192574,
+        "generation": 4640.570199999274,
+        "answer_generation": 2334.151099999872,
+        "claim_verification": 2305.8141999990767,
+        "generation_pipeline": 4640.56840000012,
+        "end_to_end": 11371.996100000615
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1",
+        "S2"
+      ],
+      "answer_generation_ms": 2334.151099999872,
+      "claim_verification_ms": 2305.8141999990767,
+      "generation_pipeline_ms": 4640.56840000012,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2610,
+      "generation_prompt_tokens_reported": 639,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 3,
+        "supported": 3,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 89,
+        "prompt_eval_count": 726,
+        "response_chars": 308,
+        "output_token_allowance": 448,
+        "estimated_input_tokens": 1845,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 62,
+      "answer_characters": 328,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 89,
+      "verification_prompt_eval_count": 726,
+      "verification_response_chars": 308,
+      "verification_output_tokens": 448,
+      "verification_input_tokens_estimated": 1845,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 3
+    },
+    {
+      "query_id": "q008",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "qdrant",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "7d2b20e5f475381efdb7d7cc2b5afc698aa46d6cdbde4d2e0af017bd63b300e1",
+        "d66fb2bac643f2e160e240c7998b00f5f1322bb6975e8b5deb2c99f5906e745e"
+      ],
+      "context_budget_estimated_tokens": 1478,
+      "context_chunks_omitted": 3,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "e30007ead0995fa7b7ba629995cd71fa3c7b4f9eac9bf43956dbccdbc510a6ba",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "6d30cc5c2426dfb6b43c81186559634eb997e81a1597df5cfb56f34f00d41623",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "2d0b3e0de1c6beb2665771e892cb4c4a0848fdb3af9514b1a13afd2bc149098a",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "7d2b20e5f475381efdb7d7cc2b5afc698aa46d6cdbde4d2e0af017bd63b300e1",
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "title": "Indexing",
+          "rrf_score": 0.032266458495966696,
+          "rerank_score": 7.424030303955078,
+          "dense_rank": 3,
+          "sparse_rank": 1,
+          "text_characters": 420
+        },
+        {
+          "rank": 3,
+          "chunk_id": "d66fb2bac643f2e160e240c7998b00f5f1322bb6975e8b5deb2c99f5906e745e",
+          "source_id": "qdrant",
+          "document_id": "c213749550c3e269216e653f594d01d6fd500740e32318aad61532d9d0f8dd1b",
+          "title": "_description",
+          "rrf_score": 0.0287391216352965,
+          "rerank_score": 5.995147705078125,
+          "dense_rank": 1,
+          "sparse_rank": 21,
+          "text_characters": 398
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "chunk_id": "7d2b20e5f475381efdb7d7cc2b5afc698aa46d6cdbde4d2e0af017bd63b300e1",
+          "title": "Indexing",
+          "rerank_score": 7.424030303955078,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "chunk_id": "e30007ead0995fa7b7ba629995cd71fa3c7b4f9eac9bf43956dbccdbc510a6ba",
+          "title": "Indexing",
+          "rerank_score": 6.3074140548706055,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "qdrant",
+          "document_id": "c213749550c3e269216e653f594d01d6fd500740e32318aad61532d9d0f8dd1b",
+          "chunk_id": "d66fb2bac643f2e160e240c7998b00f5f1322bb6975e8b5deb2c99f5906e745e",
+          "title": "_description",
+          "rerank_score": 5.995147705078125,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "qdrant",
+          "document_id": "4e606f20743c69334e03fbd474444c60b0fa75c65881e7e434a41d16a1eb2fd3",
+          "chunk_id": "6d30cc5c2426dfb6b43c81186559634eb997e81a1597df5cfb56f34f00d41623",
+          "title": "Qdrant Overview",
+          "rerank_score": 5.178708553314209,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "79a7c67443b91b7bd49bc3ad0ee231f27c558d3fc46f5b0bb93e0b76058c4511",
+          "chunk_id": "2d0b3e0de1c6beb2665771e892cb4c4a0848fdb3af9514b1a13afd2bc149098a",
+          "title": "Filtering in Vector Search: When to Use What",
+          "rerank_score": 5.096475124359131,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "title": "Indexing",
+          "pages": [],
+          "section": "",
+          "source_reference": "https://qdrant.tech/documentation/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "qdrant",
+          "document_id": "c213749550c3e269216e653f594d01d6fd500740e32318aad61532d9d0f8dd1b",
+          "title": "_description",
+          "pages": [],
+          "section": "",
+          "source_reference": "https://qdrant.tech/documentation/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 37.88250000070548,
+        "dense_search": 146.75530000022263,
+        "sparse_search": 979.6998999991047,
+        "fusion": 0.5147000010765623,
+        "rerank": 3684.160699998756,
+        "context": 2.307400000063353,
+        "generation": 4288.37779999958,
+        "answer_generation": 2258.6156999986997,
+        "claim_verification": 2028.3925000003364,
+        "generation_pipeline": 4288.374799998564,
+        "end_to_end": 9140.880400000242
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S2"
+      ],
+      "answer_generation_ms": 2258.6156999986997,
+      "claim_verification_ms": 2028.3925000003364,
+      "generation_pipeline_ms": 4288.374799998564,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2125,
+      "generation_prompt_tokens_reported": 569,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 3,
+        "supported": 3,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 91,
+        "prompt_eval_count": 648,
+        "response_chars": 308,
+        "output_token_allowance": 448,
+        "estimated_input_tokens": 1579,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 58,
+      "answer_characters": 298,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 91,
+      "verification_prompt_eval_count": 648,
+      "verification_response_chars": 308,
+      "verification_output_tokens": 448,
+      "verification_input_tokens_estimated": 1579,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 3
+    },
+    {
+      "query_id": "q009",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "docker",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "2227b862846ba9e2d6bbbc105a594193651b46bbf3fd5325bf816aee94ed4f78",
+        "58b0825200aa43852537cfe18a094fa5c84fc212d3c6c0a1381d463222017fbe",
+        "b464106258920e4a5f80cd9eb1fce682b8c204216e6bf98ed074fcc92ca09473"
+      ],
+      "context_budget_estimated_tokens": 2382,
+      "context_chunks_omitted": 2,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "cffcfcb09758d6125f1524e6652ea988cb9d7163b639bf95b2cbc4fe484f1f60",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "83361d434170aad3117ced9b889a542df5e34c6855f284b3edb0381d011b0156",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 3,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "2227b862846ba9e2d6bbbc105a594193651b46bbf3fd5325bf816aee94ed4f78",
+          "source_id": "docker",
+          "document_id": "5db55f28f50c0cee32691b1eb9d74740531dee0dde8a60e3d0401e189f44f377",
+          "title": "best-practices",
+          "rrf_score": 0.032266458495966696,
+          "rerank_score": 8.62751579284668,
+          "dense_rank": 1,
+          "sparse_rank": 3,
+          "text_characters": 499
+        },
+        {
+          "rank": 2,
+          "chunk_id": "58b0825200aa43852537cfe18a094fa5c84fc212d3c6c0a1381d463222017fbe",
+          "source_id": "docker",
+          "document_id": "f7bdb8cc3b5dfb86c752ce701118a7cdeb8b9684ce76e89d6c71bac6514dede0",
+          "title": "optimize",
+          "rrf_score": 0.03225806451612903,
+          "rerank_score": 8.360838890075684,
+          "dense_rank": 2,
+          "sparse_rank": 2,
+          "text_characters": 385
+        },
+        {
+          "rank": 3,
+          "chunk_id": "b464106258920e4a5f80cd9eb1fce682b8c204216e6bf98ed074fcc92ca09473",
+          "source_id": "docker",
+          "document_id": "25043062ccdeede16c079b2089e52630d5f630cac0ba9639720fba356a02106b",
+          "title": "multi-stage-builds",
+          "rrf_score": 0.03131881575727918,
+          "rerank_score": 7.618040084838867,
+          "dense_rank": 7,
+          "sparse_rank": 1,
+          "text_characters": 654
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "docker",
+          "document_id": "5db55f28f50c0cee32691b1eb9d74740531dee0dde8a60e3d0401e189f44f377",
+          "chunk_id": "2227b862846ba9e2d6bbbc105a594193651b46bbf3fd5325bf816aee94ed4f78",
+          "title": "best-practices",
+          "rerank_score": 8.62751579284668,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "docker",
+          "document_id": "f7bdb8cc3b5dfb86c752ce701118a7cdeb8b9684ce76e89d6c71bac6514dede0",
+          "chunk_id": "58b0825200aa43852537cfe18a094fa5c84fc212d3c6c0a1381d463222017fbe",
+          "title": "optimize",
+          "rerank_score": 8.360838890075684,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "docker",
+          "document_id": "25043062ccdeede16c079b2089e52630d5f630cac0ba9639720fba356a02106b",
+          "chunk_id": "b464106258920e4a5f80cd9eb1fce682b8c204216e6bf98ed074fcc92ca09473",
+          "title": "multi-stage-builds",
+          "rerank_score": 7.618040084838867,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "docker",
+          "document_id": "50f23247b23b0e23e507d1d673c0f373b0e2cb0641f5bc95686689ee48f65854",
+          "chunk_id": "cffcfcb09758d6125f1524e6652ea988cb9d7163b639bf95b2cbc4fe484f1f60",
+          "title": "optimization",
+          "rerank_score": 7.329132080078125,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "docker",
+          "document_id": "25043062ccdeede16c079b2089e52630d5f630cac0ba9639720fba356a02106b",
+          "chunk_id": "83361d434170aad3117ced9b889a542df5e34c6855f284b3edb0381d011b0156",
+          "title": "multi-stage-builds",
+          "rerank_score": 6.901188850402832,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "docker",
+          "document_id": "5db55f28f50c0cee32691b1eb9d74740531dee0dde8a60e3d0401e189f44f377",
+          "title": "best-practices",
+          "pages": [],
+          "section": "Use multi-stage builds",
+          "source_reference": "https://docs.docker.com/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "docker",
+          "document_id": "f7bdb8cc3b5dfb86c752ce701118a7cdeb8b9684ce76e89d6c71bac6514dede0",
+          "title": "optimize",
+          "pages": [],
+          "section": "Multi-stage builds",
+          "source_reference": "https://docs.docker.com/"
+        },
+        {
+          "citation_id": "S3",
+          "source_id": "docker",
+          "document_id": "25043062ccdeede16c079b2089e52630d5f630cac0ba9639720fba356a02106b",
+          "title": "multi-stage-builds",
+          "pages": [],
+          "section": "",
+          "source_reference": "https://docs.docker.com/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 96.04810000018915,
+        "dense_search": 92.22500000032596,
+        "sparse_search": 503.0754999988858,
+        "fusion": 0.21919999926467426,
+        "rerank": 4627.482500000042,
+        "context": 7.556700000350247,
+        "generation": 6034.851000000344,
+        "answer_generation": 3055.5974999988393,
+        "claim_verification": 2976.297199998953,
+        "generation_pipeline": 6034.848400000556,
+        "end_to_end": 11362.186299998939
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "answer_generation_ms": 3055.5974999988393,
+      "claim_verification_ms": 2976.297199998953,
+      "generation_pipeline_ms": 6034.848400000556,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 3034,
+      "generation_prompt_tokens_reported": 783,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 5,
+        "supported": 5,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 144,
+        "prompt_eval_count": 979,
+        "response_chars": 505,
+        "output_token_allowance": 512,
+        "estimated_input_tokens": 2314,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 61,
+      "answer_characters": 591,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 144,
+      "verification_prompt_eval_count": 979,
+      "verification_response_chars": 505,
+      "verification_output_tokens": 512,
+      "verification_input_tokens_estimated": 2314,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 5
+    },
+    {
+      "query_id": "q010",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "docker",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "265211ac69bbeb2142f656b2bebd028a1a35384441dfd504612e10a47cbf082f",
+        "7ddd58b7db338ed5b1b891d8a5ee393df60c2c782f52db9189eedf3e5e064328",
+        "9a1c911ae07b0b7ef78c799b18dbd0ab6559c4087d28b0dfffe7c6b78fb22a9c"
+      ],
+      "context_budget_estimated_tokens": 2319,
+      "context_chunks_omitted": 2,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "0e0926168d139d0cab182984808073bebaff7ef9e0d7781ceb0107e7b3237855",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "83f72a27e5fe071582c975eb3ee11343b4a5e5d19cc01adf16b4973be460697e",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 3,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "265211ac69bbeb2142f656b2bebd028a1a35384441dfd504612e10a47cbf082f",
+          "source_id": "docker",
+          "document_id": "632e66c39301cf96414b69d5cf5a6c90ed71c56fcc4b7659ad46a117f1c0fca2",
+          "title": "services-healthcheck",
+          "rrf_score": 0.03177805800756621,
+          "rerank_score": 8.453814506530762,
+          "dense_rank": 1,
+          "sparse_rank": 5,
+          "text_characters": 322
+        },
+        {
+          "rank": 3,
+          "chunk_id": "7ddd58b7db338ed5b1b891d8a5ee393df60c2c782f52db9189eedf3e5e064328",
+          "source_id": "docker",
+          "document_id": "b7a28358b59833cee359a51df1d9c27edc6661a02288fb47848004afe033a5b5",
+          "title": "usage",
+          "rrf_score": 0.030834914611005692,
+          "rerank_score": 3.5556278228759766,
+          "dense_rank": 8,
+          "sparse_rank": 2,
+          "text_characters": 946
+        },
+        {
+          "rank": 4,
+          "chunk_id": "9a1c911ae07b0b7ef78c799b18dbd0ab6559c4087d28b0dfffe7c6b78fb22a9c",
+          "source_id": "docker",
+          "document_id": "9389cd6f650e94597f1ab20fb2b659bb0de7d4be7d6d159b8ed6bb8b17c1a8ae",
+          "title": "local-vs-cloud",
+          "rrf_score": 0.015625,
+          "rerank_score": 1.100752353668213,
+          "dense_rank": 4,
+          "sparse_rank": null,
+          "text_characters": 213
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "docker",
+          "document_id": "632e66c39301cf96414b69d5cf5a6c90ed71c56fcc4b7659ad46a117f1c0fca2",
+          "chunk_id": "265211ac69bbeb2142f656b2bebd028a1a35384441dfd504612e10a47cbf082f",
+          "title": "services-healthcheck",
+          "rerank_score": 8.453814506530762,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "docker",
+          "document_id": "fcd709d6719c20d074519dc62027d3692991cdad7cb9f06d5b2ea3f6b5063dcb",
+          "chunk_id": "0e0926168d139d0cab182984808073bebaff7ef9e0d7781ceb0107e7b3237855",
+          "title": "go-prometheus-monitoring",
+          "rerank_score": 3.8119611740112305,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "docker",
+          "document_id": "b7a28358b59833cee359a51df1d9c27edc6661a02288fb47848004afe033a5b5",
+          "chunk_id": "7ddd58b7db338ed5b1b891d8a5ee393df60c2c782f52db9189eedf3e5e064328",
+          "title": "usage",
+          "rerank_score": 3.5556278228759766,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "docker",
+          "document_id": "9389cd6f650e94597f1ab20fb2b659bb0de7d4be7d6d159b8ed6bb8b17c1a8ae",
+          "chunk_id": "9a1c911ae07b0b7ef78c799b18dbd0ab6559c4087d28b0dfffe7c6b78fb22a9c",
+          "title": "local-vs-cloud",
+          "rerank_score": 1.100752353668213,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "docker",
+          "document_id": "a2ad8f2eed4e476f9826146f273dbe2bf53c4b9d89e48714013d7a4258423cbf",
+          "chunk_id": "83f72a27e5fe071582c975eb3ee11343b4a5e5d19cc01adf16b4973be460697e",
+          "title": "29",
+          "rerank_score": -0.5382446646690369,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "docker",
+          "document_id": "632e66c39301cf96414b69d5cf5a6c90ed71c56fcc4b7659ad46a117f1c0fca2",
+          "title": "services-healthcheck",
+          "pages": [],
+          "section": "",
+          "source_reference": "https://docs.docker.com/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "docker",
+          "document_id": "b7a28358b59833cee359a51df1d9c27edc6661a02288fb47848004afe033a5b5",
+          "title": "usage",
+          "pages": [],
+          "section": "Known limitations > Docker exec and healthchecks",
+          "source_reference": "https://docs.docker.com/"
+        },
+        {
+          "citation_id": "S3",
+          "source_id": "docker",
+          "document_id": "9389cd6f650e94597f1ab20fb2b659bb0de7d4be7d6d159b8ed6bb8b17c1a8ae",
+          "title": "local-vs-cloud",
+          "pages": [],
+          "section": "",
+          "source_reference": "https://docs.docker.com/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 26.371899999503512,
+        "dense_search": 117.33989999993355,
+        "sparse_search": 770.6526000001759,
+        "fusion": 0.39169999945443124,
+        "rerank": 4144.0688999991835,
+        "context": 2.667200000360026,
+        "answer_generation": 3287.923600000795,
+        "generation_pipeline": 3288.4604999999283,
+        "end_to_end": 8351.06050000104
+      },
+      "comparison_evidence_complete": true,
+      "status": "generation_failed",
+      "error_code": "uncited_claim_rejected",
+      "claim_count": 5,
+      "error_type": "UncitedClaimError",
+      "error_stage": "answer_validation",
+      "error_message": "Answer contains a substantive sentence without a citation.",
+      "original_cause_type": null,
+      "generation_duration_ms": 3287.923600000795,
+      "verification_duration_ms": null,
+      "retry_count": 0,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "http_status": 200,
+      "generation_http_status": 200,
+      "verification_http_status": null,
+      "generation_pipeline_duration_ms": 3288.4604999999283,
+      "verification_done_reason": null,
+      "verification_eval_count": null,
+      "verification_prompt_eval_count": null,
+      "verification_response_chars": null,
+      "verification_output_tokens": null,
+      "verification_input_tokens_estimated": null,
+      "verification_context_window_tokens": null,
+      "verification_safety_margin_tokens": null,
+      "question_characters": 69
+    },
+    {
+      "query_id": "q011",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "huggingface_transformers",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "50f750fd1f49250870ed13c26b6865c49e18907396f4c2ac0dee96c81bd00bb6",
+        "8fcb7e825bb7de689ba7b32aae97651215b3fb35c6db991186484b6d60b191b3",
+        "7e0d0c8af1d888b000562f894ca07a81b38eb05cc5b4bc8c029157b65df4ae2a"
+      ],
+      "context_budget_estimated_tokens": 2156,
+      "context_chunks_omitted": 2,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "e1e9674299c6f93c2cdb3ac5ab7f1615d2da4bd9818d56a3c805e80455db95fe",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "d5a1cd95d7f67f566b58c5b76fddbab91dfc70b5b745ae80c5643a82e4767228",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 3,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "50f750fd1f49250870ed13c26b6865c49e18907396f4c2ac0dee96c81bd00bb6",
+          "source_id": "huggingface_transformers",
+          "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+          "title": "Pipeline",
+          "rrf_score": 0.015151515151515152,
+          "rerank_score": 6.221179008483887,
+          "dense_rank": 6,
+          "sparse_rank": null,
+          "text_characters": 200
+        },
+        {
+          "rank": 2,
+          "chunk_id": "8fcb7e825bb7de689ba7b32aae97651215b3fb35c6db991186484b6d60b191b3",
+          "source_id": "huggingface_transformers",
+          "document_id": "d77091172cf783edbf8af02dd448877cf87f0197ea56f3146aeaa838a70a5692",
+          "title": "Depth Anything V2",
+          "rrf_score": 0.015625,
+          "rerank_score": 5.504975318908691,
+          "dense_rank": 4,
+          "sparse_rank": null,
+          "text_characters": 413
+        },
+        {
+          "rank": 3,
+          "chunk_id": "7e0d0c8af1d888b000562f894ca07a81b38eb05cc5b4bc8c029157b65df4ae2a",
+          "source_id": "huggingface_transformers",
+          "document_id": "891f7275aa7feb6efea822285f806ff3b5451d856e8b01c8d8e95746f1c63735",
+          "title": "Adding a new pipeline",
+          "rrf_score": 0.031054405392392875,
+          "rerank_score": 5.3470258712768555,
+          "dense_rank": 7,
+          "sparse_rank": 2,
+          "text_characters": 639
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "huggingface_transformers",
+          "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+          "chunk_id": "50f750fd1f49250870ed13c26b6865c49e18907396f4c2ac0dee96c81bd00bb6",
+          "title": "Pipeline",
+          "rerank_score": 6.221179008483887,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "huggingface_transformers",
+          "document_id": "d77091172cf783edbf8af02dd448877cf87f0197ea56f3146aeaa838a70a5692",
+          "chunk_id": "8fcb7e825bb7de689ba7b32aae97651215b3fb35c6db991186484b6d60b191b3",
+          "title": "Depth Anything V2",
+          "rerank_score": 5.504975318908691,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "huggingface_transformers",
+          "document_id": "891f7275aa7feb6efea822285f806ff3b5451d856e8b01c8d8e95746f1c63735",
+          "chunk_id": "7e0d0c8af1d888b000562f894ca07a81b38eb05cc5b4bc8c029157b65df4ae2a",
+          "title": "Adding a new pipeline",
+          "rerank_score": 5.3470258712768555,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "huggingface_transformers",
+          "document_id": "b7c5ec890a5588fc379f272ea4b562a73b896d3c123af4c765dc252f13de893d",
+          "chunk_id": "e1e9674299c6f93c2cdb3ac5ab7f1615d2da4bd9818d56a3c805e80455db95fe",
+          "title": "Qwen2.5-VL",
+          "rerank_score": 5.170476913452148,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "huggingface_transformers",
+          "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+          "chunk_id": "d5a1cd95d7f67f566b58c5b76fddbab91dfc70b5b745ae80c5643a82e4767228",
+          "title": "Pipeline",
+          "rerank_score": 5.164975166320801,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "huggingface_transformers",
+          "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+          "title": "Pipeline",
+          "pages": [],
+          "section": "Pipeline > Parameters > Device",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "huggingface_transformers",
+          "document_id": "d77091172cf783edbf8af02dd448877cf87f0197ea56f3146aeaa838a70a5692",
+          "title": "Depth Anything V2",
+          "pages": [],
+          "section": "Depth Anything V2 > Usage example > Pipeline API",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        },
+        {
+          "citation_id": "S3",
+          "source_id": "huggingface_transformers",
+          "document_id": "891f7275aa7feb6efea822285f806ff3b5451d856e8b01c8d8e95746f1c63735",
+          "title": "Adding a new pipeline",
+          "pages": [],
+          "section": "Adding a new pipeline > Register a pipeline",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 142.4986000001809,
+        "dense_search": 146.78789999925357,
+        "sparse_search": 724.8447000001761,
+        "fusion": 0.49389999912818894,
+        "rerank": 4258.397600000535,
+        "context": 1.1088999999628868,
+        "generation": 5367.88499999966,
+        "answer_generation": 2661.434100000406,
+        "claim_verification": 2703.711199999816,
+        "generation_pipeline": 5367.884200000844,
+        "end_to_end": 10643.01610000075
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "answer_generation_ms": 2661.434100000406,
+      "claim_verification_ms": 2703.711199999816,
+      "generation_pipeline_ms": 5367.884200000844,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2801,
+      "generation_prompt_tokens_reported": 809,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 4,
+        "supported": 4,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 117,
+        "prompt_eval_count": 1011,
+        "response_chars": 407,
+        "output_token_allowance": 512,
+        "estimated_input_tokens": 2206,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 54,
+      "answer_characters": 469,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 117,
+      "verification_prompt_eval_count": 1011,
+      "verification_response_chars": 407,
+      "verification_output_tokens": 512,
+      "verification_input_tokens_estimated": 2206,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 4
+    },
+    {
+      "query_id": "q012",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "huggingface_transformers",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "dd11f3581d37112cecd1bd828864f5636db514fb95b3dd85488dc5c9a70b74cb"
+      ],
+      "context_budget_estimated_tokens": 2082,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "authorization_recheck",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "b01107ba844d9d93f703bc261bc934103db825eaa486be9fd6dee014c9ac8148",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "fdd40ac3c4c2fe45591b440917550a96af07193c439749c6ad0424fe8561a03c",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "f4ccae83874eded8a2219881e219cbb4140aa4bd035d18efe1e889037fb925b2",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "7e43111914921b84576d6a6ea689521926acf246a49ac9e46f4c9e056417a44b",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "dd11f3581d37112cecd1bd828864f5636db514fb95b3dd85488dc5c9a70b74cb",
+          "source_id": "huggingface_transformers",
+          "document_id": "073d087b1dd796c887c25d1140e0e6b7f59c6d7eaeffd6088b7cf10a6ac763ee",
+          "title": "Chat templates",
+          "rrf_score": 0.030117753623188408,
+          "rerank_score": 4.809099197387695,
+          "dense_rank": 9,
+          "sparse_rank": 4,
+          "text_characters": 1552
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "huggingface_transformers",
+          "document_id": "073d087b1dd796c887c25d1140e0e6b7f59c6d7eaeffd6088b7cf10a6ac763ee",
+          "chunk_id": "dd11f3581d37112cecd1bd828864f5636db514fb95b3dd85488dc5c9a70b74cb",
+          "title": "Chat templates",
+          "rerank_score": 4.809099197387695,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "huggingface_transformers",
+          "document_id": "073d087b1dd796c887c25d1140e0e6b7f59c6d7eaeffd6088b7cf10a6ac763ee",
+          "chunk_id": "f4ccae83874eded8a2219881e219cbb4140aa4bd035d18efe1e889037fb925b2",
+          "title": "Chat templates",
+          "rerank_score": 4.537332534790039,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "huggingface_transformers",
+          "document_id": "802ee1b62295e6802e4b4fa08a46872fe0d5160df04878007e1424f339f39e0b",
+          "chunk_id": "b01107ba844d9d93f703bc261bc934103db825eaa486be9fd6dee014c9ac8148",
+          "title": "InternVL",
+          "rerank_score": 2.9254980087280273,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "huggingface_transformers",
+          "document_id": "37df83e670501c7d50f558c164f0a9dc05338520255792c03a8b93a1a54cf494",
+          "chunk_id": "fdd40ac3c4c2fe45591b440917550a96af07193c439749c6ad0424fe8561a03c",
+          "title": "Writing a chat template",
+          "rerank_score": 2.8158938884735107,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "huggingface_transformers",
+          "document_id": "b38ab38331c7a99c2674a9ffb06c6bd9c16e2f5c22b5e4391b6508bb332724ba",
+          "chunk_id": "7e43111914921b84576d6a6ea689521926acf246a49ac9e46f4c9e056417a44b",
+          "title": "FastVLM",
+          "rerank_score": 2.5489706993103027,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "huggingface_transformers",
+          "document_id": "073d087b1dd796c887c25d1140e0e6b7f59c6d7eaeffd6088b7cf10a6ac763ee",
+          "title": "Chat templates",
+          "pages": [],
+          "section": "Chat templates > Using `apply_chat_template`",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 28.101699999751872,
+        "dense_search": 133.51289999991423,
+        "sparse_search": 160.9197999987373,
+        "fusion": 0.15669999993406236,
+        "rerank": 488.7968999992154,
+        "context": 0.5909999999857973,
+        "generation": 6254.643199999919,
+        "answer_generation": 3082.5939000005746,
+        "claim_verification": 3171.2829999996757,
+        "generation_pipeline": 6254.64219999958,
+        "end_to_end": 7067.168399998991
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1"
+      ],
+      "answer_generation_ms": 3082.5939000005746,
+      "claim_verification_ms": 3171.2829999996757,
+      "generation_pipeline_ms": 6254.64219999958,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2740,
+      "generation_prompt_tokens_reported": 711,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 6,
+        "supported": 6,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 171,
+        "prompt_eval_count": 864,
+        "response_chars": 603,
+        "output_token_allowance": 512,
+        "estimated_input_tokens": 2210,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 71,
+      "answer_characters": 644,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 171,
+      "verification_prompt_eval_count": 864,
+      "verification_response_chars": 603,
+      "verification_output_tokens": 512,
+      "verification_input_tokens_estimated": 2210,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 6
+    },
+    {
+      "query_id": "q013",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "pytorch",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "602d89144b3d655722f2781984d596cfcf06c4d471118b01a11c2a64eba58739"
+      ],
+      "context_budget_estimated_tokens": 2358,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "2112c6efb61d6ae458de00e5b4c2d1cb7383fbd64870b8c4b502c211e55df9a6",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "ea7656354c0ae5cf97abaeebc5cd245139ab597a372abd75f9d4c4b8ff4a33d6",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "ab2631d10b91883172299f42723c4171d76bfd13ae66a711822414b82f3e51c2",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "45be7d43699f6c7aebb578aef2243d88590f0bf702f7b0f8a2dc619044557428",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "602d89144b3d655722f2781984d596cfcf06c4d471118b01a11c2a64eba58739",
+          "source_id": "pytorch",
+          "document_id": "a865ee1940b3fe4f1dcd3e3df66ca5783892cbb8e5c0d4eaf6f8a2950f03bc9d",
+          "title": "Extending torch.func with autograd.Function",
+          "rrf_score": 0.032266458495966696,
+          "rerank_score": 8.302714347839355,
+          "dense_rank": 3,
+          "sparse_rank": 1,
+          "text_characters": 1875
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "pytorch",
+          "document_id": "a865ee1940b3fe4f1dcd3e3df66ca5783892cbb8e5c0d4eaf6f8a2950f03bc9d",
+          "chunk_id": "602d89144b3d655722f2781984d596cfcf06c4d471118b01a11c2a64eba58739",
+          "title": "Extending torch.func with autograd.Function",
+          "rerank_score": 8.302714347839355,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "pytorch",
+          "document_id": "0291eaa44e8535fe44ce7d811e321582e797783b6ed656af5607c657cd0146c6",
+          "chunk_id": "2112c6efb61d6ae458de00e5b4c2d1cb7383fbd64870b8c4b502c211e55df9a6",
+          "title": "Complex Numbers",
+          "rerank_score": 7.897150039672852,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "pytorch",
+          "document_id": "065b84652c4b275313cee0305970baf8bdcfbc718693e6a0d3e3dbcc486b1674",
+          "chunk_id": "ea7656354c0ae5cf97abaeebc5cd245139ab597a372abd75f9d4c4b8ff4a33d6",
+          "title": "Gradcheck mechanics",
+          "rerank_score": 5.677131652832031,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "pytorch",
+          "document_id": "a865ee1940b3fe4f1dcd3e3df66ca5783892cbb8e5c0d4eaf6f8a2950f03bc9d",
+          "chunk_id": "ab2631d10b91883172299f42723c4171d76bfd13ae66a711822414b82f3e51c2",
+          "title": "Extending torch.func with autograd.Function",
+          "rerank_score": 5.516854763031006,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "pytorch",
+          "document_id": "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842",
+          "chunk_id": "45be7d43699f6c7aebb578aef2243d88590f0bf702f7b0f8a2dc619044557428",
+          "title": "Autograd mechanics",
+          "rerank_score": 4.4418158531188965,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "pytorch",
+          "document_id": "a865ee1940b3fe4f1dcd3e3df66ca5783892cbb8e5c0d4eaf6f8a2950f03bc9d",
+          "title": "Extending torch.func with autograd.Function",
+          "pages": [],
+          "section": "Extending torch.func with autograd.Function > Basic Usage > Example 2: autograd.Function specifies custom gradient rules",
+          "source_reference": "https://pytorch.org/docs/stable/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 21.251500000289525,
+        "dense_search": 47.297199998865835,
+        "sparse_search": 135.79329999993206,
+        "fusion": 0.16230000073846895,
+        "rerank": 447.63330000023416,
+        "context": 0.6769999999960419,
+        "answer_generation": 2995.1027000006434,
+        "generation_pipeline": 2995.366200000717,
+        "end_to_end": 3648.6291000001074
+      },
+      "comparison_evidence_complete": true,
+      "status": "generation_failed",
+      "error_code": "uncited_claim_rejected",
+      "claim_count": 7,
+      "error_type": "UncitedClaimError",
+      "error_stage": "answer_validation",
+      "error_message": "Answer contains a substantive sentence without a citation.",
+      "original_cause_type": null,
+      "generation_duration_ms": 2995.1027000006434,
+      "verification_duration_ms": null,
+      "retry_count": 0,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "http_status": 200,
+      "generation_http_status": 200,
+      "verification_http_status": null,
+      "generation_pipeline_duration_ms": 2995.366200000717,
+      "verification_done_reason": null,
+      "verification_eval_count": null,
+      "verification_prompt_eval_count": null,
+      "verification_response_chars": null,
+      "verification_output_tokens": null,
+      "verification_input_tokens_estimated": null,
+      "verification_context_window_tokens": null,
+      "verification_safety_margin_tokens": null,
+      "question_characters": 47
+    },
+    {
+      "query_id": "q014",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "pytorch",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "1bdd520812926202635aa1a1c1b5bd5aa78ac188217033d9040641a36dec7c3e",
+        "2627be0b1d3aa768c0e0df592c574c343e98183ce7bf00d565f02437de506e69"
+      ],
+      "context_budget_estimated_tokens": 2013,
+      "context_chunks_omitted": 3,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "51c6535459aa0991e32b5b0f382b702ad11e7cc2c23507ab90a19d5f24e42177",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "9488bfd804ae5add72a21bb9650bd4cb5c6fe30d594919e909da6f11156e125f",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "7411370550ff2309324b1b9da35b7d97814b78b272cf33f6c1c9859da6bc0ac6",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "1bdd520812926202635aa1a1c1b5bd5aa78ac188217033d9040641a36dec7c3e",
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "title": "torch.utils.data",
+          "rrf_score": 0.03278688524590164,
+          "rerank_score": 3.321626663208008,
+          "dense_rank": 1,
+          "sparse_rank": 1,
+          "text_characters": 1034
+        },
+        {
+          "rank": 5,
+          "chunk_id": "2627be0b1d3aa768c0e0df592c574c343e98183ce7bf00d565f02437de506e69",
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "title": "torch.utils.data",
+          "rrf_score": 0.03200204813108039,
+          "rerank_score": 0.32240045070648193,
+          "dense_rank": 3,
+          "sparse_rank": 2,
+          "text_characters": 287
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "chunk_id": "1bdd520812926202635aa1a1c1b5bd5aa78ac188217033d9040641a36dec7c3e",
+          "title": "torch.utils.data",
+          "rerank_score": 3.321626663208008,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "chunk_id": "51c6535459aa0991e32b5b0f382b702ad11e7cc2c23507ab90a19d5f24e42177",
+          "title": "torch.utils.data",
+          "rerank_score": 2.451270580291748,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "chunk_id": "9488bfd804ae5add72a21bb9650bd4cb5c6fe30d594919e909da6f11156e125f",
+          "title": "torch.utils.data",
+          "rerank_score": 0.9615708589553833,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "huggingface_transformers",
+          "document_id": "77f491aee8e250a3c38fbab02ed75290bdfc81b555f56cca9ca1edcd2e9ba349",
+          "chunk_id": "7411370550ff2309324b1b9da35b7d97814b78b272cf33f6c1c9859da6bc0ac6",
+          "title": "Quickstart",
+          "rerank_score": 0.49655407667160034,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "chunk_id": "2627be0b1d3aa768c0e0df592c574c343e98183ce7bf00d565f02437de506e69",
+          "title": "torch.utils.data",
+          "rerank_score": 0.32240045070648193,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "title": "torch.utils.data",
+          "pages": [],
+          "section": "torch.utils.data",
+          "source_reference": "https://pytorch.org/docs/stable/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "pytorch",
+          "document_id": "2d624e5ae5e8488fa4ea3de8f01449155889c4d6f4fe8e59313781697a8f6a07",
+          "title": "torch.utils.data",
+          "pages": [],
+          "section": "torch.utils.data > Dataset Types",
+          "source_reference": "https://pytorch.org/docs/stable/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 28.0681000003824,
+        "dense_search": 56.62639999900421,
+        "sparse_search": 116.80089999936172,
+        "fusion": 0.15530000018770806,
+        "rerank": 542.8852000004554,
+        "context": 0.7021000001259381,
+        "generation": 3335.5547999999544,
+        "answer_generation": 1410.4447999998229,
+        "claim_verification": 1924.4834999990417,
+        "generation_pipeline": 3335.553400000208,
+        "end_to_end": 4081.233799999609
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1",
+        "S2"
+      ],
+      "answer_generation_ms": 1410.4447999998229,
+      "claim_verification_ms": 1924.4834999990417,
+      "generation_pipeline_ms": 3335.553400000208,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2671,
+      "generation_prompt_tokens_reported": 719,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 3,
+        "supported": 3,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 90,
+        "prompt_eval_count": 763,
+        "response_chars": 309,
+        "output_token_allowance": 448,
+        "estimated_input_tokens": 1880,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 69,
+      "answer_characters": 209,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 90,
+      "verification_prompt_eval_count": 763,
+      "verification_response_chars": 309,
+      "verification_output_tokens": 448,
+      "verification_input_tokens_estimated": 1880,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 3
+    },
+    {
+      "query_id": "q015",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "machine_learning",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "857db17e6ba357e4751fcbe2e78c89562a70f686f726b4b98c1968bc52353a19"
+      ],
+      "context_budget_estimated_tokens": 2500,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "authorization_recheck",
+        "authorization_recheck",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "7daaa386e689752f9095162ae64d24f66149ca2b61b6ef6fbb5c2f2be04d0b4d",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "e40edc25719d675072ec47d44d368011e22f0b98dd00bc2bc9e63a10e7f2b5ac",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "3208872ce7b93a41b603bf409551860429ae3592bec8a1f2f55d9fd6d5b8529d",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "bd9b02537156b215f56b034249504eca3fcefc17f58be3592fa48781969cb073",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 3,
+          "chunk_id": "857db17e6ba357e4751fcbe2e78c89562a70f686f726b4b98c1968bc52353a19",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rrf_score": 0.014492753623188406,
+          "rerank_score": -5.449248313903809,
+          "dense_rank": 9,
+          "sparse_rank": null,
+          "text_characters": 2064
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "arxiv_llm_transformers",
+          "document_id": "bcb7ac9c1283213442110db1454a17b194730c7a6b74e47e237e30b9b7208cbe",
+          "chunk_id": "7daaa386e689752f9095162ae64d24f66149ca2b61b6ef6fbb5c2f2be04d0b4d",
+          "title": "Unforgettable Generalization in Language Models",
+          "rerank_score": -3.348896026611328,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "huggingface_transformers",
+          "document_id": "c9d54fccb4b2d651d9a13a63afb301478b97a3cae29c45a111b479cc94ec9678",
+          "chunk_id": "e40edc25719d675072ec47d44d368011e22f0b98dd00bc2bc9e63a10e7f2b5ac",
+          "title": "Image Segmentation",
+          "rerank_score": -4.988306999206543,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "857db17e6ba357e4751fcbe2e78c89562a70f686f726b4b98c1968bc52353a19",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": -5.449248313903809,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "arxiv_llm_rag",
+          "document_id": "8cadf4d69a9d65a58cb0c4251758a9f2a56f2308b30a1b563a7095860aef9698",
+          "chunk_id": "3208872ce7b93a41b603bf409551860429ae3592bec8a1f2f55d9fd6d5b8529d",
+          "title": "T-RAG: Lessons from the LLM Trenches",
+          "rerank_score": -6.095414161682129,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "29e265d8b2696f43bb97008de33495a82de49516295b4a5791d900fd76d65f28",
+          "chunk_id": "bd9b02537156b215f56b034249504eca3fcefc17f58be3592fa48781969cb073",
+          "title": "sparse-embeddings-ecommerce-part-2",
+          "rerank_score": -6.196413040161133,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "pages": [
+            531
+          ],
+          "section": "",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 23.694599998634658,
+        "dense_search": 64.9057000009634,
+        "sparse_search": 145.6426000004285,
+        "fusion": 0.17039999875123613,
+        "rerank": 603.732100000343,
+        "context": 0.528900000063004,
+        "generation": 769.2183999988629,
+        "answer_generation": 769.1646000002947,
+        "generation_pipeline": 769.2155999993702,
+        "end_to_end": 1608.3597999986523
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [],
+      "answer_generation_ms": 769.1646000002947,
+      "claim_verification_ms": null,
+      "generation_pipeline_ms": 769.2155999993702,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": null,
+      "generation_prompt_tokens_estimated": 3144,
+      "generation_prompt_tokens_reported": 773,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": null,
+        "claims": 0,
+        "supported": 0,
+        "rejected": 0,
+        "support_rate_automated": null,
+        "human_correctness": "not_assessed",
+        "done_reason": null,
+        "eval_count": null,
+        "prompt_eval_count": null,
+        "response_chars": null,
+        "output_token_allowance": null,
+        "estimated_input_tokens": null,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "abstained_insufficient_evidence",
+      "question_characters": 57,
+      "answer_characters": 49,
+      "verification_done_reason": null,
+      "verification_eval_count": null,
+      "verification_prompt_eval_count": null,
+      "verification_response_chars": null,
+      "verification_output_tokens": null,
+      "verification_input_tokens_estimated": null,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 0
+    },
+    {
+      "query_id": "q016",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "machine_learning",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "2a5bc3436ebbea33ced23e87b50d1410ebfbe6d2f12104778b18cfb2f5aa63b0"
+      ],
+      "context_budget_estimated_tokens": 2164,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "authorization_recheck",
+        "authorization_recheck",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "75d5ad1494bb7ebcce339797d397a2a229f82e98d0c4db28317c8382207be7f9",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "82e1abb0731a22ddfc36cba4072f60e21a6445b80c95f5c4934c7ab14e709877",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "a8a61602a2bbb7999683621acdf371c7429676ce763c1ecf812c49ae371b28cc",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "7f931320d836680f9ca2bcc862e0ad2627b1ee4fdbeab77d5f6d04be7e471856",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 3,
+          "chunk_id": "2a5bc3436ebbea33ced23e87b50d1410ebfbe6d2f12104778b18cfb2f5aa63b0",
+          "source_id": "arxiv_machine_learning",
+          "document_id": "0cc9c4a84230581cfb3b48f99e4b336080734540350acd5abaaf52621b244cd4",
+          "title": "Meta-Learning Representations for Continual Learning",
+          "rrf_score": 0.02819138376017471,
+          "rerank_score": 4.552866458892822,
+          "dense_rank": 9,
+          "sparse_rank": 13,
+          "text_characters": 1606
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "arxiv_machine_learning",
+          "document_id": "f86a361ae7ae8a9ebe47e952a1d3d140f03f5f7dbc2822f67db303c4765df64e",
+          "chunk_id": "75d5ad1494bb7ebcce339797d397a2a229f82e98d0c4db28317c8382207be7f9",
+          "title": "Frequency-aware SGD for Efficient Embedding Learning with Provable Benefits",
+          "rerank_score": 5.280308723449707,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "arxiv_machine_learning",
+          "document_id": "f86a361ae7ae8a9ebe47e952a1d3d140f03f5f7dbc2822f67db303c4765df64e",
+          "chunk_id": "82e1abb0731a22ddfc36cba4072f60e21a6445b80c95f5c4934c7ab14e709877",
+          "title": "Frequency-aware SGD for Efficient Embedding Learning with Provable Benefits",
+          "rerank_score": 5.089864730834961,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "arxiv_machine_learning",
+          "document_id": "0cc9c4a84230581cfb3b48f99e4b336080734540350acd5abaaf52621b244cd4",
+          "chunk_id": "2a5bc3436ebbea33ced23e87b50d1410ebfbe6d2f12104778b18cfb2f5aa63b0",
+          "title": "Meta-Learning Representations for Continual Learning",
+          "rerank_score": 4.552866458892822,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "pytorch",
+          "document_id": "6be3e9bedc9981979f783e98fc9b7184523332ecd9f85ddc8a920f19ca9d05a1",
+          "chunk_id": "7f931320d836680f9ca2bcc862e0ad2627b1ee4fdbeab77d5f6d04be7e471856",
+          "title": "Automatic Mixed Precision package - torch.amp",
+          "rerank_score": 4.36460018157959,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "arxiv_machine_learning",
+          "document_id": "492b3929a592f45660260cb80f97349db52028266270031b6ded92bed3410392",
+          "chunk_id": "a8a61602a2bbb7999683621acdf371c7429676ce763c1ecf812c49ae371b28cc",
+          "title": "Asymptotics of Network Embeddings Learned via Subsampling",
+          "rerank_score": 4.011466026306152,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "arxiv_machine_learning",
+          "document_id": "0cc9c4a84230581cfb3b48f99e4b336080734540350acd5abaaf52621b244cd4",
+          "title": "Meta-Learning Representations for Continual Learning",
+          "pages": [
+            4
+          ],
+          "section": "",
+          "source_reference": "http://arxiv.org/abs/1905.12588v2"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 50.98749999888241,
+        "dense_search": 43.19220000070345,
+        "sparse_search": 76.31650000075751,
+        "fusion": 0.15050000001792796,
+        "rerank": 463.39809999881254,
+        "context": 0.6899999989400385,
+        "generation": 3301.5820999989955,
+        "answer_generation": 1639.35390000006,
+        "claim_verification": 1661.6061000004265,
+        "generation_pipeline": 3301.5805999984877,
+        "end_to_end": 3936.792999998943
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1"
+      ],
+      "answer_generation_ms": 1639.35390000006,
+      "claim_verification_ms": 1661.6061000004265,
+      "generation_pipeline_ms": 3301.5805999984877,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2801,
+      "generation_prompt_tokens_reported": 816,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 2,
+        "supported": 2,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 63,
+        "prompt_eval_count": 832,
+        "response_chars": 211,
+        "output_token_allowance": 320,
+        "estimated_input_tokens": 1928,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 50,
+      "answer_characters": 286,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 63,
+      "verification_prompt_eval_count": 832,
+      "verification_response_chars": 211,
+      "verification_output_tokens": 320,
+      "verification_input_tokens_estimated": 1928,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 2
+    },
+    {
+      "query_id": "q017",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "information_retrieval",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "7ee9909c541dcf0915afb0250e347c8b70a017ccbe295c2aca1f292512c9f3e5",
+        "ae2b4eb242400c5d170b8ca584c244cdcf55420c9b512b28df8ada775ebcfa4c",
+        "7bc4ae12d8e34b71d3d69cca31f44a70bb99a7a34c344a1f89a78356f8aa2f60"
+      ],
+      "context_budget_estimated_tokens": 1911,
+      "context_chunks_omitted": 2,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "fbb506730762c3f448c81b7acd1376ee4648b3220df7c58e0462c0a9ae2904f4",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "dfcd1c36d7f9d9118fb05123b08c55a8eb091641fbdae0476dcef4ccb184a472",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 3,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "7ee9909c541dcf0915afb0250e347c8b70a017ccbe295c2aca1f292512c9f3e5",
+          "source_id": "qdrant",
+          "document_id": "7c0eea82706b598355e4b90c17476435ecf28b3d5c3c28ea11182afce4ce3473",
+          "title": "_description",
+          "rrf_score": 0.026856524873828405,
+          "rerank_score": 7.286681652069092,
+          "dense_rank": 13,
+          "sparse_rank": 16,
+          "text_characters": 327
+        },
+        {
+          "rank": 2,
+          "chunk_id": "ae2b4eb242400c5d170b8ca584c244cdcf55420c9b512b28df8ada775ebcfa4c",
+          "source_id": "qdrant",
+          "document_id": "32bafbfa38eb49de023553fdc3e04cc5243e650f25ef446f1f86dd07917b0e01",
+          "title": "_description",
+          "rrf_score": 0.016129032258064516,
+          "rerank_score": 6.683005332946777,
+          "dense_rank": 2,
+          "sparse_rank": null,
+          "text_characters": 448
+        },
+        {
+          "rank": 3,
+          "chunk_id": "7bc4ae12d8e34b71d3d69cca31f44a70bb99a7a34c344a1f89a78356f8aa2f60",
+          "source_id": "qdrant",
+          "document_id": "5b61cf050228dd340105376155c482a1e612c9f26291d9ff307d97f4a0815e2d",
+          "title": "Hybrid and Multi-Stage Queries",
+          "rrf_score": 0.014705882352941176,
+          "rerank_score": 6.272609233856201,
+          "dense_rank": 8,
+          "sparse_rank": null,
+          "text_characters": 290
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "qdrant",
+          "document_id": "7c0eea82706b598355e4b90c17476435ecf28b3d5c3c28ea11182afce4ce3473",
+          "chunk_id": "7ee9909c541dcf0915afb0250e347c8b70a017ccbe295c2aca1f292512c9f3e5",
+          "title": "_description",
+          "rerank_score": 7.286681652069092,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "qdrant",
+          "document_id": "32bafbfa38eb49de023553fdc3e04cc5243e650f25ef446f1f86dd07917b0e01",
+          "chunk_id": "ae2b4eb242400c5d170b8ca584c244cdcf55420c9b512b28df8ada775ebcfa4c",
+          "title": "_description",
+          "rerank_score": 6.683005332946777,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "qdrant",
+          "document_id": "5b61cf050228dd340105376155c482a1e612c9f26291d9ff307d97f4a0815e2d",
+          "chunk_id": "7bc4ae12d8e34b71d3d69cca31f44a70bb99a7a34c344a1f89a78356f8aa2f60",
+          "title": "Hybrid and Multi-Stage Queries",
+          "rerank_score": 6.272609233856201,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "qdrant",
+          "document_id": "cc4e3c457b3d874a15caa993b4bca3d6a0b2b8a52091db3c23fb2feab81a7b6e",
+          "chunk_id": "fbb506730762c3f448c81b7acd1376ee4648b3220df7c58e0462c0a9ae2904f4",
+          "title": "Full-Text Search",
+          "rerank_score": 6.231908798217773,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "cc4e3c457b3d874a15caa993b4bca3d6a0b2b8a52091db3c23fb2feab81a7b6e",
+          "chunk_id": "dfcd1c36d7f9d9118fb05123b08c55a8eb091641fbdae0476dcef4ccb184a472",
+          "title": "Full-Text Search",
+          "rerank_score": 6.143905162811279,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "qdrant",
+          "document_id": "7c0eea82706b598355e4b90c17476435ecf28b3d5c3c28ea11182afce4ce3473",
+          "title": "_description",
+          "pages": [],
+          "section": "",
+          "source_reference": "https://qdrant.tech/documentation/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "qdrant",
+          "document_id": "32bafbfa38eb49de023553fdc3e04cc5243e650f25ef446f1f86dd07917b0e01",
+          "title": "_description",
+          "pages": [],
+          "section": "",
+          "source_reference": "https://qdrant.tech/documentation/"
+        },
+        {
+          "citation_id": "S3",
+          "source_id": "qdrant",
+          "document_id": "5b61cf050228dd340105376155c482a1e612c9f26291d9ff307d97f4a0815e2d",
+          "title": "Hybrid and Multi-Stage Queries",
+          "pages": [],
+          "section": "Hybrid and Multi-Stage Queries > Multi-Stage Queries > Re-Scoring Examples > Re-Score BM25 Results with a Dense Vector",
+          "source_reference": "https://qdrant.tech/documentation/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 22.217499999896972,
+        "dense_search": 251.7489999991085,
+        "sparse_search": 182.55169999974896,
+        "fusion": 0.16229999891947955,
+        "rerank": 503.73469999976805,
+        "context": 0.4597000006469898,
+        "generation": 4377.446899999995,
+        "answer_generation": 2046.6677000003983,
+        "claim_verification": 2330.057700000907,
+        "generation_pipeline": 4377.445899999657,
+        "end_to_end": 5338.823399999455
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S2",
+        "S1"
+      ],
+      "answer_generation_ms": 2046.6677000003983,
+      "claim_verification_ms": 2330.057700000907,
+      "generation_pipeline_ms": 4377.445899999657,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2544,
+      "generation_prompt_tokens_reported": 734,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 4,
+        "supported": 4,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 118,
+        "prompt_eval_count": 899,
+        "response_chars": 406,
+        "output_token_allowance": 512,
+        "estimated_input_tokens": 1947,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 42,
+      "answer_characters": 374,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 118,
+      "verification_prompt_eval_count": 899,
+      "verification_response_chars": 406,
+      "verification_output_tokens": 512,
+      "verification_input_tokens_estimated": 1947,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 4
+    },
+    {
+      "query_id": "q018",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "information_retrieval",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "55ad1ac26d4c28ef86af147ffe7945520a9ab61cd7d8d67704205a9bab2f51c1"
+      ],
+      "context_budget_estimated_tokens": 2248,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "854651a5e7f52297e6b167a51e52204c2339c4c32e1144b8b4857fc55a617c31",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "9152e61418fc6d24b0c2364a30f1ec1b86b9a67933f58c3f1ab83e5ce1aef71f",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "ddfb2f815e06de3bb9c429ca92cbb35049321b22618af3b029a276e2f838cefa",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "8abb9d4efa14b0e16b4cedaf1b0ff3848f81c179a944415920c81d09acd2bd8e",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "55ad1ac26d4c28ef86af147ffe7945520a9ab61cd7d8d67704205a9bab2f51c1",
+          "source_id": "qdrant",
+          "document_id": "ca417baae289181b691a8de3ad7a47116c1bcb84fbf87d74b6b599c7bdc42709",
+          "title": "How to Tune Hybrid Search in Qdrant",
+          "rrf_score": 0.030679156908665108,
+          "rerank_score": 6.9066925048828125,
+          "dense_rank": 1,
+          "sparse_rank": 10,
+          "text_characters": 1754
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "qdrant",
+          "document_id": "ca417baae289181b691a8de3ad7a47116c1bcb84fbf87d74b6b599c7bdc42709",
+          "chunk_id": "55ad1ac26d4c28ef86af147ffe7945520a9ab61cd7d8d67704205a9bab2f51c1",
+          "title": "How to Tune Hybrid Search in Qdrant",
+          "rerank_score": 6.9066925048828125,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "qdrant",
+          "document_id": "93c9c6060f0bc4bf841dca13b586e8b35478a761265058642b18c30269d3887e",
+          "chunk_id": "9152e61418fc6d24b0c2364a30f1ec1b86b9a67933f58c3f1ab83e5ce1aef71f",
+          "title": "Multi-Representation Search Across Titles, Abstracts, and Chunks",
+          "rerank_score": 6.580533981323242,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "qdrant",
+          "document_id": "4e6bd789c0ff089587e2ff1b48736982f3f687b1d3a9d5b16e499b57945a5915",
+          "chunk_id": "ddfb2f815e06de3bb9c429ca92cbb35049321b22618af3b029a276e2f838cefa",
+          "title": "Frequently Asked Questions: General Topics",
+          "rerank_score": 6.0396199226379395,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "qdrant",
+          "document_id": "b30f12cafc9559f356ea447a8b0fcf033024315cdba77ebf1e95048560250a24",
+          "chunk_id": "854651a5e7f52297e6b167a51e52204c2339c4c32e1144b8b4857fc55a617c31",
+          "title": "Build a Search API with Qdrant's FastEmbed",
+          "rerank_score": 5.684072494506836,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "530323cb88493a3f5262aa25d18d3d34324bf593b8e7609afeea5149e6ed6a4d",
+          "chunk_id": "8abb9d4efa14b0e16b4cedaf1b0ff3848f81c179a944415920c81d09acd2bd8e",
+          "title": "_description",
+          "rerank_score": 5.052945613861084,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "qdrant",
+          "document_id": "ca417baae289181b691a8de3ad7a47116c1bcb84fbf87d74b6b599c7bdc42709",
+          "title": "How to Tune Hybrid Search in Qdrant",
+          "pages": [],
+          "section": "How to Tune Hybrid Search in Qdrant > RRF and DBSF Use Different Signals",
+          "source_reference": "https://qdrant.tech/documentation/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 24.072599999271915,
+        "dense_search": 48.51830000006885,
+        "sparse_search": 197.86520000161545,
+        "fusion": 0.14929999997548293,
+        "rerank": 543.7454000002617,
+        "context": 1.0204999998677522,
+        "generation": 9029.746799998975,
+        "answer_generation": 4491.163699998651,
+        "claim_verification": 4537.649599998986,
+        "generation_pipeline": 9029.745799998636,
+        "end_to_end": 9845.569400000386
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1"
+      ],
+      "answer_generation_ms": 4491.163699998651,
+      "claim_verification_ms": 4537.649599998986,
+      "generation_pipeline_ms": 9029.745799998636,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2906,
+      "generation_prompt_tokens_reported": 761,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 9,
+        "supported": 9,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 259,
+        "prompt_eval_count": 1026,
+        "response_chars": 897,
+        "output_token_allowance": 512,
+        "estimated_input_tokens": 2485,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 71,
+      "answer_characters": 998,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 259,
+      "verification_prompt_eval_count": 1026,
+      "verification_response_chars": 897,
+      "verification_output_tokens": 512,
+      "verification_input_tokens_estimated": 2485,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 9
+    },
+    {
+      "query_id": "q019",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "rag",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "758cac6e6387b8d483dd6ebc373f1d44d915fd8c0cf0bc8c6c0720596e672b56",
+        "c5135208866cea1fe69643f2c7f420bfa79e4fd647d62635b97e64cc3b7b82d8"
+      ],
+      "context_budget_estimated_tokens": 1140,
+      "context_chunks_omitted": 3,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "authorization_recheck",
+        "authorization_recheck"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "8b74172c408b7be3541682888657802a79de224311dd21f39d2885ad485a5a32",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "d86fbfd58cdcab9d643d4d8addd4fe7dad38c0353c5de0db2a5edefb85893a52",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "12362db1e339b04fdb841db7dafa00022c4a148b22451900ccc30ceaeabf4535",
+          "reason": "authorization_recheck"
+        }
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "758cac6e6387b8d483dd6ebc373f1d44d915fd8c0cf0bc8c6c0720596e672b56",
+          "source_id": "qdrant",
+          "document_id": "00f5c9b565df10a316f55948d7cfb9b434f3cc47258554825103ac39e0c15c0d",
+          "title": "Building a Chain-of-Thought Medical Chatbot with Qdrant and DSPy",
+          "rrf_score": 0.029051670471052088,
+          "rerank_score": 2.7014317512512207,
+          "dense_rank": 19,
+          "sparse_rank": 1,
+          "text_characters": 126
+        },
+        {
+          "rank": 2,
+          "chunk_id": "c5135208866cea1fe69643f2c7f420bfa79e4fd647d62635b97e64cc3b7b82d8",
+          "source_id": "qdrant",
+          "document_id": "f0dc9cb3765b5e265c146536671f637f7cf78ff05154345f72239c15f957e3c3",
+          "title": "RAG in 5 Minutes with DeepSeek and Qdrant",
+          "rrf_score": 0.03200204813108039,
+          "rerank_score": 0.7800499200820923,
+          "dense_rank": 2,
+          "sparse_rank": 3,
+          "text_characters": 354
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "qdrant",
+          "document_id": "00f5c9b565df10a316f55948d7cfb9b434f3cc47258554825103ac39e0c15c0d",
+          "chunk_id": "758cac6e6387b8d483dd6ebc373f1d44d915fd8c0cf0bc8c6c0720596e672b56",
+          "title": "Building a Chain-of-Thought Medical Chatbot with Qdrant and DSPy",
+          "rerank_score": 2.7014317512512207,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "qdrant",
+          "document_id": "f0dc9cb3765b5e265c146536671f637f7cf78ff05154345f72239c15f957e3c3",
+          "chunk_id": "c5135208866cea1fe69643f2c7f420bfa79e4fd647d62635b97e64cc3b7b82d8",
+          "title": "RAG in 5 Minutes with DeepSeek and Qdrant",
+          "rerank_score": 0.7800499200820923,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "huggingface_transformers",
+          "document_id": "a6bee54cc7e98d058f98bde1874ac856235ff4b3f2e481387268a2580d506f68",
+          "chunk_id": "8b74172c408b7be3541682888657802a79de224311dd21f39d2885ad485a5a32",
+          "title": "Cohere",
+          "rerank_score": 0.2578641176223755,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "arxiv_llm_rag",
+          "document_id": "88e56e4211ff7ef33b26c9f2c2bead1578b284e7c0a12e9e529a750ea162dee2",
+          "chunk_id": "d86fbfd58cdcab9d643d4d8addd4fe7dad38c0353c5de0db2a5edefb85893a52",
+          "title": "EVOR: Evolving Retrieval for Code Generation",
+          "rerank_score": -0.03135228157043457,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "2e9e389a7d3147f492bbc37f0b63d6c168fea38f933a5aea260d28b9af6cd0a2",
+          "chunk_id": "12362db1e339b04fdb841db7dafa00022c4a148b22451900ccc30ceaeabf4535",
+          "title": "Build a GraphRAG Agent with Neo4j and Qdrant",
+          "rerank_score": -0.35317230224609375,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "qdrant",
+          "document_id": "00f5c9b565df10a316f55948d7cfb9b434f3cc47258554825103ac39e0c15c0d",
+          "title": "Building a Chain-of-Thought Medical Chatbot with Qdrant and DSPy",
+          "pages": [],
+          "section": "Building a Chain-of-Thought Medical Chatbot with Qdrant and DSPy > Retrieval-Augmented Generation (RAG) Pipeline",
+          "source_reference": "https://qdrant.tech/documentation/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "qdrant",
+          "document_id": "f0dc9cb3765b5e265c146536671f637f7cf78ff05154345f72239c15f957e3c3",
+          "title": "RAG in 5 Minutes with DeepSeek and Qdrant",
+          "pages": [],
+          "section": "RAG in 5 Minutes with DeepSeek and Qdrant",
+          "source_reference": "https://qdrant.tech/documentation/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 42.92359999999462,
+        "dense_search": 52.9447999997501,
+        "sparse_search": 215.07669999846257,
+        "fusion": 0.14310000005934853,
+        "rerank": 538.3416999993642,
+        "context": 0.18900000031862874,
+        "generation": 2865.4039000011835,
+        "answer_generation": 1333.7193000006664,
+        "claim_verification": 1531.2259000002086,
+        "generation_pipeline": 2865.4031999994913,
+        "end_to_end": 3715.4461999998603
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S2"
+      ],
+      "answer_generation_ms": 1333.7193000006664,
+      "claim_verification_ms": 1531.2259000002086,
+      "generation_pipeline_ms": 2865.4031999994913,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 1799,
+      "generation_prompt_tokens_reported": 503,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 2,
+        "supported": 2,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 62,
+        "prompt_eval_count": 579,
+        "response_chars": 210,
+        "output_token_allowance": 320,
+        "estimated_input_tokens": 1402,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 70,
+      "answer_characters": 245,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 62,
+      "verification_prompt_eval_count": 579,
+      "verification_response_chars": 210,
+      "verification_output_tokens": 320,
+      "verification_input_tokens_estimated": 1402,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 2
+    },
+    {
+      "query_id": "q020",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "rag",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "0bcf0e8944c67fe1dce4982db50a3e2a113d28248b2937536e596d8ec93fee7e"
+      ],
+      "context_budget_estimated_tokens": 1985,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "7bfab169a6e72c6a78a2b75efb1dcf9246bb4e0a76aa84be912537fa886718cf",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "973a346d0b9141673bdb6ccc9d52b977943e545bb3aae8ffe18a91c27f819ecd",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "7728c2078e8e2f636476f60c0f5be85998144dbc064a0532aad6c9bae5c09556",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "43c0fb5afcc260eb2c0732ccda7c2592298d683c1d56fccfdd4903ce745cbd4f",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "0bcf0e8944c67fe1dce4982db50a3e2a113d28248b2937536e596d8ec93fee7e",
+          "source_id": "arxiv_llm_rag",
+          "document_id": "62f0a5d2d1fc67e97e4b97698e4214e1444870eac8f3faa665a331d30ba0df72",
+          "title": "MUST-RAG: MUSical Text Question Answering with Retrieval Augmented Generation",
+          "rrf_score": 0.028693528693528692,
+          "rerank_score": 0.9572641849517822,
+          "dense_rank": 3,
+          "sparse_rank": 18,
+          "text_characters": 1486
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "arxiv_llm_rag",
+          "document_id": "62f0a5d2d1fc67e97e4b97698e4214e1444870eac8f3faa665a331d30ba0df72",
+          "chunk_id": "0bcf0e8944c67fe1dce4982db50a3e2a113d28248b2937536e596d8ec93fee7e",
+          "title": "MUST-RAG: MUSical Text Question Answering with Retrieval Augmented Generation",
+          "rerank_score": 0.9572641849517822,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "qdrant",
+          "document_id": "8b0e7b30ca722bf2959d9c2cd41db52be7d615f6065b8d035dc0740c40e26c68",
+          "chunk_id": "973a346d0b9141673bdb6ccc9d52b977943e545bb3aae8ffe18a91c27f819ecd",
+          "title": "Evaluating Pipeline Output Quality",
+          "rerank_score": 0.7567362189292908,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "qdrant",
+          "document_id": "8b0e7b30ca722bf2959d9c2cd41db52be7d615f6065b8d035dc0740c40e26c68",
+          "chunk_id": "7728c2078e8e2f636476f60c0f5be85998144dbc064a0532aad6c9bae5c09556",
+          "title": "Evaluating Pipeline Output Quality",
+          "rerank_score": -0.8048654794692993,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "arxiv_llm_rag",
+          "document_id": "e92513c9cdc611e97c9d063eec9165e203dc49ba7a69fd6e88d227c489d21aef",
+          "chunk_id": "7bfab169a6e72c6a78a2b75efb1dcf9246bb4e0a76aa84be912537fa886718cf",
+          "title": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+          "rerank_score": -1.0004020929336548,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "8b0e7b30ca722bf2959d9c2cd41db52be7d615f6065b8d035dc0740c40e26c68",
+          "chunk_id": "43c0fb5afcc260eb2c0732ccda7c2592298d683c1d56fccfdd4903ce745cbd4f",
+          "title": "Evaluating Pipeline Output Quality",
+          "rerank_score": -2.9460840225219727,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "arxiv_llm_rag",
+          "document_id": "62f0a5d2d1fc67e97e4b97698e4214e1444870eac8f3faa665a331d30ba0df72",
+          "title": "MUST-RAG: MUSical Text Question Answering with Retrieval Augmented Generation",
+          "pages": [
+            3
+          ],
+          "section": "",
+          "source_reference": "http://arxiv.org/abs/2507.23334v2"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 18.272700001034536,
+        "dense_search": 41.27429999971355,
+        "sparse_search": 165.7924000010098,
+        "fusion": 0.1503000003140187,
+        "rerank": 548.7377000008564,
+        "context": 0.9055000009539071,
+        "generation": 8505.124700001033,
+        "answer_generation": 4018.071799999234,
+        "claim_verification": 4485.434500000338,
+        "generation_pipeline": 8505.123500000991,
+        "end_to_end": 9280.864199999996
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1"
+      ],
+      "answer_generation_ms": 4018.071799999234,
+      "claim_verification_ms": 4485.434500000338,
+      "generation_pipeline_ms": 8505.123500000991,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2645,
+      "generation_prompt_tokens_reported": 650,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 9,
+        "supported": 9,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 259,
+        "prompt_eval_count": 896,
+        "response_chars": 897,
+        "output_token_allowance": 512,
+        "estimated_input_tokens": 2392,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 73,
+      "answer_characters": 1005,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 259,
+      "verification_prompt_eval_count": 896,
+      "verification_response_chars": 897,
+      "verification_output_tokens": 512,
+      "verification_input_tokens_estimated": 2392,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 9
+    },
+    {
+      "query_id": "q021",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "llm",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "6467bf0f5dc1ba0d7519292e25465ed14543cbd47e2878a02bc0293fb04a102d",
+        "e226242bb933a1cb8bdb9306871d6fd3a8ad45280c723377bf0c18ba36ea99f6"
+      ],
+      "context_budget_estimated_tokens": 2311,
+      "context_chunks_omitted": 3,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "authorization_recheck",
+        "authorization_recheck"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "aefbc0bdde261146e94983408a5ff218858e2a0ed7cb9687b9945a68269990cf",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "22fe1c97b4c7a7c6f6c008e4b7caddc2863e5a9058e51842b10713b9a1b223cb",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "245c7f5cc74b41a8194e643d6f70020535c2bd3008a1d9ab9f37d7088af76f50",
+          "reason": "authorization_recheck"
+        }
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "6467bf0f5dc1ba0d7519292e25465ed14543cbd47e2878a02bc0293fb04a102d",
+          "source_id": "docker",
+          "document_id": "ea07bbafc36174e72f7c867c18f17417ed9ee03095c3a9023d85bdc6048b3843",
+          "title": "configuration",
+          "rrf_score": 0.01639344262295082,
+          "rerank_score": 2.435953378677368,
+          "dense_rank": 1,
+          "sparse_rank": null,
+          "text_characters": 241
+        },
+        {
+          "rank": 2,
+          "chunk_id": "e226242bb933a1cb8bdb9306871d6fd3a8ad45280c723377bf0c18ba36ea99f6",
+          "source_id": "huggingface_transformers",
+          "document_id": "d708588304ca3afcd40aea71ed26a37132e9ec65191ea2eb7fe6b312024aa451",
+          "title": "Cohere 2",
+          "rrf_score": 0.024481265860576206,
+          "rerank_score": -0.17507457733154297,
+          "dense_rank": 27,
+          "sparse_rank": 17,
+          "text_characters": 1362
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "docker",
+          "document_id": "ea07bbafc36174e72f7c867c18f17417ed9ee03095c3a9023d85bdc6048b3843",
+          "chunk_id": "6467bf0f5dc1ba0d7519292e25465ed14543cbd47e2878a02bc0293fb04a102d",
+          "title": "configuration",
+          "rerank_score": 2.435953378677368,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "huggingface_transformers",
+          "document_id": "d708588304ca3afcd40aea71ed26a37132e9ec65191ea2eb7fe6b312024aa451",
+          "chunk_id": "e226242bb933a1cb8bdb9306871d6fd3a8ad45280c723377bf0c18ba36ea99f6",
+          "title": "Cohere 2",
+          "rerank_score": -0.17507457733154297,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "qdrant",
+          "document_id": "46bfc9351e6f97297b402e8c8357fb69ed8ac10cd96a9700c4a5c9f5e7e6c8c3",
+          "chunk_id": "aefbc0bdde261146e94983408a5ff218858e2a0ed7cb9687b9945a68269990cf",
+          "title": "Qdrant Cloud Inference",
+          "rerank_score": -1.4441180229187012,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "qdrant",
+          "document_id": "d01e42823c656c06386330a0cbfa9ec62dc9887716818d24a2ec2db19b826d80",
+          "chunk_id": "22fe1c97b4c7a7c6f6c008e4b7caddc2863e5a9058e51842b10713b9a1b223cb",
+          "title": "Jina AI",
+          "rerank_score": -1.6162493228912354,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "749663895d03e4d725a5ab018d46eb5542db170b816887879112cf7879821cd2",
+          "chunk_id": "245c7f5cc74b41a8194e643d6f70020535c2bd3008a1d9ab9f37d7088af76f50",
+          "title": "Incremental Embedding Updates",
+          "rerank_score": -1.6778156757354736,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "docker",
+          "document_id": "ea07bbafc36174e72f7c867c18f17417ed9ee03095c3a9023d85bdc6048b3843",
+          "title": "configuration",
+          "pages": [],
+          "section": "Context size (context length)",
+          "source_reference": "https://docs.docker.com/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "huggingface_transformers",
+          "document_id": "d708588304ca3afcd40aea71ed26a37132e9ec65191ea2eb7fe6b312024aa451",
+          "title": "Cohere 2",
+          "pages": [],
+          "section": "Cohere 2",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 21.462099999553175,
+        "dense_search": 34.11380000034114,
+        "sparse_search": 987.2125000001688,
+        "fusion": 0.8348999999725493,
+        "rerank": 534.4855999992433,
+        "context": 0.36420000105863437,
+        "generation": 2471.0601000006136,
+        "answer_generation": 1139.8657000008825,
+        "claim_verification": 1330.701199998657,
+        "generation_pipeline": 2471.059499999683,
+        "end_to_end": 4050.1084999996237
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1"
+      ],
+      "answer_generation_ms": 1139.8657000008825,
+      "claim_verification_ms": 1330.701199998657,
+      "generation_pipeline_ms": 2471.059499999683,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2975,
+      "generation_prompt_tokens_reported": 800,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 1,
+        "supported": 1,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 35,
+        "prompt_eval_count": 805,
+        "response_chars": 112,
+        "output_token_allowance": 192,
+        "estimated_input_tokens": 1907,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 75,
+      "answer_characters": 159,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 35,
+      "verification_prompt_eval_count": 805,
+      "verification_response_chars": 112,
+      "verification_output_tokens": 192,
+      "verification_input_tokens_estimated": 1907,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 1
+    },
+    {
+      "query_id": "q022",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "llm",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "3bb47c0798e6aca70f6048ff75046b6c912ef44b1fef3438f48891c8bd5482a6",
+        "9e1e1db6b1fe4fab9d2eec99ff33c6608105da400ef5e897e2539753aa1fdd8a"
+      ],
+      "context_budget_estimated_tokens": 1974,
+      "context_chunks_omitted": 3,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "901c4c51979a1ceddd5cb2c333001fa2881b1e42b34921bbbeaff4daf12d63e7",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "753d2d2c4c317ec97ddfaeea0e53c7ce5dafae85868516b5702bc5b2dc17bedb",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "c450cf1e3f10d02aa6c6faeed47bbc25875567bcb6810d7a0bd51215ab977ebd",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "3bb47c0798e6aca70f6048ff75046b6c912ef44b1fef3438f48891c8bd5482a6",
+          "source_id": "huggingface_transformers",
+          "document_id": "9e9ca508d458512d84416466ea86168af2e4f0183b0e0b5c35fc6b553b984e09",
+          "title": "Serve CLI",
+          "rrf_score": 0.029877369007803793,
+          "rerank_score": -0.002144940197467804,
+          "dense_rank": 5,
+          "sparse_rank": 9,
+          "text_characters": 544
+        },
+        {
+          "rank": 2,
+          "chunk_id": "9e1e1db6b1fe4fab9d2eec99ff33c6608105da400ef5e897e2539753aa1fdd8a",
+          "source_id": "huggingface_transformers",
+          "document_id": "aca2cd560aa191b184665cf9be47f6308151d245a4a0520f449878604a1c6e96",
+          "title": "Pocket TTS",
+          "rrf_score": 0.02946236559139785,
+          "rerank_score": -0.14693789184093475,
+          "dense_rank": 15,
+          "sparse_rank": 2,
+          "text_characters": 734
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "huggingface_transformers",
+          "document_id": "9e9ca508d458512d84416466ea86168af2e4f0183b0e0b5c35fc6b553b984e09",
+          "chunk_id": "3bb47c0798e6aca70f6048ff75046b6c912ef44b1fef3438f48891c8bd5482a6",
+          "title": "Serve CLI",
+          "rerank_score": -0.002144940197467804,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "huggingface_transformers",
+          "document_id": "aca2cd560aa191b184665cf9be47f6308151d245a4a0520f449878604a1c6e96",
+          "chunk_id": "9e1e1db6b1fe4fab9d2eec99ff33c6608105da400ef5e897e2539753aa1fdd8a",
+          "title": "Pocket TTS",
+          "rerank_score": -0.14693789184093475,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "docker",
+          "document_id": "ea07bbafc36174e72f7c867c18f17417ed9ee03095c3a9023d85bdc6048b3843",
+          "chunk_id": "901c4c51979a1ceddd5cb2c333001fa2881b1e42b34921bbbeaff4daf12d63e7",
+          "title": "configuration",
+          "rerank_score": -1.9300787448883057,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "huggingface_transformers",
+          "document_id": "397e357a23942d1d8dc38e73d6057146972635f6a61b547026d4fd35638ff41a",
+          "chunk_id": "753d2d2c4c317ec97ddfaeea0e53c7ce5dafae85868516b5702bc5b2dc17bedb",
+          "title": "Youtu-LLM",
+          "rerank_score": -3.4796969890594482,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "huggingface_transformers",
+          "document_id": "802020a99bbf3dcf627f0c398b3b89ffe9a55fd2bec65f32461c6dcbcdcddca3",
+          "chunk_id": "c450cf1e3f10d02aa6c6faeed47bbc25875567bcb6810d7a0bd51215ab977ebd",
+          "title": "Tool use",
+          "rerank_score": -3.6541779041290283,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "huggingface_transformers",
+          "document_id": "9e9ca508d458512d84416466ea86168af2e4f0183b0e0b5c35fc6b553b984e09",
+          "title": "Serve CLI",
+          "pages": [],
+          "section": "Serve CLI > Tool calling",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "huggingface_transformers",
+          "document_id": "aca2cd560aa191b184665cf9be47f6308151d245a4a0520f449878604a1c6e96",
+          "title": "Pocket TTS",
+          "pages": [],
+          "section": "Pocket TTS > Usage tips",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 369.2126999994798,
+        "dense_search": 61.01950000083889,
+        "sparse_search": 174.95129999952042,
+        "fusion": 0.15840000014577527,
+        "rerank": 485.343099999227,
+        "context": 0.6266000000323402,
+        "answer_generation": 1249.2703999996593,
+        "generation_pipeline": 1249.4456000003993,
+        "end_to_end": 2341.2164999990637
+      },
+      "comparison_evidence_complete": true,
+      "status": "generation_failed",
+      "error_code": "uncited_claim_rejected",
+      "claim_count": 2,
+      "error_type": "UncitedClaimError",
+      "error_stage": "answer_validation",
+      "error_message": "Answer contains a substantive sentence without a citation.",
+      "original_cause_type": null,
+      "generation_duration_ms": 1249.2703999996593,
+      "verification_duration_ms": null,
+      "retry_count": 0,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "http_status": 200,
+      "generation_http_status": 200,
+      "verification_http_status": null,
+      "generation_pipeline_duration_ms": 1249.4456000003993,
+      "verification_done_reason": null,
+      "verification_eval_count": null,
+      "verification_prompt_eval_count": null,
+      "verification_response_chars": null,
+      "verification_output_tokens": null,
+      "verification_input_tokens_estimated": null,
+      "verification_context_window_tokens": null,
+      "verification_safety_margin_tokens": null,
+      "question_characters": 70
+    },
+    {
+      "query_id": "q023",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "vector_database",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "ea90f081999779b621b4b557d1ac4c33280722206c9971ceb45ce371924e3ed7",
+        "775bbe6280f95105278241978158711f782d72f219088817029875fe7869d669",
+        "f0681e17e91b55ed2c602cd2bdbb3bda53e52b7e230d9ba041605ff72a54a75b",
+        "61d53b2dfb88fcb967f6a0d9989ce3e339339fbe0eb48e6ccde7dfe1faa0b341"
+      ],
+      "context_budget_estimated_tokens": 2500,
+      "context_chunks_omitted": 1,
+      "context_omission_reasons": [
+        "context_budget_metadata"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "fc001f5f54a5e79320d030e5f46882a5a7a5c38b8c7894e7a6af3a3b262492da",
+          "reason": "context_budget_metadata"
+        }
+      ],
+      "context_citation_count": 4,
+      "comparison_diversity_applied": true,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "ea90f081999779b621b4b557d1ac4c33280722206c9971ceb45ce371924e3ed7",
+          "source_id": "qdrant",
+          "document_id": "45781d4a01af3448f6362b370b40aa5eff896973d0581ebec0985a2f0fe0bd5e",
+          "title": "Diagnosing Discrepancies",
+          "rrf_score": 0.03021353930031804,
+          "rerank_score": 6.259761810302734,
+          "dense_rank": 2,
+          "sparse_rank": 11,
+          "text_characters": 771
+        },
+        {
+          "rank": 2,
+          "chunk_id": "775bbe6280f95105278241978158711f782d72f219088817029875fe7869d669",
+          "source_id": "qdrant",
+          "document_id": "9b87bfd7c1e96fcc8a52675805729367fe3749483e98c91a3e84605d904c0b90",
+          "title": "Introduction",
+          "rrf_score": 0.03278688524590164,
+          "rerank_score": 5.813592910766602,
+          "dense_rank": 1,
+          "sparse_rank": 1,
+          "text_characters": 1836
+        },
+        {
+          "rank": 3,
+          "chunk_id": "f0681e17e91b55ed2c602cd2bdbb3bda53e52b7e230d9ba041605ff72a54a75b",
+          "source_id": "qdrant",
+          "document_id": "bda3e7c8689299e9bdfbcbf68a417f0846a875e7d16529412d92300dd123babc",
+          "title": "Pre-Migration Baseline",
+          "rrf_score": 0.02964426877470356,
+          "rerank_score": 5.639386177062988,
+          "dense_rank": 9,
+          "sparse_rank": 6,
+          "text_characters": 1347
+        },
+        {
+          "rank": 4,
+          "chunk_id": "61d53b2dfb88fcb967f6a0d9989ce3e339339fbe0eb48e6ccde7dfe1faa0b341",
+          "source_id": "arxiv_information_retrieval",
+          "document_id": "8d44da957eb6ad3a7e151afdf679a15f8849b5d44a53dcefd758db03f83460e2",
+          "title": "Neural ranking models for document retrieval",
+          "rrf_score": 0.012987012987012988,
+          "rerank_score": 4.957698822021484,
+          "dense_rank": 17,
+          "sparse_rank": null,
+          "text_characters": 2151
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "qdrant",
+          "document_id": "45781d4a01af3448f6362b370b40aa5eff896973d0581ebec0985a2f0fe0bd5e",
+          "chunk_id": "ea90f081999779b621b4b557d1ac4c33280722206c9971ceb45ce371924e3ed7",
+          "title": "Diagnosing Discrepancies",
+          "rerank_score": 6.259761810302734,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "qdrant",
+          "document_id": "9b87bfd7c1e96fcc8a52675805729367fe3749483e98c91a3e84605d904c0b90",
+          "chunk_id": "775bbe6280f95105278241978158711f782d72f219088817029875fe7869d669",
+          "title": "Introduction",
+          "rerank_score": 5.813592910766602,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "qdrant",
+          "document_id": "bda3e7c8689299e9bdfbcbf68a417f0846a875e7d16529412d92300dd123babc",
+          "chunk_id": "f0681e17e91b55ed2c602cd2bdbb3bda53e52b7e230d9ba041605ff72a54a75b",
+          "title": "Pre-Migration Baseline",
+          "rerank_score": 5.639386177062988,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "arxiv_information_retrieval",
+          "document_id": "8d44da957eb6ad3a7e151afdf679a15f8849b5d44a53dcefd758db03f83460e2",
+          "chunk_id": "61d53b2dfb88fcb967f6a0d9989ce3e339339fbe0eb48e6ccde7dfe1faa0b341",
+          "title": "Neural ranking models for document retrieval",
+          "rerank_score": 4.957698822021484,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "30d672a0fec4658319d5c19016ac1c480bab5ec166e6724abf1b2fb991945ca7",
+          "chunk_id": "fc001f5f54a5e79320d030e5f46882a5a7a5c38b8c7894e7a6af3a3b262492da",
+          "title": "Collections",
+          "rerank_score": 4.422184944152832,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "qdrant",
+          "document_id": "45781d4a01af3448f6362b370b40aa5eff896973d0581ebec0985a2f0fe0bd5e",
+          "title": "Diagnosing Discrepancies",
+          "pages": [],
+          "section": "Diagnosing Discrepancies > Configuration-Level Issues > Vector Normalization",
+          "source_reference": "https://qdrant.tech/documentation/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "qdrant",
+          "document_id": "9b87bfd7c1e96fcc8a52675805729367fe3749483e98c91a3e84605d904c0b90",
+          "title": "Introduction",
+          "pages": [],
+          "section": "Introduction > What Are Vector Databases?",
+          "source_reference": "https://qdrant.tech/documentation/"
+        },
+        {
+          "citation_id": "S3",
+          "source_id": "qdrant",
+          "document_id": "bda3e7c8689299e9bdfbcbf68a417f0846a875e7d16529412d92300dd123babc",
+          "title": "Pre-Migration Baseline",
+          "pages": [],
+          "section": "Pre-Migration Baseline > What to Capture > 1. Collection/Index Inventory",
+          "source_reference": "https://qdrant.tech/documentation/"
+        },
+        {
+          "citation_id": "S4",
+          "source_id": "arxiv_information_retrieval",
+          "document_id": "8d44da957eb6ad3a7e151afdf679a15f8849b5d44a53dcefd758db03f83460e2",
+          "title": "Neural ranking models for document retrieval",
+          "pages": [
+            14
+          ],
+          "section": "",
+          "source_reference": "http://arxiv.org/abs/2102.11903v2"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 18.26979999896139,
+        "dense_search": 130.0477000004321,
+        "sparse_search": 174.21579999972892,
+        "fusion": 0.16310000137309544,
+        "rerank": 558.1796000005852,
+        "context": 1.8874000015784986,
+        "generation": 3997.843399998601,
+        "answer_generation": 2006.2703999992664,
+        "claim_verification": 1990.9897999987152,
+        "generation_pipeline": 3997.842499999024,
+        "end_to_end": 4882.175599999755
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1",
+        "S2"
+      ],
+      "answer_generation_ms": 2006.2703999992664,
+      "claim_verification_ms": 1990.9897999987152,
+      "generation_pipeline_ms": 3997.842499999024,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 3176,
+      "generation_prompt_tokens_reported": 910,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 3,
+        "supported": 3,
+        "rejected": 0,
+        "support_rate_automated": 1.0,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 90,
+        "prompt_eval_count": 1035,
+        "response_chars": 308,
+        "output_token_allowance": 448,
+        "estimated_input_tokens": 2102,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated",
+      "question_characters": 83,
+      "answer_characters": 312,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 90,
+      "verification_prompt_eval_count": 1035,
+      "verification_response_chars": 308,
+      "verification_output_tokens": 448,
+      "verification_input_tokens_estimated": 2102,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 3
+    },
+    {
+      "query_id": "q024",
+      "question": "REDACTED; prompt text is not persisted",
+      "domain": "vector_database",
+      "test_case_type": null,
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "ca82ab30b2644ded144024236de40b29763fc8f7ae4cd7435345d840ebeb21b0"
+      ],
+      "context_budget_estimated_tokens": 2152,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "authorization_recheck",
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "e49879280fa23f5fa5148a436d928509c357457a74a4c6e4c312e4ff96ffdb41",
+          "reason": "authorization_recheck"
+        },
+        {
+          "chunk_id": "1f6cbae4cad2190b231023d67c6be18c5a8c9ceaf01d8ef5aafd4f7578360747",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "f9e35775d5f6877bccf8ab4688e5a06463408270c4226cc953435f97e8d0a641",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "ce686f0b0034b0f52f9af1a1600698ec4132ff033e454f06045b93d005146987",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": false,
+      "required_comparison_source_ids": [],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "ca82ab30b2644ded144024236de40b29763fc8f7ae4cd7435345d840ebeb21b0",
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "2b68555a73902d0626b5d27af96bf99b3214bf2489906e8232116b8f6042b5e7",
+          "title": "HAKES: Scalable Vector Database for Embedding Search Service",
+          "rrf_score": 0.0136986301369863,
+          "rerank_score": 3.7547593116760254,
+          "dense_rank": 13,
+          "sparse_rank": null,
+          "text_characters": 1567
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "2b68555a73902d0626b5d27af96bf99b3214bf2489906e8232116b8f6042b5e7",
+          "chunk_id": "ca82ab30b2644ded144024236de40b29763fc8f7ae4cd7435345d840ebeb21b0",
+          "title": "HAKES: Scalable Vector Database for Embedding Search Service",
+          "rerank_score": 3.7547593116760254,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "2b68555a73902d0626b5d27af96bf99b3214bf2489906e8232116b8f6042b5e7",
+          "chunk_id": "1f6cbae4cad2190b231023d67c6be18c5a8c9ceaf01d8ef5aafd4f7578360747",
+          "title": "HAKES: Scalable Vector Database for Embedding Search Service",
+          "rerank_score": 3.6135094165802,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "3fac7442f748d5df44c1c0f1aa8288dfd3c766808032907aa95cbb8ecd91c619",
+          "chunk_id": "f9e35775d5f6877bccf8ab4688e5a06463408270c4226cc953435f97e8d0a641",
+          "title": "MINT: Multi-Vector Search Index Tuning",
+          "rerank_score": 1.1469677686691284,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "9b5ac58832fa3cff1a6f4dd4ac0bbadabd50be5918260a712530b3cd3ebb5c1b",
+          "chunk_id": "ce686f0b0034b0f52f9af1a1600698ec4132ff033e454f06045b93d005146987",
+          "title": "Toward Efficient and Scalable Design of In-Memory Graph-Based Vector Search",
+          "rerank_score": 0.0408826619386673,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "0339734df727a6ecde06e447add22da94a32f821885cfcce62451eff9bef3bc0",
+          "chunk_id": "e49879280fa23f5fa5148a436d928509c357457a74a4c6e4c312e4ff96ffdb41",
+          "title": "Measuring ANN Recall",
+          "rerank_score": -0.027123138308525085,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "arxiv_database_vector_search",
+          "document_id": "2b68555a73902d0626b5d27af96bf99b3214bf2489906e8232116b8f6042b5e7",
+          "title": "HAKES: Scalable Vector Database for Embedding Search Service",
+          "pages": [
+            15
+          ],
+          "section": "",
+          "source_reference": "http://arxiv.org/abs/2505.12524v1"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 20.617100000890787,
+        "dense_search": 33.699699999488075,
+        "sparse_search": 128.7735000005341,
+        "fusion": 0.16869999853952322,
+        "rerank": 490.9823999987566,
+        "context": 0.8495000001857989,
+        "generation": 4211.2313000016,
+        "answer_generation": 2093.3826999989833,
+        "claim_verification": 2117.1346999999514,
+        "generation_pipeline": 4211.230400000204,
+        "end_to_end": 4886.757600001147
+      },
+      "comparison_evidence_complete": true,
+      "answer": "REDACTED; generated response text is not persisted",
+      "answer_citations": [
+        "S1"
+      ],
+      "answer_generation_ms": 2093.3826999989833,
+      "claim_verification_ms": 2117.1346999999514,
+      "generation_pipeline_ms": 4211.230400000204,
+      "generation_retry_count": 0,
+      "verification_retry_count": 0,
+      "generation_http_status": 200,
+      "verification_http_status": 200,
+      "generation_prompt_tokens_estimated": 2813,
+      "generation_prompt_tokens_reported": 976,
+      "claim_verification": {
+        "method": "automated_local_model_entailment_check",
+        "verification_model": "qwen3.5:4b",
+        "claims": 3,
+        "supported": 2,
+        "rejected": 1,
+        "support_rate_automated": 0.6666666666666666,
+        "human_correctness": "not_assessed",
+        "done_reason": "stop",
+        "eval_count": 88,
+        "prompt_eval_count": 1028,
+        "response_chars": 307,
+        "output_token_allowance": 448,
+        "estimated_input_tokens": 2045,
+        "context_window_tokens": 4096,
+        "safety_margin_tokens": 256
+      },
+      "status": "generated_partial",
+      "question_characters": 74,
+      "answer_characters": 335,
+      "verification_done_reason": "stop",
+      "verification_eval_count": 88,
+      "verification_prompt_eval_count": 1028,
+      "verification_response_chars": 307,
+      "verification_output_tokens": 448,
+      "verification_input_tokens_estimated": 2045,
+      "verification_context_window_tokens": 4096,
+      "verification_safety_margin_tokens": 256,
+      "claim_count": 3
+    }
+  ]
+}

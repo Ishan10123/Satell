@@ -1,0 +1,1 @@
+{"query_id": "m05", "test_case_type": "multi_document", "domain": "pytorch_transformers", "question": "Compare PyTorch autograd gradient tracking with how Transformer attention masks affect model inputs."}

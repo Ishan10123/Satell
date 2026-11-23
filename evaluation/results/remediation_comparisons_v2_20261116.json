@@ -1,0 +1,152 @@
+{
+  "read_only": true,
+  "result_type": "unreviewed_generation_diagnostic",
+  "index_id": "index-20261116T044640Z-b53eb021",
+  "query_count": 2,
+  "results": [
+    {
+      "query_id": "m01",
+      "question": "Compare PostgreSQL B-tree indexes with Qdrant vector indexes: what data and query patterns is each designed for?",
+      "domain": "postgresql_qdrant",
+      "test_case_type": "multi_document",
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "5b6958c2310d6eca029192376c0fa6d97135dd7aea59b3aba14edc62e4b7f1ab"
+      ],
+      "context_budget_estimated_tokens": 1749,
+      "context_chunks_omitted": 4,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget",
+        "context_budget",
+        "context_budget"
+      ],
+      "context_citation_count": 1,
+      "comparison_diversity_applied": true,
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "5b6958c2310d6eca029192376c0fa6d97135dd7aea59b3aba14edc62e4b7f1ab",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rrf_score": 0.03177805800756621,
+          "rerank_score": 5.627252101898193,
+          "dense_rank": 1,
+          "sparse_rank": 5,
+          "text": "data that can be sorted into some ordering. In\nparticular, the PostgreSQL query planner will consider using a B-tree index whenever an indexed\ncolumn is involved in a comparison using one of these operators:\n< <= = >= >\nConstructs equivalent to combinations of these operators, such as BETWEEN and IN, can also be\nimplemented with a B-tree index search. Also, an IS NULL or IS NOT NULL condition on an index\ncolumn can be used with a B-tree index.\nThe optimizer can also use a B-tree index for queries involving the pattern matching operators LIKE\nand ~ if the pattern is a constant and is anchored to the beginning of the string — for example, col\nLIKE 'foo%' or col ~ '^foo', but not col LIKE '%bar'. However, if your database\ndoes not use the C locale you will need to create the index with a special operator class to support\nindexing of pattern-matching queries; see Section 11.10 below. It is also possible to use B-tree indexes\nfor ILIKE and ~*, but only if the pattern starts with non-alphabetic characters, i.e., characters that\nare not affected by upper/lower case conversion.\nB-tree indexes can also be used to retrieve data in sorted order. This is not always faster than a simple\nscan and sort, but it is often helpful.\n456"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "pages": [
+            495
+          ],
+          "section": "",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 66.27350000053411,
+        "dense_search": 30.59439999924507,
+        "sparse_search": 147.68909999838797,
+        "fusion": 0.1416000013705343,
+        "rerank": 239.20540000108304,
+        "context": 1.486499997554347,
+        "end_to_end": 3447.1850999980234
+      },
+      "status": "generation_failed",
+      "error_type": "GenerationError",
+      "error_code": "uncited_claim_rejected"
+    },
+    {
+      "query_id": "m05",
+      "question": "Compare PyTorch autograd gradient tracking with how Transformer attention masks affect model inputs.",
+      "domain": "pytorch_transformers",
+      "test_case_type": "multi_document",
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "3b7c0195b126e296592b1cef79bd7974ff9454fe0f0818c49fa4be4fd6bf6fae",
+        "0596a9c896c1ca38727f07f387ef700cf3a71f9b25c94cf060872c51bb402c91"
+      ],
+      "context_budget_estimated_tokens": 2366,
+      "context_chunks_omitted": 2,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget"
+      ],
+      "context_citation_count": 2,
+      "comparison_diversity_applied": true,
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "3b7c0195b126e296592b1cef79bd7974ff9454fe0f0818c49fa4be4fd6bf6fae",
+          "source_id": "huggingface_transformers",
+          "document_id": "704496c838746cf662c5a2abdd7cbcf3c1f769c7c427c012cec598c2d433729b",
+          "title": "Apple Silicon",
+          "rrf_score": 0.015384615384615385,
+          "rerank_score": 2.140665292739868,
+          "dense_rank": 5,
+          "sparse_rank": null,
+          "text": "Set the attention backend with `attn_implementation` when you load a model, and it applies to both inference and training. Models use [SDPA](./attention_interface) by default. With PyTorch 2.13 or later, SDPA on MPS handles grouped-query attention directly, without repeating the key and value heads first.\nUse SDPA for training.\n- [kernels-community/metal-flash-sdpa](https://huggingface.co/kernels-community/metal-flash-sdpa) only supports variable-length inputs, such as packed sequences or a batch whose attention mask contains padding. A batch without padding, such as a single prompt, raises an error. It doesn't compute gradients for the query, key, and value projections. [gpt-oss](./model_doc/gpt_oss) switches to it automatically when you request flash attention on MPS. - [ggml-org/ggml-attn](https://huggingface.co/kernels/ggml-org/ggml-attn) is the default for `transformers serve` and for [GGUF](./quantization/gguf#attention) models when `kernels` is installed.\nInstall the `kernels` extra to use either kernel. It installs a version that Transformers supports.\npip install \"transformers[kernels]\""
+        },
+        {
+          "rank": 5,
+          "chunk_id": "0596a9c896c1ca38727f07f387ef700cf3a71f9b25c94cf060872c51bb402c91",
+          "source_id": "huggingface_transformers",
+          "document_id": "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+          "title": "Glossary",
+          "rrf_score": 0.01639344262295082,
+          "rerank_score": -0.36754730343818665,
+          "dense_rank": 1,
+          "sparse_rank": null,
+          "text": "This can then be converted into a tensor in PyTorch. The attention mask is a binary tensor indicating the position of the padded indices so that the model does not attend to them. For the [`BertTokenizer`], `1` indicates a value that should be attended to, while `0` indicates a padded value. This attention mask is in the dictionary returned by the tokenizer under the key \"attention_mask\":\n>>> padded_sequences[\"attention_mask\"]\n[[1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "huggingface_transformers",
+          "document_id": "704496c838746cf662c5a2abdd7cbcf3c1f769c7c427c012cec598c2d433729b",
+          "title": "Apple Silicon",
+          "pages": [],
+          "section": "Apple Silicon > Choose an attention backend",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "huggingface_transformers",
+          "document_id": "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+          "title": "Glossary",
+          "pages": [],
+          "section": "Glossary > A > attention mask",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 43.89490000176011,
+        "dense_search": 81.3951999953133,
+        "sparse_search": 87.31589999661082,
+        "fusion": 0.12509999942267314,
+        "rerank": 263.16640000004554,
+        "context": 0.5846999993082136,
+        "generation": 3025.223599994206,
+        "end_to_end": 3502.1184000070207
+      },
+      "answer": "UNREVIEWED LOCAL DIAGNOSTIC; NOT APPROVED FOR PRODUCTION.\n- PyTorch autograd gradient tracking computes gradients for query, key, and value projections during training [S1].\n- Attention masks are binary tensors where 1 indicates a position to attend to and 0 indicates a padded value [S2].\n- The `attn_implementation` setting applies to both inference and training in Hugging Face Transformers models [S1].\n- SDPA on MPS handles grouped-query attention directly without repeating key and value heads for PyTorch 2.13 or later [S1].\n- Variable-length inputs with padding are supported by the metal-flash-sdpa kernel, but batches without padding raise an error [S1].\n- The metal-flash-sdpa kernel does not compute gradients for query, key, and value projections [S1].\n- GGUF models use the ggml-attn kernel as the default when `kernels` is installed [S1].",
+      "answer_citations": [
+        "S1",
+        "S2"
+      ],
+      "generation_prompt_tokens_estimated": 3055,
+      "generation_prompt_tokens_reported": 885,
+      "status": "generated"
+    }
+  ]
+}

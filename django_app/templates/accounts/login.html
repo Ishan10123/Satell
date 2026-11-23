@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Sign in · satell{% endblock %}
+{% block content %}
+<section class="login-card" aria-labelledby="login-heading">
+  <div class="welcome-orb login-orb" aria-hidden="true">✳</div>
+  <p class="eyebrow">YOUR PRIVATE WORKSPACE</p><h1 id="login-heading">Welcome back</h1><p class="login-copy">Sign in to continue to your conversations.</p>
+  <form method="post" action="{% url 'accounts:login' %}" class="login-form">{% csrf_token %}
+    {{ form.non_field_errors }}
+    <label for="id_username">Username</label>{{ form.username }}{{ form.username.errors }}
+    <label for="id_password">Password</label><div class="password-field">{{ form.password }}<button class="password-toggle" type="button" data-password-toggle aria-label="Show password" aria-pressed="false"><span aria-hidden="true">◉</span><span data-password-toggle-label>Show</span></button></div>{{ form.password.errors }}
+    <input type="hidden" name="next" value="{{ next }}">
+    <div class="forgot-password"><a href="{% url 'accounts:password_reset' %}">Forgot password?</a></div>
+    <button class="primary-button login-submit" type="submit">Sign in <span aria-hidden="true">→</span></button>
+  </form>
+  <p class="login-footnote">Access is managed by your workspace administrator.</p>
+</section>
+{% endblock %}

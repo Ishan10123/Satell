@@ -1,0 +1,26 @@
+{
+  "config_version": "1.2",
+  "status": "conservative_token_budget_verified; retrieval_quality_not_benchmarked",
+  "default_strategy": "heading_aware",
+  "tokenizer": {
+    "provider": "huggingface_tokenizers_json",
+    "model_id": "nomic-ai/nomic-embed-text-v1.5",
+    "revision": "e9b6763023c676ca8431644204f50c2b100d9aab",
+    "asset_path": "assets/tokenizers/nomic-embed-text-v1.5/tokenizer.json",
+    "asset_sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "library": "tokenizers",
+    "library_version": "0.22.1",
+    "context_tokens": 2048,
+    "special_tokens_per_input": 2,
+    "embedding_model_name": "nomic-embed-text:v1.5",
+    "embedding_model_digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+  },
+  "max_tokens": 512,
+  "overlap_tokens": 64,
+  "max_characters": 2000,
+  "overlap_characters": 200,
+  "child_max_tokens": 128,
+  "parent_max_tokens": 768,
+  "semantic_similarity_threshold": 0.72,
+  "note": "Budgets use the pinned Nomic tokenizer and conservatively expand unknown-token spans by UTF-8 byte. Ollama-reported input tokens must not exceed the local budget; special tokens are included. Chunk quality still requires a curated evaluation set."
+}

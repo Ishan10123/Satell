@@ -1,0 +1,24 @@
+{"domain":"fastapi","question":"How does FastAPI dependency injection work?"}
+{"domain":"fastapi","question":"How do I protect a FastAPI endpoint using OAuth2 scopes?"}
+{"domain":"python","question":"How does asyncio TaskGroup handle failures among concurrent tasks?"}
+{"domain":"python","question":"What happens when an asyncio task is cancelled?"}
+{"domain":"postgresql","question":"How does PostgreSQL multiversion concurrency control provide transaction isolation?"}
+{"domain":"postgresql","question":"How do PostgreSQL indexes affect query performance and writes?"}
+{"domain":"qdrant","question":"How can Qdrant filter vector search results by payload fields?"}
+{"domain":"qdrant","question":"How does Qdrant configure HNSW indexing for vector search?"}
+{"domain":"docker","question":"How do multi-stage Docker builds reduce the final image size?"}
+{"domain":"docker","question":"How do Docker health checks determine whether a container is healthy?"}
+{"domain":"huggingface_transformers","question":"How do Transformers pipelines select a task and model?"}
+{"domain":"huggingface_transformers","question":"How should a chat template format messages for a causal language model?"}
+{"domain":"pytorch","question":"How does autograd compute gradients in PyTorch?"}
+{"domain":"pytorch","question":"How does PyTorch DataLoader combine datasets, samplers, and batching?"}
+{"domain":"machine_learning","question":"What is overfitting and how can regularization reduce it?"}
+{"domain":"machine_learning","question":"How does gradient descent update model parameters?"}
+{"domain":"information_retrieval","question":"How does BM25 score documents for a query?"}
+{"domain":"information_retrieval","question":"What is reciprocal rank fusion and how does it combine search rankings?"}
+{"domain":"rag","question":"What are the main stages in a retrieval augmented generation pipeline?"}
+{"domain":"rag","question":"How should retrieved passages be used to ground an answer with citations?"}
+{"domain":"llm","question":"How does the context window limit the input and output of a language model?"}
+{"domain":"llm","question":"What is the effect of temperature on token sampling during generation?"}
+{"domain":"vector_database","question":"What is the difference between cosine similarity and dot product for vector search?"}
+{"domain":"vector_database","question":"How do approximate nearest neighbor indexes trade search speed for recall?"}

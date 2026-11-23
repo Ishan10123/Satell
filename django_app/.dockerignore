@@ -1,0 +1,13 @@
+.env
+.env.*
+*.sqlite3
+*.db
+__pycache__/
+**/__pycache__/
+*.py[cod]
+tests.py
+test_*.py
+**/tests.py
+**/test_*.py
+.gitignore
+run_phase4_live_evaluation.py

@@ -1,0 +1,44 @@
+{
+  "browser": "Google Chrome controlled by Playwright",
+  "base_url": "http://127.0.0.1:8001",
+  "scenarios": {
+    "password_visibility": "show/hide verified; value preserved",
+    "forgot_password_enumeration_safe_ui": "generic confirmation verified for unknown account",
+    "invalid_and_valid_login": "invalid credentials rejected; temporary test account authenticated",
+    "browser_secret_absent": true,
+    "user_right_satell_left": {
+      "user_card_class": "message-user",
+      "assistant_card_class": "message-assistant",
+      "brand_label": "Satell"
+    },
+    "copy_response": "visible Satell answer copied",
+    "copy_citation": "citation label and safe source reference copied without internal IDs",
+    "follow_up_and_title_stability": "second question/answer persisted; generated title remained stable",
+    "rename": "saved and survived response refresh",
+    "exports": "Markdown, plain text, JSON responses verified; JSON parses; private diagnostics absent",
+    "share_and_revoke": "read-only link opened; noindex present; revoked link rejected",
+    "lock_unlock": "locked state removes composer; owner unlock restores it",
+    "delete_confirmation": "new empty conversation deleted after confirmation",
+    "mobile_and_theme": "390px viewport has no horizontal overflow; theme control active",
+    "logout_relogin_persistence": "conversation title remains in authenticated history"
+  },
+  "live_rag": {
+    "first_query": {
+      "question": "In FastAPI, what is a path parameter? Give one concise fact from its documentation.",
+      "browser_elapsed_ms": 2025.02,
+      "citation_cards": 1,
+      "verification_ui": "Claims checked against the cited sources.",
+      "answer_paragraph_count": 1,
+      "answer_list_item_count": 0,
+      "citation_labels": [
+        "Request Body"
+      ],
+      "automatic_title": "FastAPI Path Parameter",
+      "synthetic": false
+    }
+  },
+  "limitations": [
+    "SMTP delivery is not configured in this local deployment; backend email behavior is covered by Django email tests."
+  ],
+  "page_errors": []
+}

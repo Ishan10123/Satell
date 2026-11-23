@@ -1,0 +1,46 @@
+{
+  "config_version": "1.0",
+  "strategy": "dense",
+  "default_top_k": 8,
+  "maximum_top_k": 20,
+  "candidate_top_k": 30,
+  "maximum_candidate_top_k": 100,
+  "rrf_constant": 60,
+  "comparison_diversity": {
+    "enabled": true,
+    "max_per_source": 4,
+    "max_per_document": 2,
+    "context_group_budget_tokens": 2500,
+    "terms": ["compare", "comparison", "contrast", "difference", "differ", "versus", "vs", "between", "relate", "relationship"],
+    "source_aliases": {
+      "postgresql_18": ["postgresql", "postgres"],
+      "qdrant": ["qdrant"],
+      "pytorch": ["pytorch", "torch"],
+      "huggingface_transformers": ["transformer", "transformers", "hugging face"],
+      "fastapi": ["fastapi"],
+      "docker": ["docker", "compose"],
+      "python_3_13": ["python", "asyncio"]
+    }
+  },
+  "reranker": {
+    "enabled": false,
+    "model_id": "cross-encoder/ms-marco-MiniLM-L2-v2",
+    "revision": "f5f4b747a632df48bdc5572fc23e8fd991714edb",
+    "artifact": "assets/rerankers/ms-marco-MiniLM-L2-v2/model_O4.onnx",
+    "license": "Apache-2.0",
+    "max_candidates": 30,
+    "max_length": 256,
+    "batch_size": 16,
+    "execution_provider": "CPUExecutionProvider"
+  },
+  "minimum_score": null,
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "tokenizer": "unicode61 remove_diacritics 2"
+  },
+  "query_max_characters": 5000,
+  "max_evidence_context_bytes": 5000,
+  "result_preview_characters": 700,
+  "notes": "Local retrieval settings. Development access to operator_authorized_unreviewed data requires the diagnostic flag and remains unavailable through the API."
+}

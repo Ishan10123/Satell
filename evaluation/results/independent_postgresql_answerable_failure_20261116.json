@@ -1,0 +1,101 @@
+{
+  "collection": "rag_docs_v2",
+  "index_id": "index-20261116T044640Z-b53eb021",
+  "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+  "rrf_constant": 60,
+  "candidate_top_k_per_retriever": 30,
+  "reranked": true,
+  "read_only": true,
+  "query_count": 1,
+  "results": [
+    {
+      "query_id": "q001",
+      "question": "How do PostgreSQL indexes help query performance, and what is the basic tradeoff?",
+      "domain": null,
+      "embedding_ms": 76.652,
+      "dense_ms": 42.416,
+      "sparse_ms": 129.079,
+      "fusion_ms": 0.11,
+      "total_ms": 248.591,
+      "rerank_ms": 30.109,
+      "total_with_rerank_ms": 278.7,
+      "results": [
+        {
+          "rank": 1,
+          "rrf_score": 0.02832415420928403,
+          "rerank_score": 2.605842113494873,
+          "dense_rank": 2,
+          "dense_score": 0.7719824,
+          "sparse_rank": 22,
+          "sparse_score": 15.86164505325248,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "f40e3c8d78c331bfa9483fd6149d971d1997061fecf8e95adcd937f4295530fb",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "text_preview": "Chapter 14. Performance Tips\nQuery performance can be affected by many things. Some of these can be controlled by the user, while\nothers are fundamental to the underlying design of the system. This chapter provides some hints about\nunderstanding and tuning PostgreSQL performance.\n14.1. Using EXPLAIN\nPostgreSQL devises a query plan for each query it receives. Choosing the right plan to match the\nquery structure and the properties of the data is absolutely critical for good performance, so the system\nincludes a complex planner that tries to choose good plans. You can use the EXPLAIN command\nto see what query plan the planner creates for any query. Plan-reading is an art that requires some\nexpe"
+        },
+        {
+          "rank": 2,
+          "rrf_score": 0.026279628993473032,
+          "rerank_score": 1.8031470775604248,
+          "dense_rank": 22,
+          "dense_score": 0.6780679,
+          "sparse_rank": 11,
+          "sparse_score": 16.64364100844724,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "7cebbbe358601db11a2d23a9f4c9148a12a0f9e7d1382790a80c7bb24dfeeec1",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "text_preview": "match a given indexable WHERE condition are usually\nclose together in the index, the table rows they reference might be anywhere in the heap. The heap-\naccess portion of an index scan thus involves a lot of random access into the heap, which can be slow,\nparticularly on traditional rotating media. (As described in Section 11.5, bitmap scans try to alleviate\nthis cost by doing the heap accesses in sorted order, but that only goes so far.)\nTo solve this performance problem, PostgreSQL supports index-only scans, which can answer queries\nfrom an index alone without any heap access. The basic idea is to return values directly out of each\nindex entry instead of consulting the associated heap entry"
+        },
+        {
+          "rank": 3,
+          "rrf_score": 0.01639344262295082,
+          "rerank_score": -0.6402134895324707,
+          "dense_rank": 1,
+          "dense_score": 0.78245974,
+          "sparse_rank": null,
+          "sparse_score": null,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "1c486c1a8b8a4149a499e75604bc27da529cc8f97000b4a7ed72c254d9ca1261",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "text_preview": "use the index in queries when it thinks doing so would be more efficient\nthan a sequential table scan. But you might have to run the ANALYZE command regularly to update\nstatistics to allow the query planner to make educated decisions. See Chapter 14 for information about\nhow to find out whether an index is used and when and why the planner might choose not to use an\nindex.\nIndexes can also benefit UPDATE and DELETE commands with search conditions. Indexes can\nmoreover be used in join searches. Thus, an index defined on a column that is part of a join condition\ncan also significantly speed up queries with joins.\nIn general, PostgreSQL indexes can be used to optimize queries that contain one o"
+        },
+        {
+          "rank": 4,
+          "rrf_score": 0.029437229437229435,
+          "rerank_score": -2.925733804702759,
+          "dense_rank": 10,
+          "dense_score": 0.7109004,
+          "sparse_rank": 6,
+          "sparse_score": 17.919050679135147,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "632be640144022cf7192795d93b54151dac6adcdf32fa92929b1f9e27ebe9d3c",
+          "title": "PostgreSQL 18.7 Documentation",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\postgresql\\18\\postgresql-18-A4.pdf",
+          "text_preview": "the statistics away from the distribution that real data would have.\n• When indexes are not used, it can be useful for testing to force their use. There are run-time\nparameters that can turn off various plan types (see Section 19.7.1). For instance, turning off\nsequential scans (enable_seqscan) and nested-loop joins (enable_nestloop), which are\nthe most basic plans, will force the system to use a different plan. If the system still chooses a\nsequential scan or nested-loop join then there is probably a more fundamental reason why the index\nis not being used; for example, the query condition does not match the index. (What kind of query\ncan use what kind of index is explained in the previous s"
+        },
+        {
+          "rank": 5,
+          "rrf_score": 0.01639344262295082,
+          "rerank_score": -9.360015869140625,
+          "dense_rank": null,
+          "dense_score": null,
+          "sparse_rank": 1,
+          "sparse_score": 21.57674760864834,
+          "source_id": "qdrant",
+          "document_id": "f6c33b4e75a545a8e98ee0c8a95633d323d13cc498c0866cf3ba41a1851d0e7f",
+          "chunk_id": "df5af3c5fd0dfb8bfbd5380140b4b7c300e7c15c807a49cf13e415d8bdc3e538",
+          "title": "load-a-dataset",
+          "file_path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\qdrant\\documentation\\headless\\prompts\\load-a-dataset.md",
+          "text_preview": "--- title: \"Load a dataset into Qdrant\" page: /documentation/tutorials-basics/huggingface-datasets/ skills: - qdrant-performance-optimization/indexing-performance-optimization --- Help me load my dataset into Qdrant. First, read https://skills.qdrant.tech/qdrant-performance-optimization/indexing-performance-optimization/SKILL.md\nBefore writing any upload code, ask me where the data lives, how many records it contains, whether it already has embeddings, and which fields I plan to filter on.\nIf the data has precomputed vectors, confirm their dimensions and intended distance metric. Don’t assume they match my needs. If they don’t, explain what re-embedding would cost.\nHelp me decide whether to "
+        }
+      ]
+    }
+  ]
+}

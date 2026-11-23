@@ -1,0 +1,33 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: rag-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?Set POSTGRES_DB in django_app/.env}
+      POSTGRES_USER: ${POSTGRES_USER:?Set POSTGRES_USER in django_app/.env}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in django_app/.env}
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - rag_postgres_data:/var/lib/postgresql/data
+    networks:
+      rag-app-network:
+        aliases:
+          - postgres
+    restart: "no"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\""]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  rag_postgres_data:
+    external: true
+    name: rag_postgres_data
+
+networks:
+  rag-app-network:
+    external: true
+    name: rag-app-network

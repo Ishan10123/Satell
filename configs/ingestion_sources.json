@@ -1,0 +1,41 @@
+{
+  "config_version": "1.0",
+  "project_root": "..",
+  "output": {
+    "inventory_jsonl": "knowledge_base/metadata/ingestion_inventory.jsonl",
+    "summary_json": "knowledge_base/metadata/ingestion_inventory_summary.json"
+  },
+  "policy": {
+    "allowed_extensions": [
+      ".md",
+      ".html",
+      ".rst",
+      ".pdf",
+      ".txt"
+    ],
+    "allowed_documentation_categories": [
+      "documentation"
+    ],
+    "require_license_approval": true,
+    "approved_license_statuses": [
+      "approved"
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "official_documentation",
+      "source_type": "documentation_manifest",
+      "manifest_path": "knowledge_base/metadata/documentation_manifest.jsonl",
+      "enabled": true,
+      "manifest_summary_path": "knowledge_base/metadata/documentation_manifest_summary.json"
+    },
+    {
+      "source_id": "arxiv_research",
+      "source_type": "arxiv_metadata",
+      "metadata_path": "knowledge_base/metadata/arxiv_documents.jsonl",
+      "audit_path": "knowledge_base/metadata/arxiv_audit_report.jsonl",
+      "enabled": true
+    }
+  ],
+  "parser_registry": "configs/parser_registry.json"
+}

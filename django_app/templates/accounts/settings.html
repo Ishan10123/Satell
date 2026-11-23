@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Settings · satell{% endblock %}
+{% block content %}<section class="settings-page"><p class="eyebrow">ACCOUNT</p><h1>Settings</h1>
+  <section class="settings-card"><h2>Account</h2><p><strong>{{ account_user.get_username }}</strong><br>{{ account_user.email|default:"No email address set" }}</p><a class="text-link" href="{% url 'accounts:profile' %}">Edit profile</a><p><a class="text-link" href="{% url 'accounts:password_change' %}">Change password</a></p></section>
+  <section class="settings-card"><h2>Security and privacy</h2><p>Authentication protects your conversations. Sharing is off by default; links expire and can be revoked.</p><p>Your account can export each conversation from its conversation menu. Satell does not expose internal service credentials in exports.</p><p><a class="text-link" href="{% url 'creator_public' %}">View public creator profile</a></p></section>
+  <section class="settings-card"><h2>Email</h2><p>{% if email_delivery_configured %}SMTP host and sender settings are present; successful delivery still requires provider authentication and a mailbox test.{% else %}Password recovery email is unavailable until an SMTP host and sender are configured.{% endif %} Notification preferences are not offered because no notification delivery feature is enabled.</p></section>
+</section>{% endblock %}

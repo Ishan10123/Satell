@@ -1,0 +1,193 @@
+{
+  "report_version": "1.0",
+  "created_at": "2026-11-16T09:27:40.425860+00:00",
+  "approval_registry": "source_approvals.json",
+  "sources": [
+    {
+      "source_id": "arxiv_ai_systems",
+      "decision_status": "pending_review",
+      "inventory_record_count": 15,
+      "discovered_document_count": 15,
+      "evidence_artifacts": [],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Each arXiv paper requires its own evidence and document decision."
+    },
+    {
+      "source_id": "arxiv_artificial_intelligence",
+      "decision_status": "pending_review",
+      "inventory_record_count": 13,
+      "discovered_document_count": 13,
+      "evidence_artifacts": [],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Each arXiv paper requires its own evidence and document decision."
+    },
+    {
+      "source_id": "arxiv_database_vector_search",
+      "decision_status": "pending_review",
+      "inventory_record_count": 15,
+      "discovered_document_count": 15,
+      "evidence_artifacts": [],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Each arXiv paper requires its own evidence and document decision."
+    },
+    {
+      "source_id": "arxiv_information_retrieval",
+      "decision_status": "pending_review",
+      "inventory_record_count": 15,
+      "discovered_document_count": 15,
+      "evidence_artifacts": [],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Each arXiv paper requires its own evidence and document decision."
+    },
+    {
+      "source_id": "arxiv_llm_rag",
+      "decision_status": "pending_review",
+      "inventory_record_count": 16,
+      "discovered_document_count": 16,
+      "evidence_artifacts": [],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Each arXiv paper requires its own evidence and document decision."
+    },
+    {
+      "source_id": "arxiv_llm_transformers",
+      "decision_status": "pending_review",
+      "inventory_record_count": 15,
+      "discovered_document_count": 15,
+      "evidence_artifacts": [],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Each arXiv paper requires its own evidence and document decision."
+    },
+    {
+      "source_id": "arxiv_machine_learning",
+      "decision_status": "pending_review",
+      "inventory_record_count": 18,
+      "discovered_document_count": 18,
+      "evidence_artifacts": [],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Each arXiv paper requires its own evidence and document decision."
+    },
+    {
+      "source_id": "docker",
+      "decision_status": "pending_review",
+      "inventory_record_count": 1935,
+      "discovered_document_count": 1114,
+      "evidence_artifacts": [
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\LICENSE",
+          "exists": true,
+          "catalog_sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "current_sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "documentation_copy"
+        },
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\docker\\LICENSE",
+          "exists": true,
+          "catalog_sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "current_sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "source_repository_root"
+        }
+      ],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Review must define documentation-only scope; root license files do not cover third-party assets or unsupported files."
+    },
+    {
+      "source_id": "fastapi",
+      "decision_status": "pending_review",
+      "inventory_record_count": 410,
+      "discovered_document_count": 158,
+      "evidence_artifacts": [
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\fastapi\\LICENSE",
+          "exists": true,
+          "catalog_sha256": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "current_sha256": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "source_repository_root"
+        }
+      ],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Review must define documentation-only scope; root license files do not cover third-party assets or unsupported files."
+    },
+    {
+      "source_id": "huggingface_transformers",
+      "decision_status": "pending_review",
+      "inventory_record_count": 790,
+      "discovered_document_count": 787,
+      "evidence_artifacts": [
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\huggingface_transformers\\LICENSE",
+          "exists": true,
+          "catalog_sha256": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "current_sha256": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "source_repository_root"
+        }
+      ],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Review must define documentation-only scope; root license files do not cover third-party assets or unsupported files."
+    },
+    {
+      "source_id": "postgresql_18",
+      "decision_status": "pending_review",
+      "inventory_record_count": 1,
+      "discovered_document_count": 1,
+      "evidence_artifacts": [],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Review must define documentation-only scope; root license files do not cover third-party assets or unsupported files."
+    },
+    {
+      "source_id": "python_3_13",
+      "decision_status": "pending_review",
+      "inventory_record_count": 602,
+      "discovered_document_count": 553,
+      "evidence_artifacts": [],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Review must define documentation-only scope; root license files do not cover third-party assets or unsupported files."
+    },
+    {
+      "source_id": "pytorch",
+      "decision_status": "pending_review",
+      "inventory_record_count": 352,
+      "discovered_document_count": 263,
+      "evidence_artifacts": [
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\pytorch\\LICENSE",
+          "exists": true,
+          "catalog_sha256": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "current_sha256": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "source_repository_root"
+        },
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\pytorch\\NOTICE",
+          "exists": true,
+          "catalog_sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "current_sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "source_repository_root"
+        }
+      ],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Review must define documentation-only scope; root license files do not cover third-party assets or unsupported files."
+    },
+    {
+      "source_id": "qdrant",
+      "decision_status": "pending_review",
+      "inventory_record_count": 5735,
+      "discovered_document_count": 3613,
+      "evidence_artifacts": [],
+      "review_status": "pending human review; no approval made",
+      "scope_note": "Review must define documentation-only scope; root license files do not cover third-party assets or unsupported files."
+    }
+  ],
+  "all_sources_pending": true,
+  "approvals_changed": false
+}

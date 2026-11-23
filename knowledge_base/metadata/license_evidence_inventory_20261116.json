@@ -1,0 +1,1021 @@
+{
+  "report_version": "1.0",
+  "generated_at": "2026-11-16T12:32:13.555267+00:00",
+  "sources": [
+    {
+      "source_id": "arxiv_ai_systems",
+      "local_evidence": [],
+      "local_legal_files": [
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/fastapi/LICENSE",
+          "size_bytes": 1107,
+          "sha256": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/huggingface_transformers/LICENSE",
+          "size_bytes": 11621,
+          "sha256": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/LICENSE",
+          "size_bytes": 3548,
+          "sha256": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/NOTICE",
+          "size_bytes": 24088,
+          "sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/copyright.html",
+          "size_bytes": 13212,
+          "sha256": "c42a98f946a76edd69a1d556acc560ccdd7a4c4e04a8c37e962e182d3125c873",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/license.html",
+          "size_bytes": 86953,
+          "sha256": "8a7bdde40d20897ebd2cc23549498362dcfe8f4f40f3e02f10823cf3bde34a07",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/_images/mac_installer_03_license.png",
+          "size_bytes": 120419,
+          "sha256": "76d77efe7ccf2f8cc8e49e340843cf7552c3da011d49e94481d3420f1a57dbba",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        }
+      ],
+      "official_reference": {
+        "url": null,
+        "retrieved_at": null,
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Not enough evidence to recommend approval",
+      "scope": "No source-specific evidence record is available."
+    },
+    {
+      "source_id": "arxiv_artificial_intelligence",
+      "local_evidence": [],
+      "local_legal_files": [
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/fastapi/LICENSE",
+          "size_bytes": 1107,
+          "sha256": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/huggingface_transformers/LICENSE",
+          "size_bytes": 11621,
+          "sha256": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/LICENSE",
+          "size_bytes": 3548,
+          "sha256": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/NOTICE",
+          "size_bytes": 24088,
+          "sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/copyright.html",
+          "size_bytes": 13212,
+          "sha256": "c42a98f946a76edd69a1d556acc560ccdd7a4c4e04a8c37e962e182d3125c873",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/license.html",
+          "size_bytes": 86953,
+          "sha256": "8a7bdde40d20897ebd2cc23549498362dcfe8f4f40f3e02f10823cf3bde34a07",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/_images/mac_installer_03_license.png",
+          "size_bytes": 120419,
+          "sha256": "76d77efe7ccf2f8cc8e49e340843cf7552c3da011d49e94481d3420f1a57dbba",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        }
+      ],
+      "official_reference": {
+        "url": null,
+        "retrieved_at": null,
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Not enough evidence to recommend approval",
+      "scope": "No source-specific evidence record is available."
+    },
+    {
+      "source_id": "arxiv_database_vector_search",
+      "local_evidence": [],
+      "local_legal_files": [
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/fastapi/LICENSE",
+          "size_bytes": 1107,
+          "sha256": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/huggingface_transformers/LICENSE",
+          "size_bytes": 11621,
+          "sha256": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/LICENSE",
+          "size_bytes": 3548,
+          "sha256": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/NOTICE",
+          "size_bytes": 24088,
+          "sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/copyright.html",
+          "size_bytes": 13212,
+          "sha256": "c42a98f946a76edd69a1d556acc560ccdd7a4c4e04a8c37e962e182d3125c873",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/license.html",
+          "size_bytes": 86953,
+          "sha256": "8a7bdde40d20897ebd2cc23549498362dcfe8f4f40f3e02f10823cf3bde34a07",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/_images/mac_installer_03_license.png",
+          "size_bytes": 120419,
+          "sha256": "76d77efe7ccf2f8cc8e49e340843cf7552c3da011d49e94481d3420f1a57dbba",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        }
+      ],
+      "official_reference": {
+        "url": null,
+        "retrieved_at": null,
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Not enough evidence to recommend approval",
+      "scope": "No source-specific evidence record is available."
+    },
+    {
+      "source_id": "arxiv_information_retrieval",
+      "local_evidence": [],
+      "local_legal_files": [
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/fastapi/LICENSE",
+          "size_bytes": 1107,
+          "sha256": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/huggingface_transformers/LICENSE",
+          "size_bytes": 11621,
+          "sha256": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/LICENSE",
+          "size_bytes": 3548,
+          "sha256": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/NOTICE",
+          "size_bytes": 24088,
+          "sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/copyright.html",
+          "size_bytes": 13212,
+          "sha256": "c42a98f946a76edd69a1d556acc560ccdd7a4c4e04a8c37e962e182d3125c873",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/license.html",
+          "size_bytes": 86953,
+          "sha256": "8a7bdde40d20897ebd2cc23549498362dcfe8f4f40f3e02f10823cf3bde34a07",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/_images/mac_installer_03_license.png",
+          "size_bytes": 120419,
+          "sha256": "76d77efe7ccf2f8cc8e49e340843cf7552c3da011d49e94481d3420f1a57dbba",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        }
+      ],
+      "official_reference": {
+        "url": null,
+        "retrieved_at": null,
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Not enough evidence to recommend approval",
+      "scope": "No source-specific evidence record is available."
+    },
+    {
+      "source_id": "arxiv_llm_rag",
+      "local_evidence": [],
+      "local_legal_files": [
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/fastapi/LICENSE",
+          "size_bytes": 1107,
+          "sha256": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/huggingface_transformers/LICENSE",
+          "size_bytes": 11621,
+          "sha256": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/LICENSE",
+          "size_bytes": 3548,
+          "sha256": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/NOTICE",
+          "size_bytes": 24088,
+          "sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/copyright.html",
+          "size_bytes": 13212,
+          "sha256": "c42a98f946a76edd69a1d556acc560ccdd7a4c4e04a8c37e962e182d3125c873",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/license.html",
+          "size_bytes": 86953,
+          "sha256": "8a7bdde40d20897ebd2cc23549498362dcfe8f4f40f3e02f10823cf3bde34a07",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/_images/mac_installer_03_license.png",
+          "size_bytes": 120419,
+          "sha256": "76d77efe7ccf2f8cc8e49e340843cf7552c3da011d49e94481d3420f1a57dbba",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        }
+      ],
+      "official_reference": {
+        "url": null,
+        "retrieved_at": null,
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Not enough evidence to recommend approval",
+      "scope": "No source-specific evidence record is available."
+    },
+    {
+      "source_id": "arxiv_llm_transformers",
+      "local_evidence": [],
+      "local_legal_files": [
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/fastapi/LICENSE",
+          "size_bytes": 1107,
+          "sha256": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/huggingface_transformers/LICENSE",
+          "size_bytes": 11621,
+          "sha256": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/LICENSE",
+          "size_bytes": 3548,
+          "sha256": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/NOTICE",
+          "size_bytes": 24088,
+          "sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/copyright.html",
+          "size_bytes": 13212,
+          "sha256": "c42a98f946a76edd69a1d556acc560ccdd7a4c4e04a8c37e962e182d3125c873",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/license.html",
+          "size_bytes": 86953,
+          "sha256": "8a7bdde40d20897ebd2cc23549498362dcfe8f4f40f3e02f10823cf3bde34a07",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/_images/mac_installer_03_license.png",
+          "size_bytes": 120419,
+          "sha256": "76d77efe7ccf2f8cc8e49e340843cf7552c3da011d49e94481d3420f1a57dbba",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        }
+      ],
+      "official_reference": {
+        "url": null,
+        "retrieved_at": null,
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Not enough evidence to recommend approval",
+      "scope": "No source-specific evidence record is available."
+    },
+    {
+      "source_id": "arxiv_machine_learning",
+      "local_evidence": [],
+      "local_legal_files": [
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/fastapi/LICENSE",
+          "size_bytes": 1107,
+          "sha256": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/huggingface_transformers/LICENSE",
+          "size_bytes": 11621,
+          "sha256": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/LICENSE",
+          "size_bytes": 3548,
+          "sha256": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/pytorch/NOTICE",
+          "size_bytes": 24088,
+          "sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/_sources/docker/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/copyright.html",
+          "size_bytes": 13212,
+          "sha256": "c42a98f946a76edd69a1d556acc560ccdd7a4c4e04a8c37e962e182d3125c873",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/license.html",
+          "size_bytes": 86953,
+          "sha256": "8a7bdde40d20897ebd2cc23549498362dcfe8f4f40f3e02f10823cf3bde34a07",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/_images/mac_installer_03_license.png",
+          "size_bytes": 120419,
+          "sha256": "76d77efe7ccf2f8cc8e49e340843cf7552c3da011d49e94481d3420f1a57dbba",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        }
+      ],
+      "official_reference": {
+        "url": null,
+        "retrieved_at": null,
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Not enough evidence to recommend approval",
+      "scope": "No source-specific evidence record is available."
+    },
+    {
+      "source_id": "docker",
+      "local_evidence": [
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\docker\\docs\\LICENSE",
+          "exists": true,
+          "sha256_recorded": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "sha256_actual": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "documentation_copy"
+        },
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\docker\\LICENSE",
+          "exists": true,
+          "sha256_recorded": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "sha256_actual": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "source_repository_root"
+        }
+      ],
+      "local_legal_files": [
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/LICENSE",
+          "size_bytes": 11309,
+          "sha256": "089009c932d3cc296355e429fa9d6faf80ac89597da866e2424b4ea09add64b1",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/desktop-license-update.md",
+          "size_bytes": 447,
+          "sha256": "9de5c42275b2643bf8c76ca242b3e51ad13f75f29888ddbde94210dbb61fb59e",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/includes/engine-license.md",
+          "size_bytes": 114,
+          "sha256": "4c6b3045319869820246e8ab5eb676f116b802a3116bfcf7fc703cea7963f52b",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/subscription-billing/desktop-license.md",
+          "size_bytes": 2172,
+          "sha256": "7dbfece74a55e3330ec73528182b144c083e1fc8cd808d6172dca1ef09be749b",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/docker/docs/content/manuals/accounts/organization/manage/manage-licenses.md",
+          "size_bytes": 7550,
+          "sha256": "932679cf1a845fd41678e27144008153bc346e6737c89cc321ed0eb44ed91f51",
+          "license_name_guess": null
+        }
+      ],
+      "official_reference": {
+        "url": "https://github.com/docker/docs/blob/553482ce632f00c6e7faabab863422b4916e7c18/docs/LICENSE",
+        "retrieved_at": "2026-11-16",
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Evidence exists but scope is incomplete",
+      "scope": "The repository contains a docs/LICENSE artifact. Review its exact pinned revision, examples, third-party snippets, images and notices individually."
+    },
+    {
+      "source_id": "fastapi",
+      "local_evidence": [
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\fastapi\\LICENSE",
+          "exists": true,
+          "sha256_recorded": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "sha256_actual": "2853a942962e3bb755239b5fecb736503be392554c1d90f97cea7f29f4465d34",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "source_repository_root"
+        }
+      ],
+      "local_legal_files": [],
+      "official_reference": {
+        "url": "https://github.com/fastapi/fastapi/blob/5758a9c8347d911444dca97a55b708cc4a8de4f8/LICENSE",
+        "retrieved_at": "2026-11-16",
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Evidence exists but scope is incomplete",
+      "scope": "A repository MIT license exists at the pinned source revision; inspect each documentation asset and code sample provenance."
+    },
+    {
+      "source_id": "huggingface_transformers",
+      "local_evidence": [
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\huggingface_transformers\\LICENSE",
+          "exists": true,
+          "sha256_recorded": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "sha256_actual": "10fe554b4ffd57008fd1b44474b005f2c35af7312608dbd95fecad82fe87ab42",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "source_repository_root"
+        }
+      ],
+      "local_legal_files": [],
+      "official_reference": {
+        "url": "https://github.com/huggingface/transformers/blob/3a134bc37f7c22c801b618e289b0255425f22647/LICENSE",
+        "retrieved_at": "2026-11-16",
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Evidence exists but scope is incomplete",
+      "scope": "Pinned repository license is Apache-2.0; confirm which documentation text/examples are contributed or generated and inspect referenced assets."
+    },
+    {
+      "source_id": "postgresql_18",
+      "local_evidence": [],
+      "local_legal_files": [],
+      "official_reference": {
+        "url": "https://www.postgresql.org/about/licence/",
+        "retrieved_at": "2026-11-16",
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Evidence verified and scope sufficiently documented for human consideration",
+      "scope": "The official license page expressly includes documentation. Reviewer should check notices and attributed third-party excerpts in the specific PDF edition."
+    },
+    {
+      "source_id": "python_3_13",
+      "local_evidence": [],
+      "local_legal_files": [
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/copyright.html",
+          "size_bytes": 13212,
+          "sha256": "c42a98f946a76edd69a1d556acc560ccdd7a4c4e04a8c37e962e182d3125c873",
+          "license_name_guess": null
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/license.html",
+          "size_bytes": 86953,
+          "sha256": "8a7bdde40d20897ebd2cc23549498362dcfe8f4f40f3e02f10823cf3bde34a07",
+          "license_name_guess": "Apache-2.0"
+        },
+        {
+          "path": "knowledge_base/raw/official_documentation/python/3.13/python-3.13-docs-html/_images/mac_installer_03_license.png",
+          "size_bytes": 120419,
+          "sha256": "76d77efe7ccf2f8cc8e49e340843cf7552c3da011d49e94481d3420f1a57dbba",
+          "license_name_guess": null
+        }
+      ],
+      "official_reference": {
+        "url": "https://docs.python.org/3.13/copyright.html",
+        "retrieved_at": "2026-11-16",
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Evidence verified and scope sufficiently documented for human consideration",
+      "scope": "The official copyright page distinguishes the main docs from code examples. Confirm use of examples fits their additional license and inspect included third-party content."
+    },
+    {
+      "source_id": "pytorch",
+      "local_evidence": [
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\pytorch\\LICENSE",
+          "exists": true,
+          "sha256_recorded": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "sha256_actual": "0fc92425d130d9c87a5eb7427082e3afdbff6ef169bc678e15abba4c2d37c934",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "source_repository_root"
+        },
+        {
+          "path": "E:\\RAG_Project\\knowledge_base\\raw\\official_documentation\\_sources\\pytorch\\NOTICE",
+          "exists": true,
+          "sha256_recorded": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "sha256_actual": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+          "checksum_matches": true,
+          "evidence_status": "text_extracted",
+          "location": "source_repository_root"
+        }
+      ],
+      "local_legal_files": [],
+      "official_reference": {
+        "url": "https://github.com/pytorch/docs",
+        "retrieved_at": "2026-11-16",
+        "status": "reference recorded for human verification"
+      },
+      "classification": "Evidence exists but scope is incomplete",
+      "scope": "The separate pytorch/docs project states its docs are BSD licensed. Local source inventory includes PyTorch LICENSE and NOTICE, which cover a larger code repository with multiple dependency licenses; do not use those as blanket docs evidence."
+    },
+    {
+      "source_id": "qdrant",
+      "local_evidence": [],
+      "local_legal_files": [],
+      "official_reference": {
+        "url": "https://github.com/qdrant/landing_page/blob/799edaa9d0ef562790402d6d4ddf370db92162e5/LICENSE",
+        "retrieved_at": "2026-11-16",
+        "status": "404 at pinned LICENSE URL"
+      },
+      "classification": "Not enough evidence to recommend approval",
+      "scope": "The pinned repository LICENSE URL returned 404 and no local Qdrant license artifact is cataloged. Request an authoritative docs/content license or written permission."
+    },
+    {
+      "kind": "global_policy",
+      "references": [
+        {
+          "kind": "arXiv policy",
+          "url": "https://info.arxiv.org/help/license/index.html",
+          "retrieved_at": "2026-11-16",
+          "finding": "arXiv records per-version licenses chosen by the submitter; its non-exclusive distribution license grants arXiv a distribution permission and does not itself establish broad reuse rights for others. Versions can have different licenses."
+        },
+        {
+          "kind": "arXiv metadata API documentation",
+          "url": "https://info.arxiv.org/help/api/basics.html",
+          "retrieved_at": "2026-11-16",
+          "finding": "Official API documents programmatic metadata retrieval; metadata availability does not grant article reuse rights."
+        }
+      ]
+    }
+  ],
+  "approvals_modified": false
+}

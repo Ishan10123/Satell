@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Creator profile · satell{% endblock %}
+{% block content %}
+<section class="settings-page public-creator" aria-labelledby="creator-title">
+  {% if public_profile %}
+    <p class="eyebrow">SATELL · CREATOR PROFILE</p>
+    {% if public_profile.name %}<h1 id="creator-title">{{ public_profile.name }}</h1>{% else %}<h1 id="creator-title">Satell creator profile</h1>{% endif %}
+    {% if public_profile.headline %}<p class="profile-headline">{{ public_profile.headline }}</p>{% endif %}
+    {% if public_profile.biography %}<p class="profile-biography">{{ public_profile.biography }}</p>{% endif %}
+    {% if public_profile.current_role %}<section class="settings-card"><h2>Current role</h2><p>{{ public_profile.current_role }}</p></section>{% endif %}
+    {% if public_profile.education %}<section class="settings-card"><h2>Education</h2><p>{{ public_profile.education|linebreaksbr }}</p></section>{% endif %}
+    {% if public_profile.experience %}<section class="settings-card"><h2>Experience</h2><p>{{ public_profile.experience|linebreaksbr }}</p></section>{% endif %}
+    {% if public_profile.skills %}<section class="settings-card"><h2>Skills and technical interests</h2><p>{{ public_profile.skills|linebreaksbr }}</p></section>{% endif %}
+    {% if public_profile.projects %}<section class="settings-card"><h2>Projects</h2><p>{{ public_profile.projects|linebreaksbr }}</p></section>{% endif %}
+    {% if public_profile.owner_supplied_details_public and public_profile.verification_status == "Supplied by owner; not independently verified" %}<p class="field-help">Profile background details were supplied by the owner and have not been independently verified.</p>{% endif %}
+    <section class="settings-card"><h2>Professional profiles</h2><div class="profile-links">
+      {% for link in public_profile.links %}<a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><span class="profile-link-icon" aria-hidden="true">{{ link.icon }}</span><span>{{ link.label }}</span><span aria-hidden="true">↗</span></a>{% empty %}<p>No professional links are enabled for public display.</p>{% endfor %}
+    </div></section>
+  {% else %}<p class="eyebrow">SATELL</p><h1 id="creator-title">Creator profile unavailable</h1><p>Verified creator information is not currently enabled for public display.</p>{% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,406 @@
+{
+  "read_only": true,
+  "result_type": "unreviewed_generation_diagnostic",
+  "index_id": "index-20261116T044640Z-b53eb021",
+  "query_count": 2,
+  "results": [
+    {
+      "query_id": "m01",
+      "question": "Compare PostgreSQL B-tree indexes with Qdrant vector indexes: what data and query patterns is each designed for?",
+      "domain": "postgresql_qdrant",
+      "test_case_type": "multi_document",
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "5b6958c2310d6eca029192376c0fa6d97135dd7aea59b3aba14edc62e4b7f1ab",
+        "b519571f2b70d760d07cd42c8249785ac17385bfa162dc6d152988071b4dc15a",
+        "c0c3da88aa63fc40e552bdd9b0f3300a9c8aca4b55298eb257ccc32873b805a5"
+      ],
+      "context_budget_estimated_tokens": 2104,
+      "context_chunks_omitted": 2,
+      "context_omission_reasons": [
+        "context_budget",
+        "context_budget"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "c85725e56dfd9b899104a1bb67270d9f3299d160b60839c9b2944ab7a19ba8bd",
+          "reason": "context_budget"
+        },
+        {
+          "chunk_id": "3840af472115869adb297a21f3d0c5bae2dadbf631e44ca6f2f76bbd7e48fedd",
+          "reason": "context_budget"
+        }
+      ],
+      "context_citation_count": 3,
+      "comparison_diversity_applied": true,
+      "required_comparison_source_ids": [
+        "postgresql_18",
+        "qdrant"
+      ],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "5b6958c2310d6eca029192376c0fa6d97135dd7aea59b3aba14edc62e4b7f1ab",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rrf_score": 0.03177805800756621,
+          "rerank_score": 5.627252101898193,
+          "dense_rank": 1,
+          "sparse_rank": 5,
+          "text": "data that can be sorted into some ordering. In\nparticular, the PostgreSQL query planner will consider using a B-tree index whenever an indexed\ncolumn is involved in a comparison using one of these operators:\n< <= = >= >\nConstructs equivalent to combinations of these operators, such as BETWEEN and IN, can also be\nimplemented with a B-tree index search. Also, an IS NULL or IS NOT NULL condition on an index\ncolumn can be used with a B-tree index.\nThe optimizer can also use a B-tree index for queries involving the pattern matching operators LIKE\nand ~ if the pattern is a constant and is anchored to the beginning of the string — for example, col\nLIKE 'foo%' or col ~ '^foo', but not col LIKE '%bar'. However, if your database\ndoes not use the C locale you will need to create the index with a special operator class to support\nindexing of pattern-matching queries; see Section 11.10 below. It is also possible to use B-tree indexes\nfor ILIKE and ~*, but only if the pattern starts with non-alphabetic characters, i.e., characters that\nare not affected by upper/lower case conversion.\nB-tree indexes can also be used to retrieve data in sorted order. This is not always faster than a simple\nscan and sort, but it is often helpful.\n456"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "b519571f2b70d760d07cd42c8249785ac17385bfa162dc6d152988071b4dc15a",
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "title": "Indexing",
+          "rrf_score": 0.014492753623188406,
+          "rerank_score": 1.7461626529693604,
+          "dense_rank": 9,
+          "sparse_rank": null,
+          "text": "*Available as of v1.7.0*\nSparse vectors in Qdrant are indexed with a special data structure, which is optimized for vectors that have a high proportion of zeroes. In some ways, this indexing method is similar to the inverted index, which is used in text search engines.\n- A sparse vector index in Qdrant is exact, meaning it does not use any approximation algorithms. - All sparse vectors added to the collection are immediately indexed in the mutable version of a sparse index.\nWith Qdrant, you can benefit from a more compact and efficient immutable sparse index, which is constructed during the same optimization process as the dense vector index.\nThis approach is particularly useful for collections storing both dense and sparse vectors.\nTo configure a sparse vector index, create a collection with the following parameters:\n{{< code-snippet path=\"/documentation/headless/snippets/create-collection/sparse-vector-index/\" >}}\nThe sparse vector index is persisted on disk and loaded into heap memory by default for faster access. You can configure a memory tier to trade off between search speed and memory usage, for example, move a rarely-queried sparse index to the `cold` tier to save memory. The following [memory tiers](/documentation/ops-configuration/memory-tiers/) are available:\n- `pinned` - the index is loaded into memory for faster search. This is the default. - `cached` - the index is pre-loaded into the disk cache on startup, though it may be evicted under memory pressure. - `cold` - the index is stored on disk, which saves memory at the cost of search performance.\nThe following configuration creates a sparse vector index in the `cold` memory tier:\n{{< code-snippet path=\"/documentation/headless/snippets/create-collection/sparse-vector-index-on-disk/\" >}}\nUnlike a dense vector index, a sparse vector index does not require a predefined vector size. It automatically adjusts to the size of the vectors added to the collection.\n**Note:** A sparse vector index only supports dot-product similarity searches. It does not support other distance metrics."
+        },
+        {
+          "rank": 4,
+          "chunk_id": "c0c3da88aa63fc40e552bdd9b0f3300a9c8aca4b55298eb257ccc32873b805a5",
+          "source_id": "qdrant",
+          "document_id": "03d7c22926d1b35f344be944e50ead291a8c096f90783d3e400212bbdafb433a",
+          "title": "Relevance Feedback in Qdrant",
+          "rrf_score": 0.013333333333333334,
+          "rerank_score": 0.37629270553588867,
+          "dense_rank": 15,
+          "sparse_rank": null,
+          "text": "test_queries = [\n    \"how to install qdrant locally\",\n    \"qdrant vector similarity search\",\n    \"qdrant HNSW filtering vs pre-filtering performance\",\n    \"qdrant payload filtering and indexing\",\n    \"qdrant docker setup\",\n    \"cosine similarity vs dot product qdrant\",\n    \"qdrant REST API authentication\",\n    \"batch upsert vectors qdrant\",\n    \"qdrant cloud deployment\",\n    \"scalar quantization qdrant\",\n    \"qdrant internals storage engine blog post\",\n    \"delete points by filter qdrant\",\n    \"qdrant named vectors\",\n    \"sparse vectors qdrant\",\n    \"qdrant scroll points pagination\",\n    \"what is a vector database\",\n    \"qdrant vs pinecone comparison\",\n    \"semantic search tutorial qdrant\",\n    \"RAG pipeline with qdrant\",\n    \"recommendations API how to use\",\n    \"qdrant use cases e-commerce sparse vectors\",\n    \"multimodal search images text qdrant\",\n    \"qdrant performance benchmarks\",\n    \"how vector search works explained\",\n    \"qdrant hybrid search blog\",\n    \"building chatbot with qdrant\",\n    \"qdrant new features release\",\n    \"neural search vs keyword search\",\n    \"qdrant fastembed integration tutorial\",\n    \"anomaly detection vector database\",\n    \"qdrant customer success story\",\n    \"LLM memory storage qdrant\",\n    \"qdrant product quantization explained\",\n    \"qdrant scalar vs product quantization comparison\",\n    \"qdrant binary quantization blog post\",\n    \"chunking strategies for RAG qdrant blog\",\n    \"qdrant JavaScript TypeScript SDK\",\n    \"real time vector search qdrant\",\n    \"qdrant rust performance internals\",\n    \"open source vector database comparison\",\n    \"qdrant snapshot backup restore\",\n    \"image search with qdrant clip\",\n    \"qdrant geo filtering use case\",\n    \"drug discovery vector search qdrant\",\n    \"qdrant multitenant architecture\",\n    \"on premise vs cloud vector database\",\n    \"qdrant web UI dashboard\",\n    \"qdrant funding news announcement\",\n    \"fine tuning embeddings qdrant\",\n    \"getting started vector search beginner\",\n]"
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "5b6958c2310d6eca029192376c0fa6d97135dd7aea59b3aba14edc62e4b7f1ab",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 5.627252101898193,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "c85725e56dfd9b899104a1bb67270d9f3299d160b60839c9b2944ab7a19ba8bd",
+          "title": "PostgreSQL 18.7 Documentation",
+          "rerank_score": 3.194331169128418,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "chunk_id": "b519571f2b70d760d07cd42c8249785ac17385bfa162dc6d152988071b4dc15a",
+          "title": "Indexing",
+          "rerank_score": 1.7461626529693604,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "qdrant",
+          "document_id": "03d7c22926d1b35f344be944e50ead291a8c096f90783d3e400212bbdafb433a",
+          "chunk_id": "c0c3da88aa63fc40e552bdd9b0f3300a9c8aca4b55298eb257ccc32873b805a5",
+          "title": "Relevance Feedback in Qdrant",
+          "rerank_score": 0.37629270553588867,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "chunk_id": "3840af472115869adb297a21f3d0c5bae2dadbf631e44ca6f2f76bbd7e48fedd",
+          "title": "Indexing",
+          "rerank_score": -1.2601609230041504,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "title": "PostgreSQL 18.7 Documentation",
+          "pages": [
+            495
+          ],
+          "section": "",
+          "source_reference": "https://www.postgresql.org/files/documentation/pdf/18/postgresql-18-A4.pdf"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "qdrant",
+          "document_id": "b42e3f3dc56267b141a4d5c5bcc0611d793138284648681eee17db1d104b3172",
+          "title": "Indexing",
+          "pages": [],
+          "section": "Indexing > Sparse Vector Index",
+          "source_reference": "https://qdrant.tech/documentation/"
+        },
+        {
+          "citation_id": "S3",
+          "source_id": "qdrant",
+          "document_id": "03d7c22926d1b35f344be944e50ead291a8c096f90783d3e400212bbdafb433a",
+          "title": "Relevance Feedback in Qdrant",
+          "pages": [],
+          "section": "Relevance Feedback in Qdrant > Evaluation",
+          "source_reference": "https://qdrant.tech/documentation/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 69.03710000187857,
+        "dense_search": 10.334000005968846,
+        "sparse_search": 154.6883000046364,
+        "fusion": 0.14070000179344788,
+        "rerank": 250.6476999988081,
+        "context": 1.3472999999066815,
+        "generation": 2421.9105999945896,
+        "end_to_end": 2930.54650000704
+      },
+      "comparison_evidence_complete": true,
+      "answer": "UNREVIEWED LOCAL DIAGNOSTIC; NOT APPROVED FOR PRODUCTION.\n* PostgreSQL B-tree indexes are designed for data that can be sorted into some ordering [S1].\n* PostgreSQL B-tree indexes support comparison operators such as <, <=, =, >=, > [S1].\n* PostgreSQL B-tree indexes support constructs equivalent to combinations of comparison operators like BETWEEN and IN [S1].\n* Qdrant sparse vectors are indexed with a special data structure optimized for vectors with a high proportion of zeroes [S2].\n* Qdrant sparse vector indexing is similar to the inverted index used in text search engines [S2].\n* Qdrant sparse vector indexes provide exact results without using approximation algorithms [S2].",
+      "answer_citations": [
+        "S1",
+        "S2"
+      ],
+      "generation_prompt_tokens_estimated": 2807,
+      "generation_prompt_tokens_reported": 814,
+      "status": "generated"
+    },
+    {
+      "query_id": "m05",
+      "question": "Compare PyTorch autograd gradient tracking with how Transformer attention masks affect model inputs.",
+      "domain": "pytorch_transformers",
+      "test_case_type": "multi_document",
+      "access_mode": "operator_authorized_unreviewed; local diagnostic only",
+      "index_id": "index-20261116T044640Z-b53eb021",
+      "candidate_chunk_ids": [
+        "3b7c0195b126e296592b1cef79bd7974ff9454fe0f0818c49fa4be4fd6bf6fae",
+        "293258171f308758a30183778080cf3ba8fe54bad4196b9a897820a35791e5f3",
+        "2174aa2520530ba434d122a02b68ce53f1134b9d1b7cab74c7b85f2d92eccb88",
+        "0596a9c896c1ca38727f07f387ef700cf3a71f9b25c94cf060872c51bb402c91"
+      ],
+      "context_budget_estimated_tokens": 2500,
+      "context_chunks_omitted": 1,
+      "context_omission_reasons": [
+        "authorization_recheck"
+      ],
+      "context_omitted_passages": [
+        {
+          "chunk_id": "ce24da3a90ed218410712161940255816a3f719cf3aaf52c41a740e50e453e5d",
+          "reason": "authorization_recheck"
+        }
+      ],
+      "context_citation_count": 4,
+      "comparison_diversity_applied": true,
+      "required_comparison_source_ids": [
+        "pytorch"
+      ],
+      "supporting_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "3b7c0195b126e296592b1cef79bd7974ff9454fe0f0818c49fa4be4fd6bf6fae",
+          "source_id": "huggingface_transformers",
+          "document_id": "704496c838746cf662c5a2abdd7cbcf3c1f769c7c427c012cec598c2d433729b",
+          "title": "Apple Silicon",
+          "rrf_score": 0.015384615384615385,
+          "rerank_score": 2.140665292739868,
+          "dense_rank": 5,
+          "sparse_rank": null,
+          "text": "Set the attention backend with `attn_implementation` when you load a model, and it applies to both inference and training. Models use [SDPA](./attention_interface) by default. With PyTorch 2.13 or later, SDPA on MPS handles grouped-query attention directly, without repeating the key and value heads first.\nUse SDPA for training.\n- [kernels-community/metal-flash-sdpa](https://huggingface.co/kernels-community/metal-flash-sdpa) only supports variable-length inputs, such as packed sequences or a batch whose attention mask contains padding. A batch without padding, such as a single prompt, raises an error. It doesn't compute gradients for the query, key, and value projections. [gpt-oss](./model_doc/gpt_oss) switches to it automatically when you request flash attention on MPS. - [ggml-org/ggml-attn](https://huggingface.co/kernels/ggml-org/ggml-attn) is the default for `transformers serve` and for [GGUF](./quantization/gguf#attention) models when `kernels` is installed.\nInstall the `kernels` extra to use either kernel. It installs a version that Transformers supports.\npip install \"transformers[kernels]\""
+        },
+        {
+          "rank": 3,
+          "chunk_id": "293258171f308758a30183778080cf3ba8fe54bad4196b9a897820a35791e5f3",
+          "source_id": "huggingface_transformers",
+          "document_id": "57c2b4d47fabdff839a7ddb88eab91a4e3f1b48292960bb8b9d3c8da560ebe0c",
+          "title": "Audio Spectrogram Transformer",
+          "rrf_score": 0.014285714285714285,
+          "rerank_score": -0.13886481523513794,
+          "dense_rank": 10,
+          "sparse_rank": null,
+          "text": "PyTorch includes a native scaled dot-product attention (SDPA) operator as part of `torch.nn.functional`. This function encompasses several implementations that can be applied depending on the inputs and the hardware in use. See the [official documentation](https://pytorch.org/docs/stable/generated/torch.nn.functional.scaled_dot_product_attention.html) or the [GPU Inference](https://huggingface.co/docs/transformers/main/en/perf_infer_gpu_one#pytorch-scaled-dot-product-attention) page for more information.\nSDPA is used by default for `torch>=2.1.1` when an implementation is available, but you may also set `attn_implementation=\"sdpa\"` in `from_pretrained()` to explicitly request SDPA to be used.\nfrom transformers import ASTForAudioClassification\n\n\nmodel = ASTForAudioClassification.from_pretrained(\"MIT/ast-finetuned-audioset-10-10-0.4593\", attn_implementation=\"sdpa\", device_map=\"auto\")\n...\nFor the best speedups, we recommend loading the model in half-precision (e.g. `torch.float16` or `torch.bfloat16`).\nOn a local benchmark (A100-40GB, PyTorch 2.3.0, OS Ubuntu 22.04) with `float32` and `MIT/ast-finetuned-audioset-10-10-0.4593` model, we saw the following speedups during inference."
+        },
+        {
+          "rank": 4,
+          "chunk_id": "2174aa2520530ba434d122a02b68ce53f1134b9d1b7cab74c7b85f2d92eccb88",
+          "source_id": "huggingface_transformers",
+          "document_id": "b2b02edead642bff05ab9c735cd4282890a2de0f0fd8e1ac5c9e4d7bcc1ca82d",
+          "title": "DepthPro",
+          "rrf_score": 0.013157894736842105,
+          "rerank_score": -0.16854967176914215,
+          "dense_rank": 16,
+          "sparse_rank": null,
+          "text": "PyTorch includes a native scaled dot-product attention (SDPA) operator as part of `torch.nn.functional`. This function encompasses several implementations that can be applied depending on the inputs and the hardware in use. See the [official documentation](https://pytorch.org/docs/stable/generated/torch.nn.functional.scaled_dot_product_attention.html) or the [GPU Inference](https://huggingface.co/docs/transformers/main/en/perf_infer_gpu_one#pytorch-scaled-dot-product-attention) page for more information.\nSDPA is used by default for `torch>=2.1.1` when an implementation is available, but you may also set `attn_implementation=\"sdpa\"` in `from_pretrained()` to explicitly request SDPA to be used.\nfrom transformers import DepthProForDepthEstimation\n\n\nmodel = DepthProForDepthEstimation.from_pretrained(\"apple/DepthPro-hf\", attn_implementation=\"sdpa\", device_map=\"auto\")\nFor the best speedups, we recommend loading the model in half-precision (e.g. `torch.float16` or `torch.bfloat16`).\nOn a local benchmark (A100-40GB, PyTorch 2.3.0, OS Ubuntu 22.04) with `float32` and `google/vit-base-patch16-224` model, we saw the following speedups during inference."
+        },
+        {
+          "rank": 5,
+          "chunk_id": "0596a9c896c1ca38727f07f387ef700cf3a71f9b25c94cf060872c51bb402c91",
+          "source_id": "huggingface_transformers",
+          "document_id": "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+          "title": "Glossary",
+          "rrf_score": 0.01639344262295082,
+          "rerank_score": -0.36754730343818665,
+          "dense_rank": 1,
+          "sparse_rank": null,
+          "text": "This can then be converted into a tensor in PyTorch. The attention mask is a binary tensor indicating the position of the padded indices so that the model does not attend to them. For the [`BertTokenizer`], `1` indicates a value that should be attended to, while `0` indicates a padded value. This attention mask is in the dictionary returned by the tokenizer under the key \"attention_mask\":\n>>> padded_sequences[\"attention_mask\"]\n[[1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]"
+        }
+      ],
+      "reranked_candidates": [
+        {
+          "rank": 1,
+          "source_id": "huggingface_transformers",
+          "document_id": "704496c838746cf662c5a2abdd7cbcf3c1f769c7c427c012cec598c2d433729b",
+          "chunk_id": "3b7c0195b126e296592b1cef79bd7974ff9454fe0f0818c49fa4be4fd6bf6fae",
+          "title": "Apple Silicon",
+          "rerank_score": 2.140665292739868,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 2,
+          "source_id": "pytorch",
+          "document_id": "21c43e2df87337329e41478a7ffec7c5a36a50130f03bd0a7a7bc0e27397869d",
+          "chunk_id": "ce24da3a90ed218410712161940255816a3f719cf3aaf52c41a740e50e453e5d",
+          "title": "torch.nested",
+          "rerank_score": 1.5002858638763428,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": null,
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 3,
+          "source_id": "huggingface_transformers",
+          "document_id": "57c2b4d47fabdff839a7ddb88eab91a4e3f1b48292960bb8b9d3c8da560ebe0c",
+          "chunk_id": "293258171f308758a30183778080cf3ba8fe54bad4196b9a897820a35791e5f3",
+          "title": "Audio Spectrogram Transformer",
+          "rerank_score": -0.13886481523513794,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 4,
+          "source_id": "huggingface_transformers",
+          "document_id": "b2b02edead642bff05ab9c735cd4282890a2de0f0fd8e1ac5c9e4d7bcc1ca82d",
+          "chunk_id": "2174aa2520530ba434d122a02b68ce53f1134b9d1b7cab74c7b85f2d92eccb88",
+          "title": "DepthPro",
+          "rerank_score": -0.16854967176914215,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        },
+        {
+          "rank": 5,
+          "source_id": "huggingface_transformers",
+          "document_id": "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+          "chunk_id": "0596a9c896c1ca38727f07f387ef700cf3a71f9b25c94cf060872c51bb402c91",
+          "title": "Glossary",
+          "rerank_score": -0.36754730343818665,
+          "tenant_id": "local",
+          "license_review_status": "operator_authorized_unreviewed",
+          "ingestion_authority": "explicit_operator_instruction",
+          "acl_principals": [
+            "local-admin"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "huggingface_transformers",
+          "document_id": "704496c838746cf662c5a2abdd7cbcf3c1f769c7c427c012cec598c2d433729b",
+          "title": "Apple Silicon",
+          "pages": [],
+          "section": "Apple Silicon > Choose an attention backend",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "huggingface_transformers",
+          "document_id": "57c2b4d47fabdff839a7ddb88eab91a4e3f1b48292960bb8b9d3c8da560ebe0c",
+          "title": "Audio Spectrogram Transformer",
+          "pages": [],
+          "section": "Audio Spectrogram Transformer > Usage tips > Using Scaled Dot Product Attention (SDPA)",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        },
+        {
+          "citation_id": "S3",
+          "source_id": "huggingface_transformers",
+          "document_id": "b2b02edead642bff05ab9c735cd4282890a2de0f0fd8e1ac5c9e4d7bcc1ca82d",
+          "title": "DepthPro",
+          "pages": [],
+          "section": "DepthPro > Usage Tips > Using Scaled Dot Product Attention (SDPA)",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        },
+        {
+          "citation_id": "S4",
+          "source_id": "huggingface_transformers",
+          "document_id": "638098f12dc63926ea43ff95a8f69bae3d55409ef1769131e4063f1ae88da5e9",
+          "title": "Glossary",
+          "pages": [],
+          "section": "Glossary > A > attention mask",
+          "source_reference": "https://huggingface.co/docs/transformers/"
+        }
+      ],
+      "timings_ms": {
+        "embedding": 28.688799997325987,
+        "dense_search": 21.58610000333283,
+        "sparse_search": 88.94340000551892,
+        "fusion": 0.134599999000784,
+        "rerank": 240.7768999983091,
+        "context": 0.9275999982492067,
+        "end_to_end": 2434.8505000016303
+      },
+      "comparison_evidence_complete": true,
+      "status": "generation_failed",
+      "error_type": "GenerationError",
+      "error_code": "uncited_claim_rejected"
+    }
+  ]
+}

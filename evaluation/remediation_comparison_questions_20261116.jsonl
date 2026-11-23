@@ -1,0 +1,2 @@
+{"query_id": "m01", "test_case_type": "multi_document", "domain": "postgresql_qdrant", "question": "Compare PostgreSQL B-tree indexes with Qdrant vector indexes: what data and query patterns is each designed for?"}
+{"query_id": "m05", "test_case_type": "multi_document", "domain": "pytorch_transformers", "question": "Compare PyTorch autograd gradient tracking with how Transformer attention masks affect model inputs."}

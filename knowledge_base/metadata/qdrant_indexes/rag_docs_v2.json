@@ -1,0 +1,11 @@
+{
+  "manifest_version": "1.0",
+  "collection_name": "rag_docs_v2",
+  "vector_name": "dense",
+  "dimensions": 768,
+  "distance": "Cosine",
+  "embedding_provider": "ollama",
+  "embedding_model": "nomic-embed-text:v1.5",
+  "embedding_model_digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+  "chunking_version": "1.2"
+}

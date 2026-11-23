@@ -1,0 +1,886 @@
+{
+  "conversation_id": "b56527be-f26e-469d-b200-2e79b5e00ab5",
+  "results": [
+    {
+      "question_number": 1,
+      "question": "In Python, what is the key behavioral difference between a list and a tuple, and how do you create a one-item tuple?",
+      "message_status": "complete",
+      "answer": "- Lists are mutable while tuples are immutable . [S1]\n- Tuples cannot support item assignment, resulting in a TypeError if attempted . [S1]\n- Lists can contain mutable objects such as other lists . [S1]\n- Tuples are often used to represent heterogeneous sequences of related data . [S2]\n- Lists tend to hold a varying number of objects all of which have the same type . [S2]\n- Only immutable elements like tuples can be used as dictionary keys . [S2]\n- A one-item tuple is created by separating the item with a comma, for example: `t = 12345,` . [S1]",
+      "retrieval_mode": "dense",
+      "verification_status": "verified",
+      "timings_ms": {
+        "context": 1.2529590003396152,
+        "embedding": 71.7633249996652,
+        "generation": 5380.528710999897,
+        "dense_search": 50.28020900044794,
+        "answer_generation": 2196.1188400000538,
+        "claim_verification": 3183.6098030007633,
+        "generation_pipeline": 5380.527340000299
+      },
+      "diagnostics": {
+        "claim_count": 7,
+        "context_bytes": 4067,
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.80914855,
+            "chunk_id": "59c2639ce084224b8abce4209e49e8bb47ef7a2e3d88824f5b083d593aab16b1",
+            "source_id": "python_3_13",
+            "document_id": "cec0a6b1d88b05c63de313b80351f0a0529c80f4dee5d350981a6cd76d9a6534"
+          },
+          {
+            "rank": 2,
+            "score": 0.7950488,
+            "chunk_id": "23d083958f6b30e6cb5acac00a2a90150f771d9168a84737e7a6582c4ebf7032",
+            "source_id": "python_3_13",
+            "document_id": "63cac76f6c377cf51f572d64c332b65143b70fef44a3c55b359537a7e177c07b"
+          },
+          {
+            "rank": 3,
+            "score": 0.76142293,
+            "chunk_id": "cf721e71116fb7f7e262e70f8a505b9e12654e26779503c2826df0ef21e9b0b4",
+            "source_id": "fastapi",
+            "document_id": "9d3e64b552f2156338b9c5e6c0e4de0fc415e3f0fdd8275feee129934c902757"
+          },
+          {
+            "rank": 4,
+            "score": 0.75099504,
+            "chunk_id": "eb34ee06a60b8576eacffab3e4b5ebbc5318069ef33d0146aad4421088517d29",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 5,
+            "score": 0.7420784,
+            "chunk_id": "4f05e211fdd966a393ac0d859ad942e1cb1bbd86bc0ceb8b68e85d86b9aa85bb",
+            "source_id": "python_3_13",
+            "document_id": "3e7ea952d150cf6502922a8cb898c8e769a2c75cd37564efbad359036b74b02a"
+          },
+          {
+            "rank": 6,
+            "score": 0.73703134,
+            "chunk_id": "271d818371410b3bb85e561e84af59f6bae977d1b29f7fc6769c8ee6e4adcffa",
+            "source_id": "python_3_13",
+            "document_id": "cec0a6b1d88b05c63de313b80351f0a0529c80f4dee5d350981a6cd76d9a6534"
+          },
+          {
+            "rank": 7,
+            "score": 0.73168063,
+            "chunk_id": "4de1af4cd273e75416b69eb36823d7908b9562e36ac4f1165c13d6aa8782160e",
+            "source_id": "python_3_13",
+            "document_id": "bb2796172cede3af9059973de5377799162c8bf1e9f8c50f56d566e31ff51412"
+          },
+          {
+            "rank": 8,
+            "score": 0.7242235,
+            "chunk_id": "a10af96d513c8ec48b66283bf4fbce949a7b569fe4a027e2776732dc7e77a833",
+            "source_id": "python_3_13",
+            "document_id": "749a16552514bb1e4144166bb5612998c988e8a0ed2dc414e4273b448a88fa2d"
+          }
+        ],
+        "reranker_active": false,
+        "generation_model": "qwen3.5:4b",
+        "retrieval_strategy": "dense",
+        "verification_model": "qwen3.5:4b",
+        "context_chunk_count": 3,
+        "retrieval_hit_count": 8,
+        "rejected_claim_count": 0,
+        "claim_verifier_status": "verified",
+        "supported_claim_count": 7,
+        "context_token_estimate": 4063,
+        "context_exclusion_count": 5,
+        "prompt_tokens_estimated": 4771,
+        "context_exclusion_reasons": {
+          "context_budget": 5
+        },
+        "citation_validation_status": "passed"
+      },
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "python_3_13",
+          "document_id": "cec0a6b1d88b05c63de313b80351f0a0529c80f4dee5d350981a6cd76d9a6534",
+          "chunk_id": "59c2639ce084224b8abce4209e49e8bb47ef7a2e3d88824f5b083d593aab16b1",
+          "title": "5. Data Structures — Python 3.13.18 documentation",
+          "section": "5. Data Structures¶ > 5.3. Tuples and Sequences¶"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "python_3_13",
+          "document_id": "63cac76f6c377cf51f572d64c332b65143b70fef44a3c55b359537a7e177c07b",
+          "chunk_id": "23d083958f6b30e6cb5acac00a2a90150f771d9168a84737e7a6582c4ebf7032",
+          "title": "Design and History FAQ — Python 3.13.18 documentation",
+          "section": "Design and History FAQ¶ > Why are there separate tuple and list data types?¶"
+        }
+      ]
+    },
+    {
+      "question_number": 2,
+      "question": "In FastAPI, how do you declare a path parameter and a query parameter in an endpoint, and how does the framework distinguish them?",
+      "message_status": "complete",
+      "answer": "- FastAPI distinguishes path parameters from query parameters based on their type annotations and location in the function signature . [S1]\n- Path parameters are identified when a function parameter is declared to match a specific path segment . [S2]\n- Query parameters are interpreted as singular types such as `int`, `float`, `str`, or `bool` when not explicitly defined as part of the path or body . [S3]\n- FastAPI recognizes that a parameter is required if it lacks a default value, regardless of its type annotation . [S3]\n- Type annotations like `str | None` do not determine requirement status; instead, a default value of `None` indicates the parameter is optional . [S3]\n- Function parameters matching the path structure are extracted from the URL path by FastAPI . [S2]\n- Parameters declared as Pydantic models are extracted from the request body rather than the query string or path . [S2]\n- FastAPI can handle multiple body parameters simultaneously, validating and documenting them correctly within a single request . [S5]\n- Singular values declared without the `Body` annotation may be incorrectly interpreted as query parameters by FastAPI . [S6]\n- The `Body` annotation must be used to explicitly instruct FastAPI to treat a singular value as part of the request body . [S6]",
+      "retrieval_mode": "dense",
+      "verification_status": "verified",
+      "timings_ms": {
+        "context": 0.7761340002616635,
+        "embedding": 83.97880099983013,
+        "generation": 8276.51015200081,
+        "dense_search": 41.40249000010954,
+        "answer_generation": 4016.871359999641,
+        "claim_verification": 4258.434274999672,
+        "generation_pipeline": 8276.508642000408
+      },
+      "diagnostics": {
+        "claim_count": 10,
+        "context_bytes": 4705,
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.8556959,
+            "chunk_id": "fc56bb079949b44c6f5e4c73b6f48ca12415bcb2735103db6afc0efe9e3c3b47",
+            "source_id": "fastapi",
+            "document_id": "209b04a4f49090500e89b93ac26ca5599f23d7b8cfae016ba5c88a26180ee01e"
+          },
+          {
+            "rank": 2,
+            "score": 0.8133943,
+            "chunk_id": "ef93874608ee8e653f529349a576e49dccb29304c913d4cd8410130452a2f0e7",
+            "source_id": "fastapi",
+            "document_id": "900f289d2d55e9ff28f41e6c0b7b523c8658ad8546779c7107be63e1ead62dc1"
+          },
+          {
+            "rank": 3,
+            "score": 0.8074702,
+            "chunk_id": "519ee6ddcf657eb4a49f2ee56870406f0b19cde5f7130f3e06e46aabb0b29766",
+            "source_id": "fastapi",
+            "document_id": "900f289d2d55e9ff28f41e6c0b7b523c8658ad8546779c7107be63e1ead62dc1"
+          },
+          {
+            "rank": 4,
+            "score": 0.78556633,
+            "chunk_id": "5b86c18746869893bd8fd11dd4c954ce8e3ba5c5ce0164ba736c7e6e8bbdc6c1",
+            "source_id": "fastapi",
+            "document_id": "99a4ba022daf154db204aa207177538dede81ed7d4aaa4c6577057917d2bd480"
+          },
+          {
+            "rank": 5,
+            "score": 0.780177,
+            "chunk_id": "398d17e990f37ed527ebee247e71d60aad682b771bada9d46f5c01f34df01b32",
+            "source_id": "fastapi",
+            "document_id": "0680d8f3974c95e05590ac507bdb273a3f5ad1ca0ef494b49e56facb4f753e99"
+          },
+          {
+            "rank": 6,
+            "score": 0.7796976,
+            "chunk_id": "0efe15f5d2d0034e095b0edd7e499702abba84503cb2c6da913d499bc9fb7b7b",
+            "source_id": "fastapi",
+            "document_id": "0680d8f3974c95e05590ac507bdb273a3f5ad1ca0ef494b49e56facb4f753e99"
+          },
+          {
+            "rank": 7,
+            "score": 0.7764726,
+            "chunk_id": "e941aa7cf767bc1b4f2c8ab230e9c14f49872af2293e6bf8d071e17c82901651",
+            "source_id": "fastapi",
+            "document_id": "209b04a4f49090500e89b93ac26ca5599f23d7b8cfae016ba5c88a26180ee01e"
+          },
+          {
+            "rank": 8,
+            "score": 0.7588376,
+            "chunk_id": "6eccc1a78d3a7109eee4f24d6db2b39e77c3827720c3035c415cf3bcbd70fa90",
+            "source_id": "fastapi",
+            "document_id": "0680d8f3974c95e05590ac507bdb273a3f5ad1ca0ef494b49e56facb4f753e99"
+          }
+        ],
+        "reranker_active": false,
+        "generation_model": "qwen3.5:4b",
+        "retrieval_strategy": "dense",
+        "verification_model": "qwen3.5:4b",
+        "context_chunk_count": 6,
+        "retrieval_hit_count": 8,
+        "rejected_claim_count": 0,
+        "claim_verifier_status": "verified",
+        "supported_claim_count": 10,
+        "context_token_estimate": 4695,
+        "context_exclusion_count": 2,
+        "prompt_tokens_estimated": 5423,
+        "context_exclusion_reasons": {
+          "context_budget": 2
+        },
+        "citation_validation_status": "passed"
+      },
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "fastapi",
+          "document_id": "209b04a4f49090500e89b93ac26ca5599f23d7b8cfae016ba5c88a26180ee01e",
+          "chunk_id": "fc56bb079949b44c6f5e4c73b6f48ca12415bcb2735103db6afc0efe9e3c3b47",
+          "title": "Query Parameters { #query-parameters }",
+          "section": "Query Parameters { #query-parameters } > Multiple path and query parameters { #multiple-path-and-query-parameters }"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "fastapi",
+          "document_id": "900f289d2d55e9ff28f41e6c0b7b523c8658ad8546779c7107be63e1ead62dc1",
+          "chunk_id": "ef93874608ee8e653f529349a576e49dccb29304c913d4cd8410130452a2f0e7",
+          "title": "Request Body { #request-body }",
+          "section": "Request Body { #request-body } > Request body + path parameters { #request-body-path-parameters }"
+        },
+        {
+          "citation_id": "S3",
+          "source_id": "fastapi",
+          "document_id": "900f289d2d55e9ff28f41e6c0b7b523c8658ad8546779c7107be63e1ead62dc1",
+          "chunk_id": "519ee6ddcf657eb4a49f2ee56870406f0b19cde5f7130f3e06e46aabb0b29766",
+          "title": "Request Body { #request-body }",
+          "section": "Request Body { #request-body } > Request body + path + query parameters { #request-body-path-query-parameters }"
+        },
+        {
+          "citation_id": "S5",
+          "source_id": "fastapi",
+          "document_id": "0680d8f3974c95e05590ac507bdb273a3f5ad1ca0ef494b49e56facb4f753e99",
+          "chunk_id": "398d17e990f37ed527ebee247e71d60aad682b771bada9d46f5c01f34df01b32",
+          "title": "Body - Multiple Parameters { #body-multiple-parameters }",
+          "section": "Body - Multiple Parameters { #body-multiple-parameters } > Recap { #recap }"
+        },
+        {
+          "citation_id": "S6",
+          "source_id": "fastapi",
+          "document_id": "0680d8f3974c95e05590ac507bdb273a3f5ad1ca0ef494b49e56facb4f753e99",
+          "chunk_id": "0efe15f5d2d0034e095b0edd7e499702abba84503cb2c6da913d499bc9fb7b7b",
+          "title": "Body - Multiple Parameters { #body-multiple-parameters }",
+          "section": "Body - Multiple Parameters { #body-multiple-parameters } > Singular values in body { #singular-values-in-body }"
+        }
+      ]
+    },
+    {
+      "question_number": 3,
+      "question": "In Docker Compose, what does depends_on with condition service_healthy guarantee, and what healthcheck configuration does it rely on?",
+      "message_status": "complete",
+      "answer": "I cannot answer from the local academic demo sources available.",
+      "retrieval_mode": "dense",
+      "verification_status": "failed",
+      "timings_ms": {
+        "context": 0.9711720003906521,
+        "embedding": 28.556270000080985,
+        "dense_search": 32.09640499972011,
+        "answer_generation": 1609.854594999888,
+        "generation_pipeline": 1610.0464979999742,
+        "answer_validation_rejected": 1.0
+      },
+      "diagnostics": {
+        "failure_code": "uncited_claim_rejected",
+        "context_bytes": 4548,
+        "failure_stage": "answer_validation",
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.8617585,
+            "chunk_id": "265211ac69bbeb2142f656b2bebd028a1a35384441dfd504612e10a47cbf082f",
+            "source_id": "docker",
+            "document_id": "632e66c39301cf96414b69d5cf5a6c90ed71c56fcc4b7659ad46a117f1c0fca2"
+          },
+          {
+            "rank": 2,
+            "score": 0.7938974,
+            "chunk_id": "70087c168c7b0a53a94fc77a5e46ccdda4e4484c668a463ab57ce90a0e252e60",
+            "source_id": "docker",
+            "document_id": "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff"
+          },
+          {
+            "rank": 3,
+            "score": 0.79063547,
+            "chunk_id": "aad6babb439778983c88ab18b52f667af9300fd9b72dd5176eeefa79cecac42d",
+            "source_id": "docker",
+            "document_id": "79acb2ef13051dfa81ae68f2b03629d8fddcee1b8fc3741638998391a7330dce"
+          },
+          {
+            "rank": 4,
+            "score": 0.78412247,
+            "chunk_id": "ff3e72da3ab5853bb8ff1dc46339d5eaef4bd99d2dd28394883bff095de396c5",
+            "source_id": "docker",
+            "document_id": "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff"
+          },
+          {
+            "rank": 5,
+            "score": 0.77650195,
+            "chunk_id": "e032d689a1fbd64e59f33ad582c0609ddc53f8ffc0df00e68bf3053169feff9f",
+            "source_id": "docker",
+            "document_id": "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff"
+          },
+          {
+            "rank": 6,
+            "score": 0.7747668,
+            "chunk_id": "096e8ae9129e2b472b2822fadaec7155d7b67fb107dcb1d10f053492fac37da1",
+            "source_id": "docker",
+            "document_id": "438d05d74665a887ce25f6b48dd4537697ae3641d79c0dd65f7b4c6cf55a462a"
+          },
+          {
+            "rank": 7,
+            "score": 0.7730111,
+            "chunk_id": "71771867a456d9420faf8d5e4b82a311fe2dd569d0d7f7a564ccd68b36413659",
+            "source_id": "docker",
+            "document_id": "79acb2ef13051dfa81ae68f2b03629d8fddcee1b8fc3741638998391a7330dce"
+          },
+          {
+            "rank": 8,
+            "score": 0.76719785,
+            "chunk_id": "674982c6aad7ef0da9d91b1aaf12d2abffcc5a1a397e4a3d2aabc3aee30f2cde",
+            "source_id": "docker",
+            "document_id": "f90b8afb0a53ba1bf7a7980450112981f504e8e68d668dec80e0a5e4b1f711ea"
+          }
+        ],
+        "reranker_active": false,
+        "retrieval_strategy": "dense",
+        "context_chunk_count": 4,
+        "retrieval_hit_count": 8,
+        "claim_verifier_status": "not_run",
+        "context_token_estimate": 4542,
+        "context_exclusion_count": 4,
+        "context_exclusion_reasons": {
+          "context_budget": 4
+        },
+        "citation_validation_status": "rejected"
+      },
+      "citations": []
+    },
+    {
+      "question_number": 4,
+      "question": "In Qdrant, what is a collection and what is a point? How are vector size and distance metric chosen when creating a collection?",
+      "message_status": "complete",
+      "answer": "- A collection in Qdrant is a named set of points sharing vector dimensions and a distance metric . [S5]\n- A point in Qdrant holds vectors used for search and retrieval within a collection . [S2]\n- If vector sizes differ between points, it is impossible to calculate the distance between them . [S3]\n- The `distance` parameter specifies the function used to measure the distance between two points . [S1] [S3]\n- Vector size can be determined by the output dimensionality of the embedding model used . [S3]\n- Named vectors with specific sizes and distance calculation methods can be defined within a collection configuration . [S4]\nSome claims were omitted because local evidence did not verify them.",
+      "retrieval_mode": "dense",
+      "verification_status": "partially_verified",
+      "timings_ms": {
+        "context": 0.7479870000679512,
+        "embedding": 27.38984999996319,
+        "generation": 5423.994318999576,
+        "dense_search": 25.347402000079455,
+        "answer_generation": 2355.3422189997946,
+        "claim_verification": 3067.7592940000977,
+        "generation_pipeline": 5423.993448999681
+      },
+      "diagnostics": {
+        "claim_count": 7,
+        "context_bytes": 4918,
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.87574965,
+            "chunk_id": "1a5759bc885f76cf38da719fe110e1b0ed3f91a5c9912e2e09498ede0e95a8b6",
+            "source_id": "qdrant",
+            "document_id": "7f9a1678504c5c5c8f0ebde093d39bc1f8270f05dacc275397084702bb798a91"
+          },
+          {
+            "rank": 2,
+            "score": 0.85815537,
+            "chunk_id": "108ff407bea8605cb7eaaf9564542c0f73ecc412a22c5ddcd98f0d7b75407dfc",
+            "source_id": "qdrant",
+            "document_id": "2e9e389a7d3147f492bbc37f0b63d6c168fea38f933a5aea260d28b9af6cd0a2"
+          },
+          {
+            "rank": 3,
+            "score": 0.8437935,
+            "chunk_id": "4d26b8933f94ce6d44e8e15038b776c1ec7633574e774614d4bf1cf79d014242",
+            "source_id": "qdrant",
+            "document_id": "1cff5ceaa0d8d11316560d5e229740c361a01fc418028130f33f9eba340f2191"
+          },
+          {
+            "rank": 4,
+            "score": 0.8425727,
+            "chunk_id": "bdbb85275863a285b62bc14e81aff532980131d5a338964ef2e8ce4d6cd91ea4",
+            "source_id": "qdrant",
+            "document_id": "bbe3b9802781d38473b5f794c50e9ff594204ca2ef25be1cc5c3e922086d0a9f"
+          },
+          {
+            "rank": 5,
+            "score": 0.83861494,
+            "chunk_id": "d8bb731982d0990576c9d5ebb70838a70d08adc675df2db0939048e715e0e951",
+            "source_id": "qdrant",
+            "document_id": "30d672a0fec4658319d5c19016ac1c480bab5ec166e6724abf1b2fb991945ca7"
+          },
+          {
+            "rank": 6,
+            "score": 0.8293071,
+            "chunk_id": "a79252de4c5439792523657e0f436984bd2f83fb3f93b6e6a2525b989ab7d072",
+            "source_id": "qdrant",
+            "document_id": "9fb1bc9b22379333e1e7a405a309a4ac539f37f8a77e3d28bafffba1355abd76"
+          },
+          {
+            "rank": 7,
+            "score": 0.8289927,
+            "chunk_id": "1e5d491a238bf02199b3f97128fc8bb0f4d34c041db22dbba0f7912475592bac",
+            "source_id": "qdrant",
+            "document_id": "7cb2f1724a958062b9c310c4dda6d23844311572e068dcf40e67b761eefdfdf2"
+          },
+          {
+            "rank": 8,
+            "score": 0.8288615,
+            "chunk_id": "ac28131d916e818fe3929359d1d47675d3f9ee426444556289d8ed74c906ba48",
+            "source_id": "qdrant",
+            "document_id": "86bc4bf8f7454b9ad514ef6bd6984b649ea457d8153f4c8671041a38ea1b98ee"
+          }
+        ],
+        "reranker_active": false,
+        "generation_model": "qwen3.5:4b",
+        "retrieval_strategy": "dense",
+        "verification_model": "qwen3.5:4b",
+        "context_chunk_count": 7,
+        "retrieval_hit_count": 8,
+        "rejected_claim_count": 1,
+        "claim_verifier_status": "partially_verified",
+        "supported_claim_count": 6,
+        "context_token_estimate": 4906,
+        "context_exclusion_count": 1,
+        "prompt_tokens_estimated": 5633,
+        "context_exclusion_reasons": {
+          "context_budget": 1
+        },
+        "citation_validation_status": "passed"
+      },
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "qdrant",
+          "document_id": "7f9a1678504c5c5c8f0ebde093d39bc1f8270f05dacc275397084702bb798a91",
+          "chunk_id": "1a5759bc885f76cf38da719fe110e1b0ed3f91a5c9912e2e09498ede0e95a8b6",
+          "title": "Build a Semantic Search Engine in 5 Minutes",
+          "section": "Build a Semantic Search Engine in 5 Minutes > 3. Create a Collection"
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "qdrant",
+          "document_id": "2e9e389a7d3147f492bbc37f0b63d6c168fea38f933a5aea260d28b9af6cd0a2",
+          "chunk_id": "108ff407bea8605cb7eaaf9564542c0f73ecc412a22c5ddcd98f0d7b75407dfc",
+          "title": "Build a GraphRAG Agent with Neo4j and Qdrant",
+          "section": "Implementation > Ingestion > Creating Qdrant Collection"
+        },
+        {
+          "citation_id": "S3",
+          "source_id": "qdrant",
+          "document_id": "1cff5ceaa0d8d11316560d5e229740c361a01fc418028130f33f9eba340f2191",
+          "chunk_id": "4d26b8933f94ce6d44e8e15038b776c1ec7633574e774614d4bf1cf79d014242",
+          "title": "Build a Semantic Search Engine in 5 Minutes",
+          "section": "Build a Semantic Search Engine in 5 Minutes > 4. Create a Collection"
+        },
+        {
+          "citation_id": "S4",
+          "source_id": "qdrant",
+          "document_id": "bbe3b9802781d38473b5f794c50e9ff594204ca2ef25be1cc5c3e922086d0a9f",
+          "chunk_id": "bdbb85275863a285b62bc14e81aff532980131d5a338964ef2e8ce4d6cd91ea4",
+          "title": "_description",
+          "section": ""
+        },
+        {
+          "citation_id": "S5",
+          "source_id": "qdrant",
+          "document_id": "30d672a0fec4658319d5c19016ac1c480bab5ec166e6724abf1b2fb991945ca7",
+          "chunk_id": "d8bb731982d0990576c9d5ebb70838a70d08adc675df2db0939048e715e0e951",
+          "title": "Collections",
+          "section": ""
+        }
+      ]
+    },
+    {
+      "question_number": 5,
+      "question": "In Hugging Face Transformers, what does the pipeline API provide, and how do task and model arguments affect its use?",
+      "message_status": "complete",
+      "answer": "- The [`Pipeline`] API provides a simple inference interface for various machine learning tasks using models from the Hugging Face Hub . [S1]\n- Task-specific parameters can be added to customize the pipeline's behavior, such as including timestamps in automatic speech recognition . [S1]\n- The `task` parameter is used to select a specific task identifier, which configures the pipeline to use a default pretrained model and preprocessor . [S1]\n- The `model` parameter allows users to override the default model by specifying a different model ID . [S1]\n- Individual task pipelines, such as [`TextGenerationPipeline`], can be loaded by setting the corresponding task identifier in the `task` argument . [S1]\n- Task-specific parameters are accepted by the [`Pipeline`] and may vary depending on the individual task pipeline being used . [S4]\n- The `return_timestamps` parameter can be set to \"word\" within the [`Pipeline`] to return the time each word was spoken . [S4]\n- Additional task-specific parameters are available for different tasks and should be verified in the documentation for each individual pipeline . [S4]",
+      "retrieval_mode": "dense",
+      "verification_status": "verified",
+      "timings_ms": {
+        "context": 0.9133389994531171,
+        "embedding": 32.246551999378426,
+        "generation": 6768.475077999938,
+        "dense_search": 30.674669000291033,
+        "answer_generation": 3423.2991310000216,
+        "claim_verification": 3344.0954679999777,
+        "generation_pipeline": 6768.473863000509
+      },
+      "diagnostics": {
+        "claim_count": 8,
+        "context_bytes": 4802,
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.7974572,
+            "chunk_id": "854aa0dc78080764de27e2e40fd44bd656eca261f8cbc6d44b1ea245340d5315",
+            "source_id": "huggingface_transformers",
+            "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8"
+          },
+          {
+            "rank": 2,
+            "score": 0.7842494,
+            "chunk_id": "bf77eaefc372755fd3075a768e54e4e71c70d9ae30dd39b3a3dc33261ba63f3b",
+            "source_id": "huggingface_transformers",
+            "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8"
+          },
+          {
+            "rank": 3,
+            "score": 0.7712046,
+            "chunk_id": "d5a1cd95d7f67f566b58c5b76fddbab91dfc70b5b745ae80c5643a82e4767228",
+            "source_id": "huggingface_transformers",
+            "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8"
+          },
+          {
+            "rank": 4,
+            "score": 0.7652997,
+            "chunk_id": "f6d8243f76fba452a499e7e7b1380765ec2fe6280c2383f637d3634aba131462",
+            "source_id": "huggingface_transformers",
+            "document_id": "dea733068b7b52f1e819f4b25d3184d1970936a1041a7c1c1084655e87e1aad4"
+          },
+          {
+            "rank": 5,
+            "score": 0.75976264,
+            "chunk_id": "da71477c311420065a014e806ec5eb686e0426ae0fac5df0fa5ee2244917a1c6",
+            "source_id": "huggingface_transformers",
+            "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8"
+          },
+          {
+            "rank": 6,
+            "score": 0.75630105,
+            "chunk_id": "9f64657210235cd7ce296a69b9beb52bc67b087a0cde34d5eea05ca691ce0570",
+            "source_id": "huggingface_transformers",
+            "document_id": "10978088c7b8604712f170ae68219e85c7e6ee911aeea2f45963870dc2513908"
+          },
+          {
+            "rank": 7,
+            "score": 0.7505542,
+            "chunk_id": "8fcb7e825bb7de689ba7b32aae97651215b3fb35c6db991186484b6d60b191b3",
+            "source_id": "huggingface_transformers",
+            "document_id": "d77091172cf783edbf8af02dd448877cf87f0197ea56f3146aeaa838a70a5692"
+          },
+          {
+            "rank": 8,
+            "score": 0.7483825,
+            "chunk_id": "07352048949fd68ffbbd1a08ccc75de96562650e38cece1d20de07605d417990",
+            "source_id": "huggingface_transformers",
+            "document_id": "891f7275aa7feb6efea822285f806ff3b5451d856e8b01c8d8e95746f1c63735"
+          }
+        ],
+        "reranker_active": false,
+        "generation_model": "qwen3.5:4b",
+        "retrieval_strategy": "dense",
+        "verification_model": "qwen3.5:4b",
+        "context_chunk_count": 4,
+        "retrieval_hit_count": 8,
+        "rejected_claim_count": 0,
+        "claim_verifier_status": "verified",
+        "supported_claim_count": 8,
+        "context_token_estimate": 4796,
+        "context_exclusion_count": 4,
+        "prompt_tokens_estimated": 5507,
+        "context_exclusion_reasons": {
+          "context_budget": 4
+        },
+        "citation_validation_status": "passed"
+      },
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "huggingface_transformers",
+          "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+          "chunk_id": "854aa0dc78080764de27e2e40fd44bd656eca261f8cbc6d44b1ea245340d5315",
+          "title": "Pipeline",
+          "section": "Pipeline"
+        },
+        {
+          "citation_id": "S4",
+          "source_id": "huggingface_transformers",
+          "document_id": "d860573455448d6f625ba5ecc00b28df34d8f347f10baea077fa41851f0d73e8",
+          "chunk_id": "da71477c311420065a014e806ec5eb686e0426ae0fac5df0fa5ee2244917a1c6",
+          "title": "Pipeline",
+          "section": "Pipeline > Parameters > Task-specific parameters"
+        }
+      ]
+    },
+    {
+      "question_number": 6,
+      "question": "In PyTorch, what does torch.no_grad do, and why is it useful during model inference?",
+      "message_status": "complete",
+      "answer": "I cannot answer from the local academic demo sources available.",
+      "retrieval_mode": "dense",
+      "verification_status": "failed",
+      "timings_ms": {
+        "context": 0.8355110003321897,
+        "embedding": 45.70126699945831,
+        "dense_search": 35.89404900048976,
+        "answer_generation": 2850.6231950004803,
+        "generation_pipeline": 2850.8833810001306,
+        "answer_validation_rejected": 1.0
+      },
+      "diagnostics": {
+        "failure_code": "uncited_claim_rejected",
+        "context_bytes": 4699,
+        "failure_stage": "answer_validation",
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.7674631,
+            "chunk_id": "6f80447635d30f7831d8839b7fa033d59c037c0d422b48ac10f022e623b23c68",
+            "source_id": "pytorch",
+            "document_id": "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842"
+          },
+          {
+            "rank": 2,
+            "score": 0.7512752,
+            "chunk_id": "f9e038003ef5c117d4714162ee6cce2b219a27056853d0bf60761465f416bc56",
+            "source_id": "pytorch",
+            "document_id": "d4846204e5d3c8e5825a034ec40008e349d99ea357b0f981cda6b2cd1fec8842"
+          },
+          {
+            "rank": 3,
+            "score": 0.74873245,
+            "chunk_id": "a8a238d15fa3f2f3fc6ddaccab0143e45be875f106b7f2ee5eeb0137ea47f173",
+            "source_id": "huggingface_transformers",
+            "document_id": "a58dc68dd3dab7fc2c77452d6abccb9daece0872156bb506e969ce45329ac5ce"
+          },
+          {
+            "rank": 4,
+            "score": 0.7393843,
+            "chunk_id": "923a7b257613892c5303d974fccc31f749a0f5250da0cc531afb914e18ee74e0",
+            "source_id": "pytorch",
+            "document_id": "2b74e5c577375d02e9ccfdf4434e32e99ca89b6c50c53d0eac874fc201c050e9"
+          },
+          {
+            "rank": 5,
+            "score": 0.73849976,
+            "chunk_id": "e0a9cfb8362a3835ce545809f9e3dab490257a2b61256a084c217824273be97a",
+            "source_id": "pytorch",
+            "document_id": "b2abdb74fb68e873d879b27a8aa7a7ae69160bc8a99a9dcfc4500864bac5e55b"
+          },
+          {
+            "rank": 6,
+            "score": 0.73846334,
+            "chunk_id": "bcd3c036cc30e679ada03133a1e5a4bc708ec9f405b56084be18f8ffb04a3452",
+            "source_id": "pytorch",
+            "document_id": "03646923f0f991c39f710eeb5362df3b6c5280a6bd619bc2a92662fde627f48e"
+          },
+          {
+            "rank": 7,
+            "score": 0.7346284,
+            "chunk_id": "0e3d04fb24258f45638a5fe906c9570df259100fde710319f3d50ee34bf79beb",
+            "source_id": "pytorch",
+            "document_id": "1184e4e37020c6a70391ecc364880bf793d98eded440b397ccd3e9b4b68555c9"
+          },
+          {
+            "rank": 8,
+            "score": 0.73137784,
+            "chunk_id": "02570ec90f1a25ae509830f36310060523bd037853b3b2f6fa869eaaac1f6c94",
+            "source_id": "pytorch",
+            "document_id": "99ad3e7162f57fbbb5bca48cd129434080042dd84bd15c2142c2caa064c91759"
+          }
+        ],
+        "reranker_active": false,
+        "retrieval_strategy": "dense",
+        "context_chunk_count": 5,
+        "retrieval_hit_count": 8,
+        "claim_verifier_status": "not_run",
+        "context_token_estimate": 4691,
+        "context_exclusion_count": 3,
+        "context_exclusion_reasons": {
+          "context_budget": 3
+        },
+        "citation_validation_status": "rejected"
+      },
+      "citations": []
+    },
+    {
+      "question_number": 7,
+      "question": "In PostgreSQL, what is a transaction, and what do COMMIT and ROLLBACK do to the changes made within it?",
+      "message_status": "complete",
+      "answer": "- A transaction in PostgreSQL is defined by surrounding SQL commands with BEGIN and COMMIT commands . [S1]\n- Each individual SQL statement executed without an explicit BEGIN command has an implicit BEGIN and (if successful) COMMIT wrapped around it . [S1]\n- The updates made by an open transaction are invisible to other transactions until the transaction completes . [S1]\n- Upon completion, all updates made by a transaction become visible simultaneously . [S1]\n- Issuing the ROLLBACK command cancels all updates made so far within the transaction . [S1]\n- PostgreSQL treats every SQL statement as being executed within a transaction . [S1]\n- A group of statements surrounded by BEGIN and COMMIT is sometimes called a transaction block . [S1]\n- Savepoints allow for selectively discarding parts of a transaction while committing the rest . [S1]\n- ROLLBACK TO discards database changes between defining a savepoint and rolling back to it . [S1]\n- Changes earlier than a savepoint are kept after rolling back to that savepoint . [S1]\n- PostgreSQL supports a two-phase commit (2PC) protocol for distributed systems using PREPARE TRANSACTION, COMMIT PREPARED, and ROLLBACK PREPARED commands . [S2]",
+      "retrieval_mode": "dense",
+      "verification_status": "verified",
+      "timings_ms": {
+        "context": 1.1700659997586627,
+        "embedding": 22.644203999334422,
+        "generation": 8513.854175999768,
+        "dense_search": 33.332162000078824,
+        "answer_generation": 3879.2015079998237,
+        "claim_verification": 4633.409684999606,
+        "generation_pipeline": 8513.851941000212
+      },
+      "diagnostics": {
+        "claim_count": 11,
+        "context_bytes": 4207,
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.8333727,
+            "chunk_id": "1dee411d24912e61ea5eaa4ae3f919cb7f6bb05a5eb0542d04250419c52b5ec5",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 2,
+            "score": 0.8246267,
+            "chunk_id": "ed65b46058711e26d0b09020912ed9b75adbaf35d0849cb7428f4728ad1582bb",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 3,
+            "score": 0.81665826,
+            "chunk_id": "c2682543aecb06e50218df18d76fc8fa1c5112cbd6dd60bfb31b31c63f2d4c11",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 4,
+            "score": 0.79330945,
+            "chunk_id": "840de5293437c4d8a9bbcc7162e7477fae526ef8ce361be1bf1976811c0807b5",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 5,
+            "score": 0.7890766,
+            "chunk_id": "241de53108cf3bbee0fae01ad31907797c0bec2a10b624d1be2378c04f99eb3d",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 6,
+            "score": 0.7675781,
+            "chunk_id": "4affbfc6caf9a74098f69c139c9e06198ebdcb804b624fdce4b5938368fc1d94",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 7,
+            "score": 0.7604007,
+            "chunk_id": "496150b28846414bcdeb00e85adebfb09c417462641b227f23dba4a00a1bd938",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          },
+          {
+            "rank": 8,
+            "score": 0.7603729,
+            "chunk_id": "8cc9b87fe19f7087fc09af0b12a3e3635adf57768b7486ba55982ba421a589f8",
+            "source_id": "postgresql_18",
+            "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27"
+          }
+        ],
+        "reranker_active": false,
+        "generation_model": "qwen3.5:4b",
+        "retrieval_strategy": "dense",
+        "verification_model": "qwen3.5:4b",
+        "context_chunk_count": 2,
+        "retrieval_hit_count": 8,
+        "rejected_claim_count": 0,
+        "claim_verifier_status": "verified",
+        "supported_claim_count": 11,
+        "context_token_estimate": 4205,
+        "context_exclusion_count": 6,
+        "prompt_tokens_estimated": 4898,
+        "context_exclusion_reasons": {
+          "context_budget": 6
+        },
+        "citation_validation_status": "passed"
+      },
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "1dee411d24912e61ea5eaa4ae3f919cb7f6bb05a5eb0542d04250419c52b5ec5",
+          "title": "PostgreSQL 18.7 Documentation",
+          "section": ""
+        },
+        {
+          "citation_id": "S2",
+          "source_id": "postgresql_18",
+          "document_id": "b0c770392c562e044910cc8716283f8f9d8e42730ac2cb91def8ffed5aa84a27",
+          "chunk_id": "241de53108cf3bbee0fae01ad31907797c0bec2a10b624d1be2378c04f99eb3d",
+          "title": "PostgreSQL 18.7 Documentation",
+          "section": ""
+        }
+      ]
+    },
+    {
+      "question_number": 8,
+      "question": "Compare how Docker Compose service_healthy startup dependencies and FastAPI request validation help a local application fail safely when a dependency or request is invalid.",
+      "message_status": "complete",
+      "answer": "I cannot answer from the local academic demo sources available.",
+      "retrieval_mode": "dense",
+      "verification_status": "abstained",
+      "timings_ms": {
+        "context": 0.980787000116834,
+        "embedding": 60.27712800005247,
+        "dense_search": 37.899312999797985
+      },
+      "diagnostics": {
+        "context_bytes": 4687,
+        "retrieval_hits": [
+          {
+            "rank": 1,
+            "score": 0.75032556,
+            "chunk_id": "674982c6aad7ef0da9d91b1aaf12d2abffcc5a1a397e4a3d2aabc3aee30f2cde",
+            "source_id": "docker",
+            "document_id": "f90b8afb0a53ba1bf7a7980450112981f504e8e68d668dec80e0a5e4b1f711ea"
+          },
+          {
+            "rank": 2,
+            "score": 0.7464176,
+            "chunk_id": "70087c168c7b0a53a94fc77a5e46ccdda4e4484c668a463ab57ce90a0e252e60",
+            "source_id": "docker",
+            "document_id": "b126b6fcfaad9fd7528ba1615669b157033c56f0dcc54cb6fd4129f76b7cc4ff"
+          },
+          {
+            "rank": 3,
+            "score": 0.7343254,
+            "chunk_id": "194f1f7bc329bde8065d73043ad0c430df764a1a278fac209a8f82cb15067b31",
+            "source_id": "docker",
+            "document_id": "9de39dd08d0371b264914a2cbd963cbce2774ac2859ec8e5bf879c9ca4b9665a"
+          },
+          {
+            "rank": 4,
+            "score": 0.7322046,
+            "chunk_id": "cf4dd81a3b3f05046c301a57c718c89028f16351072ce89a9e469c667305cdd4",
+            "source_id": "docker",
+            "document_id": "3a3639d0534d7294181a54f5f93003e8ccbc1041d8a17229934c78a4ecdeec2a"
+          },
+          {
+            "rank": 5,
+            "score": 0.7290029,
+            "chunk_id": "7ddd58b7db338ed5b1b891d8a5ee393df60c2c782f52db9189eedf3e5e064328",
+            "source_id": "docker",
+            "document_id": "b7a28358b59833cee359a51df1d9c27edc6661a02288fb47848004afe033a5b5"
+          },
+          {
+            "rank": 6,
+            "score": 0.7225375,
+            "chunk_id": "4df8f92307941d6cd9a18a4acb8498c187f3640643c0bdbaa260296a7b12a57d",
+            "source_id": "docker",
+            "document_id": "a2ad8f2eed4e476f9826146f273dbe2bf53c4b9d89e48714013d7a4258423cbf"
+          },
+          {
+            "rank": 7,
+            "score": 0.72199774,
+            "chunk_id": "aad6babb439778983c88ab18b52f667af9300fd9b72dd5176eeefa79cecac42d",
+            "source_id": "docker",
+            "document_id": "79acb2ef13051dfa81ae68f2b03629d8fddcee1b8fc3741638998391a7330dce"
+          },
+          {
+            "rank": 8,
+            "score": 0.7176621,
+            "chunk_id": "dc592b57c26419ed8cbfe6703de4f9263adc991f3dd8a21adf3a6529b73c65a3",
+            "source_id": "docker",
+            "document_id": "f92f1a3909569c7033a9f19b3b0ceeefb899c42a38f2fe537ec7595e99e9045f"
+          }
+        ],
+        "reranker_active": false,
+        "retrieval_strategy": "dense",
+        "context_chunk_count": 3,
+        "retrieval_hit_count": 8,
+        "claim_verifier_status": "not_run",
+        "context_token_estimate": 4683,
+        "context_exclusion_count": 5,
+        "context_exclusion_reasons": {
+          "context_budget": 5
+        },
+        "citation_validation_status": "not_applicable"
+      },
+      "citations": []
+    }
+  ]
+}
